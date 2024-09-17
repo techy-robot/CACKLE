@@ -1,0 +1,13 @@
+{
+  "accentColor": "#59c3ad",
+  "theme": "moonstone",
+  "nativeMenus": false,
+  "baseFontSize": 15,
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "checkboxtest",
+    "dataview_scrollable_tables_filter",
+    "canvas-snippets"
+  ],
+  "textFontFamily": "Inter,Noto Color Emoji,Segoe UI Emoji"
+}

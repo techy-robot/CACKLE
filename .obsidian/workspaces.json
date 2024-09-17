@@ -1,0 +1,266 @@
+{
+  "workspaces": {
+    "multitask": {
+      "main": {
+        "id": "2d79f811cc7c968c",
+        "type": "split",
+        "children": [
+          {
+            "id": "c99f52fc64f96bd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b5f2c0cce19d80b1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Journal Notes/2024/2024-01-January/2024-01-04.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c04b20e4efa837d2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Wiki/Harry Potter (Topic).md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "3b95e4fdf2eae0df",
+        "type": "split",
+        "children": [
+          {
+            "id": "8d15bd751d5f8315",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "fe515236832e0540",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "af5df5a2a1b59ebf",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "[\"location\"]",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "byCreatedTimeReverse"
+                  }
+                }
+              },
+              {
+                "id": "badb70bbc2988c22",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1c0d341d1413b2db",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "8c8419fed2fa2166",
+                "type": "leaf",
+                "state": {
+                  "type": "surfing-tab-tree",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 268.5
+      },
+      "right": {
+        "id": "8ba6b92e55eaf4e5",
+        "type": "split",
+        "children": [
+          {
+            "id": "8c6eb1a509b00614",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c9829fae37b0a3c4",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "3e70a799782b21b6",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "bc463b51bbe819b5",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {}
+                }
+              },
+              {
+                "id": "42bf574afc214f46",
+                "type": "leaf",
+                "state": {
+                  "type": "graph-analysis",
+                  "state": {}
+                }
+              },
+              {
+                "id": "e8249a909a4284ca",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  }
+                }
+              }
+            ],
+            "currentTab": 4
+          },
+          {
+            "id": "996d6d15d91a46a5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c42640967fcfc256",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Journal Notes/2024/2024-01-January/2024-01-04.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "8c222d96453dd6e4",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "bf0c8bbd53a10628",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Journal Notes/2024/2024-01-January/2024-01-04.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 319.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "time-ruler:Open Time Ruler": false,
+          "switcher:Open quick switcher": false,
+          "surfing:surfing-bookmark-manager": true,
+          "3d-graph-new:Global 3D Graph": true,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "daily-notes:Open today's daily note": false,
+          "random-note:Open random note": false,
+          "templater-obsidian:Templater": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": true,
+          "dbfolder:Create a new database table": false,
+          "obsidian-map-view:Open map view": false,
+          "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+          "obsidian-media-db-plugin:Add new Media DB entry": false,
+          "obsidian-full-calendar:Open Full Calendar": false,
+          "obsidian-day-planner:Timeline": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "obsidian42-brat:BRAT": true,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "periodic-notes:Open this week": false,
+          "cmdr:Day Planner: Show the Week Planner": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "fe515236832e0540"
+    }
+  },
+  "active": "multitask"
+}

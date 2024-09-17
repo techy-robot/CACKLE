@@ -1,0 +1,6 @@
+{
+  "format": "[Log] YYYY-MM-DD",
+  "folder": "Logs",
+  "autorun": false,
+  "template": "Templates/Log Template"
+}

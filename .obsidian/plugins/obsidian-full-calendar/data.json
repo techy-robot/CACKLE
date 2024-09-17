@@ -1,0 +1,21 @@
+{
+  "calendarSources": [
+    {
+      "type": "local",
+      "color": "hsl( 168, 47%, calc(56% + 6%) )",
+      "directory": "Events"
+    },
+    {
+      "type": "local",
+      "color": "#949494",
+      "directory": "Action Items"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 1,
+  "initialView": {
+    "desktop": "dayGridMonth",
+    "mobile": "timeGrid3Days"
+  },
+  "timeFormat24h": false
+}

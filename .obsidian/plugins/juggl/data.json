@@ -1,0 +1,118 @@
+{
+  "splitDirection": "vertical",
+  "typedLinkPrefix": "-",
+  "useImgServer": false,
+  "imgServerPort": 3837,
+  "debug": false,
+  "globalStyleGroups": [
+    {
+      "filter": "class:dangling",
+      "color": "rgb(181, 181, 181)",
+      "shape": "ellipse",
+      "icon": {
+        "name": "No icon",
+        "path": "",
+        "color": "white"
+      },
+      "showInPane": true,
+      "show": true,
+      "size": 1
+    },
+    {
+      "filter": "class:file -class:image",
+      "color": "rgb(130, 130, 130)",
+      "shape": "ellipse",
+      "icon": {
+        "name": "No icon",
+        "path": "",
+        "color": "white"
+      },
+      "showInPane": true,
+      "show": true,
+      "size": 1
+    },
+    {
+      "filter": "tag:#gantt",
+      "color": "#0089BA",
+      "shape": "ellipse",
+      "icon": {
+        "name": "No icon",
+        "path": "",
+        "color": "white"
+      },
+      "showInPane": true,
+      "show": true,
+      "size": 1
+    }
+  ],
+  "globalGraphRibbon": true,
+  "graphSettings": {
+    "animateLayout": true,
+    "autoAddNodes": true,
+    "autoExpand": false,
+    "autoZoom": false,
+    "coreStore": "Obsidian",
+    "expandInitial": true,
+    "fdgdLayout": "cola",
+    "filter": "",
+    "height": "100%",
+    "hoverEdges": false,
+    "layout": "force-directed",
+    "limit": 10000,
+    "mergeEdges": true,
+    "mode": "local",
+    "navigator": false,
+    "openWithShift": false,
+    "readContent": true,
+    "styleGroups": [],
+    "toolbar": true,
+    "width": "100%",
+    "zoomSpeed": 1
+  },
+  "embedSettings": {
+    "animateLayout": true,
+    "autoAddNodes": false,
+    "autoExpand": false,
+    "autoZoom": false,
+    "coreStore": "Obsidian",
+    "expandInitial": true,
+    "fdgdLayout": "cola",
+    "filter": "",
+    "height": "400px",
+    "hoverEdges": false,
+    "layout": "force-directed",
+    "limit": 1000,
+    "mergeEdges": true,
+    "mode": "local",
+    "navigator": false,
+    "openWithShift": false,
+    "readContent": true,
+    "styleGroups": [],
+    "toolbar": false,
+    "width": "100%",
+    "zoomSpeed": 1
+  },
+  "globalGraphSettings": {
+    "animateLayout": true,
+    "autoAddNodes": true,
+    "autoExpand": false,
+    "autoZoom": false,
+    "coreStore": "Obsidian",
+    "expandInitial": false,
+    "fdgdLayout": "cola",
+    "filter": "-class:dangling -class:file",
+    "height": "100%",
+    "width": "100%",
+    "limit": 10000,
+    "hoverEdges": false,
+    "layout": "force-directed",
+    "mergeEdges": true,
+    "mode": "workspace",
+    "navigator": false,
+    "openWithShift": false,
+    "readContent": false,
+    "styleGroups": [],
+    "toolbar": true,
+    "zoomSpeed": 1
+  }
+}

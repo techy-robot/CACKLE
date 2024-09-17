@@ -1,0 +1,63 @@
+{
+  "TagColors": {
+    "ColorPicker": [],
+    "EnableMultipleTags": true,
+    "EnableSeparateBackground": false,
+    "EnableSeparateLuminanceOffset": false,
+    "EnableDarkLightDifference": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.2,
+      "LuminanceOffset": 0.15
+    }
+  },
+  "CSS": {
+    "NoteTags": true,
+    "NoteProperties": true,
+    "NoteBackgrounds": false,
+    "TagsNoWrap": true,
+    "TagsNoWrapText": "pre"
+  },
+  "FolderNote": {
+    "Enable": false,
+    "FolderTagLinks": [],
+    "EnableAutoDetect": true,
+    "Values": {
+      "ForceImportant": true,
+      "BorderRadius": "12px",
+      "Padding": "5px",
+      "BackgroundOpacity": 0.2
+    },
+    "EnableBackgroundOpacity": false
+  },
+  "Kanban": {
+    "Enable": true,
+    "EnableCards": true,
+    "EnableLists": false,
+    "HideHashtags": false,
+    "Values": {
+      "CardBackgroundOpacity": 0.2,
+      "CardBorderOpacity": 0.3,
+      "ListBackgroundOpacity": 0.2,
+      "ListBorderOpacity": 0.3,
+      "BackgroundOpacity": 0.2
+    },
+    "EnableBackgroundOpacity": false
+  },
+  "Canvas": {
+    "Enable": true,
+    "Values": {
+      "CardBorderOpacity": 0.3,
+      "CardBackgroundLuminanceOffset": 0.15,
+      "BackgroundOpacity": 0.2
+    },
+    "EnableBackgroundOpacity": false
+  },
+  "Debug": {
+    "Enable": false,
+    "EnableExperimentalCommands": false
+  },
+  "Info": {
+    "SettingsVersion": 14
+  }
+}

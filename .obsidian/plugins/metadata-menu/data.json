@@ -1,0 +1,134 @@
+{
+  "presetFields": [
+    {
+      "name": "effort",
+      "options": {
+        "valuesList": {
+          "1": "XS",
+          "2": "S",
+          "3": "M",
+          "4": "L",
+          "5": "XL",
+          "6": "XXL"
+        },
+        "sourceType": "ValuesList",
+        "valuesListNotePath": "",
+        "valuesFromDVQuery": ""
+      },
+      "id": "F7MHpV",
+      "type": "Select",
+      "path": ""
+    },
+    {
+      "name": "itemtype",
+      "options": {
+        "valuesList": {
+          "1": "task",
+          "2": "subtask",
+          "3": "bug",
+          "4": "story",
+          "5": "milestone",
+          "6": "goal"
+        },
+        "sourceType": "ValuesList",
+        "valuesListNotePath": "",
+        "valuesFromDVQuery": ""
+      },
+      "id": "Ox2d9D",
+      "type": "Select",
+      "path": ""
+    },
+    {
+      "name": "status",
+      "options": {
+        "valuesList": {
+          "1": "New",
+          "2": "Blocked",
+          "3": "In Progress",
+          "4": "Pending",
+          "5": "Done",
+          "6": "Archived"
+        },
+        "sourceType": "ValuesList",
+        "valuesListNotePath": "",
+        "valuesFromDVQuery": ""
+      },
+      "id": "WYyEFw",
+      "type": "Select",
+      "path": ""
+    },
+    {
+      "name": "priority",
+      "options": {
+        "valuesList": {
+          "1": "Lowest",
+          "2": "Low",
+          "3": "Normal",
+          "4": "High",
+          "5": "Critical"
+        },
+        "sourceType": "ValuesList",
+        "valuesListNotePath": "",
+        "valuesFromDVQuery": ""
+      },
+      "id": "hjziSU",
+      "type": "Select",
+      "style": {
+        "code": false
+      },
+      "path": ""
+    },
+    {
+      "name": "goalstatus",
+      "options": {
+        "valuesList": {
+          "1": "On Track",
+          "2": "Off Track",
+          "3": "Not Started",
+          "4": "At Risk",
+          "5": "Miss",
+          "6": "Done",
+          "7": "Discontinued"
+        },
+        "sourceType": "ValuesList",
+        "valuesListNotePath": "",
+        "valuesFromDVQuery": ""
+      },
+      "id": "oRb7ma",
+      "type": "Select",
+      "path": ""
+    }
+  ],
+  "fileClassQueries": [],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [],
+  "classFilesPath": null,
+  "isAutosuggestEnabled": true,
+  "fileClassAlias": "fileClass",
+  "settingsVersion": "5.14",
+  "firstDayOfWeek": 1,
+  "enableLinks": true,
+  "enableTabHeader": true,
+  "enableEditor": true,
+  "enableBacklinks": true,
+  "enableStarred": true,
+  "enableFileExplorer": true,
+  "enableSearch": true,
+  "enableProperties": true,
+  "tableViewMaxRecords": 100,
+  "frontmatterListDisplay": "asArray",
+  "fileClassExcludedFolders": [],
+  "showIndexingStatusInStatusBar": true,
+  "fileIndexingExcludedFolders": [],
+  "fileIndexingExcludedExtensions": [
+    ".excalidraw.md"
+  ],
+  "fileIndexingExcludedRegex": [],
+  "frontmatterOnly": false,
+  "showFileClassSelectInModal": true,
+  "chooseFileClassAtFileCreation": false,
+  "autoInsertFieldsAtFileClassInsertion": false,
+  "fileClassIcon": "package",
+  "isAutoCalculationEnabled": true,
+  "buttonIcon": "clipboard-list"
+}

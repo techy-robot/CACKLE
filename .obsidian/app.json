@@ -1,0 +1,11 @@
+{
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./media",
+  "newFileLocation": "current",
+  "trashOption": "local",
+  "focusNewTab": false,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "useTab": false
+}

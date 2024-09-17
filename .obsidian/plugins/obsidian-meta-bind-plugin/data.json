@@ -1,0 +1,81 @@
+{
+  "devMode": false,
+  "ignoreCodeBlockRestrictions": false,
+  "preferredDateFormat": "YYYY-MM-DD",
+  "firstWeekday": {
+    "index": 1,
+    "name": "Monday",
+    "shortName": "Mo"
+  },
+  "syncInterval": 200,
+  "minSyncInterval": 50,
+  "maxSyncInterval": 1000,
+  "enableJs": true,
+  "viewFieldDisplayNullAsEmpty": false,
+  "enableSyntaxHighlighting": true,
+  "enableEditorRightClickMenu": true,
+  "inputFieldTemplates": [],
+  "buttonTemplates": [
+    {
+      "label": "Finish Task",
+      "icon": "",
+      "hidden": true,
+      "class": "",
+      "tooltip": "Marks task as Completed, changes state to Done, and adds completed date",
+      "id": "complete",
+      "style": "default",
+      "actions": [
+        {
+          "type": "updateMetadata",
+          "bindTarget": "status",
+          "evaluate": false,
+          "value": "Done"
+        },
+        {
+          "type": "updateMetadata",
+          "bindTarget": "completed",
+          "evaluate": false,
+          "value": "true"
+        },
+        {
+          "type": "updateMetadata",
+          "bindTarget": "completedDate",
+          "evaluate": true,
+          "value": "moment(Date.now()).format('YYYY-MM-DD')"
+        }
+      ]
+    },
+    {
+      "label": "Undo Finish",
+      "icon": "",
+      "hidden": true,
+      "class": "",
+      "tooltip": "Erase task completion",
+      "id": "uncomplete",
+      "style": "default",
+      "actions": [
+        {
+          "type": "updateMetadata",
+          "bindTarget": "status",
+          "evaluate": false,
+          "value": "In Progress"
+        },
+        {
+          "type": "updateMetadata",
+          "bindTarget": "completed",
+          "evaluate": false,
+          "value": "null"
+        },
+        {
+          "type": "updateMetadata",
+          "bindTarget": "completedDate",
+          "evaluate": true,
+          "value": " "
+        }
+      ]
+    }
+  ],
+  "excludedFolders": [
+    "templates"
+  ]
+}

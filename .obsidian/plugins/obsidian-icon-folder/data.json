@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiPrinterCloudLine",
+      "LiFileCheck",
+      "IbTarget",
+      "TiNotes",
+      "LiCalendar"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "debugMode": false,
+    "iconInTitlePosition": "above",
+    "lucideIconPackType": "native"
+  },
+  "Docs/Wiki": "SiWikipedia",
+  "Docs/Bookmarks": "LiBookmark",
+  "Docs/Events": "LiCalendar",
+  "Docs/Logs": "TiNotes",
+  "Docs/Goals": "IbTarget",
+  "Docs/Action Items": "LiFileCheck",
+  "Docs/Action Items/Build 3D printer": "RiPrinterCloudLine"
+}

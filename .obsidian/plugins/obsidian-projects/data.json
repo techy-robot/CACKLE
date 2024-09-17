@@ -1,0 +1,333 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "status": {
+          "richText": true,
+          "options": [
+            "New",
+            "Blocked",
+            "In Progress",
+            "Pending",
+            "Done",
+            "Archived"
+          ]
+        },
+        "priority": {
+          "options": [
+            "Low",
+            "Normal",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        "effort": {
+          "options": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      },
+      "defaultName": "{{date:YYYY-MM-DD}} New Item",
+      "templates": [
+        "Docs/Templates/Action Item template.md",
+        "Docs/Templates/Milestone Template.md",
+        "Docs/Templates/Goal Template.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Docs/Action Items",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "includeFields": [
+              "deadline",
+              "effort",
+              "priority",
+              "tags",
+              "itemtype"
+            ],
+            "columns": {
+              "New": {
+                "weight": 0
+              },
+              "In Progress": {
+                "weight": 1
+              },
+              "Done": {
+                "weight": 2
+              },
+              "Pending": {
+                "weight": 3
+              },
+              "Blocked": {
+                "weight": 4
+              },
+              "Archived": {
+                "weight": 5
+              }
+            },
+            "groupByField": "status"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#243dbc",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "New"
+                }
+              },
+              {
+                "color": "#ff0000",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Blocked"
+                }
+              },
+              {
+                "color": "#fbff00",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "In Progress"
+                }
+              },
+              {
+                "color": "#fbff00",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Pending"
+                }
+              },
+              {
+                "color": "#00ff1e",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Done"
+                }
+              },
+              {
+                "color": "#a3a3a3",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Archived"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "281d4e13-4696-4910-8c13-7e3ee45afa4f",
+          "name": "Kanban",
+          "type": "board"
+        },
+        {
+          "config": {
+            "dateField": "endDate",
+            "interval": "month"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "24cb0d23-25dc-441e-afff-761c886de671",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "allDay": {
+                "hide": true
+              },
+              "id": {
+                "hide": true
+              },
+              "itemtype": {
+                "hide": true
+              },
+              "logged_hours": {
+                "hide": false
+              },
+              "logs": {
+                "hide": true
+              },
+              "modified": {
+                "hide": true
+              },
+              "planned_hours": {
+                "hide": true
+              },
+              "product_version": {
+                "hide": true
+              },
+              "sprint": {
+                "hide": true
+              },
+              "startTime": {
+                "hide": true
+              },
+              "title": {
+                "hide": true
+              },
+              "date": {
+                "hide": true
+              },
+              "endDate": {
+                "hide": true
+              },
+              "endTime": {
+                "hide": true
+              },
+              "completed": {
+                "width": 152,
+                "hide": true
+              },
+              "deadline": {
+                "width": 154
+              },
+              "alias": {
+                "hide": true
+              },
+              "aliases": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "priority",
+              "status",
+              "effort",
+              "tags"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#0000ff",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "New"
+                }
+              },
+              {
+                "color": "#ff0000",
+                "condition": {
+                  "field": "priority",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Blocked"
+                }
+              },
+              {
+                "color": "#ffff00",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "In Progress"
+                }
+              },
+              {
+                "color": "#ffff00",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Pending"
+                }
+              },
+              {
+                "color": "#00ff00",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Done"
+                }
+              },
+              {
+                "color": "#bababa",
+                "condition": {
+                  "field": "status",
+                  "operator": "contains",
+                  "enabled": true,
+                  "value": "Archived"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "date",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "90e3d668-3519-4b30-a6fe-7b74b13f28cc",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "1246936a-5c3d-4f04-be5b-589a4eaa9853",
+      "name": "Tasks"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
+    "commands": [],
+    "linkBehavior": "open-note"
+  }
+}
