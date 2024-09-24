@@ -1,19 +1,19 @@
 ---
-title: <% tp.file.title.match("(?<=\\s).*$") %>
+title: Design Qwiic Sensor Module
 aliases:
-  - <% tp.file.title.match("(?<=\\s).*$") %>
-modified: 2024-09-23T18:47:39-06:00
+  - Design Qwiic Sensor Module
+modified: 2024-09-23T19:24:35-06:00
 tags: 
 completed: 
 itemtype: task
 status: New
-date: 
+date: 2024-10-21
 startTime: 
-endDate: 
+endDate: 2024-10-26
 endTime: 
 deadline: 
 allDay: true
-priority: Normal
+priority: Low
 effort: S
 id: 
 planned_hours: 
@@ -30,6 +30,8 @@ completedby:
 
 # Description:
 
+This is just a sensor module to plug in to the top that fans out 4 adafruit qwiic connectors. Nothing major, not that important
+
 # Comments:
 - [ ] Comment ➕ YYYY-MM-DD ^1
 
@@ -39,4 +41,4 @@ completedby:
 ```
 
 # Changelog:
-- <% tp.date.now("YYYY-MM-DD") %> Created
+- 2024-09-23 Created

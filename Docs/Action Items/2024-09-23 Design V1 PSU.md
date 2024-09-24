@@ -1,7 +1,7 @@
 ---
-title: <% tp.file.title.match("(?<=\\s).*$") %>
+title: Design V1 PSU
 aliases:
-  - <% tp.file.title.match("(?<=\\s).*$") %>
+  - Design V1 PSU
 modified: 2024-09-23T18:47:39-06:00
 tags: 
 completed: 
@@ -9,22 +9,22 @@ itemtype: task
 status: New
 date: 
 startTime: 
-endDate: 
+endDate: 2024-10-21
 endTime: 
-deadline: 
+deadline: 2024-10-31
 allDay: true
 priority: Normal
-effort: S
+effort: L
 id: 
 planned_hours: 
 logged_hours: 
 product_version: 
 subitems: 
 peeritems: 
-milestone: 
+milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]"
 createdby: 
 assignees: 
-completedby: 
+completedby:
 ---
 `BUTTON[complete, uncomplete]`
 
@@ -39,4 +39,4 @@ completedby:
 ```
 
 # Changelog:
-- <% tp.date.now("YYYY-MM-DD") %> Created
+- 2024-09-23 Created

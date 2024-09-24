@@ -8,6 +8,7 @@ modified:
   - 2024-09-07T17:55:38-06:00
   - 2024-09-08T09:46:12-06:00
   - 2024-09-16T21:17:40-06:00
+  - 2024-09-23T18:45:05-06:00
 ---
 It is a modular control board design, with 4 main types of units:
 - Hubs (with an MCU on it, supports 4 drivers, one sensor with a vertical micro connector, and a chain of peers)

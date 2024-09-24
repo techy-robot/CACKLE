@@ -1,27 +1,27 @@
 ---
-title: <% tp.file.title.match("(?<=\\s).*$") %>
+title: Design V1 Motor Driver module
 aliases:
-  - <% tp.file.title.match("(?<=\\s).*$") %>
-modified: 2024-09-23T18:47:39-06:00
+  - Design V1 Motor Driver module
+modified: 2024-09-23T18:47:28-06:00
 tags: 
 completed: 
 itemtype: task
-status: New
-date: 
+status: In Progress
+date: 2024-09-23
 startTime: 
-endDate: 
+endDate: 2024-10-07
 endTime: 
-deadline: 
+deadline: 2024-10-07
 allDay: true
 priority: Normal
-effort: S
+effort: M
 id: 
-planned_hours: 
+planned_hours: 10
 logged_hours: 
 product_version: 
 subitems: 
 peeritems: 
-milestone: 
+milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]"
 createdby: 
 assignees: 
 completedby: 
@@ -39,4 +39,4 @@ completedby:
 ```
 
 # Changelog:
-- <% tp.date.now("YYYY-MM-DD") %> Created
+- 2024-09-23 Created
