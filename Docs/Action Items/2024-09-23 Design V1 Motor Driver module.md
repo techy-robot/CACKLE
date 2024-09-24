@@ -2,7 +2,7 @@
 title: Design V1 Motor Driver module
 aliases:
   - Design V1 Motor Driver module
-modified: 2024-09-23T18:47:28-06:00
+modified: 2024-09-23T19:59:06-06:00
 tags: 
 completed: 
 itemtype: task
@@ -35,7 +35,7 @@ completedby:
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[{"name":"Segment 1","startTime":"2024-09-24T01:32:53.119Z","endTime":null}]}
+{"entries":[{"name":"Initial modifications from prev design","startTime":"2024-09-24T01:32:53.000Z","endTime":"2024-09-24T02:37:31.819Z"}]}
 ```
 
 # Changelog:

@@ -9,6 +9,245 @@
 		(rev "V1")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:Conn_01x01_Socket"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Socket"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.508)
+					(mid -0.5058 0)
+					(end 0 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -1754,6 +1993,12 @@
 		(uuid "247492e0-65e5-48b8-a961-5cfd4eaf62f0")
 	)
 	(junction
+		(at 232.41 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24fa21c0-7bae-4c5d-b6ee-ad4c8207e372")
+	)
+	(junction
 		(at 40.64 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1782,6 +2027,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55934445-6be5-479c-a21d-9be54078f97f")
+	)
+	(junction
+		(at 240.03 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60ce35e3-fbc5-428c-a8e0-cbe54e1f96e1")
+	)
+	(junction
+		(at 232.41 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "707e8df2-b699-42a7-9126-7cacf1fb13ca")
 	)
 	(junction
 		(at 153.67 102.87)
@@ -1820,13 +2077,19 @@
 		(uuid "bed877be-05ef-4e02-bcaa-d868408a3b08")
 	)
 	(junction
+		(at 240.03 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7be5469-942c-4e60-8bb4-f777145cbc88")
+	)
+	(junction
 		(at 104.14 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca141246-df38-4b51-978d-966e3e2ad6fd")
 	)
 	(junction
-		(at 102.87 100.33)
+		(at 95.25 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d37e1463-d785-4261-8ce5-81d733aaa570")
@@ -1882,6 +2145,16 @@
 			(type default)
 		)
 		(uuid "08cd1737-ba64-4d78-b76f-e7a7eca1761b")
+	)
+	(wire
+		(pts
+			(xy 240.03 60.96) (xy 238.76 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf8e204-5698-4cf2-9d60-26b88cd2795f")
 	)
 	(wire
 		(pts
@@ -1965,6 +2238,26 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 24.13) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "489a3ceb-635e-4103-98f5-f2ff95ce75a2")
+	)
+	(wire
+		(pts
+			(xy 238.76 77.47) (xy 240.03 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4910af02-85d8-4829-a380-a238ac993def")
+	)
+	(wire
+		(pts
 			(xy 49.53 59.69) (xy 81.28 59.69)
 		)
 		(stroke
@@ -1982,6 +2275,16 @@
 			(type default)
 		)
 		(uuid "509086a4-b7fe-4749-8d91-80f5919838b9")
+	)
+	(wire
+		(pts
+			(xy 232.41 44.45) (xy 232.41 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50b67017-6372-436e-9ed8-b5badbc70f58")
 	)
 	(wire
 		(pts
@@ -2012,6 +2315,16 @@
 			(type default)
 		)
 		(uuid "5979db51-727e-4bfd-a02c-1d8bee080b4f")
+	)
+	(wire
+		(pts
+			(xy 238.76 66.04) (xy 240.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63296088-e00a-40f1-9070-8410b1802295")
 	)
 	(wire
 		(pts
@@ -2055,6 +2368,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 60.96) (xy 240.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704a7daf-7b26-47ca-a9f9-5a41b8106959")
+	)
+	(wire
+		(pts
 			(xy 167.64 54.61) (xy 171.45 54.61)
 		)
 		(stroke
@@ -2062,6 +2385,26 @@
 			(type default)
 		)
 		(uuid "71fee98b-759a-4fd1-9ab9-1b9f71573419")
+	)
+	(wire
+		(pts
+			(xy 232.41 39.37) (xy 232.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "758ad674-db5b-427a-90d4-8bc6445baed9")
+	)
+	(wire
+		(pts
+			(xy 232.41 25.4) (xy 233.68 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f98e43f-1902-49ee-8036-323026350494")
 	)
 	(wire
 		(pts
@@ -2095,6 +2438,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 72.39) (xy 238.76 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea82c03-b81b-4e20-9ad3-28007c62dfb4")
+	)
+	(wire
+		(pts
+			(xy 240.03 72.39) (xy 240.03 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92733394-afcd-4522-9345-7b46cf538118")
+	)
+	(wire
+		(pts
 			(xy 101.6 85.09) (xy 107.95 85.09)
 		)
 		(stroke
@@ -2115,6 +2478,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 30.48) (xy 232.41 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d419d5f-3a65-4d85-aaf3-c4872e87426c")
+	)
+	(wire
+		(pts
 			(xy 162.56 54.61) (xy 167.64 54.61)
 		)
 		(stroke
@@ -2122,6 +2495,16 @@
 			(type default)
 		)
 		(uuid "9ebc4307-13e1-4298-88e0-34abb5d1850c")
+	)
+	(wire
+		(pts
+			(xy 233.68 44.45) (xy 232.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4dc8366-85f7-4bcf-911c-c5820d55a9ed")
 	)
 	(wire
 		(pts
@@ -2135,13 +2518,23 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 102.87 100.33)
+			(xy 107.95 100.33) (xy 95.25 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a8cb2e09-3524-4e8c-8e07-a40eef30f4bf")
+	)
+	(wire
+		(pts
+			(xy 233.68 39.37) (xy 232.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab99543e-d9d9-435a-a67e-dfd4062c5029")
 	)
 	(wire
 		(pts
@@ -2265,6 +2658,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 77.47) (xy 240.03 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db60b770-0c59-48c0-8804-c93cdc62d741")
+	)
+	(wire
+		(pts
 			(xy 46.99 67.31) (xy 49.53 64.77)
 		)
 		(stroke
@@ -2295,6 +2698,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 30.48) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d3b56a-a1f9-4584-a03a-6e7f836eb624")
+	)
+	(wire
+		(pts
 			(xy 151.13 100.33) (xy 157.48 100.33)
 		)
 		(stroke
@@ -2305,7 +2718,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 100.33) (xy 102.87 109.22)
+			(xy 95.25 100.33) (xy 95.25 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2343,10 +2756,10 @@
 		)
 		(uuid "f91b4f1b-77e0-47e6-9fcd-f727cda0dfbd")
 	)
-	(text_box "Internal pulldown nSLEEP is 230kO. I need it always enabled, so I have a voltage divider on motor power. Previous design had a circular dependancy with the enable driven by the chip regulator, which needed to be enabled"
+	(text_box "Internal pulldown nSLEEP is 230kO. I need it always enabled, so I have a voltage divider on motor power."
 		(exclude_from_sim no)
 		(at 59.69 128.27 0)
-		(size 27.94 20.32)
+		(size 27.94 12.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -2361,6 +2774,25 @@
 			(justify left top)
 		)
 		(uuid "0f048e5b-12bc-4acf-b643-7611fe404b13")
+	)
+	(text_box "Spring contacts or similar"
+		(exclude_from_sim no)
+		(at 255.27 52.07 0)
+		(size 19.05 7.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4be00a92-ea87-4917-8d87-f6fa3f985da5")
 	)
 	(text_box "Slew rate not connected is 180 V/us. Gain connected to ground is 0.25V/A, or 0.5 when tied to 47k gnd. Formula for CSA out volts is Vref/2 +- gain*I"
 		(exclude_from_sim no)
@@ -2419,36 +2851,53 @@
 		)
 		(uuid "cbb3bccb-4cc3-4d1c-8763-d124a62abcc1")
 	)
+	(text "INPUT Chain"
+		(exclude_from_sim no)
+		(at 259.588 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "19ca25d6-704a-4d6c-bce7-090908cec482")
+	)
+	(text "OUTPUT Chain"
+		(exclude_from_sim no)
+		(at 259.334 35.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c4d6c35d-c37a-4ad5-ae67-9aafe727f1a1")
+	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 102.87 111.76 180)
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 233.68 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06e18e42-5f35-474c-8cfc-17c0d15a144a")
-		(property "Reference" "C7"
-			(at 105.41 110.4835 0)
+		(uuid "05cf4691-9934-48d6-80d5-9373e941b722")
+		(property "Reference" "J6"
+			(at 234.442 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 105.41 113.0235 0)
+		(property "Value" "Keystone 6100"
+			(at 233.68 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 102.87 111.76 0)
+		(property "Footprint" "6100:KEYSTONE_6100"
+			(at 233.68 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +2906,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 111.76 0)
+			(at 233.68 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 233.68 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c484cc93-1cab-4163-afe0-978c7840bf7d")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 95.25 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06e18e42-5f35-474c-8cfc-17c0d15a144a")
+		(property "Reference" "C7"
+			(at 97.79 110.4835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 97.79 113.0235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2982,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 102.87 111.76 0)
+			(at 95.25 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,43 +3012,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 219.71 71.12 270)
+		(lib_id "power:GNDPWR")
+		(at 232.41 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "15966d1b-c73e-4528-8806-3dc93203ea9c")
-		(property "Reference" "TP2"
-			(at 219.71 71.374 90)
+		(fields_autoplaced yes)
+		(uuid "08f26562-ffe2-4cca-9943-bbc34743ead7")
+		(property "Reference" "#PWR020"
+			(at 232.41 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 225.552 71.374 90)
+			(at 232.283 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 219.71 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 76.2 0)
+		(property "Footprint" ""
+			(at 232.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2540,8 +3047,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 219.71 71.12 0)
+		(property "Datasheet" ""
+			(at 232.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 232.41 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,12 +3066,76 @@
 			)
 		)
 		(pin "1"
-			(uuid "cee49822-795b-4a37-bd3b-da54d6df435d")
+			(uuid "342edc0e-b301-4fac-9f8b-d261d1b04646")
 		)
 		(instances
-			(project "DRV8311 on motor driver"
+			(project "DRV8311 Motor Driver"
 				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
-					(reference "TP2")
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 233.68 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0edffebf-8fa2-4be0-82fd-04080bfee32c")
+		(property "Reference" "J8"
+			(at 233.68 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keystone 6100"
+			(at 234.188 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "6100:KEYSTONE_6100"
+			(at 233.68 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 233.68 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6dea4da-ec7a-4953-bc72-1afcd598fb16")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2622,6 +3202,70 @@
 			(project "DRV8311 on motor driver"
 				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 233.68 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b2b2dcc-3c14-40f4-901a-c5b19f0bc85a")
+		(property "Reference" "J7"
+			(at 234.442 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keystone 6100"
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "6100:KEYSTONE_6100"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f9f064c-f933-44df-b4e8-844eb835ba70")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2701,7 +3345,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 114.3 0)
+		(at 95.25 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2710,7 +3354,7 @@
 		(fields_autoplaced yes)
 		(uuid "30758232-90c4-4252-9e80-2b9f878612c6")
 		(property "Reference" "#PWR014"
-			(at 102.87 120.65 0)
+			(at 95.25 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2719,7 +3363,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 119.38 0)
+			(at 95.25 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +3371,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 114.3 0)
+			(at 95.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,7 +3380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 114.3 0)
+			(at 95.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2745,7 +3389,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 114.3 0)
+			(at 95.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2980,6 +3624,136 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 233.68 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ac53958-0267-4f9c-986f-2b2bcf957fc9")
+		(property "Reference" "J3"
+			(at 233.68 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keystone 6100"
+			(at 234.188 76.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "6100:KEYSTONE_6100"
+			(at 233.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 233.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db19c32c-dffb-40fb-a2af-f3fc2e3b4114")
+		)
+		(instances
+			(project ""
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 238.76 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cf444ba-eabd-43b7-933f-7471f30f3255")
+		(property "Reference" "J9"
+			(at 240.03 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Keystone 6102"
+			(at 231.14 41.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "6102:KEYSTONE_6102"
+			(at 238.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 238.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74dc3784-6f02-49f4-a100-560b1e38ad00")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 40.64 67.31 0)
 		(unit 1)
@@ -3070,7 +3844,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 175.26 41.91 0)
 			(effects
 				(font
@@ -3212,7 +3986,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal"
 			(at 171.45 64.77 0)
 			(effects
 				(font
@@ -3390,6 +4164,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 238.76 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d9bf41d-666d-4fb1-bd77-92c111e55b10")
+		(property "Reference" "J11"
+			(at 240.03 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Keystone 6102"
+			(at 231.14 27.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "6102:KEYSTONE_6102"
+			(at 238.76 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 238.76 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b15a2b0-b7ae-4155-858b-3d48acddb85e")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 92.71 54.61 0)
 		(unit 1)
@@ -3549,7 +4389,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 156.21 77.47 0)
 			(effects
 				(font
@@ -4447,7 +5287,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 96.52 82.55 0)
 			(effects
 				(font
@@ -4567,7 +5407,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 102.87 100.33 0)
+		(at 95.25 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4576,7 +5416,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce151116-7158-4bad-90fc-bc33d8abf0fa")
 		(property "Reference" "#PWR012"
-			(at 102.87 104.14 0)
+			(at 95.25 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +5425,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 102.87 95.25 0)
+			(at 95.25 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,7 +5433,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 100.33 0)
+			(at 95.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,7 +5442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 100.33 0)
+			(at 95.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4611,7 +5451,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 102.87 100.33 0)
+			(at 95.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4626,72 +5466,6 @@
 			(project "DRV8311 on motor driver"
 				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 219.71 64.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1225652-b736-40b8-9b7c-7e6b4f238477")
-		(property "Reference" "TP1"
-			(at 219.71 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Power"
-			(at 225.552 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 219.71 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 219.71 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f46f626-d6bf-4215-836c-6c0bcd911a59")
-		)
-		(instances
-			(project "DRV8311 on motor driver"
-				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4773,6 +5547,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 232.41 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d36cd9aa-5f9a-478e-a0f2-9727beb760b0")
+		(property "Reference" "#PWR019"
+			(at 232.41 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 232.41 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 232.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "817fc605-974a-4e7b-8896-661d7d343a9d")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 157.48 100.33 90)
 		(unit 1)
@@ -4841,7 +5681,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 219.71 71.12 0)
+		(at 240.03 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4850,7 +5690,7 @@
 		(fields_autoplaced yes)
 		(uuid "df5ef34a-52c1-4a2d-9561-175fb2a1b1e6")
 		(property "Reference" "#PWR08"
-			(at 219.71 76.2 0)
+			(at 240.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4859,7 +5699,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 219.583 74.93 0)
+			(at 239.903 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4867,7 +5707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 72.39 0)
+			(at 240.03 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4876,7 +5716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 72.39 0)
+			(at 240.03 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +5725,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 219.71 71.12 0)
+			(at 240.03 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +5770,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 107.95 100.33 0)
 			(effects
 				(font
@@ -5110,7 +5950,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 219.71 64.77 0)
+		(at 240.03 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5119,7 +5959,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed5ca721-d202-458c-801e-499f92838208")
 		(property "Reference" "#PWR06"
-			(at 219.71 68.58 0)
+			(at 240.03 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5968,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 219.71 59.69 0)
+			(at 240.03 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,7 +5976,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 64.77 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5145,7 +5985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 64.77 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5154,7 +5994,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 219.71 64.77 0)
+			(at 240.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5330,7 +6170,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 175.26 35.56 0)
 			(effects
 				(font
@@ -5364,6 +6204,138 @@
 			(project "DRV8311 Motor Driver"
 				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 238.76 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa41fc1b-cbb4-4fbc-ad7e-98774b2d67f9")
+		(property "Reference" "J10"
+			(at 240.03 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Keystone 6102"
+			(at 231.14 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "6102:KEYSTONE_6102"
+			(at 238.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 238.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e23d92dd-6887-43c6-8e5c-b6c324e0ac16")
+		)
+		(instances
+			(project "DRV8311 Motor Driver"
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 238.76 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fead0532-275e-42c8-8ba7-1e0623ad42d9")
+		(property "Reference" "J5"
+			(at 240.03 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Keystone 6102"
+			(at 231.14 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "6102:KEYSTONE_6102"
+			(at 238.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 238.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "245270d3-096e-4e5d-bba3-b6bb9313b5c2")
+		)
+		(instances
+			(project ""
+				(path "/8760dbe3-976e-4366-afd9-aec15b99495c"
+					(reference "J5")
 					(unit 1)
 				)
 			)

@@ -90,6 +90,18 @@
           "size_x": 768,
           "size_y": 721
         }
+      },
+      {
+        "name": "DRV8311 Motor Driver.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 0,
+          "size_x": 1280,
+          "size_y": 720
+        }
       }
     ]
   }
