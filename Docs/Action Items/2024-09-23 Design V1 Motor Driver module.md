@@ -35,7 +35,7 @@ completedby:
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[]}
+{"entries":[{"name":"Segment 1","startTime":"2024-09-24T01:32:53.119Z","endTime":null}]}
 ```
 
 # Changelog:
