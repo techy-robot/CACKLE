@@ -2,7 +2,7 @@
 title: Design V1 Hub
 aliases:
   - Design V1 Hub
-modified: 2024-09-23T18:47:39-06:00
+modified: 2024-10-08T20:06:14-06:00
 tags: 
 completed: 
 itemtype: task
@@ -24,7 +24,7 @@ peeritems:
 milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]"
 createdby: 
 assignees: 
-completedby:
+completedby: 
 ---
 `BUTTON[complete, uncomplete]`
 
@@ -35,7 +35,7 @@ completedby:
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[]}
+{"entries":[{"name":"Schematic work","startTime":"2024-09-30T02:20:10.000Z","endTime":"2024-09-30T03:48:27.000Z"},{"name":"Schematic work","startTime":"2024-10-08T02:10:23.000Z","endTime":"2024-10-08T03:20:52.000Z"},{"name":"Segment 3","startTime":"2024-10-09T01:45:54.000Z","endTime":"2024-10-09T03:20:43.506Z"}]}
 ```
 
 # Changelog:

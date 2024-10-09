@@ -21,60 +21,16 @@
       "label": "Key"
     },
     {
-      "id": "ae57cd924ebe06b5",
+      "id": "1faf6832c34db87f",
       "type": "text",
-      "text": "Green means this can be used for anything",
+      "text": "---\ncssclass: rotate270\n---\nCS0",
       "styleAttributes": {
         "shape": null
       },
-      "x": -1080,
-      "y": -720,
-      "width": 280,
-      "height": 80,
-      "color": "#6fdf68"
-    },
-    {
-      "id": "08f37708630f74d8",
-      "type": "text",
-      "text": "Yellow means this pin can be used, but it has disruptive elements or limitations",
-      "styleAttributes": {},
-      "x": -1080,
-      "y": -800,
-      "width": 280,
-      "height": 80,
-      "color": "3"
-    },
-    {
-      "id": "eaa650b52a916121",
-      "type": "text",
-      "text": "Red indicates a blocking usage of the part",
-      "styleAttributes": {},
-      "x": -1080,
-      "y": -880,
-      "width": 280,
-      "height": 80,
-      "color": "1"
-    },
-    {
-      "id": "fc5e9a1587e64254",
-      "type": "text",
-      "text": "If the UART pins are active it will send gibberish on the SPI bus, but since the clock isn't going yet, it will be completely fine",
-      "styleAttributes": {},
-      "x": 34,
-      "y": -765,
-      "width": 275,
-      "height": 125
-    },
-    {
-      "id": "c51626bf24c437b6",
-      "type": "text",
-      "text": "I don't need to connect gpio45, it should have a default that will work with the chip. Pulldown",
-      "styleAttributes": {},
-      "x": -338,
-      "y": -950,
-      "width": 234,
-      "height": 110,
-      "color": "1"
+      "x": -529,
+      "y": 1340,
+      "width": 50,
+      "height": 180
     },
     {
       "id": "f9bcf0a000299dc4",
@@ -110,6 +66,16 @@
       "color": "5"
     },
     {
+      "id": "39d8dde553f87df6",
+      "type": "text",
+      "text": "CSA1 A",
+      "styleAttributes": {},
+      "x": -1480,
+      "y": 180,
+      "width": 220,
+      "height": 50
+    },
+    {
       "id": "26020e1316b5fddb",
       "type": "text",
       "text": "I could use spare ADC pins for sensors like Touch or battery monitor.",
@@ -119,6 +85,680 @@
       "width": 260,
       "height": 230,
       "color": "5"
+    },
+    {
+      "id": "36fa4627d7537ec1",
+      "type": "text",
+      "text": "All ADC capable pins have a low level startup glitch for 60uS",
+      "styleAttributes": {},
+      "x": -1420,
+      "y": 780,
+      "width": 260,
+      "height": 100,
+      "color": "5"
+    },
+    {
+      "id": "bef88543f61e2b50",
+      "type": "text",
+      "text": "ADC1_CH1",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 230,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "47990684f1ab9ed6",
+      "type": "text",
+      "text": "ADC1_CH0",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 180,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "c63d234404a11645",
+      "type": "text",
+      "text": "BOOT0 pin",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 130,
+      "width": 220,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "id": "d2d7febd908f97c1",
+      "type": "text",
+      "text": "When this is high & combined w/ GPIO 46 high, will enter a special SPI boot mode",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 180,
+      "width": 360,
+      "height": 50,
+      "color": "3"
+    },
+    {
+      "id": "d731a2fa44f54051",
+      "type": "text",
+      "text": "CSA1 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 230,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "26f4c9e9f90d2f2c",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain MOSI",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -479,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "92c477ca7f8cb6b9",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain SCK",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -429,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "e2fa819ff29766e6",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain MISO",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -379,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "66f8682217c97443",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nBattery monitor or other simple sensor",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -79,
+      "y": 1410,
+      "width": 50,
+      "height": 210
+    },
+    {
+      "id": "69a368c9ac63f55f",
+      "type": "text",
+      "text": "~~I will use USB for interdevice communication on the main board. It is fast, and very well understood. It also saves me pins on the chip, and I can auto update the boards if I connect to a master computer~~ Bad idea for rpi zero, since that will make usb otg inaccessable, plus I need a hub chip",
+      "styleAttributes": {},
+      "x": 46,
+      "y": 1340,
+      "width": 294,
+      "height": 280,
+      "color": "6"
+    },
+    {
+      "id": "eff4f00144c30ad3",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nPSRAM CS. I could use elsewise if I got a chip w/o PSRAM",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 121,
+      "y": 1120,
+      "width": 99,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "f6dcdf075b73edc1",
+      "type": "text",
+      "text": "ADC1_CH8",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 580,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "2de9fb9523ab5f2d",
+      "type": "text",
+      "text": "ADC1_CH4",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 380,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "6119cf33464614bb",
+      "type": "text",
+      "text": "ADC1_CH5",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 430,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "47ff3dedae5949ec",
+      "type": "text",
+      "text": "ADC1_CH5",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 480,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "1e4ec684811c833a",
+      "type": "text",
+      "text": "ADC1_CH7",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 530,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "611880df497319ec",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH4",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -229,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "52ae99e9838cf1a4",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH1",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -429,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "6bff94f30f66dba5",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH2",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -379,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "6596f9e27a02f95a",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH5",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -179,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "4f5b48ef81aa2f71",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH6",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -129,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "c9193c60551493d0",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nHSPI clock",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -429,
+      "y": 1160,
+      "width": 50,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "7837e442cc1198a9",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nHSPI Q/MISO",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -379,
+      "y": 1160,
+      "width": 50,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "379e5e04c320ebfb",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -79,
+      "y": 1200,
+      "width": 50,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "3e0593b0a1d0f522",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr, USB",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -29,
+      "y": 1080,
+      "width": 50,
+      "height": 280,
+      "color": "6"
+    },
+    {
+      "id": "9e7d3112b1299df3",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr, USB",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 21,
+      "y": 1080,
+      "width": 50,
+      "height": 280,
+      "color": "6"
+    },
+    {
+      "id": "40ee1dbc25e69a18",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nMotor 3 B",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 71,
+      "y": 1160,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "6e5013219ff0db8d",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\n",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 71,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "2448220a38701d22",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH7",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -79,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "a5b275f9e831e826",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH3",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -329,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "7958a60e0effca72",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nPower",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -279,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "f160a437a20c1401",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nHSPI CS0",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -529,
+      "y": 1160,
+      "width": 50,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "6614936643ef5c98",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC1_CH9",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -529,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "c4b1f46c22d7ca31",
+      "type": "text",
+      "text": "Use hardware spi is a bit better, because it can reach 80mhz clock speed compared to 40. My sensor chips cannot support that though, capping at 25mhz clock.",
+      "styleAttributes": {},
+      "x": -860,
+      "y": 1070,
+      "width": 260,
+      "height": 170,
+      "color": "6"
+    },
+    {
+      "id": "b2e4282eed146713",
+      "type": "text",
+      "text": "CSA2 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 380,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "a33fcf44b576c28e",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nMotor 3 C",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -129,
+      "y": 1160,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "ed07f7b22290f104",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nMotor4 A",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -179,
+      "y": 1160,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "9ecd203f492f2a24",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nHSPI D/MOSI",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -479,
+      "y": 1160,
+      "width": 50,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "fb97a21ec7a46c93",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nADC2_CH0",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -479,
+      "y": 980,
+      "width": 50,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "721672d4a0fa1004",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nMotor4 C",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -329,
+      "y": 1160,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "36f6bfa26f2027de",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nMotor4 B",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -229,
+      "y": 1160,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "60744377835279ee",
+      "type": "text",
+      "text": "CSA4 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 580,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "02e133a53a32928b",
+      "type": "text",
+      "text": "ADC1_CH3",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 330,
+      "width": 220,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "528cb8fdcfe34eb0",
+      "type": "text",
+      "text": "CSA2 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 330,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "3641705c92081ff0",
+      "type": "text",
+      "text": "JTAG signal source. High for usb",
+      "styleAttributes": {},
+      "x": -900,
+      "y": 280,
+      "width": 220,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "id": "429f2ff38af35332",
+      "type": "text",
+      "text": "CSA3 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 430,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "1a412fe28cbd0679",
+      "type": "text",
+      "text": "CSA4 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 530,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "da045c1da03682a2",
+      "type": "text",
+      "text": "CSA3 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 480,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "f698c66fe23ecc6f",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 321,
+      "y": 130,
+      "width": 220,
+      "height": 50,
+      "color": "4"
+    },
+    {
+      "id": "c177967406c320e0",
+      "type": "text",
+      "text": "Motor1 C",
+      "styleAttributes": {},
+      "x": 541,
+      "y": 30,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "b833540a328392ba",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 321,
+      "y": 30,
+      "width": 220,
+      "height": 50,
+      "color": "4"
+    },
+    {
+      "id": "a70bf532b5128a77",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 321,
+      "y": -70,
+      "width": 220,
+      "height": 50,
+      "color": "4"
+    },
+    {
+      "id": "6049e70fb2eb2c42",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 321,
+      "y": -20,
+      "width": 220,
+      "height": 50,
+      "color": "4"
+    },
+    {
+      "id": "a3bc2dda66af39ce",
+      "type": "text",
+      "text": "Motor1 A",
+      "styleAttributes": {},
+      "x": 541,
+      "y": -70,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "edf565e9a4b3d0b4",
+      "type": "text",
+      "text": "Motor1 B",
+      "styleAttributes": {},
+      "x": 541,
+      "y": -20,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "ab08bc30db2d6e79",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 321,
+      "y": 80,
+      "width": 220,
+      "height": 50,
+      "color": "4"
+    },
+    {
+      "id": "25864c9cef20bff9",
+      "type": "text",
+      "text": "Motor2 A",
+      "styleAttributes": {},
+      "x": 541,
+      "y": 80,
+      "width": 220,
+      "height": 50
     },
     {
       "id": "aaffd612f248a8ca",
@@ -176,99 +816,23 @@
       "color": "1"
     },
     {
+      "id": "08b3b1f4bf922f5b",
+      "type": "text",
+      "text": "Power, leave unconnected",
+      "styleAttributes": {},
+      "x": 321,
+      "y": 580,
+      "width": 220,
+      "height": 52,
+      "color": "1"
+    },
+    {
       "id": "3ca597a3ed6bb531",
       "type": "text",
       "text": "",
       "styleAttributes": {},
       "x": 321,
       "y": 230,
-      "width": 220,
-      "height": 50,
-      "color": "4"
-    },
-    {
-      "id": "f8933b001f2ea2ea",
-      "type": "text",
-      "text": "Motor3 A",
-      "styleAttributes": {},
-      "x": 541,
-      "y": 230,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "a70bf532b5128a77",
-      "type": "text",
-      "text": "",
-      "styleAttributes": {},
-      "x": 321,
-      "y": -70,
-      "width": 220,
-      "height": 50,
-      "color": "4"
-    },
-    {
-      "id": "da896a4bd1845fb6",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\n",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 121,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "4"
-    },
-    {
-      "id": "6049e70fb2eb2c42",
-      "type": "text",
-      "text": "",
-      "styleAttributes": {},
-      "x": 321,
-      "y": -20,
-      "width": 220,
-      "height": 50,
-      "color": "4"
-    },
-    {
-      "id": "a3bc2dda66af39ce",
-      "type": "text",
-      "text": "Motor1 A",
-      "styleAttributes": {},
-      "x": 541,
-      "y": -70,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "edf565e9a4b3d0b4",
-      "type": "text",
-      "text": "Motor1 B",
-      "styleAttributes": {},
-      "x": 541,
-      "y": -20,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "ab08bc30db2d6e79",
-      "type": "text",
-      "text": "",
-      "styleAttributes": {},
-      "x": 321,
-      "y": 80,
-      "width": 220,
-      "height": 50,
-      "color": "4"
-    },
-    {
-      "id": "f698c66fe23ecc6f",
-      "type": "text",
-      "text": "",
-      "styleAttributes": {},
-      "x": 321,
-      "y": 130,
       "width": 220,
       "height": 50,
       "color": "4"
@@ -285,14 +849,15 @@
       "color": "4"
     },
     {
-      "id": "25864c9cef20bff9",
+      "id": "c0c382ef03b26f1f",
       "type": "text",
-      "text": "Motor2 A",
+      "text": "Flash chip SPI",
       "styleAttributes": {},
-      "x": 541,
-      "y": 80,
+      "x": 321,
+      "y": 530,
       "width": 220,
-      "height": 50
+      "height": 50,
+      "color": "1"
     },
     {
       "id": "c6b30e9ceb28bb19",
@@ -315,15 +880,125 @@
       "height": 50
     },
     {
-      "id": "b833540a328392ba",
+      "id": "f8933b001f2ea2ea",
       "type": "text",
-      "text": "",
+      "text": "Motor3 A",
       "styleAttributes": {},
-      "x": 321,
+      "x": 541,
+      "y": 230,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "8899c8c070124228",
+      "type": "text",
+      "text": "Reset/ enable. Need a pullup externally, and a delay for the pwr to stabilize before enable. Recommended R 10kohm and C 1uf.",
+      "styleAttributes": {},
+      "x": -1195,
+      "y": 80,
+      "width": 515,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "id": "6c475ed68750062a",
+      "type": "text",
+      "text": "Wifi antenna",
+      "styleAttributes": {},
+      "x": -900,
+      "y": -70,
+      "width": 220,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "id": "32df82590999294c",
+      "type": "text",
+      "text": "Power",
+      "styleAttributes": {},
+      "x": -900,
+      "y": -20,
+      "width": 220,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "id": "e1fb208d953cc409",
+      "type": "text",
+      "text": "Power",
+      "styleAttributes": {},
+      "x": -900,
       "y": 30,
       "width": 220,
       "height": 50,
-      "color": "4"
+      "color": "1"
+    },
+    {
+      "id": "514e1d35a21c4acb",
+      "type": "text",
+      "text": "Grey blocks right after the pin are what I'm actually using it for",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": -480,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "ae57cd924ebe06b5",
+      "type": "text",
+      "text": "Green means this can be used for anything",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -1080,
+      "y": -720,
+      "width": 280,
+      "height": 80,
+      "color": "#6fdf68"
+    },
+    {
+      "id": "08f37708630f74d8",
+      "type": "text",
+      "text": "Yellow means this pin can be used, but it has disruptive elements or limitations",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": -800,
+      "width": 280,
+      "height": 80,
+      "color": "3"
+    },
+    {
+      "id": "eaa650b52a916121",
+      "type": "text",
+      "text": "Red indicates a blocking usage of the part",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": -880,
+      "width": 280,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "023e0f78ec05354c",
+      "type": "text",
+      "text": "Purple means communication",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": -640,
+      "width": 280,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "e909616d599cc359",
+      "type": "text",
+      "text": "Blue means ADC pin",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": -560,
+      "width": 280,
+      "height": 80,
+      "color": "5"
     },
     {
       "id": "44aa35464d37a07e",
@@ -333,6 +1008,18 @@
         "shape": null
       },
       "x": -229,
+      "y": -420,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "1c2e9914fdf1871b",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nCS0",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -79,
       "y": -420,
       "width": 50,
       "height": 180
@@ -362,16 +1049,142 @@
       "height": 180
     },
     {
-      "id": "1c2e9914fdf1871b",
+      "id": "43e6e8d24be8fcfe",
       "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nCS0",
+      "text": "---\ncssclass: rotate270\n---\nStatus LED",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -279,
+      "y": -530,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "403cfc96653c18e6",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nStrapped, VDD_SPI voltage",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -279,
+      "y": -240,
+      "width": 50,
+      "height": 295,
+      "color": "1"
+    },
+    {
+      "id": "5bd661c43ad81eef",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nUart rx",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -229,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "4870710323113666",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nUart tx",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -179,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "c51626bf24c437b6",
+      "type": "text",
+      "text": "I don't need to connect gpio45, it should have a default that will work with the chip. Pulldown",
+      "styleAttributes": {},
+      "x": -338,
+      "y": -950,
+      "width": 234,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "3bee511df62cba67",
+      "type": "text",
+      "text": "GPIO46 has to be pulled down with BOOT for the chip to enter bootloader mode. So if I use it for disabling uart output (pulling it up), the pin has to be able to be overridden for flashing. Default is pulldown. My best shot may be to leave unconnected and disable UART debug in software",
+      "styleAttributes": {},
+      "x": -659,
+      "y": -820,
+      "width": 310,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "262f00c7a154a77b",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nJTAG cs",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -129,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "ba9120c69301d782",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nJTAG data in",
       "styleAttributes": {
         "shape": null
       },
       "x": -79,
-      "y": -420,
+      "y": -240,
       "width": 50,
-      "height": 180
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "db3a0736d58dfa55",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nPower",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -29,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "90a04151b233da2f",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nJTAG data out",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 21,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "12b7e7046d764717",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nJTAG clock",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": 71,
+      "y": -240,
+      "width": 50,
+      "height": 180,
+      "color": "3"
     },
     {
       "id": "44b8a1401749f967",
@@ -410,6 +1223,16 @@
       "height": 180
     },
     {
+      "id": "fc5e9a1587e64254",
+      "type": "text",
+      "text": "If the UART pins are active it will send gibberish on the SPI bus, but since the clock isn't going yet, it will be completely fine",
+      "styleAttributes": {},
+      "x": 34,
+      "y": -765,
+      "width": 275,
+      "height": 125
+    },
+    {
       "id": "348527b3b4032dcf",
       "type": "text",
       "text": "I have to use the jtag lines for something. They will be completely disabled, and safe to use. During usb download they will have defined state though, which is why I have the chip select on there",
@@ -420,482 +1243,6 @@
       "height": 180
     },
     {
-      "id": "43e6e8d24be8fcfe",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nStatus LED",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -279,
-      "y": -530,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "c177967406c320e0",
-      "type": "text",
-      "text": "Motor1 C",
-      "styleAttributes": {},
-      "x": 541,
-      "y": 30,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "023e0f78ec05354c",
-      "type": "text",
-      "text": "Purple means communication",
-      "styleAttributes": {},
-      "x": -1080,
-      "y": -640,
-      "width": 280,
-      "height": 80,
-      "color": "6"
-    },
-    {
-      "id": "e909616d599cc359",
-      "type": "text",
-      "text": "Blue means ADC pin",
-      "styleAttributes": {},
-      "x": -1080,
-      "y": -560,
-      "width": 280,
-      "height": 80,
-      "color": "5"
-    },
-    {
-      "id": "3bee511df62cba67",
-      "type": "text",
-      "text": "GPIO46 has to be pulled down with BOOT for the chip to enter bootloader mode. So if I use it for disabling uart output (pulling it up), the pin has to be able to be overridden for flashing. Default is pulldown. My best shot may be to leave unconnected and disable UART debug in software",
-      "styleAttributes": {},
-      "x": -659,
-      "y": -820,
-      "width": 310,
-      "height": 200,
-      "color": "1"
-    },
-    {
-      "id": "514e1d35a21c4acb",
-      "type": "text",
-      "text": "Grey blocks right after the pin are what I'm actually using it for",
-      "styleAttributes": {},
-      "x": -1080,
-      "y": -480,
-      "width": 280,
-      "height": 80
-    },
-    {
-      "id": "2448220a38701d22",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH7",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -79,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "a5b275f9e831e826",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH3",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -329,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "6614936643ef5c98",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC1_CH9",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -529,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "fb97a21ec7a46c93",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH0",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -479,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "52ae99e9838cf1a4",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH1",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -429,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "6bff94f30f66dba5",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH2",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -379,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "c4b1f46c22d7ca31",
-      "type": "text",
-      "text": "Use hardware spi is a bit better, because it can reach 80mhz clock speed compared to 40. My sensor chips cannot support that though, capping at 25mhz clock.",
-      "styleAttributes": {},
-      "x": -860,
-      "y": 1070,
-      "width": 260,
-      "height": 170,
-      "color": "6"
-    },
-    {
-      "id": "08b3b1f4bf922f5b",
-      "type": "text",
-      "text": "Power, leave unconnected",
-      "styleAttributes": {},
-      "x": 321,
-      "y": 580,
-      "width": 220,
-      "height": 52,
-      "color": "1"
-    },
-    {
-      "id": "c0c382ef03b26f1f",
-      "type": "text",
-      "text": "Flash chip SPI",
-      "styleAttributes": {},
-      "x": 321,
-      "y": 530,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "611880df497319ec",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH4",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -229,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "6596f9e27a02f95a",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH5",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -179,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "4f5b48ef81aa2f71",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nADC2_CH6",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -129,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "5"
-    },
-    {
-      "id": "7958a60e0effca72",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nPower",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -279,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "1"
-    },
-    {
-      "id": "c9193c60551493d0",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nHSPI clock",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -429,
-      "y": 1160,
-      "width": 50,
-      "height": 180,
-      "color": "6"
-    },
-    {
-      "id": "7837e442cc1198a9",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nHSPI Q/MISO",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -379,
-      "y": 1160,
-      "width": 50,
-      "height": 180,
-      "color": "6"
-    },
-    {
-      "id": "721672d4a0fa1004",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMotor4 C",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -329,
-      "y": 1160,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "6e5013219ff0db8d",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\n",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 71,
-      "y": 980,
-      "width": 50,
-      "height": 180,
-      "color": "4"
-    },
-    {
-      "id": "f160a437a20c1401",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nHSPI CS0",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -529,
-      "y": 1160,
-      "width": 50,
-      "height": 180,
-      "color": "6"
-    },
-    {
-      "id": "9ecd203f492f2a24",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nHSPI D/MOSI",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -479,
-      "y": 1160,
-      "width": 50,
-      "height": 180,
-      "color": "6"
-    },
-    {
-      "id": "26f4c9e9f90d2f2c",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nChain MOSI",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -479,
-      "y": 1340,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "92c477ca7f8cb6b9",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nChain SCK",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -429,
-      "y": 1340,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "e2fa819ff29766e6",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nChain MISO",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -379,
-      "y": 1340,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "1faf6832c34db87f",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nCS0",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -529,
-      "y": 1340,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "36f6bfa26f2027de",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMotor4 B",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -229,
-      "y": 1160,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "379e5e04c320ebfb",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -79,
-      "y": 1200,
-      "width": 50,
-      "height": 220,
-      "color": "3"
-    },
-    {
-      "id": "a33fcf44b576c28e",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMotor 3 C",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -129,
-      "y": 1160,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "ed07f7b22290f104",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMotor4 A",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -179,
-      "y": 1160,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "66f8682217c97443",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nBattery monitor or other simple sensor",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -79,
-      "y": 1410,
-      "width": 50,
-      "height": 210
-    },
-    {
-      "id": "3e0593b0a1d0f522",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr, USB",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -29,
-      "y": 1080,
-      "width": 50,
-      "height": 280,
-      "color": "6"
-    },
-    {
-      "id": "9e7d3112b1299df3",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nTwo glitches on pwr, USB",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 21,
-      "y": 1080,
-      "width": 50,
-      "height": 280,
-      "color": "6"
-    },
-    {
-      "id": "eff4f00144c30ad3",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nPSRAM CS. I could use elsewise if I got a chip w/o PSRAM",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 121,
-      "y": 1120,
-      "width": 99,
-      "height": 320,
-      "color": "1"
-    },
-    {
-      "id": "40ee1dbc25e69a18",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMotor 3 B",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 71,
-      "y": 1160,
-      "width": 50,
-      "height": 180
-    },
-    {
-      "id": "69a368c9ac63f55f",
-      "type": "text",
-      "text": "~~I will use USB for interdevice communication on the main board. It is fast, and very well understood. It also saves me pins on the chip, and I can auto update the boards if I connect to a master computer~~ Bad idea for rpi zero, since that will make usb otg inaccessable, plus I need a hub chip",
-      "styleAttributes": {},
-      "x": 46,
-      "y": 1340,
-      "width": 294,
-      "height": 280,
-      "color": "6"
-    },
-    {
       "id": "bbea44f2634d4e7b",
       "type": "file",
       "file": "Docs/Wiki/media/ESP32-S3.png",
@@ -904,208 +1251,6 @@
       "y": -240,
       "width": 1001,
       "height": 1040
-    },
-    {
-      "id": "36fa4627d7537ec1",
-      "type": "text",
-      "text": "All ADC capable pins have a low level startup glitch for 60uS",
-      "styleAttributes": {},
-      "x": -1420,
-      "y": 780,
-      "width": 260,
-      "height": 100,
-      "color": "5"
-    },
-    {
-      "id": "02e133a53a32928b",
-      "type": "text",
-      "text": "ADC1_CH3",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 330,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "2de9fb9523ab5f2d",
-      "type": "text",
-      "text": "ADC1_CH4",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 380,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "429f2ff38af35332",
-      "type": "text",
-      "text": "CSA3 A",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 430,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "b2e4282eed146713",
-      "type": "text",
-      "text": "CSA2 B",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 380,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "528cb8fdcfe34eb0",
-      "type": "text",
-      "text": "CSA2 A",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 330,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "6c475ed68750062a",
-      "type": "text",
-      "text": "Wifi antenna",
-      "styleAttributes": {},
-      "x": -900,
-      "y": -70,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "32df82590999294c",
-      "type": "text",
-      "text": "Power",
-      "styleAttributes": {},
-      "x": -900,
-      "y": -20,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "e1fb208d953cc409",
-      "type": "text",
-      "text": "Power",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 30,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "39d8dde553f87df6",
-      "type": "text",
-      "text": "CSA1 A",
-      "styleAttributes": {},
-      "x": -1480,
-      "y": 180,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "1a412fe28cbd0679",
-      "type": "text",
-      "text": "CSA4 A",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 530,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "47ff3dedae5949ec",
-      "type": "text",
-      "text": "ADC1_CH5",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 480,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "da045c1da03682a2",
-      "type": "text",
-      "text": "CSA3 B",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 480,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "6119cf33464614bb",
-      "type": "text",
-      "text": "ADC1_CH5",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 430,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "bef88543f61e2b50",
-      "type": "text",
-      "text": "ADC1_CH1",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 230,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "47990684f1ab9ed6",
-      "type": "text",
-      "text": "ADC1_CH0",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 180,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "60744377835279ee",
-      "type": "text",
-      "text": "CSA4 B",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 580,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "1e4ec684811c833a",
-      "type": "text",
-      "text": "ADC1_CH7",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 530,
-      "width": 220,
-      "height": 50,
-      "color": "5"
-    },
-    {
-      "id": "f6dcdf075b73edc1",
-      "type": "text",
-      "text": "ADC1_CH8",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 580,
-      "width": 220,
-      "height": 50,
-      "color": "5"
     },
     {
       "id": "bdd906274e8068bb",
@@ -1121,162 +1266,17 @@
       "color": "1"
     },
     {
-      "id": "262f00c7a154a77b",
+      "id": "fde8a2cc302a4ee1",
       "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nJTAG cs",
+      "text": "---\ncssclass: rotate270\n---\nMain Clock",
       "styleAttributes": {
         "shape": null
       },
-      "x": -129,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "db3a0736d58dfa55",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nPower",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -29,
+      "x": -379,
       "y": -240,
       "width": 50,
       "height": 180,
       "color": "1"
-    },
-    {
-      "id": "ba9120c69301d782",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nJTAG data in",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -79,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "90a04151b233da2f",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nJTAG data out",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 21,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "3641705c92081ff0",
-      "type": "text",
-      "text": "JTAG signal source. High for usb",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 280,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "c63d234404a11645",
-      "type": "text",
-      "text": "BOOT0 pin",
-      "styleAttributes": {},
-      "x": -900,
-      "y": 130,
-      "width": 220,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "d2d7febd908f97c1",
-      "type": "text",
-      "text": "When this is high & combined w/ GPIO 46 high, will enter a special SPI boot mode",
-      "styleAttributes": {},
-      "x": -1260,
-      "y": 180,
-      "width": 360,
-      "height": 50,
-      "color": "3"
-    },
-    {
-      "id": "d731a2fa44f54051",
-      "type": "text",
-      "text": "CSA1 B",
-      "styleAttributes": {},
-      "x": -1120,
-      "y": 230,
-      "width": 220,
-      "height": 50
-    },
-    {
-      "id": "8899c8c070124228",
-      "type": "text",
-      "text": "Reset/ enable. Need a pullup externally, and a delay for the pwr to stabilize before enable. Recommended R 10kohm and C 1uf.",
-      "styleAttributes": {},
-      "x": -1195,
-      "y": 80,
-      "width": 515,
-      "height": 50,
-      "color": "1"
-    },
-    {
-      "id": "4870710323113666",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nUart tx",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -179,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "5bd661c43ad81eef",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nUart rx",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -229,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "403cfc96653c18e6",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nStrapped, VDD_SPI voltage",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": -279,
-      "y": -240,
-      "width": 50,
-      "height": 295,
-      "color": "1"
-    },
-    {
-      "id": "12b7e7046d764717",
-      "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nJTAG clock",
-      "styleAttributes": {
-        "shape": null
-      },
-      "x": 71,
-      "y": -240,
-      "width": 50,
-      "height": 180,
-      "color": "3"
     },
     {
       "id": "d463c98a880e6ccd",
@@ -1318,17 +1318,17 @@
       "color": "1"
     },
     {
-      "id": "fde8a2cc302a4ee1",
+      "id": "da896a4bd1845fb6",
       "type": "text",
-      "text": "---\ncssclass: rotate270\n---\nMain Clock",
+      "text": "---\ncssclass: rotate270\n---\n",
       "styleAttributes": {
         "shape": null
       },
-      "x": -379,
+      "x": 121,
       "y": -240,
       "width": 50,
       "height": 180,
-      "color": "1"
+      "color": "4"
     }
   ],
   "edges": [
