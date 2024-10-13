@@ -13,25 +13,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U6"
-				(at 2.1941 17.78 0)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "74HC595"
-				(at 2.1941 15.24 0)
+				(at -7.62 -16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -214,24 +212,6 @@
 						)
 					)
 					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2480,28 +2460,6 @@
 			)
 		)
 	)
-	(global_label "UART0-RTS"
-		(shape input)
-		(at 134.62 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "523da6ac-bfb8-46a0-aa2b-7c86ae6f51e7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.7491 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED"
 		(shape input)
 		(at 50.8 50.8 180)
@@ -2674,6 +2632,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART0-RTS{slash}CS0"
+		(shape input)
+		(at 134.62 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9a1d9b57-2b8e-4dd6-998b-41b088eab85f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.7296 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3022,9 +3002,6 @@
 		)
 		(pin "10"
 			(uuid "bf99bf68-fc97-44c2-8be5-f8a40f7f23cc")
-		)
-		(pin "17"
-			(uuid "8f970a19-7081-477d-83d5-92593e68704e")
 		)
 		(instances
 			(project "ESP32-S3 Hub"

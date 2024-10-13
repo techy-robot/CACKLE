@@ -20,7 +20,7 @@
   "attachmentLocation": "disable",
   "attachmentSpecifiedFolder": "",
   "attachmentSubfolderName": "",
-  "resizeMode": "ShortestEdge",
+  "resizeMode": "None",
   "autoNonDestructiveResize": "customSize",
   "customSize": "400",
   "desiredWidth": 600,

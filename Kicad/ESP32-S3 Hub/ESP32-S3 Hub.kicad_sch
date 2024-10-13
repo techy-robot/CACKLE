@@ -3389,7 +3389,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 107.95) (xy 195.58 107.95)
+			(xy 167.64 107.95) (xy 185.42 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3762,24 +3762,24 @@
 			)
 		)
 	)
-	(global_label "UART0-RTS"
+	(global_label "UART0-RTS{slash}CS0"
 		(shape input)
-		(at 190.5 107.95 270)
+		(at 185.42 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "24659e19-496a-4cca-8b13-8493e77e170b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 190.5 121.8209 90)
+			(at 204.3104 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3802,28 +3802,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS0"
-		(shape input)
-		(at 195.58 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "343d71f0-01f5-4e96-b90a-85d8d9352324")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.2542 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
