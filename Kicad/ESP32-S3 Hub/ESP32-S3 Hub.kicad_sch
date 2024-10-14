@@ -2276,6 +2276,12 @@
 		(uuid "8ba71c00-9b50-47bc-a535-584cd7f0e630")
 	)
 	(junction
+		(at 127 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8db3cb90-710e-44ed-a436-c49c65cefdc5")
+	)
+	(junction
 		(at 73.66 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2779,6 +2785,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 44.45) (xy 127 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ac89895-b1de-4d3f-bab1-8b92dc29f066")
+	)
+	(wire
+		(pts
 			(xy 127 49.53) (xy 139.7 49.53)
 		)
 		(stroke
@@ -3179,7 +3195,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 40.64) (xy 127 48.26)
+			(xy 127 40.64) (xy 127 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4783,6 +4799,73 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 127 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23c2d75c-af79-4856-86e5-bb38ecebbf95")
+		(property "Reference" "#FLG03"
+			(at 125.095 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 123.19 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc2776f4-dd7e-4759-9b1e-4e6fe5a046bd")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
