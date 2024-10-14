@@ -4058,7 +4058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm"
 			(at 193.04 110.49 0)
 			(effects
 				(font
