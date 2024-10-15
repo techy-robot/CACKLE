@@ -13,23 +13,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 13.97 0)
+			(property "Reference" "U2"
+				(at 5.842 19.812 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "74HC595"
-				(at -7.62 -16.51 0)
+				(at 2.1941 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -212,6 +214,24 @@
 						)
 					)
 					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -804,21 +824,20 @@
 				)
 			)
 		)
-		(symbol "Interface_UART:SP3485EN"
+		(symbol "Interface_UART:THVD1420D"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.62 13.97 0)
+				(at -6.096 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SP3485EN"
-				(at 1.905 13.97 0)
+			(property "Value" "THVD1420D"
+				(at 0.762 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -827,16 +846,24 @@
 				)
 			)
 			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 26.67 -8.89 0)
+				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1420.pdf"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Half duplex RS-485/RS-422, 12 Mbps, 3V - 5.5V supply, ±12kV electro-static discharge (ESD) protection, with receiver/driver enable, 32 receiver drive capacity, SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -845,16 +872,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Low Power Half-Duplex RS-485 Transceiver 10Mbps"
+			(property "ki_keywords" "Half duplex 3.3V 5V RS-485 RS-422"
 				(at 0 0 0)
 				(effects
 					(font
@@ -872,7 +890,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SP3485EN_0_1"
+			(symbol "THVD1420D_0_1"
 				(rectangle
 					(start -7.62 12.7)
 					(end 7.62 -12.7)
@@ -1039,7 +1057,7 @@
 					)
 				)
 			)
-			(symbol "SP3485EN_1_1"
+			(symbol "THVD1420D_1_1"
 				(circle
 					(center -0.762 2.54)
 					(radius 0.508)
@@ -1959,6 +1977,12 @@
 		)
 	)
 	(junction
+		(at 144.78 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "095fed1e-08ed-46f9-bb16-2c22a9f03e65")
+	)
+	(junction
 		(at 156.21 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1975,12 +1999,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92a09d73-81ec-44ac-8605-de2aa457c36b")
-	)
-	(junction
-		(at 144.78 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d01dfac6-2b3f-4c62-99a0-0b7e5e14f18d")
 	)
 	(no_connect
 		(at 67.31 93.98)
@@ -2387,10 +2405,10 @@
 		)
 		(uuid "acc9dc4a-6388-42d8-a5ed-6c17316de1ab")
 	)
-	(text_box "Bias and termination resistors are optional per device, because this is chainable"
+	(text_box "I really wanted to have Bias and termination resistors optional per device, but space constraints are real, and extra switches on board really does not make sense"
 		(exclude_from_sim no)
 		(at 181.61 85.09 0)
-		(size 24.13 8.89)
+		(size 38.1 11.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -2908,10 +2926,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "105dbd7c-71eb-451e-ad81-2273ba96e3cb")
 		(property "Reference" "U2"
-			(at 54.9559 109.22 0)
+			(at 51.308 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,6 +3020,9 @@
 		(pin "10"
 			(uuid "bf99bf68-fc97-44c2-8be5-f8a40f7f23cc")
 		)
+		(pin "17"
+			(uuid "66952f0e-0029-481f-925d-c336d474e5d6")
+		)
 		(instances
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
@@ -3016,10 +3036,10 @@
 		(lib_id "Device:R_Small")
 		(at 180.34 107.95 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "129b5aaa-ac56-4688-bc02-40b4c51aeab2")
 		(property "Reference" "R23"
 			(at 179.832 109.474 90)
@@ -3037,7 +3057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 180.34 107.95 0)
 			(effects
 				(font
@@ -3097,7 +3117,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "KMR2"
+		(property "Value" "Mitsumi R-667996"
 			(at 146.304 37.338 90)
 			(effects
 				(font
@@ -3106,7 +3126,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+		(property "Footprint" "Misumi switches:R-667995_MIT"
 			(at 147.32 36.83 0)
 			(effects
 				(font
@@ -3143,6 +3163,93 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_UART:THVD1420D")
+		(at 144.78 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f8e890e-5f95-4911-9356-02abfa070ded")
+		(property "Reference" "U3"
+			(at 144.526 65.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "THVD1420DRLR"
+			(at 149.098 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-583-8"
+			(at 144.78 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1420.pdf"
+			(at 144.78 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half duplex RS-485/RS-422, 12 Mbps, 3V - 5.5V supply, ±12kV electro-static discharge (ESD) protection, with receiver/driver enable, 32 receiver drive capacity, SOIC-8"
+			(at 144.78 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "aceabc2b-db5b-4fcb-8e6b-d8e1c954c5d4")
+		)
+		(pin "1"
+			(uuid "0cb72179-2d4d-4108-b0d9-01dccaef42df")
+		)
+		(pin "4"
+			(uuid "7fca328b-a013-4d6c-afc0-73bfd01fd866")
+		)
+		(pin "2"
+			(uuid "240cbab6-16e9-40cb-9ca0-4499be5adc2b")
+		)
+		(pin "7"
+			(uuid "3c8aa61c-01f4-40fe-809a-0f59fdc0504c")
+		)
+		(pin "8"
+			(uuid "30b5abe1-5aa2-45fe-9d6b-78c5ba322b63")
+		)
+		(pin "6"
+			(uuid "70cb1439-8bfb-4bff-a60e-de84325a2edb")
+		)
+		(pin "5"
+			(uuid "4f492bb9-85b2-4ace-bcd9-2e15fd65e9ed")
+		)
+		(instances
+			(project ""
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -3231,7 +3338,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "KMR2"
+		(property "Value" "Mitsumi R-667996"
 			(at 107.188 42.672 0)
 			(effects
 				(font
@@ -3240,7 +3347,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+		(property "Footprint" "Misumi switches:R-667995_MIT"
 			(at 105.41 41.91 0)
 			(effects
 				(font
@@ -3503,7 +3610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 161.29 29.21 0)
 			(effects
 				(font
@@ -3637,7 +3744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -3683,10 +3790,10 @@
 		(lib_id "power:GND")
 		(at 175.26 107.95 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8bc9dd37-6259-48d4-b527-c51e13989bed")
 		(property "Reference" "#PWR038"
@@ -3741,94 +3848,6 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_UART:SP3485EN")
-		(at 144.78 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "abab5b56-5048-437d-a385-7b6e33fe7e75")
-		(property "Reference" "U4"
-			(at 147.828 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SP3485EN"
-			(at 146.9741 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 171.45 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d043487-c9ad-4e3f-8afe-bb5cd8d0534a")
-		)
-		(pin "7"
-			(uuid "79b8b6bb-eb54-4e18-9db3-dbceeb43432f")
-		)
-		(pin "3"
-			(uuid "e344d2a5-15e3-4592-9189-e5e64cf5a6b4")
-		)
-		(pin "6"
-			(uuid "e5cc219e-ffe0-48bf-9bbe-d01a189fa46d")
-		)
-		(pin "8"
-			(uuid "825fe4ab-2ba3-400e-957a-716696612356")
-		)
-		(pin "4"
-			(uuid "c76c1aa9-1dba-41eb-a7c8-b65e57d52e31")
-		)
-		(pin "5"
-			(uuid "88bca805-6047-4f9b-a81a-205d58c27a8f")
-		)
-		(pin "2"
-			(uuid "1e63a4ef-243a-497f-91c2-b618af0b041e")
-		)
-		(instances
-			(project ""
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -3925,7 +3944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 161.29 36.83 0)
 			(effects
 				(font
@@ -3971,10 +3990,10 @@
 		(lib_id "power:VDD")
 		(at 213.36 116.84 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "c8462f18-d617-422b-b6d4-08ee963785fc")
 		(property "Reference" "#PWR037"
 			(at 209.55 116.84 0)
@@ -4036,10 +4055,10 @@
 		(lib_id "Switch:SW_DIP_x04")
 		(at 193.04 110.49 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ce02156a-8cae-4e4c-94f7-69e2ef3c8963")
 		(property "Reference" "SW3"
@@ -4188,10 +4207,10 @@
 		(lib_id "Device:R_Small")
 		(at 207.01 116.84 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "e03226a5-9751-4b3f-a5c9-41d03c69be2f")
 		(property "Reference" "R21"
 			(at 206.248 119.634 90)
@@ -4209,7 +4228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 207.01 116.84 0)
 			(effects
 				(font
@@ -4320,10 +4339,10 @@
 		(lib_id "Device:R_Small")
 		(at 205.74 110.49 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "efca0a8d-5989-4eae-bf5d-0c03fe8bbd45")
 		(property "Reference" "R22"
 			(at 205.232 112.014 90)
@@ -4341,7 +4360,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 205.74 110.49 0)
 			(effects
 				(font
