@@ -2,7 +2,7 @@
 title: Design V1 Motor Driver module
 aliases:
   - Design V1 Motor Driver module
-modified: 2024-09-29T21:19:52-06:00
+modified: 2024-10-14T22:16:19-06:00
 tags: 
 completed: 
 itemtype: task
@@ -31,7 +31,7 @@ completedby:
 # Description:
 
 # Comments:
-- [ ] Comment ➕ YYYY-MM-DD ^1
+- [ ] I need to redo the power connector scheme, to make it work in reverse 180 orientation and to use the cheaper connectors. Reverse orientation capability would mean I need 4 connectors per edge. It *should* save time and hassle so that I don't have to produce a mirror board copy, but it will be costly. Another benefit is double the current capacity. ➕ 2024-10-14 ^1
 
 # Time Tracking:
 ```simple-time-tracker

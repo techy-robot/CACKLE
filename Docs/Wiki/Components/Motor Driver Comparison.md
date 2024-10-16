@@ -11,10 +11,11 @@ modified:
   - 2024-04-25T20:01:09-06:00
   - 2024-04-27T14:00:26-06:00
   - 2024-04-29T18:03:12-06:00
+  - 2024-10-14T22:05:33-06:00
 append_modified_update: true
 ---
 
-I want a FOC controller that is compact and not to expensive. Similar to [[Motor Comparison Table]], this is not in the task/goal system.
+I want a FOC controller that is compact and not to expensive. This is not in the task/goal system.
 
 Helpful page for TI drivers: [Brushless DC (BLDC) motor drivers | TI.com](https://www.ti.com/motor-drivers/brushless-dc-bldc-drivers/overview.html)
 
