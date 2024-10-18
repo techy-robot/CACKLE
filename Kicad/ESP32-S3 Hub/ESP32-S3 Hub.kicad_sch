@@ -2216,6 +2216,18 @@
 		(uuid "356fd5ae-4058-4623-b645-ad20f0ea4aef")
 	)
 	(junction
+		(at 110.49 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4119e387-0c9c-490c-8178-012d42c3ac61")
+	)
+	(junction
+		(at 107.95 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43545807-7887-4fd9-9bf7-214d82d1604e")
+	)
+	(junction
 		(at 127 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2276,12 +2288,6 @@
 		(uuid "78668d5a-31d9-45f0-82f0-1b5c7fa687fa")
 	)
 	(junction
-		(at 109.22 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a83e996-057e-4628-a8ea-796fd2296bcb")
-	)
-	(junction
 		(at 142.24 19.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2298,6 +2304,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92548b3c-bd6e-4a1a-92e3-ec21dde10151")
+	)
+	(junction
+		(at 114.3 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4f4cc30-485f-47aa-869a-d2cf9645b0b9")
 	)
 	(junction
 		(at 101.6 90.17)
@@ -2384,6 +2396,10 @@
 		(uuid "f0b3bd6a-aff6-4850-862e-2f4c6c01566d")
 	)
 	(no_connect
+		(at 167.64 118.11)
+		(uuid "1f5e8cdb-5ee6-4ae8-893c-9994b043fc72")
+	)
+	(no_connect
 		(at 167.64 64.77)
 		(uuid "3394a0d1-d270-482b-8f90-c6234e41342e")
 	)
@@ -2467,16 +2483,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 102.87) (xy 121.92 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cf9005c-f1e2-4bd6-ad9e-f1eb9eba4305")
-	)
-	(wire
-		(pts
 			(xy 167.64 105.41) (xy 171.45 105.41)
 		)
 		(stroke
@@ -2484,6 +2490,16 @@
 			(type default)
 		)
 		(uuid "0ed6541b-c51f-47aa-9138-678c7e15a729")
+	)
+	(wire
+		(pts
+			(xy 107.95 102.87) (xy 121.92 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12db7b4f-dc58-497e-9ddc-a3b58fb7a7b4")
 	)
 	(wire
 		(pts
@@ -2737,16 +2753,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 107.95) (xy 121.92 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cb2e36e-b582-4b50-8b0d-207127d3b2f6")
-	)
-	(wire
-		(pts
 			(xy 119.38 100.33) (xy 121.92 100.33)
 		)
 		(stroke
@@ -2837,6 +2843,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 102.87) (xy 107.95 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c5fa6f-636e-4118-96b0-b441a42907ee")
+	)
+	(wire
+		(pts
 			(xy 101.6 90.17) (xy 121.92 90.17)
 		)
 		(stroke
@@ -2914,6 +2930,16 @@
 			(type default)
 		)
 		(uuid "5c00fc22-9639-42d7-8466-04bb79247820")
+	)
+	(wire
+		(pts
+			(xy 110.49 105.41) (xy 121.92 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c75f1d1-d454-4b9b-b29f-f9722d9013ab")
 	)
 	(wire
 		(pts
@@ -3227,7 +3253,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 107.95) (xy 109.22 107.95)
+			(xy 106.68 107.95) (xy 114.3 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3354,16 +3380,6 @@
 			(type default)
 		)
 		(uuid "c7e972bb-0ec1-4f84-b48f-890167a79dd0")
-	)
-	(wire
-		(pts
-			(xy 171.45 118.11) (xy 167.64 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca1e9829-f39e-4978-a548-f37f48600131")
 	)
 	(wire
 		(pts
@@ -3567,7 +3583,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 105.41) (xy 121.92 105.41)
+			(xy 114.3 107.95) (xy 121.92 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa08bdec-6ff7-4e9a-9dde-f33902d3538d")
+	)
+	(wire
+		(pts
+			(xy 106.68 105.41) (xy 110.49 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3662,10 +3688,10 @@
 		)
 		(uuid "0e8ed6bc-3c1d-44c6-b9d3-0821ae0bacfe")
 	)
-	(text_box "IO46 controls UART boot output, and has to be low for programming"
+	(text_box "IO46 controls UART boot output, and has to be low for programming. I want to expose it for testing, but space is limited"
 		(exclude_from_sim no)
 		(at 176.53 125.73 0)
-		(size 21.59 8.89)
+		(size 26.67 12.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -3680,6 +3706,25 @@
 			(justify left top)
 		)
 		(uuid "15088e59-20b0-418a-a7e0-fa0385c506e1")
+	)
+	(text_box "GPIO 1-20 have glitches of some form, most of them low-level glitches. gpio18-20 have 2 levels of glitches. DANGER. I2c may have problems with this, but I have no other free pins. If the logic remains low thru pwr up, then a low level glitch won't hurt, but the pullup resistors WILL cause issue"
+		(exclude_from_sim no)
+		(at 49.53 71.12 0)
+		(size 35.56 21.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "42b8ec2e-59c2-4ef1-9715-cad859acd87d")
 	)
 	(text_box "Formula for crystal capacitance: C_load = (C1 * C2) / (C1 + C2) + Cstray. C stray is from the short traces, estimate 3~5pF"
 		(exclude_from_sim no)
@@ -3709,16 +3754,6 @@
 			)
 		)
 		(uuid "8f08753a-8b3c-4894-b41c-391fb14e9d13")
-	)
-	(text "gpio18 has 2 glitches"
-		(exclude_from_sim no)
-		(at 93.726 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e6327759-ef5e-4542-8f31-db0fe6bf5b70")
 	)
 	(global_label "2CSA-A"
 		(shape input)
@@ -3782,6 +3817,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Free2"
+		(shape input)
+		(at 121.92 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18de542c-cdfb-4834-b4e6-456e8b89a46c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.6733 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4030,7 +4087,7 @@
 	)
 	(global_label "ShiftRegCLK"
 		(shape input)
-		(at 121.92 95.25 180)
+		(at 106.68 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4040,7 +4097,7 @@
 		)
 		(uuid "7d8b2eea-1dfc-41d2-9628-b79710258d18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.4444 95.25 0)
+			(at 92.2044 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5055,7 +5112,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 119.38 102.87 90)
+		(at 107.95 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5063,7 +5120,7 @@
 		(dnp no)
 		(uuid "3b97af7b-7761-4365-8875-3baa3e9e29a1")
 		(property "Reference" "TP1"
-			(at 117.602 104.394 90)
+			(at 106.426 101.092 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,7 +5128,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 110.49 102.616 90)
+			(at 108.204 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5079,7 +5136,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 119.38 97.79 0)
+			(at 113.03 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5088,7 +5145,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 97.79 0)
+			(at 113.03 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5154,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 119.38 102.87 0)
+			(at 107.95 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5241,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 109.22 107.95 0)
+		(at 114.3 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5192,7 +5249,7 @@
 		(dnp no)
 		(uuid "43391f77-273c-4d44-9df7-036cff3c2639")
 		(property "Reference" "TP14"
-			(at 109.22 100.838 90)
+			(at 114.3 100.838 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5200,7 +5257,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 109.474 99.06 90)
+			(at 114.554 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5208,7 +5265,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 114.3 107.95 0)
+			(at 119.38 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5217,7 +5274,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 107.95 0)
+			(at 119.38 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5226,7 +5283,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 109.22 107.95 0)
+			(at 114.3 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +5965,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 106.68 105.41 0)
+		(at 110.49 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5916,7 +5973,7 @@
 		(dnp no)
 		(uuid "7ba243f8-04a0-422e-a99c-461857879ec9")
 		(property "Reference" "TP12"
-			(at 106.68 98.298 90)
+			(at 110.49 98.298 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5924,7 +5981,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 106.934 96.52 90)
+			(at 110.744 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5932,7 +5989,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 111.76 105.41 0)
+			(at 115.57 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5941,7 +5998,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 105.41 0)
+			(at 115.57 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5950,7 +6007,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 106.68 105.41 0)
+			(at 110.49 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6800,70 +6857,6 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 171.45 118.11 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0411ded-c280-4e21-8d8f-b9fdeff33697")
-		(property "Reference" "TP22"
-			(at 178.562 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 180.34 118.364 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 171.45 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 171.45 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ae4d7735-0dbe-4744-869e-793f7efbe4fb")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
-					(reference "TP22")
 					(unit 1)
 				)
 			)

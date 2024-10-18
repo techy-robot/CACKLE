@@ -2522,7 +2522,7 @@
 			)
 		)
 	)
-	(global_label "RS485_B+"
+	(global_label "RS485+"
 		(shape bidirectional)
 		(at 179.07 113.03 180)
 		(fields_autoplaced yes)
@@ -2534,7 +2534,7 @@
 		)
 		(uuid "6d22afdc-92f0-4b03-98ec-ea9181ca851e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.0555 113.03 0)
+			(at 167.2931 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +2566,7 @@
 			)
 		)
 	)
-	(global_label "RS485_B+"
+	(global_label "RS485+"
 		(shape bidirectional)
 		(at 154.94 83.82 0)
 		(fields_autoplaced yes)
@@ -2578,7 +2578,7 @@
 		)
 		(uuid "71ca7f52-5703-4747-916d-09dd0fc525ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.9545 83.82 0)
+			(at 166.7169 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2720,7 +2720,7 @@
 			)
 		)
 	)
-	(global_label "RS485_A-"
+	(global_label "RS485-"
 		(shape bidirectional)
 		(at 154.94 78.74 0)
 		(fields_autoplaced yes)
@@ -2732,7 +2732,7 @@
 		)
 		(uuid "b212afdd-eb3d-4a08-be7b-fb841265b864")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.7731 78.74 0)
+			(at 166.7169 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,7 +2742,7 @@
 			)
 		)
 	)
-	(global_label "RS485_A-"
+	(global_label "RS485-"
 		(shape bidirectional)
 		(at 213.36 107.95 0)
 		(fields_autoplaced yes)
@@ -2754,7 +2754,7 @@
 		)
 		(uuid "b543c99b-cb8d-41c8-bde6-460ef8156808")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.1931 107.95 0)
+			(at 225.1369 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
