@@ -85,8 +85,8 @@
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 566,
-          "pos_y": 1179,
+          "pos_x": 561,
+          "pos_y": 1080,
           "size_x": 768,
           "size_y": 721
         }
@@ -100,7 +100,7 @@
           "pos_x": 182,
           "pos_y": 1080,
           "size_x": 1280,
-          "size_y": 504
+          "size_y": 396
         }
       }
     ]
