@@ -2,7 +2,7 @@
 title: Design V1 Hub
 aliases:
   - Design V1 Hub
-modified: 2024-10-19T14:43:30-06:00
+modified: 2024-10-19T17:02:13-06:00
 tags: 
 completed: 
 itemtype: task
@@ -36,7 +36,9 @@ This is the central point of the modular control board. It talks to other hubs, 
 - [x] Shift all the motor pwm pins down, and stick the FREEx pins and the i2c pins near the end. Now, only the motor pins and the analog pins will have glitching. Since it is a low level glitch, and there are no pullups on those lines, it should be fine. ➕ 2024-10-17 ✅ 2024-10-17 ^1
 - [x] Move out the pin headers a few 0.1mms so that the headers are exactly the distance required for connection to the motor cards ➕ 2024-10-18 ✅ 2024-10-18 ^2
 - [x] Fix port 2 and 4 being swapped ➕ 2024-10-18 ✅ 2024-10-18 ^3
-- [x] If I go with a 6 layer board design I will have more space to route, and JLC offers free filled vias with the increased cost, saving me even more space. ➕ 2024-10-18 ✅ 2024-10-18 ^3
+- [x] If I go with a 6 layer board design I will have more space to route, and JLC offers free filled vias with the increased cost, saving me even more space. ➕ 2024-10-18 ✅ 2024-10-18 ^4
+- [ ] The Free 1 and Free 2 pins might be more capable going on an analog capable pin. This, however, would require a fairly complex restructuring of the routing, which causes delay for not much gain ➕ 2024-10-19 ^5
+- [ ] There is a potentially big cross talk problem on layer In3. There is a high speed differential pair running on that layer, along with the lowspeed i2c lines, all right next to thick power traces. ➕ 2024-10-19 ^6
 
 # Time Tracking:
 ```simple-time-tracker
