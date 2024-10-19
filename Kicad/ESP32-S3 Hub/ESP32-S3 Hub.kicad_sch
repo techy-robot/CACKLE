@@ -2503,6 +2503,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 120.65) (xy 121.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e15fb93-9460-473b-8040-71f1199e8d3e")
+	)
+	(wire
+		(pts
 			(xy 167.64 105.41) (xy 171.45 105.41)
 		)
 		(stroke
@@ -2793,7 +2803,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 120.65) (xy 121.92 120.65)
+			(xy 91.44 120.65) (xy 100.33 120.65)
 		)
 		(stroke
 			(width 0)
@@ -7011,6 +7021,73 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 102.87 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfcf971c-ab7e-4592-b448-d756f9c82727")
+		(property "Reference" "R6"
+			(at 100.838 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22 ohm"
+			(at 102.616 119.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7897db6-f15c-4bd8-9333-edd22827f741")
+		)
+		(pin "1"
+			(uuid "9786273d-b3dd-4a14-847e-9028443ed630")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
+					(reference "R6")
 					(unit 1)
 				)
 			)
