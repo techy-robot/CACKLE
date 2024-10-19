@@ -80,25 +80,13 @@
   "project": {
     "files": [
       {
-        "name": "DRV8311 Motor Driver.kicad_pro",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 382,
-          "pos_y": 166,
-          "size_x": 772,
-          "size_y": 754
-        }
-      },
-      {
         "name": "DRV8311 Motor Driver.kicad_sch",
         "open": true,
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 384,
-          "pos_y": 163,
+          "pos_x": 566,
+          "pos_y": 1179,
           "size_x": 768,
           "size_y": 721
         }
@@ -109,10 +97,10 @@
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 0,
-          "pos_y": 0,
+          "pos_x": 182,
+          "pos_y": 1080,
           "size_x": 1280,
-          "size_y": 612
+          "size_y": 504
         }
       }
     ]
