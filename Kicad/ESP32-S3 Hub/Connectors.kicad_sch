@@ -8952,7 +8952,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_02x15_Odd_Even_MountingPin")
-		(at 246.38 142.24 0)
+		(at 173.99 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8960,7 +8960,7 @@
 		(dnp no)
 		(uuid "547265bf-760d-40c0-a095-ea0c2ea8dc71")
 		(property "Reference" "J14"
-			(at 247.396 126.492 0)
+			(at 175.006 126.492 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8968,7 +8968,7 @@
 			)
 		)
 		(property "Value" "TE 3-2363962-0 Connector"
-			(at 247.65 120.65 0)
+			(at 175.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8976,7 +8976,7 @@
 			)
 		)
 		(property "Footprint" "custom_testpoints:TE_mezzanine_conn_3-2363962-0"
-			(at 246.38 142.24 0)
+			(at 173.99 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8985,7 +8985,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 142.24 0)
+			(at 173.99 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8994,7 +8994,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 246.38 142.24 0)
+			(at 173.99 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9173,7 +9173,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_02x15_Odd_Even_MountingPin")
-		(at 173.99 142.24 0)
+		(at 246.38 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9181,7 +9181,7 @@
 		(dnp no)
 		(uuid "5dbddcb1-a94c-451c-a6cf-7d6c3845267b")
 		(property "Reference" "J17"
-			(at 175.26 125.73 0)
+			(at 247.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9189,7 +9189,7 @@
 			)
 		)
 		(property "Value" "TE 3-2363962-0 Connector"
-			(at 175.26 120.65 0)
+			(at 247.65 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9197,7 +9197,7 @@
 			)
 		)
 		(property "Footprint" "custom_testpoints:TE_mezzanine_conn_3-2363962-0"
-			(at 173.99 142.24 0)
+			(at 246.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9206,7 +9206,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 142.24 0)
+			(at 246.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9215,7 +9215,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 142.24 0)
+			(at 246.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9547,7 +9547,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_02x15_Odd_Even_MountingPin")
-		(at 246.38 91.44 0)
+		(at 173.99 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9556,7 +9556,7 @@
 		(fields_autoplaced yes)
 		(uuid "64746ba2-d4b7-447a-8d9d-97b6eeb5252c")
 		(property "Reference" "J13"
-			(at 247.65 67.31 0)
+			(at 175.26 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9564,7 +9564,7 @@
 			)
 		)
 		(property "Value" "TE 3-2363961-0 receptacle"
-			(at 247.65 69.85 0)
+			(at 175.26 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9572,7 +9572,7 @@
 			)
 		)
 		(property "Footprint" "custom_testpoints:TE_mezzanine_rec_3-2363961-0"
-			(at 246.38 91.44 0)
+			(at 173.99 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9581,7 +9581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 91.44 0)
+			(at 173.99 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9590,7 +9590,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 246.38 91.44 0)
+			(at 173.99 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11305,7 +11305,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_02x15_Odd_Even_MountingPin")
-		(at 173.99 91.44 0)
+		(at 246.38 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11314,7 +11314,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfa4cd4f-61ea-4af8-8037-661a0e9c9931")
 		(property "Reference" "J16"
-			(at 175.26 67.31 0)
+			(at 247.65 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11322,7 +11322,7 @@
 			)
 		)
 		(property "Value" "TE 3-2363961-0 receptacle"
-			(at 175.26 69.85 0)
+			(at 247.65 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11330,7 +11330,7 @@
 			)
 		)
 		(property "Footprint" "custom_testpoints:TE_mezzanine_rec_3-2363961-0"
-			(at 173.99 91.44 0)
+			(at 246.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11339,7 +11339,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 91.44 0)
+			(at 246.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11348,7 +11348,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 91.44 0)
+			(at 246.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
