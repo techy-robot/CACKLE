@@ -9,6 +9,7 @@ modified:
   - 2024-09-08T09:46:12-06:00
   - 2024-09-16T21:17:40-06:00
   - 2024-09-23T18:45:05-06:00
+  - 2024-10-19T17:45:06-06:00
 ---
 It is a modular control board design, with 4 main types of units:
 - Hubs (with an MCU on it, supports 4 drivers, one sensor with a vertical micro connector, and a chain of peers)
@@ -27,6 +28,8 @@ My idea is to use some highspeed dual core MCUs for the hubs, something like the
 Ideally I will have spring contacts for all the modules, and you can just clip them in. But I will have to custom manufacture these board springs that clip into through holes, because I haven't found any commercially available ones. Alternately I can use some Keystone micro SMD tab pins.
 
 3.3v should be supplied to the Drivers, in case I wanted to plug in a bigger or power hungry sensor board, or if I have a driver chip that doesn't have a built in regulator.
+
+The numbering scheme is bottom up, with the PSU at the very bottom, and hubs connected on top of that. All the sensor and motor ports follow this as well.
 
 # Changelog:
 - 2024-08-09 Created
