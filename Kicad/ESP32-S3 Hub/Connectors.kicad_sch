@@ -10800,7 +10800,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "TX"
 			(at 207.01 32.004 90)
 			(effects
 				(font
@@ -11754,7 +11754,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "RX"
 			(at 207.01 28.194 90)
 			(effects
 				(font
