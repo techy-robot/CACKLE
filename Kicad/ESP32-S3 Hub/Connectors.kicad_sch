@@ -3294,7 +3294,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 35.56) (xy 190.5 35.56)
+			(xy 194.31 21.59) (xy 189.23 21.59)
 		)
 		(stroke
 			(width 0)
@@ -4118,9 +4118,9 @@
 		)
 		(uuid "547af850-112e-4405-b4b9-45b9ff4515a5")
 	)
-	(text "DEBUG pin for programming. Access SPI via magnetic sensor header"
+	(text "DEBUG pins"
 		(exclude_from_sim no)
-		(at 201.676 31.496 0)
+		(at 200.406 17.526 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5172,6 +5172,28 @@
 			)
 		)
 	)
+	(global_label "UART0_RX"
+		(shape input)
+		(at 198.12 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7251ca19-3b23-408d-973f-175678c9b573")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.8215 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL1"
 		(shape input)
 		(at 254 154.94 0)
@@ -5564,6 +5586,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART0_TX"
+		(shape input)
+		(at 198.12 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "90de8cbd-45b8-4096-8f9a-0eeafac479e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.1239 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6098,7 +6142,7 @@
 	)
 	(global_label "UART0-RTS{slash}CS0"
 		(shape input)
-		(at 195.58 35.56 0)
+		(at 194.31 21.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6108,7 +6152,7 @@
 		)
 		(uuid "b9123ea9-2835-4558-aff9-a3efdaf76e65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.4704 35.56 0)
+			(at 213.2004 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,7 +10791,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 190.5 35.56 90)
+		(at 189.23 21.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10755,7 +10799,7 @@
 		(dnp no)
 		(uuid "948cb43d-20a3-4abe-87d6-64a47c45003f")
 		(property "Reference" "TP20"
-			(at 187.452 37.846 90)
+			(at 186.182 23.876 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10763,7 +10807,7 @@
 			)
 		)
 		(property "Value" "CS0"
-			(at 179.832 35.56 90)
+			(at 178.562 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10771,7 +10815,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 190.5 30.48 0)
+			(at 189.23 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10780,7 +10824,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 30.48 0)
+			(at 189.23 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10789,7 +10833,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 190.5 35.56 0)
+			(at 189.23 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11163,6 +11207,70 @@
 			(project ""
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/e098af34-1b04-4f22-87f1-2a3ef3b390de"
 					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.12 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b03c0f35-609d-4667-8e9b-b5693bef704a")
+		(property "Reference" "TP3"
+			(at 205.232 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 207.01 32.004 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 198.12 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.12 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47d6a5de-d5ae-40e1-8dc0-0d8252107547")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/e098af34-1b04-4f22-87f1-2a3ef3b390de"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -12053,6 +12161,70 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/e098af34-1b04-4f22-87f1-2a3ef3b390de"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.12 27.94 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "da5188da-bd19-41ab-bb82-fb86906c847a")
+		(property "Reference" "TP2"
+			(at 205.232 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 207.01 28.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 198.12 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.12 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98daf92a-6234-406a-8362-289ca644cafe")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/e098af34-1b04-4f22-87f1-2a3ef3b390de"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
