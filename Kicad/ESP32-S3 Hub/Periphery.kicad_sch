@@ -7,6 +7,9 @@
 	(title_block
 		(title "CACKLE -  Hub/Periphery")
 		(date "2024-10-08")
+		(rev "V1")
+		(comment 1 "Licensed under CERN-OHL-S v2")
+		(comment 2 "Author: Asher Edwards")
 	)
 	(lib_symbols
 		(symbol "74xx:74HC595"

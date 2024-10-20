@@ -7,6 +7,9 @@
 	(title_block
 		(title "CACKLE -  Hub")
 		(date "2024-10-08")
+		(rev "V1")
+		(comment 1 "Licensed under CERN-OHL-S v2")
+		(comment 2 "Author: Asher Edwards")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2396,10 +2399,6 @@
 		(uuid "f0b3bd6a-aff6-4850-862e-2f4c6c01566d")
 	)
 	(no_connect
-		(at 167.64 118.11)
-		(uuid "1f5e8cdb-5ee6-4ae8-893c-9994b043fc72")
-	)
-	(no_connect
 		(at 167.64 64.77)
 		(uuid "3394a0d1-d270-482b-8f90-c6234e41342e")
 	)
@@ -2680,6 +2679,16 @@
 			(type default)
 		)
 		(uuid "2984e4aa-3f17-44f5-a965-0a8c8faff41d")
+	)
+	(wire
+		(pts
+			(xy 176.53 118.11) (xy 167.64 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cc4fea6-c5ae-4041-9c10-362ac46f3908")
 	)
 	(wire
 		(pts
@@ -3708,7 +3717,7 @@
 		)
 		(uuid "0e8ed6bc-3c1d-44c6-b9d3-0821ae0bacfe")
 	)
-	(text_box "IO46 controls UART boot output, and has to be low for programming. I want to expose it for testing, but space is limited"
+	(text_box "IO46 controls UART boot output, and has to be low for programming."
 		(exclude_from_sim no)
 		(at 176.53 125.73 0)
 		(size 26.67 12.7)
@@ -4596,6 +4605,70 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 176.53 118.11 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "02ac428c-36cc-433c-a12e-ec61419631c5")
+		(property "Reference" "TP4"
+			(at 178.308 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 185.42 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 176.53 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bbc4572-bb08-412b-afea-b79d31a0e792")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658"
+					(reference "TP4")
+					(unit 1)
+				)
 			)
 		)
 	)

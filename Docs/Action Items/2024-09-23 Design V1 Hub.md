@@ -2,7 +2,7 @@
 title: Design V1 Hub
 aliases:
   - Design V1 Hub
-modified: 2024-10-20T09:51:01-06:00
+modified: 2024-10-20T10:26:52-06:00
 tags: 
 completed: 
 itemtype: task
@@ -44,7 +44,7 @@ This is a 6 layer board, which tries to follow the order Sig/Gnd/Pwr/Sig/Gnd/Sig
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[{"name":"Schematic work","startTime":"2024-09-30T02:20:10.000Z","endTime":"2024-09-30T03:48:27.000Z"},{"name":"Schematic work","startTime":"2024-10-08T02:10:23.000Z","endTime":"2024-10-08T03:20:52.000Z"},{"name":"Finished rough schematic","startTime":"2024-10-09T01:45:54.000Z","endTime":"2024-10-09T03:20:43.000Z"},{"name":"Component Research","startTime":"2024-10-13T23:14:51.000Z","endTime":"2024-10-14T00:10:14.000Z"},{"name":"Designing footprint for mezzanine connectors","startTime":"2024-10-14T00:47:13.000Z","endTime":"2024-10-14T02:04:04.000Z"},{"name":"Component downsizing research, finished layout","startTime":"2024-10-15T20:15:11.000Z","endTime":"2024-10-16T01:59:11.000Z"},{"name":"started wire fanout","startTime":"2024-10-16T22:00:40.000Z","endTime":"2024-10-16T23:51:07.000Z"},{"name":"routing","startTime":"2024-10-17T21:36:40.000Z","endTime":"2024-10-18T00:03:41.000Z"},{"name":"routing and part rearrangement","startTime":"2024-10-18T15:54:34.000Z","endTime":"2024-10-18T16:56:00.000Z"},{"name":"routing 6 layers","startTime":"2024-10-18T19:45:01.000Z","endTime":"2024-10-19T00:06:37.000Z"},{"name":"debugging how to route a tricky wire","startTime":"2024-10-19T00:50:32.000Z","endTime":"2024-10-19T03:08:28.000Z"},{"name":"routing tricky wires","startTime":"2024-10-19T20:01:01.000Z","endTime":"2024-10-20T00:20:07.374Z"},{"name":"finished routing","startTime":"2024-10-20T14:49:04.000Z","endTime":"2024-10-20T15:50:43.000Z"}]}
+{"entries":[{"name":"Schematic work","startTime":"2024-09-30T02:20:10.000Z","endTime":"2024-09-30T03:48:27.000Z"},{"name":"Schematic work","startTime":"2024-10-08T02:10:23.000Z","endTime":"2024-10-08T03:20:52.000Z"},{"name":"Finished rough schematic","startTime":"2024-10-09T01:45:54.000Z","endTime":"2024-10-09T03:20:43.000Z"},{"name":"Component Research","startTime":"2024-10-13T23:14:51.000Z","endTime":"2024-10-14T00:10:14.000Z"},{"name":"Designing footprint for mezzanine connectors","startTime":"2024-10-14T00:47:13.000Z","endTime":"2024-10-14T02:04:04.000Z"},{"name":"Component downsizing research, finished layout","startTime":"2024-10-15T20:15:11.000Z","endTime":"2024-10-16T01:59:11.000Z"},{"name":"started wire fanout","startTime":"2024-10-16T22:00:40.000Z","endTime":"2024-10-16T23:51:07.000Z"},{"name":"routing","startTime":"2024-10-17T21:36:40.000Z","endTime":"2024-10-18T00:03:41.000Z"},{"name":"routing and part rearrangement","startTime":"2024-10-18T15:54:34.000Z","endTime":"2024-10-18T16:56:00.000Z"},{"name":"routing 6 layers","startTime":"2024-10-18T19:45:01.000Z","endTime":"2024-10-19T00:06:37.000Z"},{"name":"debugging how to route a tricky wire","startTime":"2024-10-19T00:50:32.000Z","endTime":"2024-10-19T03:08:28.000Z"},{"name":"routing tricky wires","startTime":"2024-10-19T20:01:01.000Z","endTime":"2024-10-20T00:20:07.374Z"},{"name":"finished routing","startTime":"2024-10-20T14:49:04.000Z","endTime":"2024-10-20T15:50:43.000Z"},{"name":"Segment 14","startTime":"2024-10-20T16:00:37.000Z","endTime":null}]}
 ```
 
 # Changelog:
