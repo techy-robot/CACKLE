@@ -6582,7 +6582,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "101ba280-2970-48d4-a463-304716949ee4")
 		(property "Reference" "J12"
 			(at 39.37 134.6199 0)
@@ -6602,7 +6601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 135.89 0)
 			(effects
 				(font
@@ -7054,7 +7053,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1b4996c7-f16b-4ce9-8ab3-ce41eb63534c")
 		(property "Reference" "J1"
 			(at 39.37 31.7499 0)
@@ -7074,7 +7072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 33.02 0)
 			(effects
 				(font
@@ -7195,7 +7193,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1cf35e43-92f6-43ac-896f-779ce665d7c5")
 		(property "Reference" "J9"
 			(at 39.37 102.8699 0)
@@ -7215,7 +7212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 104.14 0)
 			(effects
 				(font
@@ -8295,7 +8292,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "48860f1e-c88b-4a96-b1a4-c936bd0659c2")
 		(property "Reference" "J10"
 			(at 39.37 126.9999 0)
@@ -8315,7 +8311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 128.27 0)
 			(effects
 				(font
@@ -8500,7 +8496,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50c10cc4-f288-4e33-8955-88d00bbe19f0")
 		(property "Reference" "J2"
 			(at 39.37 39.3699 0)
@@ -8520,7 +8515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 40.64 0)
 			(effects
 				(font
@@ -9881,7 +9876,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "77b92291-b4c3-4705-a6ad-f19f2785f636")
 		(property "Reference" "J4"
 			(at 39.37 64.7699 0)
@@ -9901,7 +9895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 66.04 0)
 			(effects
 				(font
@@ -9954,7 +9948,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7c8ac24e-cdf1-4a91-aa47-a8564bd01316")
 		(property "Reference" "J6"
 			(at 39.37 72.3899 0)
@@ -9974,7 +9967,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 73.66 0)
 			(effects
 				(font
@@ -10160,7 +10153,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "86abd25e-d982-4408-aefc-127dc89262ba")
 		(property "Reference" "J7"
 			(at 39.37 95.2499 0)
@@ -10180,7 +10172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
 			(at 38.1 96.52 0)
 			(effects
 				(font
