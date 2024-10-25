@@ -4,9 +4,9 @@ aliases:
   - Design V1 Motor Driver module
 modified: 2024-10-21T09:37:45-06:00
 tags: 
-completed: 
+completed: true
 itemtype: task
-status: In Progress
+status: Done
 date: 2024-09-23
 startTime: 
 endDate: 2024-10-07
@@ -25,6 +25,7 @@ milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]
 createdby: 
 assignees: 
 completedby: 
+completedDate: 2024-10-21
 ---
 `BUTTON[complete, uncomplete]`
 

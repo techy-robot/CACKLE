@@ -65,10 +65,17 @@
                 "weight": 0
               },
               "In Progress": {
-                "weight": 1
+                "weight": 1,
+                "records": [
+                  "Docs/Action Items/2024-09-23 Design V1 Motor Driver module.md",
+                  "Docs/Action Items/2024-09-23 Design V1 of all 4 modules.md"
+                ]
               },
               "Done": {
-                "weight": 2
+                "weight": 2,
+                "records": [
+                  "Docs/Action Items/2024-09-23 Design V1 Hub.md"
+                ]
               },
               "Pending": {
                 "weight": 3

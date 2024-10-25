@@ -3,7 +3,7 @@
   "theme": "moonstone",
   "nativeMenus": false,
   "baseFontSize": 15,
-  "cssTheme": "",
+  "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "checkboxtest",
     "dataview_scrollable_tables_filter",
