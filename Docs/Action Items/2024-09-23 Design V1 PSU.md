@@ -2,7 +2,7 @@
 title: Design V1 PSU
 aliases:
   - Design V1 PSU
-modified: 2024-10-25T20:39:48-06:00
+modified: 2024-10-25T21:48:37-06:00
 tags: 
 completed: 
 itemtype: task
@@ -35,7 +35,7 @@ completedby:
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[{"name":"Segment 1","startTime":"2024-10-26T02:39:49.610Z","endTime":null}]}
+{"entries":[{"name":"Initial arrangment of schem","startTime":"2024-10-26T02:39:49.000Z","endTime":"2024-10-26T03:48:16.000Z"}]}
 ```
 
 # Changelog:

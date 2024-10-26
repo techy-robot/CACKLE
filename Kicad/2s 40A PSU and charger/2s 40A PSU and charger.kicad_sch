@@ -723,6 +723,158 @@
 		)
 	)
 	(sheet
+		(at 40.64 83.82)
+		(size 33.02 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3a3003bc-8e40-4cd7-b859-421f37e4b48c")
+		(property "Sheetname" "Connectors"
+			(at 40.64 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 40.64 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 54.61 41.91)
+		(size 43.18 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "51a1bb53-ba94-4dbc-a00c-ce32ffc237e4")
+		(property "Sheetname" "Battery Charger"
+			(at 54.61 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Battery Charger.kicad_sch"
+			(at 54.61 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 133.35 114.3)
+		(size 27.94 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "77be5f81-4ede-42b7-b1c4-fa657e9379ac")
+		(property "Sheetname" "MCU"
+			(at 133.35 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 133.35 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 33.02)
+		(size 36.83 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9cf42ac0-c980-41ef-957c-e7b7cc3eb205")
+		(property "Sheetname" "Battery Balancer"
+			(at 144.78 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Battery Balancer.kicad_sch"
+			(at 144.78 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 194.31 68.58)
 		(size 33.02 19.05)
 		(fields_autoplaced yes)
