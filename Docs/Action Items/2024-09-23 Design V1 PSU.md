@@ -2,16 +2,16 @@
 title: Design V1 PSU
 aliases:
   - Design V1 PSU
-modified: 2024-09-23T18:47:39-06:00
+modified: 2024-10-25T20:39:48-06:00
 tags: 
 completed: 
 itemtype: task
 status: New
-date: 
+date: 2024-10-25
 startTime: 
-endDate: 2024-10-21
+endDate: 2024-11-10
 endTime: 
-deadline: 2024-10-31
+deadline: 2024-11-10
 allDay: true
 priority: Normal
 effort: L
@@ -24,7 +24,7 @@ peeritems:
 milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]"
 createdby: 
 assignees: 
-completedby:
+completedby: 
 ---
 `BUTTON[complete, uncomplete]`
 
@@ -35,7 +35,7 @@ completedby:
 
 # Time Tracking:
 ```simple-time-tracker
-{"entries":[]}
+{"entries":[{"name":"Segment 1","startTime":"2024-10-26T02:39:49.610Z","endTime":null}]}
 ```
 
 # Changelog:
