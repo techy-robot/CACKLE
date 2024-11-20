@@ -2003,6 +2003,12 @@
 		(color 0 0 0 0)
 		(uuid "92a09d73-81ec-44ac-8605-de2aa457c36b")
 	)
+	(junction
+		(at 69.85 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d28b28ed-d89e-4b35-8ee6-41d2ac827107")
+	)
 	(no_connect
 		(at 67.31 93.98)
 		(uuid "32db88d9-7a1d-4a90-8ce3-19b761a96073")
@@ -2151,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 86.36) (xy 71.12 86.36)
+			(xy 67.31 86.36) (xy 69.85 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2238,6 +2244,16 @@
 			(type default)
 		)
 		(uuid "8a6348cb-a6c2-4784-aa90-c0183a754c49")
+	)
+	(wire
+		(pts
+			(xy 69.85 86.36) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c43e9fe-f959-4394-9d12-5bdf2a7c4b5f")
 	)
 	(wire
 		(pts
@@ -3121,7 +3137,7 @@
 			)
 		)
 		(property "Value" "Mitsumi R-667996"
-			(at 146.304 37.338 90)
+			(at 138.938 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,6 +3541,71 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
+		(at 69.85 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "505f8b56-432a-48c6-a3e5-9bde95a6d4a6")
+		(property "Reference" "#PWR079"
+			(at 69.85 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 72.136 79.248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4208399b-0c36-4b22-bc65-f521c2e8e6c8")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
 		(at 161.29 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3650,6 +3731,75 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 69.85 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7075f781-3e37-422c-a973-5c5a9ef4462f")
+		(property "Reference" "R11"
+			(at 71.374 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 69.342 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fcc18389-39d7-4eb0-b26a-91f7ab33d8c5")
+		)
+		(pin "2"
+			(uuid "232eeeb4-891a-46f8-869e-62632fd6f698")
+		)
+		(instances
+			(project "ESP32-S3 Hub"
+				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
+					(reference "R11")
 					(unit 1)
 				)
 			)

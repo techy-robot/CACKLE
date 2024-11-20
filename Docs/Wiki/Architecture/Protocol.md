@@ -6,10 +6,11 @@ modified:
   - 2024-09-16T21:19:03-06:00
   - 2024-09-29T21:48:08-06:00
   - 2024-10-08T20:11:50-06:00
+  - 2024-10-27T21:47:33-06:00
 ---
 
 # Protocol
-Ideally I want this board is to be **asymmetrical** in communication, where no one MCU is master. This theoretically would allow me to have a **compute cluster** using onboard MCUs, without relying on a powerful SBC. I will still likely have a host SBC talk with the board for advance AI. Each MCU has a customizable config that can be updated to help it understand it's place and connected motors and sensors. The best multi-master/ multi-drop busses I found are differential, such as RS485, ethernet, and CAN. They all support buses and collision detection, though RS485 is just a hardware spec and you have to write your own mult-master protocol on top.
+Ideally I want this board is to be **asymmetrical** in communication, where no one MCU is master. This theoretically would allow me to have a **compute cluster** using onboard MCUs, without relying on a powerful SBC. I will still likely have a host SBC talk with the board for advance AI. Each MCU has a customizable config that can be updated to help it understand it's place and connected motors and sensors. The best multi-master/ multi-drop busses I found are differential, such as RS485, ethernet, and CAN. They all support buses and collision detection, though RS485 is just a hardware spec and you have to write your own multi-master protocol on top.
 
 Yet there are also a lot of **dis-advantages** with this setup, namely **Speed and cost**. Any sort of differential bus is NOT usually supported natively, and therefore will require a 1 dollar transceiver per board. It is also really slow, with CAN bus topping out at 1MB/s. Ethernet is much higher speed, but it requires really expensive chips or a lot of pins. SPI bus in this case would win for speed and cost savings, though it would mean a master and slave architecture
 
@@ -30,6 +31,8 @@ Another Idea I had was using a RP2040 as a repeater. If I had a 15x15mm module b
 I could write a protocol that supports user-assisted auto addressing. The user could press the BOOT buttons on each board in order, and the address will be broadcasted on the network on by one! The ordered number would also be saved on chip, and each chip would have its own map. This idea works for both multi-master and master-slave architecture, and does not need external connections to setup a network. Each device added afterward initial setup would broadcast its mac address, and would be assigned a number based on the existing map. You can trigger a map reset too. 
 
 For hotplugging rs 485 support I should have the chip assume on powerup that nothing is talking to it, and only after a set delay of idle bus should it respond
+
+I also found an opensource product that does almost exactly what I want for my modular robot control system! Its called [luos_engine](https://github.com/Luos-io/luos_engine). Every MCU knows all the others in the system and can communicate with any of the servicies. This was just a random discussion I found on the SimpleFOC discord about its integration. [Luos Technology | Luos](https://www.luos.io/docs/luos-technology). Luos has its own communication protocol built in, called Robus, which supporst Rs485 or One wire. It supports 700kbs per second for data max on a 1mhz bus. I would write my own motor services and process data commands.
 
 # Changelog:
 - 2024-09-16 Created

@@ -6601,7 +6601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 135.89 0)
 			(effects
 				(font
@@ -7072,7 +7072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 33.02 0)
 			(effects
 				(font
@@ -7212,7 +7212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 104.14 0)
 			(effects
 				(font
@@ -8311,7 +8311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 128.27 0)
 			(effects
 				(font
@@ -8515,7 +8515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 40.64 0)
 			(effects
 				(font
@@ -9895,7 +9895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 66.04 0)
 			(effects
 				(font
@@ -9967,7 +9967,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 73.66 0)
 			(effects
 				(font
@@ -10172,7 +10172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 38.1 96.52 0)
 			(effects
 				(font
