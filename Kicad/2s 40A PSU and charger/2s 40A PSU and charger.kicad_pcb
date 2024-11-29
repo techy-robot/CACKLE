@@ -701,121 +701,6 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
-		(layer "F.Cu")
-		(uuid "0c5db535-f91d-4fdf-8da3-fb6656c0abc5")
-		(at 140.4 109.9)
-		(descr "SMD pad as test Point, diameter 1.0mm")
-		(tags "test point SMD pad")
-		(property "Reference" "TP3"
-			(at 0 -1.448 0)
-			(layer "F.SilkS")
-			(uuid "48e80cf6-6459-4d16-b3c8-d6861ceab5d7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 0 1.55 0)
-			(layer "F.Fab")
-			(uuid "78838363-296f-460d-991a-39c02be367d4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6bab23e3-5b83-4542-a074-4a995a316c6e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2833faf6-c0b4-477d-8b29-ad7477143123")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "26bb073f-9ced-4d0a-b77b-82de0f75b5cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/77be5f81-4ede-42b7-b1c4-fa657e9379ac/76704b04-3e64-457d-9945-4749d04a5527")
-		(sheetname "MCU")
-		(sheetfile "MCU.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 0 0.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "8dcc82d9-1575-4b1c-9bda-753eb7377a3e")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "4125e006-e144-400f-8bce-e9c1927a36d9")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.45 0)
-			(layer "F.Fab")
-			(uuid "55a8cbcb-008f-4f29-adef-b1bbfe0ce640")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd circle
-			(at 0 0)
-			(size 1 1)
-			(layers "F.Cu" "F.Mask")
-			(net 64 "/Connectors/D+")
-			(pinfunction "1")
-			(pintype "passive")
-			(uuid "dd694910-7530-49c7-9f6d-fa31828f4d28")
-		)
-	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "1432cc45-939c-4f38-810c-9a5d99562e1e")
@@ -6975,7 +6860,7 @@
 				)
 			)
 		)
-		(property "Value" "JST XH-S"
+		(property "Value" "JST XH-S Balance Plug"
 			(at 2.5 10.4 90)
 			(layer "F.Fab")
 			(uuid "56a8d6d2-132e-4313-aeb7-0bb7c8d29fb1")
@@ -12229,7 +12114,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 51 "/SCL")
+			(net 54 "/SDA")
 			(pintype "passive")
 			(uuid "551a08e5-a259-433b-973a-81b6c75db4fb")
 		)
@@ -13997,7 +13882,7 @@
 				)
 			)
 		)
-		(property "Value" "Pad"
+		(property "Value" "Bat+"
 			(at 0 2.55 0)
 			(layer "F.Fab")
 			(uuid "706be7e3-0161-48f9-a3a7-97cf8f0c6b50")
@@ -16620,7 +16505,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 54 "/SDA")
+			(net 51 "/SCL")
 			(pintype "passive")
 			(uuid "9f7b3e8e-9055-4541-b8be-f643cd2ab1c0")
 		)
@@ -26692,7 +26577,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Pad"
+		(property "Value" "Bat-"
 			(at 0 -2.55 0)
 			(layer "B.Fab")
 			(uuid "4550862c-8e42-499e-a7d0-1a4909a93b75")
