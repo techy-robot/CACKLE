@@ -5,7 +5,7 @@
 	(uuid "f8a026f2-14cc-48ec-adc8-4e62f9f94d87")
 	(paper "A4")
 	(title_block
-		(date "2024-03-29")
+		(date "2024-11-28")
 		(rev "V1 Alpha")
 	)
 	(lib_symbols
@@ -1474,12 +1474,6 @@
 		(uuid "9a4c423c-cfd6-4c5f-b8bf-adbbe6f57edb")
 	)
 	(junction
-		(at 97.79 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e281296-f37f-4e85-b38e-3a9cc0c8a55a")
-	)
-	(junction
 		(at 243.84 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1502,6 +1496,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e29683d1-fc77-41d2-85f7-a65d54399ccf")
+	)
+	(no_connect
+		(at 97.79 77.47)
+		(uuid "181e295a-7bd8-46e4-a9e2-2004aea2292f")
 	)
 	(no_connect
 		(at 118.11 77.47)
@@ -1839,16 +1837,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 74.93) (xy 97.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2b85d8b-5f03-4b7f-95e8-987260dca200")
-	)
-	(wire
-		(pts
 			(xy 179.07 86.36) (xy 195.58 86.36)
 		)
 		(stroke
@@ -1897,7 +1885,26 @@
 		)
 		(uuid "f4501f13-bbe5-4dbe-a896-b7248fb3a88a")
 	)
-	(text_box "I really might want to find a better diode for blocking current, but 0.01ma leakage doesn't seem bad"
+	(text_box "TLV709A33DBVR is a higher speced reg for the same cost as LP2981-33. 30v, 150ma; instead of 16v, 100ma"
+		(exclude_from_sim no)
+		(at 104.14 49.53 0)
+		(size 25.4 13.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ab82bd3f-f336-4a3a-be73-46967dbcc09e")
+	)
+	(text_box "I might want to find a better diode for blocking current, but 0.01ma leakage doesn't seem bad"
 		(exclude_from_sim no)
 		(at 26.67 48.26 0)
 		(size 24.13 11.43)
@@ -1917,15 +1924,15 @@
 		)
 		(uuid "c3964071-5916-4a97-9bdf-b91d9f063741")
 	)
-	(text "1206 high wattage"
+	(text "0805 Resistor"
 		(exclude_from_sim no)
-		(at 68.326 68.58 0)
+		(at 68.072 67.818 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "5e323c48-0e91-4bc7-a331-39b5a3322660")
+		(uuid "2353ed1d-008e-46d0-a80c-16173670db99")
 	)
 	(text "Onboard MCU 3.3v Supply, 100mA"
 		(exclude_from_sim no)
@@ -2357,7 +2364,7 @@
 				)
 			)
 		)
-		(property "Value" "LP2981-3.3"
+		(property "Value" "TLV709A33DBVR"
 			(at 107.95 71.12 0)
 			(effects
 				(font
@@ -2374,7 +2381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp2981.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv709.pdf"
 			(at 107.95 77.47 0)
 			(effects
 				(font
@@ -2383,7 +2390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+		(property "Description" "150mA 30V Low-noise Low-dropout Regulator, 3.3V output voltage, SOT-23-5"
 			(at 107.95 77.47 0)
 			(effects
 				(font
