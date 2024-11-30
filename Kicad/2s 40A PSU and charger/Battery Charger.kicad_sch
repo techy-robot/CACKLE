@@ -2526,12 +2526,6 @@
 		(uuid "15139956-dd7b-4617-abc7-0bc30c03d1a7")
 	)
 	(junction
-		(at 193.04 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "166f91f3-145f-486d-97f8-1e825cebf00e")
-	)
-	(junction
 		(at 200.66 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3115,7 +3109,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 54.61) (xy 193.04 54.61)
+			(xy 176.53 54.61) (xy 199.39 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3752,16 +3746,6 @@
 			(type default)
 		)
 		(uuid "ce277def-d0a0-4811-b91f-54e52b07dbe9")
-	)
-	(wire
-		(pts
-			(xy 199.39 54.61) (xy 193.04 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0ad002d-a936-4962-8726-de522057b4d3")
 	)
 	(wire
 		(pts
@@ -6055,77 +6039,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDPWR")
-		(at 193.04 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "53d9307f-e93f-404a-8abc-e129630ded85")
-		(property "Reference" "#PWR?"
-			(at 193.04 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 188.468 62.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "148d340d-bb5a-42c6-8047-64a7f9d441d4")
-		)
-		(instances
-			(project "Battery Charger"
-				(path "/a7feb2bd-883b-459c-b24f-35371efba833"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 190.5 85.09 270)
 		(unit 1)
@@ -7413,81 +7326,6 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 193.04 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b7a38388-4eee-4711-9841-83dde0c6ad59")
-		(property "Reference" "C?"
-			(at 195.072 57.404 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF,APA0609221M016R"
-			(at 195.834 60.198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x9.9"
-			(at 194.0052 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 193.04 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6031f597-0f4d-4794-9cbd-c8c0aa114a5a")
-		)
-		(pin "2"
-			(uuid "aa02b5d1-d59b-4cf2-889d-d8ce67fd1dee")
-		)
-		(instances
-			(project "Battery Charger"
-				(path "/a7feb2bd-883b-459c-b24f-35371efba833"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
-					(reference "C7")
 					(unit 1)
 				)
 			)

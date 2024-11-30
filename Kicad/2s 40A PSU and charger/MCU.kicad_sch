@@ -2378,7 +2378,7 @@
 		)
 		(uuid "ff3eda7f-d538-4664-a1aa-b43d759cf10b")
 	)
-	(text_box "i2c pins are shared with swd pins, and BOOT is shared with USB D+ (which seems weird and may have potential issues)"
+	(text_box "i2c pins are shared with swd pins, and BOOT is shared with USB D+ (which seems weird and may lead to debugging issues)"
 		(exclude_from_sim no)
 		(at 179.07 105.41 0)
 		(size 24.13 13.97)
