@@ -45,13 +45,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 52.07) (xy 107.95 52.07)
+			(xy 97.79 68.58) (xy 97.79 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b706bff-ad29-4f5d-b609-c79979e37055")
+		(uuid "0431ee2b-4f48-4eac-b99e-1cba1c07d10e")
 	)
 	(wire
 		(pts
@@ -275,16 +275,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 71.12) (xy 207.01 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74c759e0-948a-47a7-9c85-73e66e6e4e85")
-	)
-	(wire
-		(pts
 			(xy 181.61 82.55) (xy 207.01 82.55)
 		)
 		(stroke
@@ -312,6 +302,16 @@
 			(type default)
 		)
 		(uuid "85b02d91-9f0c-46d6-b941-4c0943a61869")
+	)
+	(wire
+		(pts
+			(xy 207.01 72.39) (xy 207.01 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85dc6811-c18e-4e30-a0b6-a187f3fb1c7b")
 	)
 	(wire
 		(pts
@@ -395,6 +395,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 66.04) (xy 97.79 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae1240cd-c286-4064-8d8b-bb91c5adb7ad")
+	)
+	(wire
+		(pts
 			(xy 134.62 95.25) (xy 134.62 125.73)
 		)
 		(stroke
@@ -472,16 +482,6 @@
 			(type default)
 		)
 		(uuid "d04e5156-1214-4025-af39-cb3c85a59684")
-	)
-	(wire
-		(pts
-			(xy 106.68 52.07) (xy 105.41 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2acc569-d3f8-4f85-95ea-3df6641e0e2e")
 	)
 	(wire
 		(pts
@@ -565,13 +565,13 @@
 		(uuid "3a742b6e-588b-4123-a0db-0e438efa19aa")
 	)
 	(label "SDA"
-		(at 106.68 52.07 90)
+		(at 97.79 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5448ac8b-7f4c-4d1d-9bb2-b79173ffb9fa")
 	)
@@ -587,7 +587,7 @@
 		(uuid "61103e63-c5ef-4d73-b028-5ad0e66b6865")
 	)
 	(label "SDA"
-		(at 207.01 71.12 180)
+		(at 207.01 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -598,13 +598,13 @@
 		(uuid "6863c14c-c2f7-414c-acd6-5a365ddeea8e")
 	)
 	(label "SCL"
-		(at 109.22 52.07 90)
+		(at 97.79 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ed9d80f7-d86b-488f-b9f4-8d5afbd3764a")
 	)
@@ -935,22 +935,22 @@
 			(uuid "0d16422f-da81-470d-a87c-774b02c4e2af")
 		)
 		(pin "SDA" output
-			(at 105.41 52.07 90)
+			(at 97.79 64.77 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "5c16a19f-4579-4833-a48f-732e1b06a379")
 		)
 		(pin "SCL" output
-			(at 107.95 52.07 90)
+			(at 97.79 67.31 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "b7ec0542-43c8-4b8b-932f-58b3b22b2976")
 		)
@@ -1113,7 +1113,7 @@
 			(uuid "f741dfb7-903e-47d2-a754-3ea925a87da8")
 		)
 		(pin "SDA" input
-			(at 207.01 69.85 180)
+			(at 207.01 71.12 180)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -141,7 +141,7 @@
 					)
 				)
 				(pin passive line
-					(at 35.56 -10.16 180)
+					(at 35.56 0 180)
 					(length 5.08)
 					(name "NC_4"
 						(effects
@@ -231,7 +231,7 @@
 					)
 				)
 				(pin passive line
-					(at 35.56 0 180)
+					(at 35.56 -10.16 180)
 					(length 5.08)
 					(name "NC_1"
 						(effects
@@ -249,7 +249,7 @@
 					)
 				)
 				(pin passive line
-					(at 35.56 -2.54 180)
+					(at 35.56 -7.62 180)
 					(length 5.08)
 					(name "NC_2"
 						(effects
@@ -285,7 +285,7 @@
 					)
 				)
 				(pin passive line
-					(at 35.56 -7.62 180)
+					(at 35.56 -2.54 180)
 					(length 5.08)
 					(name "NC_3"
 						(effects
@@ -2368,6 +2368,12 @@
 		)
 	)
 	(junction
+		(at 124.46 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "045cce97-d587-47d7-a0bd-2e10def0959d")
+	)
+	(junction
 		(at 68.58 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2452,12 +2458,6 @@
 		(uuid "8931b444-fd0a-4ed5-a209-c3f74d1445ff")
 	)
 	(junction
-		(at 124.46 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b617549-7fd5-4f6a-9753-7cf45435a0b7")
-	)
-	(junction
 		(at 55.88 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2474,6 +2474,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1ffd269-9fba-4808-8ea2-df0939889f11")
+	)
+	(junction
+		(at 113.03 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0121ad4-d934-465a-9c85-eaa84a47477f")
 	)
 	(junction
 		(at 52.07 95.25)
@@ -2498,12 +2504,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e692d623-f751-4eee-a187-a147551baa35")
-	)
-	(junction
-		(at 113.03 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb6e78e8-5ca9-40cc-94bf-b1e658c76634")
 	)
 	(junction
 		(at 73.66 67.31)
@@ -2621,7 +2621,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 67.31) (xy 120.65 67.31)
+			(xy 120.65 67.31) (xy 124.46 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2869,16 +2869,6 @@
 		)
 		(uuid "6c6f5ce8-cf54-4b82-a6b4-61d567a0cfa2")
 	)
-	(wire
-		(pts
-			(xy 127 67.31) (xy 124.46 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "756a55d3-bfe2-4858-a019-03911d64138c")
-	)
 	(polyline
 		(pts
 			(xy 135.89 67.31) (xy 285.75 67.31)
@@ -3048,6 +3038,16 @@
 			(type default)
 		)
 		(uuid "bdf80e02-529b-4ff4-9f15-b305a0a50938")
+	)
+	(wire
+		(pts
+			(xy 124.46 67.31) (xy 127 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be67a93c-ff9a-43f3-b887-06de7cfe5d10")
 	)
 	(wire
 		(pts
@@ -3538,71 +3538,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 113.03 64.77 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e7b2b44-c7a8-4826-964f-70d66d9fdeca")
-		(property "Reference" "#PWR013"
-			(at 118.11 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 96.012 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 113.03 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b30e5c8-2372-4349-a42f-af80bb6a32f2")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/3a3003bc-8e40-4cd7-b859-421f37e4b48c"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
 		(at 55.88 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3948,6 +3883,72 @@
 			(project "Connectors"
 				(path "/ef905b65-82b7-484f-997c-0c6089b83b28"
 					(reference "#FLG?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f965340-c79f-4196-a3f7-efd22a0cdaa9")
+		(property "Reference" "#PWR013"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.266 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5aa58ac7-556c-4ce7-84b8-f52e59da15cc")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/3a3003bc-8e40-4cd7-b859-421f37e4b48c"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4594,6 +4595,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 124.46 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "795671d0-1efd-455f-9894-9145680b722c")
+		(property "Reference" "#PWR06"
+			(at 124.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56b44374-e22a-4979-b16d-a2c5c3fedf90")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/3a3003bc-8e40-4cd7-b859-421f37e4b48c"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 208.28 151.13 0)
 		(unit 1)
@@ -4960,7 +5027,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c6ad37bd-33a9-423b-9c7d-a937d8230e58")
 		(property "Reference" "D11"
 			(at 95.25 52.07 0)
@@ -4971,14 +5037,14 @@
 			)
 		)
 		(property "Value" "CDDFN10-3324P"
-			(at 95.25 54.61 0)
+			(at 94.742 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "CDDFN10-3324P:CDDFN103324P"
+		(property "Footprint" "CDDFN103324P"
 			(at 109.22 154.61 0)
 			(effects
 				(font
@@ -4999,7 +5065,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CDDFN10-3324P - DIODE, ESD PROTECTION, 3.3V, 0.45PF"
-			(at 77.47 59.69 0)
+			(at 77.47 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,71 +5631,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDPWR")
-		(at 124.46 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e9ee1a0c-5816-4402-920d-00b539b343a0")
-		(property "Reference" "#PWR06"
-			(at 124.46 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 130.302 67.818 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 124.46 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "463e433d-dad0-4d83-932e-690a38b8c3e7")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/3a3003bc-8e40-4cd7-b859-421f37e4b48c"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 204.47 34.29 90)
 		(unit 1)
@@ -5718,7 +5719,7 @@
 		(dnp no)
 		(uuid "fea3d835-77df-4aa5-a112-df22ec2af244")
 		(property "Reference" "C1"
-			(at 74.676 45.72 0)
+			(at 87.63 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5728,7 @@
 			)
 		)
 		(property "Value" "10uF, 16v"
-			(at 75.692 47.498 0)
+			(at 88.646 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)

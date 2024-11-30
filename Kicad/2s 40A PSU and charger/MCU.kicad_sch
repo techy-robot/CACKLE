@@ -2128,6 +2128,16 @@
 		)
 		(uuid "6ee82dbe-5817-4a8f-b254-796a8dc4998e")
 	)
+	(polyline
+		(pts
+			(xy 50.8 41.91) (xy 43.18 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7065cd4b-3dd4-4bb0-ac7d-d25da2aa8fa9")
+	)
 	(wire
 		(pts
 			(xy 113.03 83.82) (xy 123.19 83.82)
@@ -2368,6 +2378,16 @@
 		)
 		(uuid "fce04897-1fb2-4b5c-bcdc-9d3829979935")
 	)
+	(polyline
+		(pts
+			(xy 39.37 45.72) (xy 43.18 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe973dfd-bfee-48ae-a51a-eee3c723486b")
+	)
 	(wire
 		(pts
 			(xy 81.28 142.24) (xy 74.93 142.24)
@@ -2473,15 +2493,24 @@
 		)
 		(uuid "b4164978-601e-4ac9-9f4c-9302fbae0439")
 	)
-	(text "Pullups BIG problem?"
+	(text_box "Are i2c pullups a problem for SWD? Its in the spec, but the programmer might already have them"
 		(exclude_from_sim no)
-		(at 49.53 43.688 0)
+		(at 50.8 36.83 0)
+		(size 24.13 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left top)
 		)
-		(uuid "78103f14-999d-4f10-9a46-20e2ab58a1e0")
+		(uuid "c440d61a-3026-47b7-9373-6a1ad6f49da0")
 	)
 	(text "RST does not exist on the QFN28 package"
 		(exclude_from_sim no)
@@ -3582,7 +3611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.6x2.6mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.8x2.8mm"
 			(at 146.05 142.24 0)
 			(effects
 				(font
