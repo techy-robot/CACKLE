@@ -658,7 +658,7 @@
 			)
 			(uuid "a2f9dc6d-3b67-4ebb-abcb-91611163734f")
 		)
-		(pin "BAT+" bidirectional
+		(pin "+BAT" bidirectional
 			(at 181.61 80.01 0)
 			(effects
 				(font
@@ -668,7 +668,7 @@
 			)
 			(uuid "49823cb4-9993-4fc3-9512-bd384dc92246")
 		)
-		(pin "BAT-" bidirectional
+		(pin "-BAT" bidirectional
 			(at 181.61 85.09 0)
 			(effects
 				(font
@@ -816,7 +816,7 @@
 			)
 			(uuid "15c774bd-1b77-4187-8e1c-fb6bd681eee6")
 		)
-		(pin "BAT+" bidirectional
+		(pin "+BAT" bidirectional
 			(at 170.18 130.81 0)
 			(effects
 				(font
@@ -1102,7 +1102,7 @@
 				(justify left top)
 			)
 		)
-		(pin "BAT-" bidirectional
+		(pin "-BAT" bidirectional
 			(at 207.01 85.09 180)
 			(effects
 				(font
@@ -1132,7 +1132,7 @@
 			)
 			(uuid "e09c2ffb-e854-4f5f-b271-30b66e378195")
 		)
-		(pin "BAT+" bidirectional
+		(pin "+BAT" bidirectional
 			(at 207.01 80.01 180)
 			(effects
 				(font
@@ -1230,7 +1230,7 @@
 			)
 			(uuid "0e01db4b-85ce-4611-a0ce-28ed28f1d300")
 		)
-		(pin "BAT+" bidirectional
+		(pin "+BAT" bidirectional
 			(at 91.44 119.38 0)
 			(effects
 				(font

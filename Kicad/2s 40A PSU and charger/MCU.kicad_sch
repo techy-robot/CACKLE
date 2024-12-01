@@ -2675,6 +2675,16 @@
 			(justify left)
 		)
 		(uuid "1f0c5cf5-fbb3-4c45-9912-9d24f59f5d31")
+		(property "Netclass" "Logic Pwr"
+			(at 142.24 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(hierarchical_label "PWRON"
 		(shape output)
@@ -2879,6 +2889,16 @@
 			(justify right)
 		)
 		(uuid "f10fe0b7-4c0b-4663-a336-1256745373df")
+		(property "Netclass" "Logic Pwr"
+			(at 82.55 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "3.3v"
 		(shape input)
@@ -2891,6 +2911,16 @@
 			(justify left)
 		)
 		(uuid "f2334a12-bd34-4c7f-a334-46d2886f642a")
+		(property "Netclass" "Logic Pwr"
+			(at 31.75 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(hierarchical_label "SCL"
 		(shape output)

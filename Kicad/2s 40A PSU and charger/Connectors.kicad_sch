@@ -2901,7 +2901,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 163.83) (xy 60.96 163.83)
+			(xy 68.58 163.83) (xy 59.69 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2981,7 +2981,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 168.91) (xy 68.58 168.91)
+			(xy 59.69 168.91) (xy 68.58 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3161,7 +3161,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 166.37) (xy 68.58 166.37)
+			(xy 59.69 166.37) (xy 68.58 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3316,6 +3316,16 @@
 		)
 		(uuid "3d98db59-a5f5-4f96-8406-840c1bdab2b5")
 	)
+	(text "IT THINKS THESE ARE DIFFERENTIAL PAIRS. Fix it"
+		(exclude_from_sim no)
+		(at 55.626 126.746 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6e2fd625-27e9-426d-aaaf-e8c220769ddf")
+	)
 	(text "Inputs"
 		(exclude_from_sim no)
 		(at 123.444 16.51 0)
@@ -3379,10 +3389,20 @@
 			(justify left)
 		)
 		(uuid "48083b62-ea59-4c84-aec6-d8233dd129e7")
+		(property "Netclass" "High Current"
+			(at 203.2 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(hierarchical_label "Bat Cell 1"
 		(shape bidirectional)
-		(at 60.96 166.37 180)
+		(at 59.69 166.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3391,6 +3411,17 @@
 			(justify right)
 		)
 		(uuid "48ecf87d-fce7-46db-9ba3-e383dbd3fa71")
+		(property "Netclass" "Logic Power"
+			(at 59.69 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "CC1"
 		(shape bidirectional)
@@ -3404,9 +3435,9 @@
 		)
 		(uuid "568c763a-76d9-48c1-a1f1-125370ebdd12")
 	)
-	(hierarchical_label "BAT+"
+	(hierarchical_label "+BAT"
 		(shape bidirectional)
-		(at 60.96 168.91 180)
+		(at 59.69 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3415,8 +3446,18 @@
 			(justify right)
 		)
 		(uuid "59d0d3b9-cdfd-4123-8c45-bd7df10378a1")
+		(property "Netclass" "High Current"
+			(at 59.69 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
-	(hierarchical_label "BAT-"
+	(hierarchical_label "-BAT"
 		(shape bidirectional)
 		(at 68.58 138.43 180)
 		(fields_autoplaced yes)
@@ -3427,6 +3468,16 @@
 			(justify right)
 		)
 		(uuid "7ea309b0-17b8-41ad-a2e1-7369d1f765bc")
+		(property "Netclass" "High Current"
+			(at 68.58 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "MOTORPWR"
 		(shape input)
@@ -3439,8 +3490,18 @@
 			(justify left)
 		)
 		(uuid "88b3f2ec-1cf2-4080-9f82-d39a016186f5")
+		(property "Netclass" "High Current"
+			(at 203.2 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
-	(hierarchical_label "BAT+"
+	(hierarchical_label "+BAT"
 		(shape bidirectional)
 		(at 68.58 132.08 180)
 		(fields_autoplaced yes)
@@ -3451,6 +3512,16 @@
 			(justify right)
 		)
 		(uuid "8c16ff1b-6006-454f-95c7-155e1f05b592")
+		(property "Netclass" "High Current"
+			(at 68.58 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "CC2"
 		(shape bidirectional)
@@ -3476,9 +3547,9 @@
 		)
 		(uuid "c4b23d3d-5144-4bc8-9e89-04ad33b1fcff")
 	)
-	(hierarchical_label "BAT-"
+	(hierarchical_label "-BAT"
 		(shape bidirectional)
-		(at 60.96 163.83 180)
+		(at 59.69 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3487,6 +3558,16 @@
 			(justify right)
 		)
 		(uuid "d5f4c2d5-5e45-4e4b-adc7-cfd3386c0ffa")
+		(property "Netclass" "High Current"
+			(at 59.69 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "3.3v"
 		(shape input)
@@ -3499,6 +3580,16 @@
 			(justify right)
 		)
 		(uuid "e0350548-9e44-4f9a-9a8d-7c992ecbf855")
+		(property "Netclass" "High Current"
+			(at 198.12 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "D+"
 		(shape bidirectional)
@@ -3523,6 +3614,16 @@
 			(justify left)
 		)
 		(uuid "ff4875ea-cd7f-4940-b3cd-c934fc0b2dcd")
+		(property "Netclass" "USB-C pwr"
+			(at 97.79 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(hierarchical_label "RS485-"
 		(shape bidirectional)
@@ -5044,7 +5145,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CDDFN103324P"
+		(property "Footprint" "CDDFN10-3324P:CDDFN103324P"
 			(at 109.22 154.61 0)
 			(effects
 				(font
