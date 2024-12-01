@@ -5,8 +5,10 @@
 	(uuid "a7feb2bd-883b-459c-b24f-35371efba833")
 	(paper "A4")
 	(title_block
-		(date "2024-11-28")
-		(rev "V1 Alpha")
+		(title "CACKLE 2s 40A PSU & Charger")
+		(date "2024-12-01")
+		(rev "V1")
+		(comment 1 "Author: Asher Edwards")
 	)
 	(lib_symbols
 		(symbol "BQ24780s:BQ24780SRUYR"
