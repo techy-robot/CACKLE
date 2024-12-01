@@ -2721,6 +2721,29 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 187.96 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30b789cc-5b51-4c3e-accd-717a919253f1")
+		(property "Netclass" "Logic Pwr"
+			(at 188.6585 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 176.53 85.09 0)
 		(fields_autoplaced yes)
 		(effects

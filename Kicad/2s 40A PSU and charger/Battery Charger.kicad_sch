@@ -4897,7 +4897,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.16mm"
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
 			(at 220.98 110.49 0)
 			(effects
 				(font
@@ -5142,7 +5142,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.16mm"
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
 			(at 213.36 110.49 0)
 			(effects
 				(font
@@ -7222,7 +7222,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.16mm"
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
 			(at 90.17 58.42 0)
 			(effects
 				(font
@@ -8397,7 +8397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.16mm"
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
 			(at 132.08 57.15 0)
 			(effects
 				(font
@@ -9842,7 +9842,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.16mm"
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
 			(at 124.46 57.15 0)
 			(effects
 				(font

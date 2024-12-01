@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -591,6 +591,7 @@
       "GND": "Logic Power",
       "GNDPWR": "High Current GND",
       "Net-(C18-Pad2)": "Logic Pwr",
+      "Net-(D1-A)": "Logic Pwr",
       "Net-(D1-K)": "Logic Pwr",
       "Net-(D2-A)": "Logic Power",
       "Net-(D2-K)": "Logic Power",
