@@ -10,7 +10,401 @@
 		(rev "V1")
 		(comment 1 "Author: Asher Edwards")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 110.49 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1efffb4f-5083-4b65-80fc-2431af9fbed9")
+	)
 	(junction
 		(at 165.1 116.84)
 		(diameter 0)
@@ -24,10 +418,22 @@
 		(uuid "ab16a1a4-ddd7-4941-b125-887a99519bba")
 	)
 	(junction
+		(at 107.95 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc865630-7b90-42c8-9115-0985d49fa902")
+	)
+	(junction
 		(at 189.23 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8b03193-6f0e-4a0b-84f6-70205eafaee7")
+	)
+	(junction
+		(at 110.49 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb90247e-347a-4f40-8e45-a88c5ae05a48")
 	)
 	(junction
 		(at 189.23 80.01)
@@ -54,6 +460,26 @@
 			(type default)
 		)
 		(uuid "0431ee2b-4f48-4eac-b99e-1cba1c07d10e")
+	)
+	(wire
+		(pts
+			(xy 107.95 123.19) (xy 107.95 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a09b29f-6758-4111-b062-4cd3dcbb5ee8")
+	)
+	(wire
+		(pts
+			(xy 71.12 121.92) (xy 71.12 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fb596d6-3a92-4164-8cac-b4adb4890902")
 	)
 	(wire
 		(pts
@@ -94,6 +520,16 @@
 			(type default)
 		)
 		(uuid "1ed2b064-65eb-47ae-8a34-a8fd6d8fbf0a")
+	)
+	(wire
+		(pts
+			(xy 110.49 147.32) (xy 127 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2189a57a-85f5-4dbf-a16b-326b40bbf72d")
 	)
 	(wire
 		(pts
@@ -167,6 +603,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 134.62) (xy 110.49 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39123e29-7f5e-4125-9ed8-b5281d07448e")
+	)
+	(wire
+		(pts
 			(xy 91.44 116.84) (xy 165.1 116.84)
 		)
 		(stroke
@@ -177,6 +623,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 147.32) (xy 110.49 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a76fc9c-1978-47b5-937b-1dd74cdda3e3")
+	)
+	(wire
+		(pts
 			(xy 181.61 85.09) (xy 207.01 85.09)
 		)
 		(stroke
@@ -184,6 +640,16 @@
 			(type default)
 		)
 		(uuid "4cbab67b-d754-4ade-9a9b-15b092a6ffa7")
+	)
+	(wire
+		(pts
+			(xy 107.95 114.3) (xy 107.95 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ded911-5cb4-4351-a95b-27fd229c626f")
 	)
 	(wire
 		(pts
@@ -204,6 +670,16 @@
 			(type default)
 		)
 		(uuid "5e326de8-39ca-4ec8-af64-6c940e4f9941")
+	)
+	(wire
+		(pts
+			(xy 107.95 130.81) (xy 107.95 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f169150-0ef2-4d6a-90a8-46687b2d087a")
 	)
 	(wire
 		(pts
@@ -247,16 +723,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 119.38) (xy 189.23 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70c60828-8212-464d-8452-2c1a04e03220")
-	)
-	(wire
-		(pts
 			(xy 74.93 102.87) (xy 74.93 81.28)
 		)
 		(stroke
@@ -267,7 +733,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 114.3) (xy 160.02 114.3)
+			(xy 91.44 114.3) (xy 107.95 114.3)
 		)
 		(stroke
 			(width 0)
@@ -297,6 +763,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 114.3) (xy 160.02 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81bfe86f-8e2d-4823-ad4a-18afa4b3f4b5")
+	)
+	(wire
+		(pts
 			(xy 165.1 116.84) (xy 165.1 125.73)
 		)
 		(stroke
@@ -317,6 +793,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 134.62) (xy 115.57 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87ea4d3b-2df9-48ff-89ae-cb2e36353cf6")
+	)
+	(wire
+		(pts
 			(xy 163.83 69.85) (xy 163.83 59.69)
 		)
 		(stroke
@@ -334,6 +820,16 @@
 			(type default)
 		)
 		(uuid "9053b374-9325-4fe0-911c-c1031848a401")
+	)
+	(wire
+		(pts
+			(xy 110.49 142.24) (xy 110.49 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c94cb8a-84ed-469e-8e03-d0ca11671361")
 	)
 	(wire
 		(pts
@@ -467,6 +963,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 127) (xy 115.57 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c37f3f6e-9810-4df9-87ed-7e92050f71cf")
+	)
+	(wire
+		(pts
 			(xy 134.62 77.47) (xy 148.59 77.47)
 		)
 		(stroke
@@ -517,6 +1023,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 119.38) (xy 189.23 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde54a67-22c2-438c-a85b-c3ac890ddbdc")
+	)
+	(wire
+		(pts
 			(xy 171.45 99.06) (xy 171.45 69.85)
 		)
 		(stroke
@@ -543,6 +1059,36 @@
 			(justify left top)
 		)
 		(uuid "3601b890-389c-4ace-a217-9aa5061f1d65")
+	)
+	(text_box "I might want to find a better diode for blocking current, but 0.01ma leakage doesn't seem bad"
+		(exclude_from_sim no)
+		(at 260.35 147.32 0)
+		(size 24.13 11.43)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type color)
+			(color 255 10 16 0)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cf74b19e-4235-425b-88f9-e732708d98e6")
+	)
+	(text "0805 Resistor"
+		(exclude_from_sim no)
+		(at 95.25 137.922 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4884c973-f377-4660-b129-559354f9c29d")
 	)
 	(label "SDA"
 		(at 170.18 140.97 0)
@@ -609,6 +1155,475 @@
 			(justify right bottom)
 		)
 		(uuid "ed9d80f7-d86b-488f-b9f4-8d5afbd3764a")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 134.62 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06a003f0-2c40-4b51-abb4-f5667ab21ab7")
+		(property "Netclass" "Logic Power"
+			(at 102.87 130.048 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 115.57 125.73 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2698e34c-455c-4396-9edd-1f98c754d89f")
+		(property "Netclass" "Logic Power"
+			(at 109.982 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 83.82 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64d45ffb-0c9a-4fc0-b080-fb1f5d683d39")
+		(property "Netclass" "Logic Power"
+			(at 88.392 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 123.19 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6adb33d2-0731-47d1-83db-daf76ca4c264")
+		(property "Netclass" "Logic Power"
+			(at 109.22 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cfe10e6-8815-4a9d-88af-47bf6eae02ce")
+		(property "Reference" "R9"
+			(at 105.664 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10 ohm"
+			(at 113.792 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 112.268 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41d72c2c-63fb-4f3e-8514-cd5f9cac0f6a")
+		)
+		(pin "1"
+			(uuid "a0784388-8d7b-4662-a8b3-cceba9063d48")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 107.95 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b460ef08-ec73-4263-afd9-da30e29d24b2")
+		(property "Reference" "D3"
+			(at 105.41 128.5876 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GSDH3005"
+			(at 105.41 126.0476 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "886ea123-946f-46c1-bc6e-e152ee8f2f2c")
+		)
+		(pin "1"
+			(uuid "691fd473-aae4-4087-9c5b-f6f231c5db6d")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 115.57 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "eaadaaf0-1f83-4b1d-9698-ea5a4cdfef92")
+		(property "Reference" "NT10"
+			(at 114.3 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PWR NetTie"
+			(at 110.236 121.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.28mm"
+			(at 115.57 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 115.57 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39d98168-5d21-4a77-8a91-b91e6a6b7f0c")
+		)
+		(pin "2"
+			(uuid "598e6775-323d-4fae-90b0-8c24e77533ad")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "NT10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 115.57 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9b7317f-16c3-48c3-ac6c-b5fd97d8db33")
+		(property "Reference" "D2"
+			(at 118.11 129.8574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GSDH3005"
+			(at 118.11 132.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "998d3aa2-fed5-45c8-b71f-3efd3202448b")
+		)
+		(pin "1"
+			(uuid "8ac2e8f9-9a16-4dc6-85b8-3ccfa9e62bcd")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 107.95 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "feb2cb34-78ee-40f0-a29d-c5fd82433d73")
+		(property "Reference" "NT12"
+			(at 105.664 118.872 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PWR NetTie"
+			(at 102.362 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.28mm"
+			(at 107.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 107.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c21c5f91-0d8a-4ca1-af9f-7f22bc86b71f")
+		)
+		(pin "2"
+			(uuid "5c6ae266-1ffc-485a-9ece-473062833883")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "NT12")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet
 		(at 148.59 69.85)
@@ -887,6 +1902,16 @@
 				(justify right)
 			)
 			(uuid "0f5e7e68-1184-4699-87ec-93a8568ac697")
+		)
+		(pin "Always On PWR" input
+			(at 127 147.32 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "36ca4bea-57b1-419b-9ef3-87e56af01b74")
 		)
 		(instances
 			(project "2s 40A PSU and charger"
@@ -1232,16 +2257,6 @@
 			)
 			(uuid "0e01db4b-85ce-4611-a0ce-28ed28f1d300")
 		)
-		(pin "+BAT" bidirectional
-			(at 91.44 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "99d3fa99-c9a2-40f6-9c97-07b1de6daf8a")
-		)
 		(pin "MOTORPWR" input
 			(at 91.44 114.3 0)
 			(effects
@@ -1251,6 +2266,16 @@
 				(justify right)
 			)
 			(uuid "9986bc65-9e98-4fa3-aa01-7525ce75e1e2")
+		)
+		(pin "Always On PWR" input
+			(at 71.12 121.92 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "01d124a9-5e61-4905-a0ac-684ac88a569e")
 		)
 		(instances
 			(project "2s 40A PSU and charger"
