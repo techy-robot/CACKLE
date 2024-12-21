@@ -1680,6 +1680,12 @@
 		(uuid "2fef169c-786d-4993-a1b0-ea23bfe51d3e")
 	)
 	(junction
+		(at 62.23 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b95588c-1091-4496-87fc-3b78e79e263d")
+	)
+	(junction
 		(at 156.21 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1708,12 +1714,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a2ed0f2-9a5e-4b54-b334-a038f2697500")
-	)
-	(junction
-		(at 99.06 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d44ee66-3e4c-4275-b3ff-f9b3a33891d9")
 	)
 	(junction
 		(at 254 91.44)
@@ -1929,16 +1929,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 92.71) (xy 101.6 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28fc4fac-ad69-4438-8349-a7569202b1fc")
-	)
-	(wire
-		(pts
 			(xy 101.6 74.93) (xy 101.6 77.47)
 		)
 		(stroke
@@ -1959,7 +1949,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 113.03) (xy 99.06 113.03)
+			(xy 85.09 113.03) (xy 90.17 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1996,6 +1986,26 @@
 			(type default)
 		)
 		(uuid "44f0d599-e197-46b4-b917-82df5778d8f9")
+	)
+	(wire
+		(pts
+			(xy 73.66 106.68) (xy 62.23 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c3cf03-8be3-48a3-99f7-cb8ee7b7073e")
+	)
+	(wire
+		(pts
+			(xy 73.66 92.71) (xy 73.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a9f1319-5bd2-41c7-ac53-63b2bef67303")
 	)
 	(wire
 		(pts
@@ -2079,16 +2089,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 92.71) (xy 99.06 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82ab1aba-a8eb-48af-8f98-c13f2b966f63")
-	)
-	(wire
-		(pts
 			(xy 148.59 87.63) (xy 148.59 85.09)
 		)
 		(stroke
@@ -2126,6 +2126,16 @@
 			(type default)
 		)
 		(uuid "96d3e355-2a4c-4eda-8ffd-9f5be349f131")
+	)
+	(wire
+		(pts
+			(xy 62.23 106.68) (xy 62.23 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "993775a1-76e6-4430-990c-219c35d434e4")
 	)
 	(wire
 		(pts
@@ -2207,6 +2217,16 @@
 		)
 		(uuid "a6e1130f-cd04-47f3-90c3-8cef15fa8b3c")
 	)
+	(wire
+		(pts
+			(xy 73.66 92.71) (xy 101.6 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a878f742-1315-4f63-9976-13c8cab886ad")
+	)
 	(polyline
 		(pts
 			(xy 86.36 72.39) (xy 95.25 72.39)
@@ -2229,7 +2249,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 101.6) (xy 62.23 113.03)
+			(xy 62.23 101.6) (xy 62.23 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2457,6 +2477,25 @@
 		)
 		(uuid "fd4e107d-9cd8-4a75-b7b4-f86fddab4f3d")
 	)
+	(text_box "This must be connected to battery ground to operate in shutdown mode and recover"
+		(exclude_from_sim no)
+		(at 147.32 57.15 0)
+		(size 20.32 13.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5bc9de0f-3053-4a5e-b7a4-c5f6bfeaa3df")
+	)
 	(text_box "Can be configured standalone, but requires TI specialist programming and an I2C lockdown"
 		(exclude_from_sim no)
 		(at 125.73 116.84 0)
@@ -2574,6 +2613,28 @@
 	)
 	(hierarchical_label "-BAT"
 		(shape bidirectional)
+		(at 148.59 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c75b905-c60e-4aa3-bddf-39c3b5498452")
+		(property "Netclass" "High Current"
+			(at 148.59 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(hierarchical_label "-BAT"
+		(shape bidirectional)
 		(at 223.52 91.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -2681,6 +2742,28 @@
 					(italic yes)
 				)
 				(justify right)
+			)
+		)
+	)
+	(hierarchical_label "-BAT"
+		(shape bidirectional)
+		(at 165.1 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2123e0e-0c6b-4c5f-919b-8487096e3fd5")
+		(property "Netclass" "High Current"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -3063,71 +3146,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDPWR")
-		(at 148.59 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "14daa60a-5afb-493d-8ac0-0406aa530ad2")
-		(property "Reference" "#PWR02"
-			(at 148.59 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 150.114 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 148.59 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28ee78a2-2c7d-4bb8-a2cc-fab105ccb5fa")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "BQ76905:BQ76905RGRR")
 		(at 101.6 74.93 0)
 		(unit 1)
@@ -3249,71 +3267,6 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 165.1 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2f9f3bb4-7b8b-494e-8f60-b3ab824eb484")
-		(property "Reference" "#PWR04"
-			(at 165.1 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 166.624 78.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 165.1 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b660bb8-620f-4bd4-aa3f-cee70bf0b4cc")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3697,7 +3650,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 99.06 113.03 0)
+		(at 90.17 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3705,7 +3658,7 @@
 		(dnp no)
 		(uuid "6ae71304-e24d-41d9-a476-6c5629af2ea8")
 		(property "Reference" "#PWR01"
-			(at 99.06 118.11 0)
+			(at 90.17 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,7 +3667,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 100.584 117.094 0)
+			(at 91.694 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 114.3 0)
+			(at 90.17 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3731,7 +3684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 114.3 0)
+			(at 90.17 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3740,7 +3693,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 99.06 113.03 0)
+			(at 90.17 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
