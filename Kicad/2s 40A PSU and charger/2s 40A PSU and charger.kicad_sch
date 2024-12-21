@@ -424,12 +424,6 @@
 		(uuid "ab16a1a4-ddd7-4941-b125-887a99519bba")
 	)
 	(junction
-		(at 107.95 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc865630-7b90-42c8-9115-0985d49fa902")
-	)
-	(junction
 		(at 189.23 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -440,6 +434,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb90247e-347a-4f40-8e45-a88c5ae05a48")
+	)
+	(junction
+		(at 107.95 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f97356a8-b7ac-4870-a9dd-364f285024ea")
 	)
 	(junction
 		(at 189.23 80.01)
@@ -469,7 +469,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 123.19) (xy 107.95 120.65)
+			(xy 107.95 123.19) (xy 107.95 121.92)
 		)
 		(stroke
 			(width 0)
@@ -629,7 +629,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 116.84) (xy 165.1 116.84)
+			(xy 91.44 116.84) (xy 107.95 116.84)
 		)
 		(stroke
 			(width 0)
@@ -656,16 +656,6 @@
 			(type default)
 		)
 		(uuid "4cbab67b-d754-4ade-9a9b-15b092a6ffa7")
-	)
-	(wire
-		(pts
-			(xy 107.95 114.3) (xy 107.95 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53ded911-5cb4-4351-a95b-27fd229c626f")
 	)
 	(wire
 		(pts
@@ -759,7 +749,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 114.3) (xy 107.95 114.3)
+			(xy 91.44 114.3) (xy 160.02 114.3)
 		)
 		(stroke
 			(width 0)
@@ -786,16 +776,6 @@
 			(type default)
 		)
 		(uuid "79ad1b66-b938-4ce6-9865-3ccda9343574")
-	)
-	(wire
-		(pts
-			(xy 107.95 114.3) (xy 160.02 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81bfe86f-8e2d-4823-ad4a-18afa4b3f4b5")
 	)
 	(wire
 		(pts
@@ -846,6 +826,16 @@
 			(type default)
 		)
 		(uuid "9053b374-9325-4fe0-911c-c1031848a401")
+	)
+	(wire
+		(pts
+			(xy 107.95 116.84) (xy 165.1 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94899d9c-8830-4bbe-93ee-c70953963cf9")
 	)
 	(wire
 		(pts
@@ -1604,7 +1594,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 107.95 118.11 90)
+		(at 107.95 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1612,7 +1602,7 @@
 		(dnp no)
 		(uuid "feb2cb34-78ee-40f0-a29d-c5fd82433d73")
 		(property "Reference" "NT12"
-			(at 105.664 118.872 90)
+			(at 105.664 120.142 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1611,7 @@
 			)
 		)
 		(property "Value" "PWR NetTie"
-			(at 102.362 116.586 90)
+			(at 102.362 117.856 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,7 +1620,7 @@
 			)
 		)
 		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.28mm"
-			(at 107.95 118.11 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1629,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 118.11 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1648,7 +1638,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 107.95 118.11 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
