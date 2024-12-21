@@ -1354,16 +1354,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 76.2) (xy 179.07 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "264b618a-6b37-484d-8e23-9da48d43518b")
-	)
-	(wire
-		(pts
 			(xy 83.82 80.01) (xy 93.98 80.01)
 		)
 		(stroke
@@ -1481,6 +1471,16 @@
 			(type default)
 		)
 		(uuid "4d763a29-a21c-4f16-8cc9-57fc73f59d9f")
+	)
+	(wire
+		(pts
+			(xy 171.45 76.2) (xy 179.07 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56473e4d-5ed2-4d9d-9f31-9df2bd8ba809")
 	)
 	(wire
 		(pts
@@ -1819,7 +1819,7 @@
 	)
 	(hierarchical_label "MOTORPWR"
 		(shape input)
-		(at 173.99 76.2 180)
+		(at 171.45 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1828,6 +1828,28 @@
 			(justify right)
 		)
 		(uuid "cd69650e-45ef-4344-b75e-f6d0d370ea4c")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 184.15 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "988005f6-9727-453c-823f-e77e19b4bb69")
+		(property "Netclass" "Charge Current"
+			(at 178.816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(netclass_flag ""
 		(length 2.54)
