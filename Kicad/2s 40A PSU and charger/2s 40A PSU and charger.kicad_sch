@@ -406,6 +406,12 @@
 		(uuid "1efffb4f-5083-4b65-80fc-2431af9fbed9")
 	)
 	(junction
+		(at 74.93 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81db86ab-5c04-44e7-ba26-6457af2784b9")
+	)
+	(junction
 		(at 165.1 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -550,6 +556,16 @@
 			(type default)
 		)
 		(uuid "26f1ffa6-88c2-4362-a00b-1e5c358fef48")
+	)
+	(wire
+		(pts
+			(xy 64.77 99.06) (xy 74.93 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b12847f-7a2a-482d-8c62-5310e7984dcb")
 	)
 	(wire
 		(pts
@@ -703,6 +719,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 99.06) (xy 74.93 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c04bbce-afd2-4887-92c9-fdb9b57c49b1")
+	)
+	(wire
+		(pts
 			(xy 166.37 69.85) (xy 166.37 57.15)
 		)
 		(stroke
@@ -723,7 +749,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 102.87) (xy 74.93 81.28)
+			(xy 74.93 102.87) (xy 74.93 99.06)
 		)
 		(stroke
 			(width 0)
@@ -820,6 +846,16 @@
 			(type default)
 		)
 		(uuid "9053b374-9325-4fe0-911c-c1031848a401")
+	)
+	(wire
+		(pts
+			(xy 127 151.13) (xy 64.77 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97d157fd-3132-4631-aed4-99a094bd179c")
 	)
 	(wire
 		(pts
@@ -970,6 +1006,16 @@
 			(type default)
 		)
 		(uuid "c37f3f6e-9810-4df9-87ed-7e92050f71cf")
+	)
+	(wire
+		(pts
+			(xy 64.77 151.13) (xy 64.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3baae44-26aa-4585-9e50-e8b8a0d2f292")
 	)
 	(wire
 		(pts
@@ -1785,7 +1831,7 @@
 	)
 	(sheet
 		(at 127 125.73)
-		(size 43.18 26.67)
+		(size 43.18 29.21)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1805,7 +1851,7 @@
 			)
 		)
 		(property "Sheetfile" "Battery Charger.kicad_sch"
-			(at 127 152.9846 0)
+			(at 127 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,6 +1958,16 @@
 				(justify left)
 			)
 			(uuid "36ca4bea-57b1-419b-9ef3-87e56af01b74")
+		)
+		(pin "MCU3.3v" input
+			(at 127 151.13 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "60a7469d-da69-4c47-8a21-f4926466f521")
 		)
 		(instances
 			(project "2s 40A PSU and charger"

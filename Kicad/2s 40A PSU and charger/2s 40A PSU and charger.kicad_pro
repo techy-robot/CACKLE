@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -587,6 +587,7 @@
       "/Battery Balancer/Up": "Logic Pwr",
       "/Battery Charger/Always On PWR": "Logic Power",
       "/Battery Charger/IN": "USB-C pwr",
+      "/Battery Charger/MCU3.3v": "Logic Pwr",
       "/Battery Charger/MOTORPWR": "High Current",
       "/Battery Charger/REGN": "Logic Pwr",
       "/Connectors/3.3v": "Charge Current",
