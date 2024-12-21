@@ -2439,6 +2439,25 @@
 		)
 		(uuid "24190ff9-7528-476a-b98b-0f3f204755a6")
 	)
+	(text_box "How am I going to have the main host connect and communicate rs485 with the network? USB or SPI?"
+		(exclude_from_sim no)
+		(at 190.5 138.43 0)
+		(size 45.72 8.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "29b0dfca-023a-4988-8fe1-a67a85a2a848")
+	)
 	(text_box "PC 10 and 11 are tied to these USB pins, so make sure to configure them floating"
 		(exclude_from_sim no)
 		(at 179.07 91.44 0)
@@ -4122,9 +4141,9 @@
 		(at 29.21 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e4dc8018-42f2-4d19-96b1-366b0ca276d6")
 		(property "Reference" "J12"
