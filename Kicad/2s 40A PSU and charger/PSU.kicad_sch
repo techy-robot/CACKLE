@@ -1884,7 +1884,7 @@
 			(justify right bottom)
 		)
 		(uuid "d56aa8a4-3258-46f1-a48f-450b23dcd1c6")
-		(property "Netclass" "Logic Power"
+		(property "Netclass" "Logic Pwr"
 			(at 148.59 139.192 90)
 			(effects
 				(font

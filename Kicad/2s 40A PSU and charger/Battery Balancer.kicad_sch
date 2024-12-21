@@ -2544,6 +2544,16 @@
 			(justify left bottom)
 		)
 		(uuid "02402551-db14-43e8-a438-5d9e90aca6d4")
+		(property "Netclass" "Logic Pwr"
+			(at 267.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "Mid"
 		(at 267.97 85.09 0)
@@ -2555,6 +2565,16 @@
 			(justify left bottom)
 		)
 		(uuid "07e33c1f-1da8-4bd5-a835-51ee6bef88ee")
+		(property "Netclass" "Logic Pwr"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "Up"
 		(at 147.32 82.55 0)
@@ -2577,6 +2597,16 @@
 			(justify left bottom)
 		)
 		(uuid "2808568c-c8c5-4ffe-80c2-f6346212896f")
+		(property "Netclass" "Logic Pwr"
+			(at 267.97 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "Low"
 		(at 97.79 85.09 180)
@@ -2884,75 +2914,6 @@
 		(uuid "706fbdd6-3637-4575-9b6f-d63c10213ea3")
 		(property "Netclass" "Logic Pwr"
 			(at 240.7285 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 262.89 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "89781016-ceb5-4b03-bb88-6cd5f03cc710")
-		(property "Netclass" "Logic Pwr"
-			(at 263.5885 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 262.89 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "94cf9d2c-e75a-4dfa-8d80-2a370993c570")
-		(property "Netclass" "Logic Pwr"
-			(at 263.5885 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 262.89 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0b09e2c-c56e-45b7-bc8c-9504c20c446d")
-		(property "Netclass" "Logic Pwr"
-			(at 263.5885 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)

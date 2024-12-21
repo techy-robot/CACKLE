@@ -1195,7 +1195,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 107.95 134.62 90)
+		(at 110.49 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1203,8 +1203,8 @@
 			(justify left bottom)
 		)
 		(uuid "06a003f0-2c40-4b51-abb4-f5667ab21ab7")
-		(property "Netclass" "Logic Power"
-			(at 102.87 130.048 90)
+		(property "Netclass" "Logic Pwr"
+			(at 108.712 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,7 +1225,7 @@
 			(justify right bottom)
 		)
 		(uuid "2698e34c-455c-4396-9edd-1f98c754d89f")
-		(property "Netclass" "Logic Power"
+		(property "Netclass" "Logic Pwr"
 			(at 109.982 127 0)
 			(effects
 				(font
@@ -1247,7 +1247,7 @@
 			(justify left bottom)
 		)
 		(uuid "64d45ffb-0c9a-4fc0-b080-fb1f5d683d39")
-		(property "Netclass" "Logic Power"
+		(property "Netclass" "Logic Pwr"
 			(at 88.392 142.24 0)
 			(effects
 				(font
@@ -1269,7 +1269,7 @@
 			(justify left bottom)
 		)
 		(uuid "6adb33d2-0731-47d1-83db-daf76ca4c264")
-		(property "Netclass" "Logic Power"
+		(property "Netclass" "Logic Pwr"
 			(at 109.22 121.92 0)
 			(effects
 				(font
