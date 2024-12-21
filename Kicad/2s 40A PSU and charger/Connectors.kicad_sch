@@ -3921,7 +3921,7 @@
 			(justify right)
 		)
 		(uuid "e0350548-9e44-4f9a-9a8d-7c992ecbf855")
-		(property "Netclass" "High Current"
+		(property "Netclass" "Charge Current"
 			(at 198.12 46.99 0)
 			(effects
 				(font

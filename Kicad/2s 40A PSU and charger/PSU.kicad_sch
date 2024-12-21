@@ -791,6 +791,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
 		(symbol "power:GND"
@@ -1221,6 +1239,12 @@
 		(uuid "8de77615-cb18-4dcd-b4e1-11b40c3d5466")
 	)
 	(junction
+		(at 107.95 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ed8b9af-dadf-4bd9-af8b-47d2804972a9")
+	)
+	(junction
 		(at 243.84 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1243,6 +1267,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e29683d1-fc77-41d2-85f7-a65d54399ccf")
+	)
+	(no_connect
+		(at 116.84 69.85)
+		(uuid "5ddf5dc2-d3f2-4caa-b0ac-e9d3010390ec")
 	)
 	(wire
 		(pts
@@ -1433,6 +1461,16 @@
 			(type default)
 		)
 		(uuid "4903b33f-f3bd-4134-bb00-1f8a1884a18c")
+	)
+	(wire
+		(pts
+			(xy 107.95 64.77) (xy 107.95 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a7e92e8-ca68-4db4-a8d3-613db77f5f4d")
 	)
 	(wire
 		(pts
@@ -2016,6 +2054,9 @@
 		)
 		(pin "1"
 			(uuid "841c12fb-47ed-4766-abf1-2a650814a190")
+		)
+		(pin "7"
+			(uuid "ecc9e7f3-8752-4a3e-9d7c-505fb01ef374")
 		)
 		(instances
 			(project ""
