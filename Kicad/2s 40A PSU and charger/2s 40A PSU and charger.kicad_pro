@@ -249,7 +249,6 @@
   "erc": {
     "erc_exclusions": [
       "pin_to_pin|1181100|685800|e9978583-6e37-4ce1-924b-3a6809f5587c|34a5c4fe-ba6d-41be-b694-6bdd4892e615|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205",
-      "pin_to_pin|1384300|812800|34a5c4fe-ba6d-41be-b694-6bdd4892e615|d01e2b82-f56e-4bf7-b895-14992da3a4df|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205",
       "pin_to_pin|1473200|1003300|34a5c4fe-ba6d-41be-b694-6bdd4892e615|d01e2b82-f56e-4bf7-b895-14992da3a4df|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
     ],
     "meta": {
@@ -588,13 +587,13 @@
       "/Battery Charger/Always On PWR": "Logic Pwr",
       "/Battery Charger/IN": "USB-C pwr",
       "/Battery Charger/MCU3.3v": "Logic Pwr",
-      "/Battery Charger/MOTORPWR": "Charge Current",
+      "/Battery Charger/MOTORPWR": "High Current",
       "/Battery Charger/REGN": "Logic Pwr",
       "/Connectors/3.3v": "Charge Current",
       "/Connectors/CC1": "Default",
       "/Connectors/CC2": "Default",
       "/MCU/3.3v": "Logic Pwr",
-      "GND": "Logic Pwr",
+      "GND": "Logic Power",
       "GNDPWR": "High Current GND",
       "Net-(C18-Pad2)": "Logic Pwr",
       "Net-(C7-Pad1)": "USB-C pwr",

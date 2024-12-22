@@ -436,12 +436,6 @@
 		(uuid "eb90247e-347a-4f40-8e45-a88c5ae05a48")
 	)
 	(junction
-		(at 107.95 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f97356a8-b7ac-4870-a9dd-364f285024ea")
-	)
-	(junction
 		(at 189.23 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -626,16 +620,6 @@
 			(type default)
 		)
 		(uuid "39123e29-7f5e-4125-9ed8-b5281d07448e")
-	)
-	(wire
-		(pts
-			(xy 91.44 116.84) (xy 107.95 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a67e4a6-97c7-449c-849b-e73c6b364eda")
 	)
 	(wire
 		(pts
@@ -2282,16 +2266,6 @@
 				(justify right)
 			)
 			(uuid "76eb86f3-e154-4de8-8169-15047e227c4c")
-		)
-		(pin "USBPWR" input
-			(at 91.44 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "b94f9cb1-b553-42ed-ab10-ac6aed9495d9")
 		)
 		(pin "MCU3.3v" output
 			(at 74.93 102.87 90)
