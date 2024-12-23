@@ -5069,7 +5069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7025"
+		(property "Footprint" "custom_Connector:USB_C_G-Switch_GT-USB-7025-JLCPCBv"
 			(at 55.88 67.31 0)
 			(effects
 				(font

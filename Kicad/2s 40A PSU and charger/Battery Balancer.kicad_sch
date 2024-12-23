@@ -1614,12 +1614,6 @@
 		(uuid "3f512f72-f057-46d6-8ceb-00214ceef80e")
 	)
 	(junction
-		(at 62.23 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b95588c-1091-4496-87fc-3b78e79e263d")
-	)
-	(junction
 		(at 156.21 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1923,26 +1917,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 106.68) (xy 62.23 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45c3cf03-8be3-48a3-99f7-cb8ee7b7073e")
-	)
-	(wire
-		(pts
-			(xy 73.66 92.71) (xy 73.66 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a9f1319-5bd2-41c7-ac53-63b2bef67303")
-	)
-	(wire
-		(pts
 			(xy 148.59 85.09) (xy 156.21 85.09)
 		)
 		(stroke
@@ -1970,6 +1944,16 @@
 			(type default)
 		)
 		(uuid "56711bf7-7b2c-4558-aeae-a7f3fff660ad")
+	)
+	(wire
+		(pts
+			(xy 53.34 92.71) (xy 53.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ee572a-ee29-44bd-a700-9b9d372c9d7b")
 	)
 	(wire
 		(pts
@@ -2013,6 +1997,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 92.71) (xy 101.6 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71dd0460-2164-4cee-a4df-0e77db8ca6f5")
+	)
+	(wire
+		(pts
 			(xy 62.23 113.03) (xy 63.5 113.03)
 		)
 		(stroke
@@ -2053,6 +2047,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 111.76) (xy 69.85 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "959e039c-9c74-4f68-b9e8-443ecbc731ab")
+	)
+	(wire
+		(pts
 			(xy 77.47 102.87) (xy 77.47 105.41)
 		)
 		(stroke
@@ -2060,16 +2064,6 @@
 			(type default)
 		)
 		(uuid "96d3e355-2a4c-4eda-8ffd-9f5be349f131")
-	)
-	(wire
-		(pts
-			(xy 62.23 106.68) (xy 62.23 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "993775a1-76e6-4430-990c-219c35d434e4")
 	)
 	(wire
 		(pts
@@ -2150,16 +2144,6 @@
 			(type default)
 		)
 		(uuid "a6e1130f-cd04-47f3-90c3-8cef15fa8b3c")
-	)
-	(wire
-		(pts
-			(xy 73.66 92.71) (xy 101.6 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a878f742-1315-4f63-9976-13c8cab886ad")
 	)
 	(polyline
 		(pts
@@ -2243,7 +2227,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 101.6) (xy 69.85 113.03)
+			(xy 69.85 101.6) (xy 69.85 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2380,6 +2364,16 @@
 			(type default)
 		)
 		(uuid "eb816a20-60f3-4766-a777-d3a0b114a7ec")
+	)
+	(wire
+		(pts
+			(xy 62.23 111.76) (xy 62.23 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05cf1bb-27b4-485c-80cc-9d64004c9f75")
 	)
 	(wire
 		(pts
@@ -2921,6 +2915,75 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 62.23 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0272afd1-0de0-469e-9ebc-ccfcef0db98d")
+		(property "Reference" "NT1"
+			(at 60.198 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Sense NetTie"
+			(at 49.276 110.236 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
+			(at 62.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 62.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a131c515-96b3-41ac-a9a2-efef4ed925d2")
+		)
+		(pin "2"
+			(uuid "326d9a8e-5fc9-41ce-b9fc-fb707d6a6074")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
+					(reference "NT1")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4596,6 +4659,75 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff54cd85-a2b8-49b5-807d-ad5b329ad4fa")
+		(property "Reference" "NT11"
+			(at 67.818 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Sense NetTie"
+			(at 50.038 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
+			(at 69.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb171667-e657-42d0-b156-d6b46593b7dd")
+		)
+		(pin "2"
+			(uuid "4d22d3f7-79e6-40b4-be03-6837bbf5cb0e")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205"
+					(reference "NT11")
 					(unit 1)
 				)
 			)

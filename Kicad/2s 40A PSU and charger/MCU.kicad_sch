@@ -2554,6 +2554,28 @@
 		)
 		(uuid "ecd88e25-119c-48a2-a604-ec48e617e6e3")
 	)
+	(label "MOSI"
+		(at 210.82 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "086dc112-8d70-47ce-8640-c3f25ecbb3aa")
+	)
+	(label "CS"
+		(at 210.82 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c062455-90e2-4641-8e08-d354f30d502d")
+	)
 	(label "UART1-RTS"
 		(at 158.75 76.2 0)
 		(fields_autoplaced yes)
@@ -2575,6 +2597,17 @@
 			(justify left bottom)
 		)
 		(uuid "20ca4ee7-a24c-4ddc-9134-1164d70c5975")
+	)
+	(label "SCLK"
+		(at 210.82 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3510f293-70c9-467c-a510-344558233e97")
 	)
 	(label "MOSI"
 		(at 158.75 91.44 0)
@@ -2630,6 +2663,17 @@
 			(justify right bottom)
 		)
 		(uuid "7055cf3c-d0ee-4451-8300-439ad7ca67a5")
+	)
+	(label "MISO"
+		(at 210.82 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79619a65-659a-4f81-ab39-e9e33d464d0e")
 	)
 	(label "UART1_TX"
 		(at 158.75 78.74 0)
@@ -3304,6 +3348,134 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "57f22b4b-1842-44cc-bd69-e5d4e054ea31")
+		(property "Reference" "TP5"
+			(at 207.518 60.706 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SDI"
+			(at 203.454 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96f42edf-3a2c-4e01-9e5f-89fdd4c68e8b")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "65fbbdbc-6a6a-481b-a422-838693c353ed")
+		(property "Reference" "TP6"
+			(at 207.518 63.246 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SDO"
+			(at 203.454 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 210.82 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "658f4e86-942b-48cd-9c48-65155c2ba42d")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 151.13 64.77 0)
 		(unit 1)
@@ -3498,6 +3670,134 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "83c644b8-cbea-4562-8923-ab129788daef")
+		(property "Reference" "TP2"
+			(at 207.518 55.626 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CS"
+			(at 203.454 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 210.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "426b5aea-5323-438a-b615-0ff2eb5bcbf0")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f470ff3-d6ec-4c08-b1eb-22dd24ba4160")
+		(property "Reference" "TP3"
+			(at 207.518 58.166 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCK"
+			(at 203.454 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 210.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af094e71-a9c6-4e9c-a63d-1cef6f91bdab")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
