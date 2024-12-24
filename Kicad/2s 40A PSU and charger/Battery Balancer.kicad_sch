@@ -1041,15 +1041,13 @@
 				)
 			)
 		)
-		(symbol "NMOS_1"
-			(pin_numbers hide)
+		(symbol "custom_Device:Q_NMOS_SGD_8-pin"
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q3"
+			(property "Reference" "Q"
 				(at 6.35 1.2701 0)
 				(effects
 					(font
@@ -1058,7 +1056,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS,12v,PPak"
+			(property "Value" "Q_NMOS_SGD_8-pin"
 				(at 6.35 -1.2699 0)
 				(effects
 					(font
@@ -1067,8 +1065,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
-				(at 5.08 2.54 0)
+			(property "Footprint" ""
+				(at 5.08 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1076,17 +1074,17 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Datasheet" "~"
 				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, source/gate/drain"
+				(at 0 -3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1095,7 +1093,7 @@
 				)
 			)
 			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
+				(at 0 -14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1104,7 +1102,7 @@
 				)
 			)
 			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
+				(at -0.254 -16.002 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1112,8 +1110,8 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
+			(property "Sim.Pins" "1,2,3=S 4=G 5,6,7,8=D"
+				(at 0.254 -12.446 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1121,7 +1119,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1130,7 +1128,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_1_0_1"
+			(symbol "Q_NMOS_SGD_8-pin_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -1297,11 +1295,11 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1_1"
+			(symbol "Q_NMOS_SGD_8-pin_1_1"
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1317,9 +1315,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
+					(at 2.54 -5.08 90)
+					(length 2.54) hide
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1335,9 +1333,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
+					(at 2.54 -5.08 90)
+					(length 2.54) hide
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1354,7 +1352,7 @@
 				)
 				(pin input line
 					(at -5.08 0 0)
-					(length 2.54)
+					(length 5.08)
 					(name "G"
 						(effects
 							(font
@@ -1371,9 +1369,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1381,6 +1379,60 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54) hide
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54) hide
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54) hide
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3455,8 +3507,7 @@
 		)
 	)
 	(symbol
-		(lib_name "NMOS_1")
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "custom_Device:Q_NMOS_SGD_8-pin")
 		(at 77.47 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3489,8 +3540,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 64.77 110.49 0)
+		(property "Datasheet" "~"
+			(at 77.47 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3498,7 +3549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, source/gate/drain"
 			(at 77.47 110.49 0)
 			(effects
 				(font
@@ -3525,7 +3576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "1,2,3=S 4=G 5,6,7,8=D"
 			(at 62.23 110.49 0)
 			(effects
 				(font
@@ -3537,17 +3588,26 @@
 		(pin "1"
 			(uuid "fa2c0d2a-5408-40a8-aa61-df46e48aa261")
 		)
-		(pin "4"
-			(uuid "54f7e180-c6cd-4ee5-8606-eb285b0de5df")
-		)
-		(pin "5"
-			(uuid "95a6c6bf-87f1-4622-9456-6990a6b01302")
-		)
 		(pin "2"
 			(uuid "0640ba60-ae7d-4ead-bad0-78b3e9277beb")
 		)
 		(pin "3"
 			(uuid "20468e0a-57e4-4fe7-beab-0a39acd38ddd")
+		)
+		(pin "4"
+			(uuid "166b3852-f149-4e28-9b99-b40cfc57133a")
+		)
+		(pin "5"
+			(uuid "23742aac-25e9-4c8e-b719-aa7853b08f2d")
+		)
+		(pin "7"
+			(uuid "c0c87c40-4a5d-4a15-bf6e-0611bc2d03f0")
+		)
+		(pin "8"
+			(uuid "3273d86c-41d2-4326-9121-8c0ab5bd069d")
+		)
+		(pin "6"
+			(uuid "a091a0f5-b4a2-4140-b107-82a7bfadd63f")
 		)
 		(instances
 			(project "2s 40A PSU and charger"

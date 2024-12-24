@@ -1080,6 +1080,44 @@
 		)
 		(uuid "3601b890-389c-4ace-a217-9aa5061f1d65")
 	)
+	(text_box "Several components are not orderable from JLCPCB, or cannot be assembled by them (the power edge connectors). So I have added DNP indicators on those"
+		(exclude_from_sim no)
+		(at 30.48 62.23 0)
+		(size 27.94 17.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "723a28dd-c7ba-42ae-8120-828300f08afe")
+	)
+	(text_box "all mosfets I currently have are not on jlcpcb"
+		(exclude_from_sim no)
+		(at 30.48 87.63 0)
+		(size 12.7 8.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c3959984-e867-42f9-a506-ccc70026f99d")
+	)
 	(text_box "I might want to find a better diode for blocking current, but 0.01ma leakage doesn't seem bad"
 		(exclude_from_sim no)
 		(at 260.35 147.32 0)
