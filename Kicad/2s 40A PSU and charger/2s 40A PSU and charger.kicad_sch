@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CACKLE 2s 40A PSU & Charger")
-		(date "2024-12-01")
+		(date "2024-12-23")
 		(rev "V1")
 		(comment 1 "Author: Asher Edwards")
 	)
@@ -418,16 +418,16 @@
 		(uuid "9183ef1f-2af4-4ddd-8ee0-045afe8073f9")
 	)
 	(junction
-		(at 160.02 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab16a1a4-ddd7-4941-b125-887a99519bba")
-	)
-	(junction
 		(at 189.23 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8b03193-6f0e-4a0b-84f6-70205eafaee7")
+	)
+	(junction
+		(at 160.02 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4e401ed-a400-4a84-a7e0-089bec49357a")
 	)
 	(junction
 		(at 110.49 147.32)
@@ -733,7 +733,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 114.3) (xy 160.02 114.3)
+			(xy 91.44 110.49) (xy 160.02 110.49)
 		)
 		(stroke
 			(width 0)
@@ -863,7 +863,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 86.36) (xy 160.02 114.3)
+			(xy 160.02 86.36) (xy 160.02 110.49)
 		)
 		(stroke
 			(width 0)
@@ -940,16 +940,6 @@
 			(type default)
 		)
 		(uuid "b2bf4779-fcbc-46ea-84ac-49033f2a979e")
-	)
-	(wire
-		(pts
-			(xy 160.02 114.3) (xy 160.02 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc3ecb9b-d6d6-4fcc-b304-24698541cff7")
 	)
 	(wire
 		(pts
@@ -1060,6 +1050,16 @@
 			(type default)
 		)
 		(uuid "fa8a0333-032c-4dcb-acc8-a066804b67b6")
+	)
+	(wire
+		(pts
+			(xy 160.02 110.49) (xy 160.02 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feefea20-1123-4bb2-9b23-7f7750cb9d5f")
 	)
 	(text_box "All capacitors (in my current setup) are Ceremic and X5r or X7r according to datasheet recommendations. All low power capacitors should be rated for 6.3v, while high power should be 16v"
 		(exclude_from_sim no)
@@ -2316,7 +2316,7 @@
 			(uuid "0e01db4b-85ce-4611-a0ce-28ed28f1d300")
 		)
 		(pin "MOTORPWR" input
-			(at 91.44 114.3 0)
+			(at 91.44 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)

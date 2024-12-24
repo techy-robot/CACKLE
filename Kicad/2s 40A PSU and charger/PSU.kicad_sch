@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CACKLE 2s 40A PSU & Charger")
-		(date "2024-12-01")
+		(date "2024-12-23")
 		(rev "V1")
 		(comment 1 "Author: Asher Edwards")
 	)
@@ -914,12 +914,6 @@
 		(uuid "4522a2f9-c257-4fca-8b4e-64b0fdb3028f")
 	)
 	(junction
-		(at 123.19 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5faed202-37d6-4602-9463-9097ff2ce951")
-	)
-	(junction
 		(at 236.22 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -976,6 +970,16 @@
 	(no_connect
 		(at 116.84 69.85)
 		(uuid "5ddf5dc2-d3f2-4caa-b0ac-e9d3010390ec")
+	)
+	(wire
+		(pts
+			(xy 107.95 72.39) (xy 116.84 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04746cea-9d7c-4b0b-9f94-88d98818c97d")
 	)
 	(wire
 		(pts
@@ -1159,16 +1163,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 72.39) (xy 119.38 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60300c41-fc29-402a-ba57-cbe4e874f46e")
-	)
-	(wire
-		(pts
 			(xy 195.58 87.63) (xy 195.58 86.36)
 		)
 		(stroke
@@ -1209,16 +1203,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 72.39) (xy 119.38 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e78e716-291d-4255-a2da-1fbacf148b06")
-	)
-	(wire
-		(pts
 			(xy 236.22 81.28) (xy 236.22 76.2)
 		)
 		(stroke
@@ -1246,16 +1230,6 @@
 			(type default)
 		)
 		(uuid "99a5e115-d54a-4d0e-9d22-e735994e1d07")
-	)
-	(wire
-		(pts
-			(xy 119.38 81.28) (xy 123.19 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99e36fb3-6c7e-40de-997e-667fce1d0f03")
 	)
 	(wire
 		(pts

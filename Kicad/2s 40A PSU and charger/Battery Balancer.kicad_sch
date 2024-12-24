@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CACKLE 2s 40A PSU & Charger")
-		(date "2024-12-01")
+		(date "2024-12-23")
 		(rev "V1")
 		(comment 1 "Author: Asher Edwards")
 	)

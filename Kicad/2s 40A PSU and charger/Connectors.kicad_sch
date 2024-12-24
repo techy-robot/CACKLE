@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CACKLE 2s 40A PSU & Charger")
-		(date "2024-12-01")
+		(date "2024-12-23")
 		(rev "V1")
 		(comment 1 "Author: Asher Edwards")
 	)
@@ -3267,6 +3267,25 @@
 		)
 		(uuid "8129d8ed-8bdc-42be-a096-45068e0e7a33")
 	)
+	(text_box "Not populated due to custom handling required, and the parts don't exist in LCSC."
+		(exclude_from_sim no)
+		(at 240.03 110.49 0)
+		(size 16.51 15.24)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "969087fd-1ce6-4a88-b34d-8b988e6dbbcb")
+	)
 	(text "Outputs"
 		(exclude_from_sim no)
 		(at 149.098 16.764 0)
@@ -3286,16 +3305,6 @@
 			)
 		)
 		(uuid "3d98db59-a5f5-4f96-8406-840c1bdab2b5")
-	)
-	(text "IT THINKS THESE ARE DIFFERENTIAL PAIRS. Fix it"
-		(exclude_from_sim no)
-		(at 55.626 126.746 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6e2fd625-27e9-426d-aaaf-e8c220769ddf")
 	)
 	(text "Inputs"
 		(exclude_from_sim no)

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CACKLE 2s 40A PSU & Charger")
-		(date "2024-12-01")
+		(date "2024-12-23")
 		(rev "V1")
 		(company "ME")
 		(comment 1 "Author: Asher Edwards")
@@ -2439,9 +2439,9 @@
 		)
 		(uuid "24190ff9-7528-476a-b98b-0f3f204755a6")
 	)
-	(text_box "How am I going to have the main host connect and communicate rs485 with the network? USB or SPI?"
+	(text_box "USB or SPI can be used to talk to the RS485 network, the mcu here acts as a converter and a sensor device"
 		(exclude_from_sim no)
-		(at 190.5 138.43 0)
+		(at 201.93 69.85 0)
 		(size 45.72 8.89)
 		(stroke
 			(width 0)
@@ -2457,6 +2457,25 @@
 			(justify left top)
 		)
 		(uuid "29b0dfca-023a-4988-8fe1-a67a85a2a848")
+	)
+	(text_box "Just THT for optional connection"
+		(exclude_from_sim no)
+		(at 233.68 48.26 0)
+		(size 15.24 7.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5ff8e092-857d-4296-883b-d3440efd3c0b")
 	)
 	(text_box "PC 10 and 11 are tied to these USB pins, so make sure to configure them floating"
 		(exclude_from_sim no)
@@ -2910,7 +2929,7 @@
 	)
 	(hierarchical_label "D+{slash}BOOT"
 		(shape bidirectional)
-		(at 34.29 97.79 0)
+		(at 242.57 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2934,7 +2953,7 @@
 	)
 	(hierarchical_label "D-"
 		(shape bidirectional)
-		(at 34.29 95.25 0)
+		(at 242.57 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4438,7 +4457,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 29.21 97.79 180)
+		(at 237.49 64.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4447,7 +4466,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4dc8018-42f2-4d19-96b1-366b0ca276d6")
 		(property "Reference" "J12"
-			(at 29.845 90.17 0)
+			(at 238.125 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +4474,7 @@
 			)
 		)
 		(property "Value" "USB"
-			(at 29.845 92.71 0)
+			(at 238.125 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4463,7 +4482,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
-			(at 29.21 97.79 0)
+			(at 237.49 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4472,7 +4491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.21 97.79 0)
+			(at 237.49 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4481,7 +4500,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 29.21 97.79 0)
+			(at 237.49 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
