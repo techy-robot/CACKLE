@@ -59,17 +59,12 @@
         }
       ],
       "drc_exclusions": [
-        "copper_edge_clearance|178600001|106150000|1db8c5f3-4f41-44a5-a5d0-f4bad5dbaa2b|a84c15ec-498a-4ab0-8774-01498344e194",
-        "courtyards_overlap|170808462|104270001|7378bb2d-39ec-428f-983a-7e82e4c0d46c|daec1ce1-0d94-4b9a-873e-03cbfb1e0669",
-        "courtyards_overlap|171150001|103640001|7378bb2d-39ec-428f-983a-7e82e4c0d46c|aa50cd05-eaf4-4139-b4fa-8cd092857ad5",
-        "courtyards_overlap|171350001|105050001|7378bb2d-39ec-428f-983a-7e82e4c0d46c|75caf57b-03ba-4d7b-8654-b07ae0946615",
-        "courtyards_overlap|171350001|105050001|75caf57b-03ba-4d7b-8654-b07ae0946615|aa50cd05-eaf4-4139-b4fa-8cd092857ad5",
-        "courtyards_overlap|175420001|105050001|27d1a416-43c0-4f50-b6e3-fd4d8a6d1beb|59f12305-feb8-4eb9-97c9-39c61b5d46bd",
-        "courtyards_overlap|178749999|98250001|63318a93-ff50-4d3c-be8d-46837ab66a78|aa50cd05-eaf4-4139-b4fa-8cd092857ad5",
-        "unconnected_items|173500000|111750000|c326e6c7-f631-4420-bd45-c876deed0625|c2c2e488-cdf5-4f19-b091-57e99877b002",
-        "unconnected_items|174050000|108050000|535bc562-ba05-4f1d-8314-b7111445f2d5|8f5ecebd-e669-4e77-94e6-0a92bf9ef70c",
-        "unconnected_items|176600000|91650000|3fd79f1f-1c6a-42a1-943e-2165cf0819b0|04e2a910-16c3-45d9-ab1b-31e015f82269",
-        "unconnected_items|176600000|91650000|cada2d58-6949-4f39-a16a-6aedcc42dc90|b79fe661-7e51-4326-be02-ba21fecc942a"
+        "courtyards_overlap|168245000|97607935|82a5e400-526d-40cc-b52d-28a7b9694c80|a9194b17-0c82-4622-a026-132db903b544",
+        "courtyards_overlap|170811740|104275000|7378bb2d-39ec-428f-983a-7e82e4c0d46c|daec1ce1-0d94-4b9a-873e-03cbfb1e0669",
+        "courtyards_overlap|171155000|103645000|7378bb2d-39ec-428f-983a-7e82e4c0d46c|aa50cd05-eaf4-4139-b4fa-8cd092857ad5",
+        "courtyards_overlap|171155000|99325000|aa50cd05-eaf4-4139-b4fa-8cd092857ad5|beb707f8-5733-4549-89a0-f3142ba77bce",
+        "courtyards_overlap|171355000|105055000|7378bb2d-39ec-428f-983a-7e82e4c0d46c|75caf57b-03ba-4d7b-8654-b07ae0946615",
+        "courtyards_overlap|175425000|105055000|27d1a416-43c0-4f50-b6e3-fd4d8a6d1beb|59f12305-feb8-4eb9-97c9-39c61b5d46bd"
       ],
       "meta": {
         "version": 2
@@ -191,12 +186,10 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
+        0.16,
         0.2,
         0.28,
-        0.6,
-        1.0,
-        2.814
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -508,9 +501,9 @@
       "plot": "",
       "pos_files": "Centroid/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "DRV8213 brushed Motor Driver.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "DRV8213 brushed Motor Driver.wrl"
     },
     "page_layout_descr_file": ""
   },
