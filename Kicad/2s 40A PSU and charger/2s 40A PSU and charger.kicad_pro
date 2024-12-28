@@ -627,9 +627,9 @@
       "plot": "Gerbers",
       "pos_files": "Gerbers/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "2s 40A PSU and charger.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "2s 40A PSU and charger.wrl"
     },
     "page_layout_descr_file": ""
   },

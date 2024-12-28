@@ -3267,7 +3267,7 @@
 		)
 		(uuid "8129d8ed-8bdc-42be-a096-45068e0e7a33")
 	)
-	(text_box "Not populated due to custom handling required, and the parts don't exist in LCSC."
+	(text_box "Not populated due for JLC due to custom handling required, and the parts don't exist in LCSC."
 		(exclude_from_sim no)
 		(at 240.03 110.49 0)
 		(size 16.51 15.24)
@@ -3646,7 +3646,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "29bc0704-a9b2-4c78-b738-3042c1aebdfb")
 		(property "Reference" "J4"
 			(at 203.962 140.462 0)
@@ -3666,7 +3666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 208.28 140.97 0)
 			(effects
 				(font
@@ -4134,7 +4134,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "472c5cba-6dd9-4a08-a793-9ec05987d2dc")
 		(property "Reference" "J7"
 			(at 205.232 105.664 0)
@@ -4204,7 +4204,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "487b98e9-a62b-4260-8292-36e0895cf7bb")
 		(property "Reference" "J3"
 			(at 205.232 95.504 0)
@@ -4416,7 +4416,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "5d4ce13f-135d-4912-904d-5ad0fd22edcb")
 		(property "Reference" "J1"
 			(at 205.232 137.414 0)
@@ -4559,7 +4559,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "8d21cac1-e767-4a2b-b761-2defbb76dae0")
 		(property "Reference" "J8"
 			(at 203.962 150.622 0)
@@ -4579,7 +4579,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 208.28 151.13 0)
 			(effects
 				(font
@@ -4766,7 +4766,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "b8839dcd-5c9e-410f-81d3-369854173202")
 		(property "Reference" "J5"
 			(at 203.962 98.552 0)
@@ -4786,7 +4786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 208.28 99.06 0)
 			(effects
 				(font
@@ -5244,7 +5244,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "d7a36ff1-5cda-4ec9-8dc2-099870f580fc")
 		(property "Reference" "J9"
 			(at 203.962 108.712 0)
@@ -5264,7 +5264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 208.28 109.22 0)
 			(effects
 				(font
@@ -5316,7 +5316,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "da8e863d-7675-4d3e-b198-dd227cdef809")
 		(property "Reference" "J6"
 			(at 205.232 147.574 0)
@@ -5524,7 +5524,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "eae784ca-0251-41ba-9c50-e61c247c9682")
 		(property "Reference" "J11"
 			(at 213.106 36.068 90)
