@@ -3083,6 +3083,25 @@
 		)
 		(uuid "860d276a-117c-49a9-a664-4a9fe89b15ee")
 	)
+	(text_box "JLC doesn't have these parts, and I need to add some custom processing to cut the 3569 parts in half, so not populated"
+		(exclude_from_sim no)
+		(at 220.98 53.34 0)
+		(size 24.13 13.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b94d3e36-4530-46b8-8ee7-270540d4f3f7")
+	)
 	(text_box "Any capacitors on the power supply line should be rated above my intended voltage range of 3.7-7.4v\nThe bulk capacitance on VM should also be really high"
 		(exclude_from_sim no)
 		(at 31.75 22.86 0)
@@ -3403,7 +3422,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1b2b2dcc-3c14-40f4-901a-c5b19f0bc85a")
 		(property "Reference" "J7"
 			(at 212.598 32.766 0)
@@ -3952,7 +3971,7 @@
 		(at 175.26 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4fbe9f7c-1a73-45a1-b4de-d9ddfacadd45")
@@ -4018,7 +4037,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4ff910f9-b328-4146-9370-76b73ada3871")
 		(property "Reference" "J9"
 			(at 253.492 29.464 0)
@@ -4157,7 +4176,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "54ea1271-206c-4ca3-bf2e-80fe981e0068")
 		(property "Reference" "J3"
 			(at 212.598 42.926 0)
@@ -4700,7 +4719,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7d18fc35-6a94-4e5a-8c4f-a412382ac080")
 		(property "Reference" "J6"
 			(at 213.868 29.718 0)
@@ -4720,7 +4739,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 209.55 29.21 0)
 			(effects
 				(font
@@ -5663,7 +5682,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b79e6afd-2c42-499d-9911-b75e2512ee09")
 		(property "Reference" "J11"
 			(at 253.492 39.624 0)
@@ -6145,7 +6164,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d4b5b20c-5883-4b79-848f-22f8dacff8e2")
 		(property "Reference" "J5"
 			(at 214.122 39.116 0)
@@ -6165,7 +6184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 209.55 39.37 0)
 			(effects
 				(font
@@ -6342,7 +6361,7 @@
 		(at 107.95 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e23dbcd0-43d2-4c96-890c-e18075dbb6aa")
@@ -6746,7 +6765,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f7dd5381-36c9-420c-8bc0-6deb44f3bf24")
 		(property "Reference" "J10"
 			(at 252.222 42.672 0)
@@ -6766,7 +6785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 256.54 43.18 0)
 			(effects
 				(font
@@ -6875,7 +6894,7 @@
 		(at 175.26 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f93423d8-a0bd-43dd-966e-8a762c11daf5")
@@ -6941,7 +6960,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fcb47131-e1e7-47d6-9fa4-a3b96496c576")
 		(property "Reference" "J8"
 			(at 252.222 32.512 0)
@@ -6961,7 +6980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 256.54 33.02 0)
 			(effects
 				(font
