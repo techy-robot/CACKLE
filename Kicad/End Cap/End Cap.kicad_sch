@@ -1423,7 +1423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 129.54 153.67 0)
 			(effects
 				(font
@@ -1687,7 +1687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 129.54 121.92 0)
 			(effects
 				(font
@@ -1955,7 +1955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 129.54 163.83 0)
 			(effects
 				(font
@@ -2153,7 +2153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "custom_Connector:Keystone_3569"
+		(property "Footprint" "custom_Connector:Keystone_3569_half"
 			(at 129.54 111.76 0)
 			(effects
 				(font

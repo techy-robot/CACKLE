@@ -58,14 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "copper_edge_clearance|120542293|89745816|8c06adf3-a331-408b-bab7-788e58774b4e|d248447d-532b-4ce5-9746-0f14dcb39914",
-        "copper_edge_clearance|120542293|89745816|8c06adf3-a331-408b-bab7-788e58774b4e|e3ef23b5-b10d-4630-87a2-80c34d0e3660",
-        "unconnected_items|120624500|93499500|1245fe7a-cf06-4665-b771-0ca0df074f01|bbbf8229-1ac8-465d-a499-f66cb8ae4003",
-        "unconnected_items|120624500|93499500|7e803841-6083-4ade-9f1d-b5ff28b21a8a|1441b119-c11d-4dab-ac79-28227e487a1c",
-        "unconnected_items|160000000|91150000|91b1f9d3-f802-422a-a7d7-713918bb7330|aa1fdd44-ca16-4040-b872-beec21ca7cc8",
-        "unconnected_items|160000000|91150000|bffbd88f-3e16-4a9d-8ee4-553abb92bf00|9364685b-f410-4b4b-8504-02c406040412"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -545,9 +538,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "End Cap.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "End Cap.wrl"
     },
     "page_layout_descr_file": ""
   },
