@@ -58,21 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "unconnected_items|141710000|101430000|ac955d10-6a55-4ad4-8ea3-cf460d314ca7|31d67689-c06c-415e-9ab6-353c1cc85daf",
-        "unconnected_items|142110000|101430000|91a8c347-8f51-4378-b8c6-41b3c4400139|6fa9db55-9834-4b52-94ad-638bd968bf57",
-        "unconnected_items|143310000|103180000|73860000-dca9-429f-8bce-53303670fad5|9d1dde5d-487f-4258-abbf-14efe0e2eb2f",
-        "unconnected_items|143710000|102284998|476aa14e-a2df-4006-8364-1ccc42dc9de5|96ab93ed-bef1-4202-852f-a3bf85c05824",
-        "unconnected_items|144510000|101430000|fb63223c-60cf-4615-a0e2-883393cb34a3|5ed37bb6-2d79-4f6a-9cb9-2f91a7f6159b",
-        "unconnected_items|144910000|101430000|4acc6846-951c-4ea3-8885-2654d48730bf|496f84d4-6673-49ad-8d49-dbefb1d30d31",
-        "unconnected_items|144910000|102350000|e78f4c87-3e33-44bf-bd94-de342bc2be2f|32f39254-a9fb-47cb-8b9b-e308bb741ad9",
-        "unconnected_items|145310000|101430000|7b1a3a49-1792-4e9e-a9e4-c62ff4425878|2530a02c-7dec-41d6-91f4-ddcebc6fc932",
-        "unconnected_items|145710000|103180000|665a35e2-d6a4-4f5d-a4d5-967dd7beea8e|81f25d34-0c67-410f-a167-4b00fe3c8298",
-        "unconnected_items|146510000|101430000|802cf881-b739-4d68-9d51-a5d5d6ad57f3|b9d12d61-22fc-4f81-bfa5-eb6cb07a838a",
-        "unconnected_items|146510000|103180000|cffcec90-1946-47b7-a13d-6b20a09c1cbb|09b386e4-98c9-4328-9aca-8bf6554dd7cd",
-        "unconnected_items|146910000|101950000|286245e8-0ec9-4665-9779-c032dfa377fb|8bf8f070-2304-48c7-827f-9f9300021a61",
-        "unconnected_items|147310000|101430000|2f953538-ea2e-4aa8-ac24-f421f42d9a34|bdf44e7d-b126-4f99-92d3-6db3d3c61610"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -523,9 +509,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Sensor Board.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "Sensor Board.wrl"
     },
     "page_layout_descr_file": ""
   },

@@ -78,31 +78,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Sensor Board.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 566,
-          "pos_y": 1112,
-          "size_x": 768,
-          "size_y": 945
-        }
-      },
-      {
-        "name": "Sensor Board.kicad_pcb",
-        "open": true,
-        "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": 256,
-          "pos_y": 0,
-          "size_x": 1280,
-          "size_y": 558
-        }
-      }
-    ]
+    "files": []
   }
 }

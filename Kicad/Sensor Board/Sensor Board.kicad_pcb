@@ -211,7 +211,7 @@
 		(path "/ada13a9f-2d58-4cbb-919b-7f106cd79a60")
 		(sheetname "Root")
 		(sheetfile "Sensor Board.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.11 -0.76)
 			(end 0 -0.76)
@@ -849,7 +849,7 @@
 		(path "/4298ca51-1701-44ba-8e26-023a80107334")
 		(sheetname "Root")
 		(sheetfile "Sensor Board.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.11 3.235)
 			(end -0.30753 3.235)
@@ -1607,7 +1607,7 @@
 		(path "/bd9147cb-68be-4f61-b3f2-5f88cf94cff3")
 		(sheetname "Root")
 		(sheetfile "Sensor Board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -2892,6 +2892,17 @@
 				"ff9b76ab-b82e-43ac-a680-9b9de65bb457"
 			)
 		)
+		(model "${KICAD8_3DMODEL_DIR}/TE c-3-2363962-0-a-3d.stp"
+			(offset
+				(xyz 0 0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "B.Cu")
@@ -3190,7 +3201,7 @@
 		(path "/19d96b11-ec24-4cf0-ad78-5c3c4444a6ee")
 		(sheetname "Root")
 		(sheetfile "Sensor Board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
