@@ -74,13 +74,13 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Sensor Board.kicad_prl",
+    "filename": "Verticale Sensor Spacer.kicad_prl",
     "version": 3
   },
   "project": {
     "files": [
       {
-        "name": "Sensor Board.kicad_sch",
+        "name": "Verticale Sensor Spacer.kicad_sch",
         "open": true,
         "window": {
           "display": 0,
@@ -92,7 +92,7 @@
         }
       },
       {
-        "name": "Sensor Board.kicad_pcb",
+        "name": "Verticale Sensor Spacer.kicad_pcb",
         "open": true,
         "window": {
           "display": 1,
@@ -100,7 +100,7 @@
           "pos_x": 256,
           "pos_y": 0,
           "size_x": 1280,
-          "size_y": 396
+          "size_y": 612
         }
       }
     ]
