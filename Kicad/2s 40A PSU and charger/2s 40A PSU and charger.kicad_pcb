@@ -4508,7 +4508,7 @@
 			(at 0.882 -3.3964 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c6ba265f-ae00-4b3a-b737-3d6ac58384d4")
+			(uuid "ca4a7aad-abb2-4325-b627-bd032c01eba4")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -4519,7 +4519,7 @@
 		(property "Value" "Keystone 3579"
 			(at 2.3 2.25 90)
 			(layer "F.Fab")
-			(uuid "35cf7bb7-8f60-4227-801b-adb62c9d87b6")
+			(uuid "077384c6-2d59-4642-a49c-97c2b7fb761e")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -4531,7 +4531,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "23ea0bc4-327a-45a3-9679-d5e84b7aea99")
+			(uuid "c6f71596-0969-45b2-9bde-812f28b5dd17")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4543,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6baaf09d-1c55-4895-b639-1d41dc983723")
+			(uuid "90e1e5e3-806e-49ab-8ab3-6419803fdcd4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4555,7 +4555,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "86ebe2ce-2a60-4e49-a911-f7234b234f55")
+			(uuid "a2eb2e26-c7f8-4ae9-b59f-828d09474b3c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,7 +4567,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/487b98e9-a62b-4260-8292-36e0895cf7bb")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.55 1.55)
 			(end -1.55 1.55)
@@ -4576,7 +4576,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f9269753-568c-425d-97d4-869e3d71602c")
+			(uuid "42eb43a8-97cc-4cf5-919a-2e28d01e6d00")
 		)
 		(fp_line
 			(start 1.55 1.2)
@@ -4586,7 +4586,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "4bdd2ba5-ec7f-414a-9a1f-5ef585cc6806")
+			(uuid "c0706470-e6f2-4d4d-b566-8bd25c6dcbd7")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -4596,7 +4596,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1a901def-c5fa-4f5b-8f1b-c68246e1418e")
+			(uuid "9280b02b-d736-49f7-8702-9c3d95816121")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -4606,7 +4606,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ddc2edc0-ac0c-46be-aa8f-b134a5bc423a")
+			(uuid "e4961967-d2d9-4e80-82a1-8a7553a67c09")
 		)
 		(fp_line
 			(start -1.55 -1.2)
@@ -4616,7 +4616,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "051b7a4e-8b9d-4098-8dbe-7ec0dd41ace1")
+			(uuid "409c328f-70b3-4ac3-bffb-5c31cc0dc958")
 		)
 		(fp_line
 			(start -1.55 -1.55)
@@ -4626,7 +4626,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b1c9d49b-f551-4807-95f3-d41ad793a1aa")
+			(uuid "c866fe04-c38e-4bb7-aeed-c35a8d79b04a")
 		)
 		(fp_rect
 			(start -1.55 -1.55)
@@ -4637,7 +4637,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "569c3329-5e70-49fc-a817-bac3562b392b")
+			(uuid "16638b4d-c76f-4db8-9bca-50d2a9b2af81")
 		)
 		(fp_line
 			(start 1.55 4.55)
@@ -4647,7 +4647,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f8d0b063-191a-45d0-961c-2bd64434e0d3")
+			(uuid "0f7df773-d67e-434c-aeff-5559f383ff11")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -4657,7 +4657,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "fe6459df-6412-472c-9baf-3d4c92ae9108")
+			(uuid "1be17d7b-fb21-4af9-8eaa-f8053a2a1308")
 		)
 		(fp_line
 			(start 1.3 4.85)
@@ -4667,7 +4667,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "9bc274ff-47bf-4fa1-9242-ab47d5978a78")
+			(uuid "1236b79d-16ec-4aff-880d-fdf654e31803")
 		)
 		(fp_line
 			(start -1.3 4.85)
@@ -4677,7 +4677,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "9edb097a-efec-4de2-a421-1e33cef70546")
+			(uuid "82d0de0e-ff55-4ac5-b788-4a827030bec6")
 		)
 		(fp_line
 			(start -1.3 4.85)
@@ -4687,7 +4687,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "2afab7d3-b9c4-47bc-b392-2fd1d89c9032")
+			(uuid "821aaa73-0cfa-4961-8b4b-8a6c68db3c48")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -4697,7 +4697,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "76426ba5-8d21-4410-bed6-cc88cc86050e")
+			(uuid "0ee46b9e-405c-4da9-8dcd-4eb41f2fa7a8")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -4707,7 +4707,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "08685ef2-184b-44f6-a2e8-2ebf4990ae67")
+			(uuid "5cf26845-0bed-4d4d-98dc-55db2a19fbbe")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -4717,7 +4717,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5074635c-5cae-448a-b806-ed7cfc07802c")
+			(uuid "f13f6622-d117-4997-baea-346a7a423070")
 		)
 		(fp_line
 			(start -1.55 -1.55)
@@ -4727,7 +4727,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "c09ca48b-1252-48bf-a06d-c6ffa836d588")
+			(uuid "e5c671fe-4c73-46a6-a216-299990267ca5")
 		)
 		(pad "1" smd rect
 			(at 0 0 180)
@@ -4737,11 +4737,11 @@
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "2e3b4537-fe9e-45f3-ab6a-7924806503bb")
+			(uuid "4c362839-c3ee-4148-b03a-013fc680a777")
 		)
 		(model "${KICAD_USER_CUSTOM}/custom_Connector.pretty/Keystone 3579.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -6552,7 +6552,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/b8839dcd-5c9e-410f-81d3-369854173202")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.45 0.95)
 			(end -1.45 1.95)
@@ -11159,7 +11159,7 @@
 			(at 0.882 -3.3964 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "782806b8-bd73-4115-a9ae-edf6f6f3b03c")
+			(uuid "5fec8e1a-b0a0-4bec-83ba-7013b3579403")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -11170,7 +11170,7 @@
 		(property "Value" "Keystone 3579"
 			(at 1.999999 7.35 90)
 			(layer "F.Fab")
-			(uuid "3c74ebc6-c246-4bf3-896a-553ed3b28f1b")
+			(uuid "53efab6f-50a3-4515-b4f5-c4686dd2fb05")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -11182,7 +11182,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77946ed8-e3fe-4827-b2fe-9598d97b45d9")
+			(uuid "8d2f2658-485b-43f6-ae43-4246c6c04d08")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11194,7 +11194,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8b1b8bc2-8909-40eb-92cd-a2ea6c1f2590")
+			(uuid "635240ae-ab9e-4bdc-baac-942dbc5a21a6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11206,7 +11206,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb8af02d-b4e7-441a-b7fb-feb465ab0d5a")
+			(uuid "7e3c9e75-f055-4d06-90b1-f2f7120ec9a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11218,7 +11218,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/5d4ce13f-135d-4912-904d-5ad0fd22edcb")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.55 1.55)
 			(end -1.55 1.55)
@@ -11227,7 +11227,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6f118f4e-8a96-4639-bea5-cbe31285a0dc")
+			(uuid "0c3a1071-026c-4acf-8846-4e717a1c615f")
 		)
 		(fp_line
 			(start 1.55 1.2)
@@ -11237,7 +11237,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "fe9d53fc-d88e-4ff5-92f6-0b5cb54cb827")
+			(uuid "050bf091-2411-4b27-b65c-8f554f0ba776")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -11247,7 +11247,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ad8cc5b0-42d5-446b-b516-29622e13e7ab")
+			(uuid "4430fd22-46c2-4448-833a-a55f9ce98ce9")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -11257,7 +11257,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "bfd471a5-8d6d-4d98-81ea-db091d6b0055")
+			(uuid "5e4fda06-a3f5-4760-b87a-338502aab666")
 		)
 		(fp_line
 			(start -1.55 -1.2)
@@ -11267,7 +11267,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6b03d3a0-a335-4cf8-8c4a-63df841fe109")
+			(uuid "f0176692-ec22-43ca-b3ad-0d5de6c36057")
 		)
 		(fp_line
 			(start -1.55 -1.55)
@@ -11277,7 +11277,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f7b8e98e-e226-41fa-bed4-d5bdaa8aff09")
+			(uuid "89ece4e5-77dd-4716-98e1-13d7e839d3da")
 		)
 		(fp_rect
 			(start -1.55 -1.55)
@@ -11288,7 +11288,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "80fe5a73-9158-4524-b32c-3a7cb4654507")
+			(uuid "8302d7cb-88de-44f9-8b79-a9cf46a96b24")
 		)
 		(fp_line
 			(start 1.55 4.55)
@@ -11298,7 +11298,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "c9988d59-ef81-4a12-9172-fb71bb80189d")
+			(uuid "2110a302-402b-4f69-8790-f8c4483a67df")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -11308,7 +11308,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "98c5f6cb-ba7a-4b17-9379-84b2e2004c07")
+			(uuid "38d70163-bb06-4e97-b2ea-54c8c850880e")
 		)
 		(fp_line
 			(start 1.3 4.85)
@@ -11318,7 +11318,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "c1678e57-5331-43af-9f88-6615aaa8ca0a")
+			(uuid "82d256ca-98cd-4d48-9a55-679711ec5477")
 		)
 		(fp_line
 			(start -1.3 4.85)
@@ -11328,7 +11328,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e9fa5745-d90f-4077-9cdc-a6dde23fa16e")
+			(uuid "9d9e40b0-2e21-42c8-a3a1-634c1fc9b792")
 		)
 		(fp_line
 			(start -1.3 4.85)
@@ -11338,7 +11338,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "a0379435-12cf-41d9-8eaa-499d1c0b029e")
+			(uuid "5018cd80-5e00-4a41-b8c1-441d1f8b39f2")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -11348,7 +11348,7 @@
 				(type default)
 			)
 			(layer "F.Fab")
-			(uuid "696c0693-4413-4a48-a68c-deeda6573b41")
+			(uuid "13ae3f7c-d165-4c05-a67a-472f795d1ff0")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -11358,7 +11358,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "88708af7-7ac9-45a5-b531-ffcf418290d0")
+			(uuid "4ff0ed78-6833-407f-ace3-21b9edbaa683")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -11368,7 +11368,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a6c2d99a-4698-4594-aefa-d0e1ddac6871")
+			(uuid "0a22489d-2391-491b-92f9-8a2294218080")
 		)
 		(fp_line
 			(start -1.55 -1.55)
@@ -11378,7 +11378,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "94319e9e-7c3a-4b43-854c-3aaa79f874c3")
+			(uuid "aa99b42d-00c3-4dd6-b5d3-f005803a386d")
 		)
 		(pad "1" smd rect
 			(at 0 0 180)
@@ -11388,11 +11388,11 @@
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "0b5950b7-c819-4991-bcdf-b303faa7567d")
+			(uuid "7faf73ca-b62a-478f-bd0f-152fdec09a3a")
 		)
 		(model "${KICAD_USER_CUSTOM}/custom_Connector.pretty/Keystone 3579.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -12408,7 +12408,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/29bc0704-a9b2-4c78-b738-3042c1aebdfb")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.45 0.95)
 			(end -1.45 1.95)
@@ -20453,7 +20453,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/8d21cac1-e767-4a2b-b761-2defbb76dae0")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.45 -3.15)
 			(end 1.45 -4.15)
@@ -21941,7 +21941,7 @@
 			(at 0.882 3.3964 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c7d06180-bb14-4324-a01c-9a48082a4d8d")
+			(uuid "b701d1c3-0013-46b6-9d53-b8c998c2df9d")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -21953,7 +21953,7 @@
 		(property "Value" "Keystone 3579"
 			(at -2.700001 -1.25 90)
 			(layer "B.Fab")
-			(uuid "3e2373fb-e32d-453b-902f-2362c46d92c9")
+			(uuid "eab12b66-f77a-4e0f-ab9a-a036af5a7a49")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -21966,7 +21966,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0209c794-de7f-4d3c-a417-82fffa54562d")
+			(uuid "dc95c5e3-6ad9-4a5c-816e-9951e84c7cfe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21979,7 +21979,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "6e7821da-9a83-4917-bf02-f1a2f1caccba")
+			(uuid "babac28f-9e1e-419d-a97b-e09088c1505e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21992,7 +21992,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "75471bf8-ae4a-4b08-86fb-fe0835c04815")
+			(uuid "c83dacf6-b5b6-4b04-90e4-22e3e259a247")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22005,7 +22005,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/472c5cba-6dd9-4a08-a793-9ec05987d2dc")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.55 -1.55)
 			(end 1.55 -1.55)
@@ -22014,7 +22014,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "c33c5194-6fa8-4885-a8b7-8fffc7e4b763")
+			(uuid "ec88769a-caa2-4a3d-85a7-07003087c69d")
 		)
 		(fp_line
 			(start -1.55 -1.2)
@@ -22024,7 +22024,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "1483933c-2ea4-4847-8a61-e1f2dccdc8ce")
+			(uuid "8b6721e8-fa78-48f0-85b8-d679c4a89efd")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -22034,7 +22034,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "dc3131f5-f98a-439e-b313-2bfdfb36f7e6")
+			(uuid "95d14067-2f70-4dd3-86ee-c1413a786e8e")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -22044,7 +22044,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a40f4acf-8b69-42a6-83a8-128031fd811e")
+			(uuid "0e06ee80-4762-40dd-b677-351e15128b6c")
 		)
 		(fp_line
 			(start 1.55 1.2)
@@ -22054,7 +22054,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a8af1724-c02d-4e0c-a9f7-dee27b059633")
+			(uuid "518ed60c-128a-4f8c-964b-931fc4a7f764")
 		)
 		(fp_line
 			(start 1.55 1.55)
@@ -22064,7 +22064,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "3440b6ea-a019-41c0-80ff-37f38f838ca8")
+			(uuid "c57f2d6e-9679-4d00-9397-660f73d86003")
 		)
 		(fp_rect
 			(start -1.55 1.55)
@@ -22075,7 +22075,7 @@
 			)
 			(fill none)
 			(layer "B.CrtYd")
-			(uuid "cb2d362a-7ef4-4cc3-a17a-5036b33bd690")
+			(uuid "ab3c94f7-84bc-4d63-a236-a46cb78a312a")
 		)
 		(fp_line
 			(start -1.550002 -4.550002)
@@ -22085,7 +22085,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "2417ae3a-2939-4420-a6e5-325c9e1aced0")
+			(uuid "59132a9b-e809-49a6-9537-99c5f6fb2a0a")
 		)
 		(fp_line
 			(start -1.55 -4.55)
@@ -22095,7 +22095,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "242d0b74-19e8-42ea-8ba3-e05e0629a16a")
+			(uuid "251759d3-b4a5-4f0c-92c9-7a90590fa688")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -22105,7 +22105,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "9478aceb-b946-4113-93c1-1a2cfc85a6cb")
+			(uuid "cf8827ac-996d-4c0d-816e-d47594390c3a")
 		)
 		(fp_line
 			(start 1.3 -4.85)
@@ -22115,7 +22115,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "f862d329-ac24-4d7e-8078-eab4c1f46bb9")
+			(uuid "feac344a-2370-4462-b26e-9a89032acf21")
 		)
 		(fp_line
 			(start 1.55 -4.55)
@@ -22125,7 +22125,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "2feed167-d132-4e66-92c7-a24561e78c74")
+			(uuid "3e4de18d-c3ad-4eaf-8143-92f8aea2ceb4")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -22135,7 +22135,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "79411ee9-89c6-4e2d-8e81-f8c861d05720")
+			(uuid "fdd4e29c-684b-40f7-ac6a-023311ad7901")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -22145,7 +22145,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "977ddd5f-b6d4-4271-ad63-2dc0dbd45f5b")
+			(uuid "80f5db79-2d88-45a8-bea0-1048346c590f")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -22155,7 +22155,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "e766350b-8182-4023-bf05-064b0fa90c34")
+			(uuid "688a77ed-85f9-4738-99f8-85d03ecad53d")
 		)
 		(fp_line
 			(start 1.55 1.55)
@@ -22165,7 +22165,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "d3fc75ee-68ce-4998-90d1-f7eced4e7350")
+			(uuid "7c9db7a3-5cf2-4962-9aa4-19658ca731fd")
 		)
 		(pad "1" smd rect
 			(at 0 0)
@@ -22175,11 +22175,11 @@
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "c769ec32-2c37-46b1-93c5-67006ddec580")
+			(uuid "69d3d637-247e-4e4f-8532-c405b416ecf7")
 		)
 		(model "${KICAD_USER_CUSTOM}/custom_Connector.pretty/Keystone 3579.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -26270,7 +26270,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/d7a36ff1-5cda-4ec9-8dc2-099870f580fc")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.45 -3.15)
 			(end 1.45 -4.15)
@@ -26902,7 +26902,7 @@
 			(at 0.882 3.3964 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "509d84a8-5f18-4099-a065-d73337ae1f05")
+			(uuid "13d7c5de-5a04-4e0f-b1e1-86a1fa314659")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -26914,7 +26914,7 @@
 		(property "Value" "Keystone 3579"
 			(at -2.200001 -1.65 90)
 			(layer "B.Fab")
-			(uuid "409845ec-501f-4040-ab2d-43acd6b77aa3")
+			(uuid "22d5f9a2-55a1-43b2-ad96-3c56e06fec8b")
 			(effects
 				(font
 					(size 0.64 0.64)
@@ -26927,7 +26927,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "83238dab-1281-40ff-9c44-0268f25fae25")
+			(uuid "01c9df8b-5a26-4b23-ac02-7eff23951166")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26940,7 +26940,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "161488d9-a869-4666-95fa-ab082c091202")
+			(uuid "5a36c428-bfc3-4542-983d-4485a6cff2ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26953,7 +26953,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "7ab15e99-83cf-4c44-97cf-feaa216faf34")
+			(uuid "4abc2f64-42fc-4cec-af4d-301ff2767ffb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26966,7 +26966,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/da8e863d-7675-4d3e-b198-dd227cdef809")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.55 -1.55)
 			(end 1.55 -1.55)
@@ -26975,7 +26975,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "2b8e2b66-8fbe-4962-9a71-14a1edb65776")
+			(uuid "dae905b7-9a87-422c-ab66-8b565f2cb6eb")
 		)
 		(fp_line
 			(start -1.55 -1.2)
@@ -26985,7 +26985,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "ffc45f85-0c10-42cb-a6fb-f027914e2de4")
+			(uuid "3f029003-30df-4835-a5a0-b7cb3bd300f9")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -26995,7 +26995,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "9ed26740-1999-407b-b3b0-02b00def2761")
+			(uuid "5a04669d-38ba-4630-8df5-326b9bdd36ae")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -27005,7 +27005,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7cb810f4-96df-40f9-973a-88832f745563")
+			(uuid "102e4c38-da1f-445c-9385-4ca1f91b4afc")
 		)
 		(fp_line
 			(start 1.55 1.2)
@@ -27015,7 +27015,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7fdc2f1e-bf23-47d5-9e7b-a28e1764bc63")
+			(uuid "b3ba6fa8-2f0e-4706-abfe-d48eb46e372f")
 		)
 		(fp_line
 			(start 1.55 1.55)
@@ -27025,7 +27025,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "01962a87-7a0f-4ddb-bd29-7e29b9311769")
+			(uuid "9f394ea9-c2f8-40b0-94a7-9481dde86b3b")
 		)
 		(fp_rect
 			(start -1.55 1.55)
@@ -27036,7 +27036,7 @@
 			)
 			(fill none)
 			(layer "B.CrtYd")
-			(uuid "ffb66b3c-64bd-4744-9150-0c4a28c093fa")
+			(uuid "74805cad-e1b0-4713-b7f9-4bf30e399882")
 		)
 		(fp_line
 			(start -1.550002 -4.550002)
@@ -27046,7 +27046,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "9c02241c-f4a9-49ff-85f8-7887e4344d12")
+			(uuid "d615f8b9-36ae-4832-b09d-b332e573dabd")
 		)
 		(fp_line
 			(start -1.55 -4.55)
@@ -27056,7 +27056,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "d45e6d54-c4f8-478a-8379-240ed745b957")
+			(uuid "3d8a8e33-9b02-4cff-afe8-11a1eea57186")
 		)
 		(fp_line
 			(start -1.55 1.55)
@@ -27066,7 +27066,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "741336ef-47a5-406a-b62e-3b0159dfc33f")
+			(uuid "4c699f38-b3e7-441f-8c61-aad61188dc9a")
 		)
 		(fp_line
 			(start 1.3 -4.85)
@@ -27076,7 +27076,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "827ca126-4c06-49c5-b48c-fd7aaa50c050")
+			(uuid "cf587851-8a05-41c7-b54a-cd9e45e8c83e")
 		)
 		(fp_line
 			(start 1.55 -4.55)
@@ -27086,7 +27086,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "07b0c2cc-8a0e-4d8f-bf2f-ad61d8edae49")
+			(uuid "0466164d-7d7c-4c9b-a2c0-c8a0ece538a4")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -27096,7 +27096,7 @@
 				(type default)
 			)
 			(layer "B.Fab")
-			(uuid "1afd1bfa-a0a8-45fc-a6b6-9caf04165f4d")
+			(uuid "2263b6b7-f180-496f-905f-e6f82fc727eb")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -27106,7 +27106,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "304d7281-fdcd-46b7-8bcc-d48aa269b3ba")
+			(uuid "28d51a16-7bc2-47e5-8502-cb6123a68dca")
 		)
 		(fp_line
 			(start 1.55 -1.55)
@@ -27116,7 +27116,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "71e77090-2cc9-4ea9-a4fc-6cfc35cc3aaf")
+			(uuid "514594be-aac9-4f81-afc5-6be973a5d61c")
 		)
 		(fp_line
 			(start 1.55 1.55)
@@ -27126,7 +27126,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "bea29ad2-ddd5-4852-a032-b469babf1267")
+			(uuid "adc07d3c-55fa-4669-bc85-f1f8eb95437c")
 		)
 		(pad "1" smd rect
 			(at 0 0)
@@ -27136,11 +27136,11 @@
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "24b29510-319a-420f-8935-131fa2427c9d")
+			(uuid "c331b30c-bc2e-4c04-982e-0fc6a2943c49")
 		)
 		(model "${KICAD_USER_CUSTOM}/custom_Connector.pretty/Keystone 3579.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.2)
 			)
 			(scale
 				(xyz 1 1 1)
