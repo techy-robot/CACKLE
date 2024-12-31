@@ -1,7 +1,0 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"J1";"PinHeader_1x04_P1.27mm_Vertical";1;"1.27mm 4 pin header";;;
-2;"J3,J7,J5,J9";"Keystone_3569_half";4;"Keystone 3569";;;
-3;"J2,J6,J4,J8";"Keystone_3579";4;"Keystone 3579";;;
-4;"TP3";"TestPoint_Pad_D1.0mm";1;"3.3v";;;
-5;"R1";"R_0402_1005Metric";1;"120ohm";;;
-6;"TP4";"TestPoint_Pad_D1.0mm";1;"GND";;;
