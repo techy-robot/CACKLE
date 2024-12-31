@@ -1,29 +1,24 @@
-
+# documents
 *.odt#
 
+# compressions
 *.zip
+*.tgz
 
+#audio
 *.wav
 *.mkv
 
-.trash/
-
-*.tgz
-
-*/fp-info-cache
-
-*#auto_saved_files#
-
+# kicad files
+*fp-info-cache*
+*fabrication-toolkit-options.json
+\#auto_saved_files#
+_autosave-*
 *.lck
+
+# specific files and directories
 Recordings
-
-
-Kicad/ESP32-S3 Hub/fp-info-cache
-
 .obsidian/workspace.json
-
 .obsidian/plugins/various-complements/histories.json
-
+.trash/
 wak.toml
-
-Kicad/2s 40A PSU and charger/fp-info-cache
