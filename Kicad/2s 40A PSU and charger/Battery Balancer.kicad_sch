@@ -3316,6 +3316,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22394458"
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "15"
 			(uuid "95b7c261-90ba-4f6a-b256-e834e1210fbf")
 		)
@@ -4367,7 +4376,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+		(property "Footprint" "custom_Passives:R_2512_6332Metric_6W"
 			(at 66.04 113.03 0)
 			(effects
 				(font

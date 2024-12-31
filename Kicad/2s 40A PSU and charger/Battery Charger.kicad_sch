@@ -2244,6 +2244,12 @@
 		(uuid "15139956-dd7b-4617-abc7-0bc30c03d1a7")
 	)
 	(junction
+		(at 220.98 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19bb4f33-0677-4e70-90d1-7e4591558271")
+	)
+	(junction
 		(at 200.66 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2260,12 +2266,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3945be20-021a-4cff-8c4b-4e0a3208c2fc")
-	)
-	(junction
-		(at 220.98 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "396ab1bb-feae-4648-8fcb-d5061c3bfef3")
 	)
 	(junction
 		(at 124.46 54.61)
@@ -2292,6 +2292,12 @@
 		(uuid "5525579e-f220-4fa5-ad3d-3fb39dc3c373")
 	)
 	(junction
+		(at 213.36 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55e76069-d1ab-45c0-b0e4-6000a7284353")
+	)
+	(junction
 		(at 132.08 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2302,12 +2308,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5741d2ba-9315-4056-8cc1-ea22261b3290")
-	)
-	(junction
-		(at 213.36 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5812917e-4f25-42e7-ad85-d71bdebf9af7")
 	)
 	(junction
 		(at 153.67 54.61)
@@ -2607,16 +2607,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 107.95) (xy 220.98 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2eaa25bb-03de-48bf-a185-a684ce92328b")
-	)
-	(wire
-		(pts
 			(xy 106.68 71.12) (xy 132.08 71.12)
 		)
 		(stroke
@@ -2777,6 +2767,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 107.95) (xy 236.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0c4caf-8bc4-4f31-a157-612ed8b0e2f1")
+	)
+	(wire
+		(pts
 			(xy 152.4 95.25) (xy 168.91 95.25)
 		)
 		(stroke
@@ -2917,7 +2917,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 113.03) (xy 213.36 116.84)
+			(xy 213.36 107.95) (xy 213.36 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3247,6 +3247,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 107.95) (xy 214.63 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a840ef40-3d4b-43f0-b341-578c5f52e89b")
+	)
+	(wire
+		(pts
 			(xy 213.36 116.84) (xy 214.63 116.84)
 		)
 		(stroke
@@ -3317,7 +3327,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 107.95) (xy 236.22 107.95)
+			(xy 219.71 107.95) (xy 220.98 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3354,16 +3364,6 @@
 			(type default)
 		)
 		(uuid "c261453b-71e2-4b5d-8de8-de3dc4c28a5e")
-	)
-	(wire
-		(pts
-			(xy 213.36 107.95) (xy 214.63 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c378ac60-9db5-45ee-b81e-2e3a447d19bf")
 	)
 	(wire
 		(pts
@@ -3487,6 +3487,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 107.95) (xy 220.98 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf145ca-23f4-44d7-8963-669197643500")
+	)
+	(wire
+		(pts
 			(xy 236.22 107.95) (xy 242.57 107.95)
 		)
 		(stroke
@@ -3604,16 +3614,6 @@
 			(type default)
 		)
 		(uuid "fac255ac-fd27-401b-b8f7-b2a45268a313")
-	)
-	(wire
-		(pts
-			(xy 220.98 113.03) (xy 220.98 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fba10a3c-3ea0-4e2a-9406-4932d0ee0fb5")
 	)
 	(wire
 		(pts
@@ -4252,75 +4252,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 220.98 110.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "02f2180b-8d84-4bf2-89ec-df02dbab0886")
-		(property "Reference" "NT5"
-			(at 218.948 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Sense NetTie"
-			(at 214.884 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
-			(at 220.98 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 220.98 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a58a19e8-49ff-4f87-adb8-c2ff93e42c2e")
-		)
-		(pin "2"
-			(uuid "17afe1a6-1472-4953-bbbb-3de887cbf714")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
-					(reference "NT5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Q_NMOS_GSD")
 		(at 173.99 113.03 0)
 		(unit 1)
@@ -4420,75 +4351,6 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
 					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 213.36 110.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "0bc304b3-9fa4-487b-87fb-900bf0706489")
-		(property "Reference" "NT6"
-			(at 211.328 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Sense NetTie"
-			(at 207.264 112.522 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "custom_Connector:NetTie-2_SMD_Pad0.2mm"
-			(at 213.36 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 213.36 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0cb9f02-8711-4aaa-ae39-c15e201f81eb")
-		)
-		(pin "2"
-			(uuid "d39339da-b71b-48f3-9f3c-4d12a7f3f767")
-		)
-		(instances
-			(project "2s 40A PSU and charger"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/51a1bb53-ba94-4dbc-a00c-ce32ffc237e4"
-					(reference "NT6")
 					(unit 1)
 				)
 			)
@@ -4876,7 +4738,7 @@
 				)
 			)
 		)
-		(property "Value" "5mOhm, 10W"
+		(property "Value" "5mOhm, 10W, 2818"
 			(at 217.678 104.648 90)
 			(effects
 				(font
@@ -4884,7 +4746,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2816_7142Metric"
+		(property "Footprint" "custom_Passives:R_Vishay_2818"
 			(at 217.17 107.95 0)
 			(effects
 				(font

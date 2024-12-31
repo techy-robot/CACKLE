@@ -603,6 +603,7 @@
       "GND": "Logic Power",
       "GNDPWR": "High Current GND",
       "Net-(C18-Pad2)": "Logic Pwr",
+      "Net-(C21-Pad2)": "High Current",
       "Net-(C4-Pad1)": "High Current",
       "Net-(C7-Pad1)": "USB-C pwr",
       "Net-(D1-A)": "Logic Pwr",
