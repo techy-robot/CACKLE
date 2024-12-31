@@ -3267,7 +3267,7 @@
 		)
 		(uuid "8129d8ed-8bdc-42be-a096-45068e0e7a33")
 	)
-	(text_box "Not populated due for JLC due to custom handling required, and the parts don't exist in LCSC."
+	(text_box "Not populated due to custom handling required, and the parts aren't available from China."
 		(exclude_from_sim no)
 		(at 240.03 110.49 0)
 		(size 16.51 15.24)
@@ -4112,6 +4112,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17521"
+			(at 86.614 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f616691-200d-4e31-8365-354bf46ce86c")
 		)
@@ -4358,7 +4367,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uf, 16v"
+		(property "Value" "10uF, 16v"
 			(at 81.788 48.26 0)
 			(effects
 				(font
@@ -4387,6 +4396,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 88.9 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 84.836 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4744,6 +4762,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 117.348 57.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c80667c-baaf-444e-8725-85471b3cffa6")
 		)
@@ -4884,6 +4911,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C161860"
+			(at 74.93 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "188ae1f8-c4a5-47d7-9d1b-9fec9fa6a50d")
 		)
@@ -5013,6 +5049,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C913227"
+			(at 94.234 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "57f7f30e-6aff-4baf-ade4-5c93b8edb749")
 		)
@@ -5098,6 +5143,15 @@
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 52.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C963213"
+			(at 52.07 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5215,6 +5269,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 125.73 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25905"
+			(at 123.698 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5524,7 +5587,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "eae784ca-0251-41ba-9c50-e61c247c9682")
 		(property "Reference" "J11"
 			(at 213.106 36.068 90)

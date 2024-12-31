@@ -88,7 +88,7 @@
           "pos_x": 566,
           "pos_y": 1080,
           "size_x": 768,
-          "size_y": 945
+          "size_y": 977
         }
       },
       {
@@ -100,19 +100,7 @@
           "pos_x": 256,
           "pos_y": 0,
           "size_x": 1280,
-          "size_y": 612
-        }
-      },
-      {
-        "name": "2 connector Sensor Board.kicad_pro",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 564,
-          "pos_y": 1246,
-          "size_x": 772,
-          "size_y": 754
+          "size_y": 504
         }
       }
     ]

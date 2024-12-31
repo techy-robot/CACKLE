@@ -4338,7 +4338,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PJA3430"
+		(property "Value" "PJA3430, or HL 2320A"
 			(at 178.562 113.03 0)
 			(effects
 				(font
@@ -4657,7 +4657,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nf"
+		(property "Value" "47nF, 16v"
 			(at 94.488 59.436 0)
 			(effects
 				(font
@@ -4876,7 +4876,7 @@
 				)
 			)
 		)
-		(property "Value" "5mOhm, CS wshp2818"
+		(property "Value" "5mOhm, 10W"
 			(at 217.678 104.648 90)
 			(effects
 				(font
@@ -5016,7 +5016,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 226.06 124.968 0)
 			(effects
 				(font
@@ -5308,7 +5308,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 218.44 123.952 0)
 			(effects
 				(font
@@ -5531,7 +5531,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 133.604 66.294 90)
 			(effects
 				(font
@@ -5605,7 +5605,7 @@
 				)
 			)
 		)
-		(property "Value" "4.02kohm"
+		(property "Value" "4.02k"
 			(at 192.024 83.058 90)
 			(effects
 				(font
@@ -5679,7 +5679,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 141.986 60.96 90)
 			(effects
 				(font
@@ -5754,7 +5754,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 122.682 60.96 90)
 			(effects
 				(font
@@ -6090,8 +6090,8 @@
 				)
 			)
 		)
-		(property "Value" "10mOhm LVT12R0100FER"
-			(at 129.032 53.086 90)
+		(property "Value" "10mOhm, 1W"
+			(at 130.048 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6442,7 +6442,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PJA3430"
+		(property "Value" "PJA3430, or HL 2320A"
 			(at 178.308 95.758 0)
 			(effects
 				(font
@@ -6547,7 +6547,7 @@
 				)
 			)
 		)
-		(property "Value" "PJA3430"
+		(property "Value" "PJA3430, or HL 2320A"
 			(at 100.33 48.26 90)
 			(effects
 				(font
@@ -6872,7 +6872,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nF"
+		(property "Value" "1nF, 16v"
 			(at 67.818 58.42 0)
 			(effects
 				(font
@@ -7239,7 +7239,7 @@
 				)
 			)
 		)
-		(property "Value" "PJA3430"
+		(property "Value" "PJA3430, or HL 2320A"
 			(at 82.55 50.8 90)
 			(effects
 				(font
@@ -7929,7 +7929,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 212.09 123.952 0)
 			(effects
 				(font
@@ -8223,7 +8223,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uf"
+		(property "Value" "2.2uf, 16v"
 			(at 157.988 147.32 0)
 			(effects
 				(font

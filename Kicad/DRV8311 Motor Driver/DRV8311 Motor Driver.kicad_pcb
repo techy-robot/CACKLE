@@ -494,6 +494,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C505275"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b9a8adfe-1b1a-4c60-869b-54bedaa986fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/55062ee0-6cbe-4129-9b00-bd33506f3405")
 		(sheetname "Root")
@@ -964,6 +976,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C23733"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8043c01f-1f63-4be7-9140-6f4148d44739")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3798ec0c-44e9-44d8-8c79-95c6a5891871")
 		(sheetname "Root")
@@ -1278,6 +1302,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "690ca7da-4132-46d8-bd2a-ccb98922d2b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5218862"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "46bd98e1-005e-466e-8374-686e75f37d09")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1957,7 +1993,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "017b388a-fed6-4045-a91a-5578a5e423b5")
@@ -2000,6 +2036,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "38c14d13-2444-49db-b0a9-0335ddafc10e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8279aea0-6d38-45af-b0d4-014a1353883a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2717,7 +2765,7 @@
 		(path "/b96db891-322b-4d89-9142-c44076207503")
 		(sheetname "Root")
 		(sheetfile "DRV8311 Motor Driver.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 5.56 2.8)
 			(end 1.56 2.8)
@@ -3282,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "39e6b06c-cecf-4ccf-9f07-40ff5b35634b")
@@ -3325,6 +3373,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9a3a6a10-a638-4888-8263-c2ea81eb4073")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d6c51c65-dac5-47ab-ba85-351bf70db18e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3550,7 +3610,7 @@
 		(path "/65f69095-061c-48aa-9870-b5e6da287541")
 		(sheetname "Root")
 		(sheetfile "DRV8311 Motor Driver.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 5.56 2.8)
 			(end 1.56 2.8)
@@ -4168,6 +4228,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C25774"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "01608226-1f77-4198-a4e5-9e4a485357ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -5006,6 +5078,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a96b1b2a-0dc0-45d5-8cc4-9659aac1fc00")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/89cf2ae3-e5ee-4d73-8f79-2f6b852dc8c1")
 		(sheetname "Root")
@@ -5226,6 +5310,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f76ee2fa-6fb7-42ab-b696-4cb1e6540db1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5a16816f-acf6-41e8-bfdc-421607a0f84a")
 		(sheetname "Root")
@@ -5392,7 +5488,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "4955cd03-364e-4db0-b120-6f9eb0267305")
@@ -5444,6 +5540,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c70443d7-9a97-4409-b700-b3a0b1bc3eda")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -5664,6 +5772,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f3900fe8-9906-44d2-a800-c779c23717f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -6264,6 +6384,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1b1adef2-aea6-4ddd-b164-41c69774b4f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4a3bf193-c0f1-4cb6-85c5-8b7e7248e28a")
 		(sheetname "Root")
@@ -6740,6 +6872,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c87532bd-3226-402a-96f3-1bb65f4d8749")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/319320ad-1a91-4ce4-ae5e-91890bcd114b")
 		(sheetname "Root")
@@ -6906,7 +7050,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "7ddeeb92-430c-423e-8d91-ed7c0e11b895")
@@ -6958,6 +7102,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5b41f0b8-ee50-4583-95da-9677443c6259")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -7302,6 +7458,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "96554356-f87d-4a49-90b6-68919eeeb576")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5421a132-a2d0-4472-819d-dea296a6e26c")
 		(sheetname "Root")
@@ -7520,6 +7688,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e406fe40-9839-4668-ba36-0fa0ea768010")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -7787,7 +7967,7 @@
 		)
 	)
 	(gr_text "-"
-		(at 175.649999 109.1 -0)
+		(at 175.1 109.1 -0)
 		(layer "B.SilkS")
 		(uuid "d4c33927-6a49-471f-89a7-bcd1da8c1a99")
 		(effects
@@ -7835,7 +8015,7 @@
 		)
 	)
 	(gr_text "+"
-		(at 174.5 108.8 -0)
+		(at 173.85 109.2 -0)
 		(layer "F.SilkS")
 		(uuid "d77dc91f-ae10-4b23-87a8-608b0797dc92")
 		(effects

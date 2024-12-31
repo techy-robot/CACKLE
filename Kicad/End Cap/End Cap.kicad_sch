@@ -1207,7 +1207,7 @@
 	)
 	(text_box "Custom handling required, and the parts don't exist in LCSC."
 		(exclude_from_sim no)
-		(at 181.61 124.46 0)
+		(at 153.67 125.73 0)
 		(size 16.51 15.24)
 		(stroke
 			(width 0)
@@ -1403,7 +1403,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "35c43b58-1856-4f38-8b7b-e632fa190d60")
 		(property "Reference" "J7"
 			(at 125.222 153.162 0)
@@ -1469,7 +1469,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4b8ba2ac-36bd-4c38-a98a-66f3e526d50b")
 		(property "Reference" "J8"
 			(at 126.492 160.274 0)
@@ -1667,7 +1667,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "76bdebd5-a830-4b46-9e51-7c350fb57a91")
 		(property "Reference" "J5"
 			(at 125.222 121.412 0)
@@ -1734,7 +1734,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7a01af98-9736-4255-b72b-cae41e837147")
 		(property "Reference" "J1"
 			(at 126.746 58.42 90)
@@ -1935,7 +1935,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bff49ec4-d738-497e-baea-5694fbf04084")
 		(property "Reference" "J9"
 			(at 125.222 163.322 0)
@@ -2001,7 +2001,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c4046cd2-0885-4663-a809-e47a75bd336a")
 		(property "Reference" "J4"
 			(at 126.492 118.364 0)
@@ -2111,6 +2111,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25079"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d3f1c6d-8d38-4927-832a-6eaf7dc1ad25")
 		)
@@ -2133,7 +2142,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d03c9a32-0980-4eb5-9df9-e14ef8c85b0f")
 		(property "Reference" "J3"
 			(at 125.222 111.252 0)
@@ -2199,7 +2208,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d2527b7b-886b-4655-b482-7c718e8af4dc")
 		(property "Reference" "J6"
 			(at 126.492 150.114 0)
@@ -2263,7 +2272,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e07b3d52-8fe5-44e5-ae47-0cd2ca901eb6")
 		(property "Reference" "J2"
 			(at 126.492 108.204 0)

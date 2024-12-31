@@ -84,7 +84,6 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0.05)
-		(solder_mask_min_width 0.1)
 		(allow_soldermask_bridges_in_footprints yes)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
@@ -202,7 +201,7 @@
 		(path "/7a01af98-9736-4255-b72b-cae41e837147")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.11 4.505)
 			(end -0.30753 4.505)
@@ -509,7 +508,7 @@
 		(path "/d03c9a32-0980-4eb5-9df9-e14ef8c85b0f")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.45 4.15)
 			(end 1.45 3.15)
@@ -748,7 +747,7 @@
 		(path "/e07b3d52-8fe5-44e5-ae47-0cd2ca901eb6")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.55 -1.55)
 			(end 1.55 -1.55)
@@ -1001,7 +1000,7 @@
 		(path "/35c43b58-1856-4f38-8b7b-e632fa190d60")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.45 4.15)
 			(end 1.45 3.15)
@@ -1240,7 +1239,7 @@
 		(path "/d2527b7b-886b-4655-b482-7c718e8af4dc")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.55 -1.55)
 			(end 1.55 -1.55)
@@ -1620,7 +1619,7 @@
 		(path "/76bdebd5-a830-4b46-9e51-7c350fb57a91")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.45 -1.95)
 			(end -1.45 -0.95)
@@ -1866,6 +1865,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C25079"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "87a8aa77-860f-48a0-adf9-46b86d6517fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/cedecfff-3c9a-4837-b2b2-7e6a13f78821")
 		(sheetname "Root")
@@ -2087,7 +2098,7 @@
 		(path "/bff49ec4-d738-497e-baea-5694fbf04084")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -1.45 -1.95)
 			(end -1.45 -0.95)
@@ -2454,7 +2465,7 @@
 		(path "/c4046cd2-0885-4663-a809-e47a75bd336a")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.55 1.55)
 			(end -1.55 1.55)
@@ -2710,7 +2721,7 @@
 		(path "/4b8ba2ac-36bd-4c38-a98a-66f3e526d50b")
 		(sheetname "Root")
 		(sheetfile "End Cap.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 1.55 1.55)
 			(end -1.55 1.55)

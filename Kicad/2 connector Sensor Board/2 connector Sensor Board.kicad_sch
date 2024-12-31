@@ -3338,6 +3338,25 @@
 		)
 		(uuid "fbe8792d-0b26-4d35-ae26-e4682f8222e2")
 	)
+	(text_box "Can't populate due to parts not being available from China. Will have to manually populate"
+		(exclude_from_sim no)
+		(at 96.52 45.72 0)
+		(size 29.21 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1f9d6912-a1f4-4fd0-9486-465a17c5c857")
+	)
 	(text_box "CS pullup helps during device startup and decreases randomness on the SPI lines"
 		(exclude_from_sim no)
 		(at 99.06 16.51 0)
@@ -4826,6 +4845,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 70.104 66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6fd45c4-0f89-4b23-9b33-5ba905b47c0d")
 		)
@@ -5293,6 +5321,15 @@
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160404"
+			(at 172.72 35.9155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6322,6 +6359,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C425104"
+			(at 195.326 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "28"
 			(uuid "6c377b93-71d1-46f6-88c0-8526dab83231")
 		)
@@ -6743,6 +6789,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C425104"
+			(at 255.016 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "28"
 			(uuid "6f5a6a78-f197-4bf5-ab76-3d005ebacd9a")
 		)
@@ -6988,7 +7043,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "82c7ef5c-ef7d-413a-a16a-36faded3e091")
 		(property "Reference" "J5"
@@ -7209,7 +7264,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "aa10c2fa-941d-464e-ba4d-8f75a7a33518")
 		(property "Reference" "J2"
@@ -8084,6 +8139,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 67.31 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 70.104 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)

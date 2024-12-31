@@ -3026,10 +3026,10 @@
 		)
 		(uuid "0f048e5b-12bc-4acf-b643-7611fe404b13")
 	)
-	(text_box "Spring contacts or similar"
+	(text_box "Can't populate due to parts not being available from China, and custom processing required. Will have to manually populate"
 		(exclude_from_sim no)
-		(at 255.27 52.07 0)
-		(size 19.05 7.62)
+		(at 222.25 54.61 0)
+		(size 29.21 11.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -3043,7 +3043,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "4be00a92-ea87-4917-8d87-f6fa3f985da5")
+		(uuid "3a8d6699-afbf-4c2a-b3da-2312813e1693")
 	)
 	(text_box "Slew rate not connected is 180 V/us. Gain connected to ground is 0.25V/A, or 0.5 when tied to 47k gnd. Formula for CSA out volts is Vref/2 +- gain*I"
 		(exclude_from_sim no)
@@ -3082,25 +3082,6 @@
 			(justify left top)
 		)
 		(uuid "860d276a-117c-49a9-a664-4a9fe89b15ee")
-	)
-	(text_box "JLC doesn't have these parts, and I need to add some custom processing to cut the 3569 parts in half, so not populated"
-		(exclude_from_sim no)
-		(at 220.98 53.34 0)
-		(size 24.13 13.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b94d3e36-4530-46b8-8ee7-270540d4f3f7")
 	)
 	(text_box "Any capacitors on the power supply line should be rated above my intended voltage range of 3.7-7.4v\nThe bulk capacitance on VM should also be really high"
 		(exclude_from_sim no)
@@ -3226,7 +3207,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 97.79 113.0235 0)
 			(effects
 				(font
@@ -4647,7 +4628,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "65f69095-061c-48aa-9870-b5e6da287541")
 		(property "Reference" "J1"
 			(at 157.48 78.7401 0)
@@ -5003,7 +4984,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 100.076 56.388 90)
 			(effects
 				(font
@@ -5746,7 +5727,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b96db891-322b-4d89-9142-c44076207503")
 		(property "Reference" "J2"
 			(at 93.472 81.788 0)
@@ -5894,7 +5875,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 160.274 51.308 90)
 			(effects
 				(font
@@ -6034,7 +6015,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 58.674 63.5 0)
 			(effects
 				(font

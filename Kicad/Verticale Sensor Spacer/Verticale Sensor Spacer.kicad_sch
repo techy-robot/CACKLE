@@ -3248,6 +3248,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C425104"
+			(at 119.126 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "28"
 			(uuid "6c377b93-71d1-46f6-88c0-8526dab83231")
 		)
@@ -4405,6 +4414,15 @@
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 185.42 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C425103"
+			(at 186.436 82.042 0)
 			(effects
 				(font
 					(size 1.27 1.27)

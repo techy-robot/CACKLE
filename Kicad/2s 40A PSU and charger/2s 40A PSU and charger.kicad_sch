@@ -1319,7 +1319,7 @@
 				)
 			)
 		)
-		(property "Value" "10 ohm"
+		(property "Value" "10ohm"
 			(at 113.792 138.938 90)
 			(effects
 				(font
@@ -1347,6 +1347,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 110.49 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17415"
+			(at 105.664 138.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1435,6 +1444,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2837790"
+			(at 105.41 128.5876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,6 +1610,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 115.57 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2837790"
+			(at 118.11 129.8574 0)
 			(effects
 				(font
 					(size 1.27 1.27)

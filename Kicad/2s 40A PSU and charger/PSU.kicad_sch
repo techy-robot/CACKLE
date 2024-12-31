@@ -1648,6 +1648,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5832372"
+			(at 232.41 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "60217b6e-8559-47a7-a697-16d01785acac")
 		)
@@ -1746,7 +1755,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 88.392 81.28 0)
 			(effects
 				(font
@@ -1775,6 +1784,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 93.98 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 90.17 76.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,6 +1869,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 80.01 76.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a337fd68-22cf-4058-b894-8615e11fb550")
 		)
@@ -1884,7 +1911,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF, 10v"
+		(property "Value" "2.2uF, 16v"
 			(at 118.11 79.756 0)
 			(effects
 				(font
@@ -1913,6 +1940,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 123.19 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12530"
+			(at 119.38 76.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2150,7 +2186,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF, 16v"
 			(at 228.092 78.994 90)
 			(effects
 				(font
@@ -2179,6 +2215,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 219.964 79.502 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2248,6 +2293,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 179.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C159758"
+			(at 175.006 79.248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,6 +2583,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 243.84 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C159758"
+			(at 242.316 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)

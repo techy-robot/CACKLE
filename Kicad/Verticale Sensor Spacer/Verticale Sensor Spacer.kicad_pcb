@@ -90,7 +90,6 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0.05)
-		(solder_mask_min_width 0.1)
 		(allow_soldermask_bridges_in_footprints yes)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
@@ -209,6 +208,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C425103"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "05e07edd-d1e3-4156-9c75-45a4c2def56e")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -705,6 +716,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C425104"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "4d235674-f65f-4fcb-8d46-146d203807d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "Connector*:*_2x??-1MP*")

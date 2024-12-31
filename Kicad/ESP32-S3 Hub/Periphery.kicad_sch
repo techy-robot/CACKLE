@@ -1998,7 +1998,7 @@
 		(uuid "6204f7ea-2d08-464f-a7e0-851d7793ab2d")
 	)
 	(junction
-		(at 185.42 113.03)
+		(at 224.79 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92a09d73-81ec-44ac-8605-de2aa457c36b")
@@ -2014,11 +2014,11 @@
 		(uuid "32db88d9-7a1d-4a90-8ce3-19b761a96073")
 	)
 	(no_connect
-		(at 185.42 105.41)
+		(at 224.79 106.68)
 		(uuid "808000f4-acf1-4e12-9048-bd5e1c4d0a0a")
 	)
 	(no_connect
-		(at 200.66 105.41)
+		(at 240.03 106.68)
 		(uuid "a30387ff-69b1-4dd1-9555-0594e30b795c")
 	)
 	(no_connect
@@ -2037,7 +2037,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 107.95) (xy 213.36 110.49)
+			(xy 252.73 109.22) (xy 252.73 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2057,7 +2057,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 110.49) (xy 185.42 113.03)
+			(xy 224.79 111.76) (xy 224.79 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2067,7 +2067,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 107.95) (xy 177.8 107.95)
+			(xy 214.63 109.22) (xy 217.17 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2077,7 +2077,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 107.95) (xy 185.42 107.95)
+			(xy 222.25 109.22) (xy 224.79 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2117,7 +2117,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 116.84) (xy 200.66 113.03)
+			(xy 240.03 118.11) (xy 240.03 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2127,7 +2127,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 116.84) (xy 213.36 116.84)
+			(xy 248.92 118.11) (xy 252.73 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2177,7 +2177,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 113.03) (xy 185.42 113.03)
+			(xy 218.44 114.3) (xy 224.79 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2207,7 +2207,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 110.49) (xy 208.28 110.49)
+			(xy 252.73 111.76) (xy 247.65 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2267,7 +2267,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 110.49) (xy 203.2 110.49)
+			(xy 240.03 111.76) (xy 242.57 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2277,7 +2277,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 116.84) (xy 200.66 116.84)
+			(xy 243.84 118.11) (xy 240.03 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2337,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 107.95) (xy 200.66 107.95)
+			(xy 252.73 109.22) (xy 240.03 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2405,6 +2405,25 @@
 		)
 		(uuid "f0ffd532-fcf2-47e6-8ef6-79fdd9c30ee8")
 	)
+	(text_box "Can't populate due to parts not being available from China. Will have to manually populate"
+		(exclude_from_sim no)
+		(at 167.64 76.2 0)
+		(size 29.21 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "16e78aac-2565-4f0f-af8c-d933a791dfed")
+	)
 	(text_box "Have pullups on all the Chip select lines to the shift reg, because I have tied the two clocks together and if the outputs are disabled they will be floating, there is no buffer"
 		(exclude_from_sim no)
 		(at 35.56 114.3 0)
@@ -2426,7 +2445,7 @@
 	)
 	(text_box "I really wanted to have Bias and termination resistors optional per device, but space constraints are real, and extra switches on board really does not make sense"
 		(exclude_from_sim no)
-		(at 181.61 85.09 0)
+		(at 220.98 86.36 0)
 		(size 38.1 11.43)
 		(stroke
 			(width 0)
@@ -2543,7 +2562,7 @@
 	)
 	(global_label "RS485+"
 		(shape bidirectional)
-		(at 179.07 113.03 180)
+		(at 218.44 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2553,7 +2572,7 @@
 		)
 		(uuid "6d22afdc-92f0-4b03-98ec-ea9181ca851e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.2931 113.03 0)
+			(at 206.6631 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2763,7 +2782,7 @@
 	)
 	(global_label "RS485-"
 		(shape bidirectional)
-		(at 213.36 107.95 0)
+		(at 252.73 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2773,7 +2792,7 @@
 		)
 		(uuid "b543c99b-cb8d-41c8-bde6-460ef8156808")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.1369 107.95 0)
+			(at 264.5069 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,6 +3010,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C730243"
+			(at 51.308 111.252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "d3382a0d-9be6-4eac-89f5-930fc62a24bb")
 		)
@@ -3053,7 +3081,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 180.34 107.95 270)
+		(at 219.71 109.22 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3061,7 +3089,7 @@
 		(dnp yes)
 		(uuid "129b5aaa-ac56-4688-bc02-40b4c51aeab2")
 		(property "Reference" "R23"
-			(at 179.832 109.474 90)
+			(at 219.202 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3069,7 +3097,7 @@
 			)
 		)
 		(property "Value" "120 ohm"
-			(at 179.324 106.68 90)
+			(at 218.694 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3105,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 180.34 107.95 0)
+			(at 219.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +3114,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 107.95 0)
+			(at 219.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +3123,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 180.34 107.95 0)
+			(at 219.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3172,6 +3200,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C4365007"
+			(at 150.368 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff1139f7-387f-4cf7-8ddd-7617b9bd60de")
 		)
@@ -3194,7 +3231,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1f8e890e-5f95-4911-9356-02abfa070ded")
 		(property "Reference" "U3"
 			(at 144.526 65.786 0)
@@ -3386,6 +3423,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4365007"
+			(at 102.616 45.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3721,6 +3767,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 156.464 29.718 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6cf16596-f48c-4fa6-a92c-006b09b328a1")
 		)
@@ -3783,6 +3838,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 71.374 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,6 +3988,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C185392"
+			(at 57.15 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d452ef0-ab4c-4920-be63-3eb0ad1df7d9")
 		)
@@ -3941,7 +4014,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 107.95 270)
+		(at 214.63 109.22 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3950,7 +4023,7 @@
 		(fields_autoplaced yes)
 		(uuid "8bc9dd37-6259-48d4-b527-c51e13989bed")
 		(property "Reference" "#PWR038"
-			(at 168.91 107.95 0)
+			(at 208.28 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3959,7 +4032,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 107.9499 90)
+			(at 210.82 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,7 +4041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 107.95 0)
+			(at 214.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,7 +4050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 107.95 0)
+			(at 214.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +4059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 107.95 0)
+			(at 214.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4124,6 +4197,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 163.068 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eb1ee64e-f8f1-4b2d-80f7-79134bc1e9ee")
 		)
@@ -4141,7 +4223,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 213.36 116.84 270)
+		(at 252.73 118.11 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4149,7 +4231,7 @@
 		(dnp yes)
 		(uuid "c8462f18-d617-422b-b6d4-08ee963785fc")
 		(property "Reference" "#PWR037"
-			(at 209.55 116.84 0)
+			(at 248.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +4240,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 219.202 118.11 90)
+			(at 258.572 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4166,7 +4248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 116.84 0)
+			(at 252.73 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4175,7 +4257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 116.84 0)
+			(at 252.73 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4184,7 +4266,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 213.36 116.84 0)
+			(at 252.73 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,7 +4288,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x04")
-		(at 193.04 110.49 0)
+		(at 232.41 111.76 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4215,7 +4297,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce02156a-8cae-4e4c-94f7-69e2ef3c8963")
 		(property "Reference" "SW3"
-			(at 193.04 97.79 0)
+			(at 232.41 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,7 +4305,7 @@
 			)
 		)
 		(property "Value" "DS04-254-2-04BK-SMT"
-			(at 193.04 100.33 0)
+			(at 232.41 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4313,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm"
-			(at 193.04 110.49 0)
+			(at 232.41 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4240,7 +4322,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 110.49 0)
+			(at 232.41 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4249,7 +4331,7 @@
 			)
 		)
 		(property "Description" "4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 193.04 110.49 0)
+			(at 232.41 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,7 +4440,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 207.01 116.84 270)
+		(at 246.38 118.11 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4366,7 +4448,7 @@
 		(dnp yes)
 		(uuid "e03226a5-9751-4b3f-a5c9-41d03c69be2f")
 		(property "Reference" "R21"
-			(at 206.248 119.634 90)
+			(at 245.618 120.904 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4374,7 +4456,7 @@
 			)
 		)
 		(property "Value" "120 ohm"
-			(at 206.502 114.554 90)
+			(at 245.872 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4382,7 +4464,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 207.01 116.84 0)
+			(at 246.38 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4391,7 +4473,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 116.84 0)
+			(at 246.38 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4482,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 207.01 116.84 0)
+			(at 246.38 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4490,7 +4572,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 205.74 110.49 270)
+		(at 245.11 111.76 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4498,7 +4580,7 @@
 		(dnp yes)
 		(uuid "efca0a8d-5989-4eae-bf5d-0c03fe8bbd45")
 		(property "Reference" "R22"
-			(at 205.232 112.014 90)
+			(at 244.602 113.284 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4506,7 +4588,7 @@
 			)
 		)
 		(property "Value" "120 ohm"
-			(at 204.724 109.22 90)
+			(at 244.094 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4514,7 +4596,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 205.74 110.49 0)
+			(at 245.11 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,7 +4605,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 110.49 0)
+			(at 245.11 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4532,7 +4614,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 205.74 110.49 0)
+			(at 245.11 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +4645,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ffc7eccc-37ca-4142-8db6-884b6812c9ec")
 		(property "Reference" "D1"
 			(at 67.6275 43.18 0)
@@ -4573,8 +4654,8 @@
 				)
 			)
 		)
-		(property "Value" "Osram LT Q99G.01 green led"
-			(at 67.6275 45.72 0)
+		(property "Value" "2.6~3.1 Fv Green 5ma"
+			(at 71.374 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4601,6 +4682,15 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 66.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3028858"
+			(at 67.6275 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)

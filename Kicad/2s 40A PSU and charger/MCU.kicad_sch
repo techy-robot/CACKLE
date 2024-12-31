@@ -2515,6 +2515,25 @@
 		)
 		(uuid "9ad06a74-6283-42ab-bf5e-df64942987e3")
 	)
+	(text_box "Can't populate due to parts not being available from China. Will have to manually populate"
+		(exclude_from_sim no)
+		(at 74.93 163.83 0)
+		(size 29.21 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a76b8f18-5911-44e7-8381-7796d36751db")
+	)
 	(text_box "Schematic symbol looks funky and reversed compared to the actual chip, however I have verified that the pins are correct"
 		(exclude_from_sim no)
 		(at 85.09 114.3 0)
@@ -3113,7 +3132,7 @@
 				)
 			)
 		)
-		(property "Value" "Osram LT Q99G.01 green led"
+		(property "Value" "2.6~3.1 Fv Green 5ma"
 			(at 77.7875 25.4 0)
 			(effects
 				(font
@@ -3140,6 +3159,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 76.2 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3028858"
 			(at 76.2 30.48 0)
 			(effects
 				(font
@@ -3210,6 +3238,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 29.21 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 26.162 41.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3905,7 +3942,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF, 16v"
 			(at 144.272 54.356 90)
 			(effects
 				(font
@@ -3933,6 +3970,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 143.51 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 143.002 56.642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,7 +4158,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9e07bccd-57c1-49b0-8355-9b6707aba6b9")
 		(property "Reference" "U5"
 			(at 57.912 150.114 0)
@@ -4577,6 +4623,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 33.02 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54c07fba-a57a-4ecc-ba80-3014e8257ac8")
 		)
@@ -4609,7 +4664,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF, 16v"
 			(at 144.272 60.706 90)
 			(effects
 				(font
@@ -4637,6 +4692,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 143.002 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4139,6 +4139,25 @@
 		)
 		(uuid "1a867905-6c8e-46ae-86d4-0b7639debe71")
 	)
+	(text_box "Can't populate due to parts not being available from China. Will have to manually populate"
+		(exclude_from_sim no)
+		(at 45.72 146.05 0)
+		(size 29.21 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1cae23f3-af21-4ec5-bd4c-d8fde6cb3e78")
+	)
 	(text_box "The CS pins can be used as a generic digital output, connected to the shift register. Each half of the board has its own pair of CS pins"
 		(exclude_from_sim no)
 		(at 179.07 53.34 0)
@@ -6581,7 +6600,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "101ba280-2970-48d4-a463-304716949ee4")
 		(property "Reference" "J12"
 			(at 39.37 134.6199 0)
@@ -7052,7 +7071,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1b4996c7-f16b-4ce9-8ab3-ce41eb63534c")
 		(property "Reference" "J1"
 			(at 39.37 31.7499 0)
@@ -7192,7 +7211,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1cf35e43-92f6-43ac-896f-779ce665d7c5")
 		(property "Reference" "J9"
 			(at 39.37 102.8699 0)
@@ -7668,7 +7687,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "331efef2-53c8-4327-b661-82325283bfc8")
 		(property "Reference" "J5"
@@ -8133,6 +8152,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 71.12 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2b351f8f-8bcc-45f3-be77-ddbe408ef911")
 		)
@@ -8291,7 +8319,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "48860f1e-c88b-4a96-b1a4-c936bd0659c2")
 		(property "Reference" "J10"
 			(at 39.37 126.9999 0)
@@ -8495,7 +8523,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "50c10cc4-f288-4e33-8955-88d00bbe19f0")
 		(property "Reference" "J2"
 			(at 39.37 39.3699 0)
@@ -8605,6 +8633,15 @@
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 173.99 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C425104"
+			(at 175.006 126.492 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,6 +8803,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 71.12 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "376e69cf-4f72-4ec8-86a1-67de15234c42")
 		)
@@ -8826,6 +8872,15 @@
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C425104"
+			(at 247.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9077,7 +9132,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "61a4f631-2c2c-4969-b4df-2bd26479eed5")
 		(property "Reference" "J3"
@@ -9208,6 +9263,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C425103"
+			(at 175.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "28"
 			(uuid "dec3ec7a-4fe5-4b7d-964e-8effcbf03cf7")
 		)
@@ -9317,7 +9381,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "69a95151-9d09-40d9-9047-50330a4a99cd")
 		(property "Reference" "J21"
 			(at 162.306 169.418 90)
@@ -9723,7 +9787,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7546d773-370a-4521-bc5a-a005c0afdc34")
 		(property "Reference" "J11"
@@ -9853,6 +9917,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 71.12 70.866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "15b026a8-68c6-4863-ba06-ee3fb7ccf366")
 		)
@@ -9875,7 +9948,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "77b92291-b4c3-4705-a6ad-f19f2785f636")
 		(property "Reference" "J4"
 			(at 39.37 64.7699 0)
@@ -9947,7 +10020,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7c8ac24e-cdf1-4a91-aa47-a8564bd01316")
 		(property "Reference" "J6"
 			(at 39.37 72.3899 0)
@@ -10152,7 +10225,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "86abd25e-d982-4408-aefc-127dc89262ba")
 		(property "Reference" "J7"
 			(at 39.37 95.2499 0)
@@ -10491,7 +10564,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "986876fb-19e8-46f5-94ea-86f047cddbeb")
 		(property "Reference" "J8"
@@ -10709,7 +10782,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ab288d88-2cf4-4a30-bc05-af4be03f2c24")
 		(property "Reference" "J22"
 			(at 147.066 193.04 90)
@@ -11027,6 +11100,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C425103"
+			(at 247.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "28"
 			(uuid "d946f43d-a637-4b56-b1c0-f3416acd1727")
 		)
@@ -11174,6 +11256,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 69.85 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 71.12 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)

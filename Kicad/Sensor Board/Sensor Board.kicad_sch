@@ -4250,6 +4250,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 71.374 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6fd45c4-0f89-4b23-9b33-5ba905b47c0d")
 		)
@@ -5332,6 +5341,15 @@
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 194.31 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C425104"
+			(at 195.326 93.472 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6676,6 +6694,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 67.31 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 70.104 28.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)

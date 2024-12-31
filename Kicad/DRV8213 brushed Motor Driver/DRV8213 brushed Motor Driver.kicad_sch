@@ -2962,7 +2962,7 @@
 	)
 	(text_box "R2 converts current mirror to a voltage. Tieing the gain to ground means it is 205uA/A"
 		(exclude_from_sim no)
-		(at 151.13 82.55 0)
+		(at 62.23 107.95 0)
 		(size 21.59 12.7)
 		(stroke
 			(width 0)
@@ -3000,7 +3000,7 @@
 	)
 	(text_box "- tINRUSH = 6.5 x 10^6 x CINRUSH, to set inrush time\n- Current regulation Enabled at all times\n- Stall detection Enabled"
 		(exclude_from_sim no)
-		(at 81.28 109.22 0)
+		(at 85.09 107.95 0)
 		(size 29.21 13.97)
 		(stroke
 			(width 0)
@@ -3035,6 +3035,25 @@
 			(justify left top)
 		)
 		(uuid "7f910219-e473-498f-99de-85139930789f")
+	)
+	(text_box "JLC doesn't have the right version of the chip"
+		(exclude_from_sim no)
+		(at 134.62 77.47 0)
+		(size 24.13 7.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ac16170f-7f67-432e-8327-65d3a45900d8")
 	)
 	(text_box "Any capacitors on the power supply line should be rated above my intended voltage range of 3.7-7.4v\nThe bulk capacitance on VM should also be really high"
 		(exclude_from_sim no)
@@ -3371,6 +3390,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25890"
+			(at 82.55 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1882bcb7-3355-4c36-8fa0-843835cca274")
 		)
@@ -3440,6 +3468,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 13.97 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "17242d6c-7ef5-4bbe-82f6-87e412976a1f")
 		)
@@ -3502,6 +3539,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 40.64 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 36.83 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3708,6 +3754,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 30.48 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "85d29418-30bd-498e-9de9-f5ad766dbe87")
 		)
@@ -3865,7 +3920,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "588625b2-60b6-4f87-9453-bee0b665c44e")
 		(property "Reference" "U1"
 			(at 92.964 51.562 0)
@@ -4019,6 +4074,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 48.26 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 44.45 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4300,6 +4364,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C12530"
+			(at 53.34 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c53eec2c-c973-4345-a17f-5a6ea7061aac")
 		)
@@ -4495,6 +4568,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 27.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 24.13 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,6 +4791,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 50.8 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "436f4467-66b1-44f2-869f-24488e574ab9")
 		)
@@ -4875,7 +4966,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 21.844 92.71 0)
 			(effects
 				(font
@@ -4904,6 +4995,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 27.94 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 24.13 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,6 +5073,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 146.05 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C295747"
+			(at 147.32 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +5521,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF, 16v"
+		(property "Value" "100nF, 16v"
 			(at 58.674 63.5 0)
 			(effects
 				(font
@@ -5441,6 +5550,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 64.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 60.96 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5720,6 +5838,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C129997"
+			(at 41.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "458ad704-aed0-45bd-ab20-7c8a8365fa53")
 		)
@@ -5924,6 +6051,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 152.4 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 154.94 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)

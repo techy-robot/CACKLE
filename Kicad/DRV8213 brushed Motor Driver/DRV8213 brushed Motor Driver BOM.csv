@@ -1,7 +1,7 @@
 "Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
 1;"J3,J2,J7,J6";"Keystone_3579";4;"Keystone 3579";;;
 2;"J4,J1,J8,J5";"Keystone_3569_half";4;"Keystone 3569";;;
-3;"C6,C8";"C_0402_1005Metric";2;"0.1uF, 16v";;;
+3;"C6,C8";"C_0402_1005Metric";2;"100nF, 16v";;;
 4;"J11,J10";"PinHeader_1x03_P1.27mm_Horizontal";2;"1.27mm pin header";;;
 5;"C7,C1,C4,C5,C3,C2";"C_0603_1608Metric";6;"10uF, 16v";;;
 6;"J9";"JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal";1;"JST PH 2mm horizontal";;;
