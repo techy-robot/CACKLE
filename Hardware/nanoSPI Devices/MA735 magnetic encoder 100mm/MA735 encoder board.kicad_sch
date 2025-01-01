@@ -1323,6 +1323,25 @@
 		)
 		(uuid "ef3d2da6-542a-46e7-b986-d74aa2c36e3c")
 	)
+	(text_box "Supports SPI mode 0 or 3, automatically"
+		(exclude_from_sim no)
+		(at 118.11 138.43 0)
+		(size 29.21 8.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "87d57061-7ccf-4985-830c-52deffe9450b")
+	)
 	(text_box "Ideally each signal line is next to a ground line. However, this is an extremely space limited part so the most natural wiring from the chip out takes priority. CS kinda acts like ground when it is selected"
 		(exclude_from_sim no)
 		(at 195.58 102.87 0)
@@ -1344,7 +1363,7 @@
 	)
 	(text_box "Internal pulldowns on all SPI lines"
 		(exclude_from_sim no)
-		(at 120.65 113.03 0)
+		(at 107.95 105.41 0)
 		(size 22.86 8.89)
 		(stroke
 			(width 0)
@@ -1524,6 +1543,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 180.34 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb6063f1-98a1-45c5-a262-87b3c11bd8df")
 		)
@@ -1653,6 +1681,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 187.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 190.5 82.5562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1857,6 +1894,15 @@
 		)
 		(property "Description" ""
 			(at 120.65 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17233427"
+			(at 140.97 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,7 +2167,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "de372727-16fb-42d5-a321-9899ba27037e")
 		(property "Reference" "J1"

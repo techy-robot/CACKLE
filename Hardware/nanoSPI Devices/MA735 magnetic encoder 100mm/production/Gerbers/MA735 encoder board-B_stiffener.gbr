@@ -1,0 +1,22 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.7-8.0.7-0~ubuntu24.04.1*
+G04 #@! TF.CreationDate,2024-12-31T17:41:06-07:00*
+G04 #@! TF.ProjectId,MA735 encoder board,4d413733-3520-4656-9e63-6f6465722062,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Other,User*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.7-8.0.7-0~ubuntu24.04.1) date 2024-12-31 17:41:06*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 APERTURE END LIST*
+G36*
+X151600000Y-29100000D02*
+G01*
+X154000000Y-29100000D01*
+X154000000Y-32100000D01*
+X151600000Y-32100000D01*
+X151600000Y-29100000D01*
+G37*
+M02*
