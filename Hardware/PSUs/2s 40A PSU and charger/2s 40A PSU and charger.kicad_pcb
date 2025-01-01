@@ -723,6 +723,19 @@
 				)
 			)
 		)
+		(property "Position Offset" "0,0.4"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88f4596c-6b6a-4546-a80a-4bd93e2f1f9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/c6ad37bd-33a9-423b-9c7d-a937d8230e58")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
@@ -2445,11 +2458,24 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a88da04-c44b-4636-a87b-107e109e0d18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C7437078"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "eab623f1-f480-4c14-a101-5172b83f6f11")
+			(uuid "dbc02950-0aa4-4208-beef-54e81bc0ae53")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3028,11 +3054,24 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5318bce-f3cb-4fe3-8000-97b017164f2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C7437078"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "6af8bdb2-6168-4730-a1b3-55f95480c9f3")
+			(uuid "ff1f80b0-e878-4899-bb08-a169369a79ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5197,7 +5236,7 @@
 			)
 		)
 		(property "Value" "5mOhm, 10W, 2818"
-			(at 0 3.18 360)
+			(at 0 3.18 0)
 			(layer "F.Fab")
 			(uuid "9c83567f-2e99-4d3a-8dbd-c9668bb91cb4")
 			(effects
@@ -5335,7 +5374,7 @@
 			(uuid "d1619d1c-6fab-4e36-a05d-b86f668a6c25")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ff14a03c-10bc-45d8-a3df-e001ca88c89c")
 			(effects
@@ -5934,11 +5973,24 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c487e03-e810-4a38-bbc9-a337836aa8b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C357072"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "fc93d027-fe16-4ed5-97c7-f53165a226f2")
+			(uuid "beb41a4d-24f4-428a-80e7-7d5025ae047e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6151,7 +6203,7 @@
 		(path "/3a3003bc-8e40-4cd7-b859-421f37e4b48c/c4a99cec-c448-4099-abe7-7df9832fece4")
 		(sheetname "Connectors")
 		(sheetfile "Connectors.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 7.56 -2.41)
 			(end 6.14 -2.41)
@@ -7835,11 +7887,24 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf3aa372-550e-4928-8603-e11138d77b68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C7437078"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "75fbccfe-3799-4281-aa2e-8020710fc435")
+			(uuid "5aa8ebe1-e758-476a-af4d-5792c68364fb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10484,14 +10549,28 @@
 				)
 			)
 		)
-		(property "LCSC" "C3289487"
-			(at 0 0 0)
-			(layer "F.SilkS")
+		(property "Rotation Offset" "270"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "fd156ee0-3cc1-4140-af13-5895a91494be")
+			(uuid "5fffbafc-a2f1-4627-b636-5a9e21930684")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C3289487"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68b624a3-25f5-44e4-881a-a7b90f1874ad")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11139,11 +11218,24 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "440c0bf7-ed62-41b4-9d75-437d3327afac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "LCSC" "C7437078"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5772ceb5-623a-4500-9d34-d755596f7ca2")
+			(uuid "82a9f145-a7ed-4c3d-833e-4e0fcf8f5fd2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12107,14 +12199,15 @@
 				)
 			)
 		)
-		(property "LCSC" "C882400"
-			(at 0 0 0)
-			(layer "F.SilkS")
+		(property "Rotation Offset" "270"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
 			(hide yes)
-			(uuid "11d6c8d5-55ff-4a52-8527-d97343fde101")
+			(uuid "9efeb58a-978c-4524-b13a-fe028a465607")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13319,6 +13412,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Position Offset" "0,1.55"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d44ef85-137d-4588-aff7-5528efc5a383")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21756,6 +21862,20 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "270"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b8efd64b-573c-4f78-81c5-c8b6b560a16a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/9cf42ac0-c980-41ef-957c-e7b7cc3eb205/60eed8d4-b9f9-4862-adce-8427059ed020")
 		(sheetname "Battery Balancer")
 		(sheetfile "Battery Balancer.kicad_sch")
@@ -24855,6 +24975,20 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a897b098-317f-41bb-a4ac-bb1e30d6b235")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/77be5f81-4ede-42b7-b1c4-fa657e9379ac/9aef2dd7-af01-439f-980e-f1135c11253a")
 		(sheetname "MCU")
 		(sheetfile "MCU.kicad_sch")
@@ -26397,6 +26531,20 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bc34d4f0-e3f6-4c07-aae7-3aa29a38e632")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
 			)
 		)
 		(property ki_fp_filters "TSOT?23*")
@@ -39070,8 +39218,8 @@
 				(xy 139.044276 125.007841) (xy 139.104784 124.861762) (xy 139.125422 124.705) (xy 139.104784 124.548238)
 				(xy 139.098397 124.53282) (xy 139.090926 124.463353) (xy 139.122199 124.400872) (xy 139.125219 124.397741)
 				(xy 139.446144 124.076816) (xy 139.507466 124.043334) (xy 139.533824 124.0405) (xy 139.58439 124.0405)
-				(xy 139.651429 124.060185) (xy 139.67207 124.076818) (xy 140.865725 125.270473) (xy 140.94774 125.352488)
-				(xy 141.048186 125.410481) (xy 141.16022 125.4405) (xy 142.5005 125.4405) (xy 142.567539 125.460185)
+				(xy 139.651429 124.060185) (xy 139.67207 124.076818) (xy 140.94774 125.352488) (xy 141.048186 125.410481)
+				(xy 141.16022 125.4405) (xy 141.276206 125.4405) (xy 142.5005 125.4405) (xy 142.567539 125.460185)
 				(xy 142.613294 125.512989) (xy 142.6245 125.5645) (xy 142.6245 125.643102) (xy 142.6281 125.67308)
 				(xy 142.635122 125.731561) (xy 142.635122 125.731563) (xy 142.635123 125.731564) (xy 142.645059 125.75676)
 				(xy 142.690639 125.872343) (xy 142.782077 125.992922) (xy 142.902656 126.08436) (xy 142.902657 126.08436)

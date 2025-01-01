@@ -4866,7 +4866,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c4a99cec-c448-4099-abe7-7df9832fece4")
 		(property "Reference" "J2"
 			(at 74.93 157.48 0)
@@ -5058,6 +5058,15 @@
 				(hide yes)
 			)
 		)
+		(property "Position Offset" "0,0.4"
+			(at 76.2 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "57f7f30e-6aff-4baf-ade4-5c93b8edb749")
 		)
@@ -5152,6 +5161,15 @@
 		)
 		(property "LCSC" "C963213"
 			(at 52.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Position Offset" "0,1.55"
+			(at 52.07 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

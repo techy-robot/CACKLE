@@ -1451,7 +1451,7 @@
 		(path "/b96db891-322b-4d89-9142-c44076207503")
 		(sheetname "Root")
 		(sheetfile "DRV8213 brushed Motor Driver.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 5.56 2.8)
 			(end 1.56 2.8)
@@ -2292,7 +2292,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C295747"
+		(property "LCSC" "C160237"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2300,6 +2300,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab2e7d43-60b1-47a3-a46b-d1d5daa15695")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3363,7 +3376,7 @@
 		(path "/65f69095-061c-48aa-9870-b5e6da287541")
 		(sheetname "Root")
 		(sheetfile "DRV8213 brushed Motor Driver.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 5.56 2.8)
 			(end 1.56 2.8)

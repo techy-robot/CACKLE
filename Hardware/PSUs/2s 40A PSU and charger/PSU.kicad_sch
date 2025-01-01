@@ -2395,6 +2395,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 204.47 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3aaec8aa-ab3c-459f-96f8-f8ac4a0d171e")
 		)

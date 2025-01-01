@@ -4245,7 +4245,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "65f69095-061c-48aa-9870-b5e6da287541")
 		(property "Reference" "J10"
 			(at 76.2 73.6601 0)
@@ -5080,8 +5080,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C295747"
+		(property "LCSC" "C160237"
 			(at 147.32 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rotation Offset" "180"
+			(at 146.05 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,7 +5184,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b96db891-322b-4d89-9142-c44076207503")
 		(property "Reference" "J11"
 			(at 37.592 119.888 0)

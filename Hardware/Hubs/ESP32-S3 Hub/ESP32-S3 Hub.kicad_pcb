@@ -5553,6 +5553,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6af08291-7908-4f79-b2a5-d0e810d60990")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "QFN*1EP*7x7mm*P0.4mm*")
 		(path "/ae2abed9-99c5-4e8e-acea-ddc8da259a2a")
 		(sheetname "Root")
@@ -10334,7 +10347,7 @@
 		(descr "DHVQFN, 16 Pin (JEDEC MO-241/VAB, https://assets.nexperia.com/documents/package-information/SOT763-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "DHVQFN NoLead")
 		(property "Reference" "U2"
-			(at 2.404163 1.131371 -135)
+			(at 2.404163 1.131371 45)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "d9a28e61-266b-43d4-b57d-751f32e555f1")
@@ -10410,6 +10423,20 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property "Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "229603fe-3d65-4816-a1a8-98c4e2e7a352")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*")

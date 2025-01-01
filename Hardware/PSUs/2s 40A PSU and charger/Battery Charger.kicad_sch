@@ -4332,6 +4332,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4507900f-2ff5-4bcd-920b-33b03ae3d0f7")
 		)
@@ -5755,6 +5764,24 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "270"
+			(at 198.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3289487"
+			(at 198.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d3ed2f7-be9b-4284-9b22-613244c75535")
 		)
@@ -6367,6 +6394,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 173.99 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d24e4dc1-e79f-47b8-8a12-833395820958")
 		)
@@ -6471,6 +6507,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 100.33 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3b3a14ff-c49f-44f0-b409-d11056b9f914")
 		)
@@ -6540,6 +6585,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 187.96 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 187.96 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7163,6 +7217,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 82.55 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "10547bdf-07d0-4676-b426-204190598d0d")
 		)
@@ -7590,6 +7653,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 132.08 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rotation Offset" "270"
 			(at 132.08 118.11 0)
 			(effects
 				(font
