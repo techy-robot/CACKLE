@@ -4,9 +4,9 @@ aliases:
   - Design Qwiic Sensor Module
 modified: 2024-09-23T19:24:35-06:00
 tags: 
-completed: 
+completed: true
 itemtype: task
-status: New
+status: Done
 date: 2024-10-21
 startTime: 
 endDate: 2024-10-26
@@ -25,6 +25,7 @@ milestone:
 createdby: 
 assignees: 
 completedby: 
+completedDate: 2025-01-01
 ---
 `BUTTON[complete, uncomplete]`
 

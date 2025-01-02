@@ -4,9 +4,9 @@ aliases:
   - Design V1 of all 4 modules
 modified: 2024-09-23T18:46:33-06:00
 tags: 
-completed: 
+completed: true
 itemtype: milestone
-status: In Progress
+status: Done
 date: 2024-09-23
 startTime: 
 endDate: 2024-10-31
@@ -19,7 +19,9 @@ peeritems:
 subitems: 
 createdby: 
 assignees: 
+completedDate: 2025-01-01
 ---
+`BUTTON[complete, uncomplete]`
 
 # Description:
 

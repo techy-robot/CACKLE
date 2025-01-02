@@ -2,7 +2,7 @@
 title: Design V1 Hub
 aliases:
   - Design V1 Hub
-modified: 2024-10-20T12:14:32-06:00
+modified: 2025-01-01T17:26:17-07:00
 tags: 
 completed: true
 itemtype: task
@@ -17,7 +17,7 @@ priority: Normal
 effort: L
 id: 
 planned_hours: 30
-logged_hours: 
+logged_hours: 70
 product_version: 
 subitems: 
 peeritems: 
@@ -25,7 +25,7 @@ milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]
 createdby: 
 assignees: 
 completedby: 
-completedDate: 2024-10-20
+completedDate: 2025-01-01
 ---
 `BUTTON[complete, uncomplete]`
 
@@ -40,7 +40,7 @@ This is a 6 layer board, which tries to follow the order Sig/Gnd/Pwr/Sig/Gnd/Sig
 - [x] Move out the pin headers a few 0.1mms so that the headers are exactly the distance required for connection to the motor cards ➕ 2024-10-18 ✅ 2024-10-18 ^2
 - [x] Fix port 2 and 4 being swapped ➕ 2024-10-18 ✅ 2024-10-18 ^3
 - [x] If I go with a 6 layer board design I will have more space to route, and JLC offers free filled vias with the increased cost, saving me even more space. ➕ 2024-10-18 ✅ 2024-10-18 ^4
-- [ ] The Free 1 and Free 2 pins might be more capable going on an analog capable pin. This, however, would require a fairly complex restructuring of the routing, which causes delay for not much gain ➕ 2024-10-19 ^5
+- [x] The Free 1 and Free 2 pins might be more capable going on an analog capable pin. This, however, would require a fairly complex restructuring of the routing, which causes delay for not much gain ➕ 2024-10-19 ✅ 2025-01-01 ^5
 - [x] There is a potentially big cross talk problem on layer In3. There is a high speed differential pair running on that layer, along with the lowspeed i2c lines, all right next to thick power traces. ➕ 2024-10-19 ✅ 2024-10-20 ^6
 - [x] Disconnect all pins except RS485 and i2c from the bottom mezzanine connectors. If we stack hubs on top of eachother, we only want multi-master capable communications running through, otherwise there will be some fights. ➕ 2024-10-20 ✅ 2024-10-20 ^7
 

@@ -12,33 +12,54 @@ modified:
   - 2024-10-19T17:45:06-06:00
   - 2024-11-06T17:24:05-07:00
   - 2024-11-22T22:24:30-07:00
+  - 2025-01-01T19:29:53-07:00
 ---
-It is a modular control board design, with 4 main types of units:
-- Hubs (with an MCU on it, supports 4 drivers, one sensor with a vertical micro connector, and a chain of peers)
+# Types of sub-boards
+- Hubs (with an MCU on it, supports 2 or 4 drivers, 2 expansion cards, and a chain of peers)
 - PSUs (typically only one board)
-- Modules/ Sensors (vertical mezzenine connector boards for sensors)
-- Drivers (Any high power motor driver, plus a SPI bus for feedback sensors)
+- Expansion Cards (vertical mezzenine connector boards for breaking out sensors and other interfaces)
+- Drivers (Any high power driver)
+- nanoSPI devices (Small 7-pin flex cable SPI devices, mostly for sensors)
+- Passives (spacers, end caps, etc...)
 
-The base unit for this project is 1.5 cm squared. The modules and drivers should each be 15x15mm, while the Hubs are 15x30mm. There is a slight possibility it can be 15x10mm instead.
+# Dimensions
+The base unit for this project is 1.5 cm squared. The expansion cards and drivers should each be 1 unit squared, the Hubs 1x1 or 1x2, and the PSUs 3x1 units. With a 12 motor board with PSU for example, the board would be 45x105mm. nanoSPI devices can be much smaller due to the flex cable, such as a 5mm diameter tip and 2.4mm wide cable.
 
-With a 12 motor board that would be 45x90mm
+Any board on the ends of the main board (PSUs or sensor arrays) can be extended beyond the 1 unit vertical limitation. For example, the V1 PSU is 20mm instead of 15mm high, meaning its 3x1 & 1/3 units.
 
-The PSU and any extra peripheral such as speakers will have to be off-board and crammed somewhere else, though small sensors can be mounted vertically on the connectors. If the Battery charger is too difficult to cram in the provided space, I could move the battery charger off the board and have the battery protector in the robot only.
+# Communication Protocol
+The Hubs communicated over a 3.3v (NOT 5v!) RS485 bus using Modbus or a derivative communication protocol. It is a multi master system.
 
-My idea is to use some highspeed dual core MCUs for the hubs, something like the ESP32-s3. The esp32-s3 is low on pins, therefore I will have to use some tricks such as disabling USB, programming over the sensor SPI bus, and using a multiplexor or shift register for SPI chip select. Depending on the chosen inter-hub protocol I may have a few more pins.
+Sensors can communicate to the hubs using I2c or SPI, and the hubs can subsequently advertise the sensor resources on the main network.
 
-Ideally I will have spring contacts for all the modules, and you can just clip them in. But I will have to custom manufacture these board springs that clip into through holes, because I haven't found any commercially available ones. Alternately I can use some Keystone micro SMD tab pins.
+The one exception to the RS485 network is for GPU intensive modules, such as displays or cameras. Those are expected to go directly to the board requiring the resources and not to be broadcasted over the network, due to bandwidth limitations.
 
-3.3v should be supplied to the Drivers, in case I wanted to plug in a bigger or power hungry sensor board, or if I have a driver chip that doesn't have a built in regulator.
+# MCU requirements
+Highspeed 32-bit MCUs for the hubs are ideal with over 100mhz clock speed. Dual-core MCUs are nice but not required. The chips should operated on 3.3volts and not be sensitive to voltage fluctuations. 
 
-The numbering scheme between hubs is bottom up, with the PSU at the very bottom, and hubs connected on top of that. All the sensor and motor ports per hub follow this numbering scheme as well.
+The chips should also have DMA access or a highspeed peripherial for PWM and ADC pins, and all external driver connections must be connected directly to them. Other pins do not have to be connected directly to the hub since they are less demanding. 
 
-I also have ideas to expand the architecture of CACKLE, including adding new modules types. A compute board would be a good idea, which is a 45mm x45mm SBC with connections to pass through power and signals. I also have ideas for various "passive" board types, like power hubs, horizontal or vertical spacers where you want empty space, and blank driver and sensor boards where all the signals are exposed for easier prototyping and soldering. I also have an idea for sensor array's, which are on the opposite ends of a PSU. They measure 15x45 and exist for advanced sensors such as cameras, LIDAR, or anything really that doesn't fit in the normal 10mmx15mm sensor package.
+At least one I2c and one SPI bus is required for the expansion ports and the nanoSPI connectors. If the device has multiple buses and can afford it in pins, you can split the networks per expansion connector or between nanoSPI connectors and expansion connectors.
 
-Another idea: Add 4 pwm outputs for each port on the hubs, in-case you wanted to have a manual h-bridge or a dual motor controller.
+Only 2 ADC lines per driver slot are required, though 3 is nice. There isn't currently a need for 3 ADC lines because both brushed and brushless motor drivers can work fine with only 2 current sense feedback lines. This may change
+
+The first chip I used is the esp32-s3. This chip is a low on pins, so some tricks such as disabling USB, programming over the sensor SPI bus, and using a shift register for SPI chip selects were used. I also have exposed only 2 adc lines per driver.
+
+# Numbering Scheme
+The numbering scheme between hubs is bottom up, with the PSU at the very bottom as address 0, and hubs connected on top of that with subsequent numbers. All the sensor and motor ports per hub follow this numbering scheme as well, with a left to right scheme added. Even the individual driver pins follow the bottom up scheme
+
+# Future Ideas
+## New Modules
+- A compute board would be nice, I'm thinking it would be a 45mm x45mm SBC with connectors to pass power and signals through
+- Various "passive" board types, like power hubs, horizontal or vertical spacers where you want empty space, and blank driver and sensor boards where all the signals are exposed for easier prototyping and soldering.
+- I also have an idea for sensor array's, which are on the opposite ends of a PSU. They measure 15x45 and exist for advanced sensors such as cameras, LIDAR, or anything really that doesn't fit in the normal 10mmx15mm sensor package.
+## Other ideas
+- Move from 3pwm outputs to 4 pwm outputs for each port on the hubs, in-case you wanted to have a manual h-bridge a dual motor controller, or a stepper driver that didn't have step/dir control.
+- Shrink the base unit from 15mm squared to 10mm squared.
 
 # Changelog:
 - 2024-08-09 Created
+- 2025-01-01 Updated ideas and spec
 
 See also:
 ```dataview
