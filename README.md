@@ -1,5 +1,5 @@
 ---
-modified: 2025-01-01T19:31:14-07:00
+modified: 2025-01-01T19:31:57-07:00
 ---
 # CACKLE - Card Adaptable Controller Kinetic Link Electronics
 This is designed to be a super small, open source, adaptable control board. Each module is arranged in units of 1.5cm squared, but can handle high power micro robotic actuators, such as my [Mighty-Micro-Motors](https://github.com/techy-robot/Mighty-Micro-Motors). Ideally this board can be reused and rebuilt for all sorts of small robots.
