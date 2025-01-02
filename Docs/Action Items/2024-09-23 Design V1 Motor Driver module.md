@@ -2,7 +2,7 @@
 title: Design V1 Motor Driver module
 aliases:
   - Design V1 Motor Driver module
-modified: 2024-10-21T09:37:45-06:00
+modified: 2025-01-01T17:26:04-07:00
 tags: 
 completed: true
 itemtype: task
@@ -17,7 +17,7 @@ priority: Normal
 effort: M
 id: 
 planned_hours: 10
-logged_hours: 
+logged_hours: 7
 product_version: 
 subitems: 
 peeritems: 
@@ -25,7 +25,7 @@ milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]
 createdby: 
 assignees: 
 completedby: 
-completedDate: 2024-10-21
+completedDate: 2025-01-01
 ---
 `BUTTON[complete, uncomplete]`
 

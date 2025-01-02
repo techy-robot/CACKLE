@@ -2,11 +2,11 @@
 title: Design V1 PSU
 aliases:
   - Design V1 PSU
-modified: 2024-11-09T14:15:15-07:00
+modified: 2025-01-01T17:25:49-07:00
 tags: 
-completed: 
+completed: true
 itemtype: task
-status: New
+status: Done
 date: 2024-10-25
 startTime: 
 endDate: 2024-11-10
@@ -17,7 +17,7 @@ priority: Normal
 effort: L
 id: 
 planned_hours: 50
-logged_hours: 
+logged_hours: 40
 product_version: 
 subitems: 
 peeritems: 
@@ -25,16 +25,17 @@ milestone: "[[2024-09-23 Design V1 of all 4 modules|Design V1 of all 4 modules]]
 createdby: 
 assignees: 
 completedby: 
+completedDate: 2025-01-01
 ---
 `BUTTON[complete, uncomplete]`
 
 # Description:
 
 # Comments:
-- [ ] I found several design errata from the original, such as swapped polarity on the balance plug, and incorrect input voltage source. My prototype will need modification ➕ 2024-10-27 ^1
-- [ ] I should add a secondary rs485 transceiver for redundancy for the host. The battery charge mcu should not have to act as a passthrough for the main compute module. Still, for this prototype it is unneccessary ➕ 2024-11-08 ^2
-- [ ] Use XT30 connectors for the main battery plug ➕ 2024-11-08 ^3
-- [ ] The BQ24780s does not handle charge profiles by itself, the i2c host has to handle all the battery charge profiles by itself. ➕ 2024-11-08 ^4
+- [x] I found several design errata from the original, such as swapped polarity on the balance plug, and incorrect input voltage source. My prototype will need modification ➕ 2024-10-27 ✅ 2025-01-01 ^1
+- [-] I should add a secondary rs485 transceiver for redundancy for the host. The battery charge mcu should not have to act as a passthrough for the main compute module. Still, for this prototype it is unneccessary ➕ 2024-11-08 ❌ 2025-01-01 ^2
+- [-] Use XT30 connectors for the main battery plug ➕ 2024-11-08 ❌ 2025-01-01 ^3
+- [x] The BQ24780s does not handle charge profiles by itself, the i2c host has to handle all the battery charge profiles by itself. ➕ 2024-11-08 ✅ 2025-01-01 ^4
 
 # Time Tracking:
 ```simple-time-tracker
