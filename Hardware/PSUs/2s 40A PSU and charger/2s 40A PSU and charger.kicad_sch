@@ -8,7 +8,8 @@
 		(title "CACKLE 2s 40A PSU & Charger")
 		(date "2024-12-23")
 		(rev "V1")
-		(comment 1 "Author: Asher Edwards")
+		(company "Author: Asher Edwards")
+		(comment 1 "Licensed under CERN-OHL-S")
 	)
 	(lib_symbols
 		(symbol "Device:D_Schottky"
