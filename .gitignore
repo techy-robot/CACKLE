@@ -1,10 +1,6 @@
 # documents
 *.odt#
 
-# compressions
-*.zip
-*.tgz
-
 #audio
 *.wav
 *.mkv
@@ -22,3 +18,4 @@ Recordings
 .obsidian/plugins/various-complements/histories.json
 .trash/
 wak.toml
+Hardware/**/*backups/*.zip
