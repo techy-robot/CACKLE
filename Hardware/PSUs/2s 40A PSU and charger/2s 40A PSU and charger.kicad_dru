@@ -1,11 +1,4 @@
 (version 1)
-(rule "exclude USB-C pad clearance"
-	# ignore the usb-c connectors closer than normal pads, with 0.12mm gap
-	(severity exclusion)
-	(condition "A.memberOfFootprint('Connector_USB:USB_C*')")
-	(condition "A.memberOfFootprint('custom_Connector:USB_C*')")
-	(constraint clearance (min 0.12mm))
-)
 (rule "hole to hole clearance"
 	# normal holes
 	(severity error)

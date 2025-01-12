@@ -80,27 +80,15 @@
   "project": {
     "files": [
       {
-        "name": "2s 40A PSU and charger.kicad_sch",
+        "name": "2s 40A PSU and charger.kicad_pcb",
         "open": true,
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 566,
-          "pos_y": 1080,
-          "size_x": 768,
-          "size_y": 977
-        }
-      },
-      {
-        "name": "2s 40A PSU and charger.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 166,
-          "pos_y": 1080,
+          "pos_x": 294,
+          "pos_y": 1212,
           "size_x": 1280,
-          "size_y": 367
+          "size_y": 720
         }
       }
     ]
