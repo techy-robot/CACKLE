@@ -1,5 +1,5 @@
 ---
-modified: 2025-01-12T18:55:37-07:00
+modified: 2025-01-12T19:11:32-07:00
 ---
 
 # 2s 40A PSU and charger
@@ -19,7 +19,7 @@ The MCU has several purposes:
 - Report battery sensor data over the bus
 - Act as a host adapter to convert USB or SPI data to rs485 bus commands and back. Helpful for debugging the system via a laptop, or if your main compute board needs to control the motors and sensors and doesn't have RS485 built in.
 
-![2s 40A PSU and charger](2s%2040A%20PSU%20and%20charger.pdf)
+![Schematic PDF](2s%2040A%20PSU%20and%20charger.pdf)
 
 Partial 3D image, some connectors missing:
 ![2s 40a PSU 3D picture](media/2s%2040a%20PSU%203D%20picture.png)

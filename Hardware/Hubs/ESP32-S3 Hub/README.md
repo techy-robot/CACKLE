@@ -10,7 +10,7 @@ The ESP32-S3 chip does not *quite* have enough pins for driving 4 motors and sev
 
 The SPI bus should be able to operate at 80mhz, though this has not been tested yet. For all practical use-cases I am limiting this to 20mhz.
 
-![ESP32-S3 Hub](ESP32-S3%20Hub.pdf)
+![Schematic PDF](ESP32-S3%20Hub.pdf)
 
 Partial 3D picture (headers not shown)
 ![Esp32-s3 hub 3D picture](media/Esp32-s3%20hub%203D%20picture.png)

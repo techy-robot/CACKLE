@@ -1,5 +1,5 @@
 ---
-modified: 2025-01-12T15:36:49-07:00
+modified: 2025-01-12T19:10:09-07:00
 ---
 
 # DRV8311 Motor Driver
@@ -10,7 +10,7 @@ The chip has 3 current sense outputs, tied to all three ADC pins. The motor outp
 
 The module is a 4-layer PCB with additional exposed traces for the power and ground to add solder for more current carrying capability. I designed it to carry 10 amps with 1 oz outer copper and 0.5oz inner copper, which can be increased to 20 amps current by adding solder. This was the cheapest method to go with, since 2 oz copper would add an additional 30$ per 5 boards. 
 
-![DRV8311 Motor Driver](DRV8311%20Motor%20Driver.pdf)
+![Schematic PDF](DRV8311%20Motor%20Driver.pdf)
 
 3D model
 ![](media/DRV8311%203D%20model%20picture.jpg)

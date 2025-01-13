@@ -1,5 +1,5 @@
 ---
-modified: 2025-01-12T15:55:20-07:00
+modified: 2025-01-12T19:10:46-07:00
 ---
 
 
@@ -9,4 +9,4 @@ This is a connector breakout board that spans between 2 vertical mezzanine conne
 
 One advantage this has over the single connector breakout is that this fits on normal sized hubs without needing a vertical spacer
 
-![2 connector Sensor Board](2%20connector%20Sensor%20Board.pdf)
+![Schematic PDF](2%20connector%20Sensor%20Board.pdf)

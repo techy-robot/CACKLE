@@ -1,5 +1,5 @@
 ---
-modified: 2025-01-12T15:54:43-07:00
+modified: 2025-01-12T19:10:57-07:00
 ---
 
 
@@ -9,4 +9,4 @@ This is a connector breakout board for vertical mezzanine connectors on a hub. I
 
 Note that this does not fit the hubs by default because it sticks into the hub chaining headers. You will need a Vertical Spacer, or use the [2 connector sensor breakout](../2%20connector%20Sensor%20Board/README.md) instead, which does fit.
 
-![Sensor Board](Sensor%20Board.pdf)
+![Schematic PDF](Sensor%20Board.pdf)

@@ -10,4 +10,4 @@ It supports a max of 25mhz bus speed, though practically speaking this is closer
 
 The sensor itself, MagAlpha MA735, has some quirks to it. It is variable resolution ranging from 9 to 13 bit which is inversely proportional to its speed. If you want the max measurement speed at 60k rpm, then you will have to read 9-bit angles. This is all dictated by the Filter Window setting, resolution and speed are derived from this setting.
 
-![MA735 encoder board](MA735%20encoder%20board.pdf)
+![Schematic PDF](MA735%20encoder%20board.pdf)
