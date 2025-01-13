@@ -7,5 +7,7 @@
   "focusNewTab": false,
   "readableLineLength": false,
   "showLineNumber": true,
-  "useTab": false
+  "useTab": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }

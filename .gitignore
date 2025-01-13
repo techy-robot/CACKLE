@@ -19,3 +19,4 @@ Recordings
 .trash/
 wak.toml
 Hardware/**/*backups/*.zip
+**/obsidian-icon-folder/icons/*.zip
