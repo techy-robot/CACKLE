@@ -22,3 +22,5 @@ Hardware/**/*backups/*.zip
 **/obsidian-icon-folder/icons/*.zip
 
 .obsidian/plugins/obsidian-wakatime/
+
+*.pio/
