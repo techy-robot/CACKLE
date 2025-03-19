@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 33,
     "active_layer_preset": "All Layers",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -81,14 +81,14 @@
     "files": [
       {
         "name": "2s 40A PSU and charger.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 294,
-          "pos_y": 1212,
+          "pos_x": 0,
+          "pos_y": 0,
           "size_x": 1280,
-          "size_y": 720
+          "size_y": 666
         }
       }
     ]

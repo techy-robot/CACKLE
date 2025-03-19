@@ -81,26 +81,26 @@
     "files": [
       {
         "name": "MA735 encoder board.kicad_sch",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 566,
-          "pos_y": 1080,
-          "size_x": 768,
-          "size_y": 977
+          "pos_x": 0,
+          "pos_y": 262,
+          "size_x": 1536,
+          "size_y": 460
         }
       },
       {
         "name": "MA735 encoder board.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
-          "display": 1,
+          "display": 0,
           "maximized": true,
-          "pos_x": 591,
-          "pos_y": 0,
+          "pos_x": 0,
+          "pos_y": 191,
           "size_x": 1280,
-          "size_y": 612
+          "size_y": 450
         }
       }
     ]
