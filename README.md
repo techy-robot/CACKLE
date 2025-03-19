@@ -49,5 +49,15 @@ Original (bit outdated) sketch of the architecture:
 - Easy automatic hardware configuration
 - Ability to stack hubs vertically using the Expansion Card system, in addition to horizontal chaining.
 
+
+# Contributing
+Feal free to contribute in any way possible! This is an open-source project, and with so many modules yet to be explored, I encourage you to help test boards, create modules or code, or ask about the project!
+
+- GitHub Discussions: Participate in discussions on GitHub to share your experiences and ask questions.
+- Contribute: Help develop the project, create PRs with new features or modules
+- Report: Open issues, give me feedback!
+
+Read the Architecture notes and [CONTRIBUTING.md](CONTRIBUTING.md) for more in-depth on this.
+
 # A Note on Project Management
 This project is managed transparently in this very repo. I am using Obsidian.md as my notetaking, documentation, and project management tool. A lot of the markdown files you will see in this repo might look a bit weird; that is due to the Wiki-links instead of markdown links and the YAML file front-matter that Obsidian supports. My system works well for one person, but I'm not sure how future proof this system is. You can find my sample vault here, which explains more: [GitHub - techy-robot/Project-Management-Obsidian-Sample-Vault](https://github.com/techy-robot/Project-Management-Obsidian-Sample-Vault). 
