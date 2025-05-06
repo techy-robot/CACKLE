@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-05T15:28:19-07:00
+modified: 2025-05-05T23:28:19-07:00
 ---
 # CACKLE - Card Adaptable Controller Kinetic Link Electronics
 ![](media/sideview%20RL%20with%20arrows.jpg)
@@ -25,7 +25,7 @@ There are currently 6 types of sub-boards:
 - nanoSPI devices (Small 7-pin flex cable SPI devices, mostly for sensors)
 - Passives (spacers, end caps, etc...)
 
-The base unit for this project is 1.5 cm squared. The expansion cards and drivers should each be 1 unit, the Hubs 1x1 or 1x2, and the PSUs 3x1 units. With a 12 motor board with PSU for example, the board would be 45x105mm. nanoSPI devices can be much smaller due to the flex cable, such as a 5mm diameter tip and 2.4mm wide cable.
+The base unit for this project is 1.5 cm squared. The expansion cards and drivers should each be 1 unit, the Hubs 1x1 or 1x2, and the PSUs 3x1 units. For example, with a 12 motor board you would need 1 PSU, 3 1-by-2 hubs, and 12 drivers; the board would be 45x105mm. nanoSPI devices can be much smaller due to the  2.4mm wide flex cable, such as a 5mm diameter magnetic encoder.
 
 Unfortunately I was unable to create a 45x15mm PSU for the first version, it had to be extended up by 5mm to fit the high current circuitry.
 
@@ -56,6 +56,11 @@ Original (bit outdated) sketch of the architecture:
 - Easy automatic hardware configuration
 - Ability to stack hubs vertically using the Expansion Card system, in addition to horizontal chaining.
 
+
+# Software
+As of now software is very limited in scope, I have not had the time to fully assembly and test the boards I have made. I am planning on using SimpleFOC and Luos Engine. SimpleFOC is a motor driver library for Field Oreinted Control for motors. Luos Engine is a lightweight-distributed communication engine that aims to make hardware as modular as software. Combined, I have covered 50% of the use-cases of the code necessary for this project.
+
+See [Software](Software/README.md) for more.
 
 # Contributing
 Feal free to contribute in any way possible! This is an open-source project, and with so many modules yet to be explored, I encourage you to help test boards, create modules or code, or ask about the project!
