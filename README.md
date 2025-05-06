@@ -1,10 +1,20 @@
 ---
-modified: 2025-01-12T15:28:19-07:00
+modified: 2025-05-05T15:28:19-07:00
 ---
 # CACKLE - Card Adaptable Controller Kinetic Link Electronics
+![](media/sideview%20RL.jpg)
+
 This is designed to be a super small, open source, adaptable control board. Each module is arranged in units of 1.5cm squared, but can handle high power micro robotic actuators, such as my [Mighty-Micro-Motors](https://github.com/techy-robot/Mighty-Micro-Motors). Ideally this board can be reused and rebuilt for all sorts of small robots.
 
 You can read up on specific modules in their respective folders in Hardware, or take a look at the overall architecture
+
+Real Life pictures:
+![](media/front%20view%20PSU%20macro%20RL.jpg)
+![](media/front%20view%20macro%20RL.jpg)
+![](media/overview%20RL.jpg)
+
+3D model demo:
+![CACKLE 3D model demo](media/CACKLE%203D%20model%20demo.png)
 
 # Architecture
 There are currently 6 types of sub-boards:
@@ -24,9 +34,6 @@ My initial idea was to have spring contacts to allow easy clip in clip out, but 
 Original (bit outdated) sketch of the architecture:
 ![Cackle Design Outline](media/CACKLE%20Design%20Outline.jpg)
 
-3D model demo:
-![CACKLE 3D model demo](media/CACKLE%203D%20model%20demo.png)
-
 # Goals
 - Adaptable 
 - Small
@@ -36,7 +43,7 @@ Original (bit outdated) sketch of the architecture:
 
 # Features
 ## Required:
-- Small modules
+- Super Small modules
 - Hubs with an mcu that can talk to its peers and a master
 - Motor driver boards that can handle several amps
 - Sensor ports with protocols like i2c and SPI
