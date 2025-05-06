@@ -115,6 +115,18 @@
   "project": {
     "files": [
       {
+        "name": "MA735 encoder board.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 192,
+          "pos_y": 214,
+          "size_x": 1152,
+          "size_y": 492
+        }
+      },
+      {
         "name": "MA735 encoder board.kicad_pcb",
         "open": false,
         "window": {
@@ -124,18 +136,6 @@
           "pos_y": 127,
           "size_x": 1280,
           "size_y": 666
-        }
-      },
-      {
-        "name": "MA735 encoder board.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 192,
-          "pos_y": 214,
-          "size_x": 1152,
-          "size_y": 492
         }
       }
     ]
