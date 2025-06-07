@@ -49,19 +49,6 @@ The first chip I used is the esp32-s3. This chip is a low on pins, so some trick
 # Numbering Scheme
 The numbering scheme between hubs is bottom up, with the PSU at the very bottom as address 0, and hubs connected on top of that with subsequent numbers. All the sensor and motor ports per hub follow this numbering scheme as well, with a left to right scheme added. Even the individual driver pins follow the bottom up scheme
 
-# Future Ideas
-## New Modules
-- A compute board would be nice, I'm thinking it would be a 45mm x45mm SBC with connectors to pass power and signals through
-- Various "passive" board types, like power hubs, horizontal or vertical spacers where you want empty space, and blank driver and sensor boards where all the signals are exposed for easier prototyping and soldering.
-- I also have an idea for sensor array's, which are on the opposite ends of a PSU. They measure 15x45 and exist for advanced sensors such as cameras, LIDAR, or anything really that doesn't fit in the normal 10mmx15mm sensor package.
-- Jumbo sized modules, that are 30x30. This is for really complex items that need highpower and more surface area, like a mosfet or relay.
-- Isolators for power and signals that prevent interferance
-- Translators, for rs485 to canbus or usb or whatever.
-## Other ideas
-- Move from 3pwm outputs to 4 pwm outputs for each port on the hubs, in-case you wanted to have a manual h-bridge a dual motor controller, or a stepper driver that didn't have step/dir control.
-- Shrink the base unit from 15mm squared to 10mm squared.
-- Power Bypass connection ecosystem, a bunch of thick wires and jumpers between boards instead of board to board. This should be for highvoltage or high currant applications
-
 # Changelog:
 - 2024-08-09 Created
 - 2025-01-01 Updated ideas and spec
