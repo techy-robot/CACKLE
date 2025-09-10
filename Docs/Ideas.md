@@ -1,9 +1,10 @@
 ---
-aliases: 
-tags: 
+aliases:
+tags:
 append_modified_update: true
 modified:
   - 2025-06-06T20:38:58-06:00
+  - 2025-09-09T16:25:11-06:00
 ---
 
 # New Module Types
@@ -13,6 +14,7 @@ modified:
 - Jumbo sized modules, that are 30x30. This is for really complex items that need highpower and more surface area, like a mosfet or relay.
 - Isolators for power and signals that prevent interferance
 - Translators, for rs485 to canbus or usb or whatever.
+- 1 sided PSUs and PSUs with no driver output
 
 # New Modules
 - DRV8850 motor driver, a high current (5-8amps), low voltage (5v) H-bridge driver. Needs 4 control pins
