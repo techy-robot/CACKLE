@@ -31,7 +31,8 @@
     "iconIdentifier": ":",
     "debugMode": false,
     "iconInTitlePosition": "above",
-    "lucideIconPackType": "native"
+    "lucideIconPackType": "native",
+    "useInternalPlugins": false
   },
   "Docs/Wiki": "SiWikipedia",
   "Docs/Bookmarks": "LiBookmark",
