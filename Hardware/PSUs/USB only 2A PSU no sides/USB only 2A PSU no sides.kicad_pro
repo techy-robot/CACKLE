@@ -279,12 +279,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|1181100|685800|e9978583-6e37-4ce1-924b-3a6809f5587c|34a5c4fe-ba6d-41be-b694-6bdd4892e615|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -665,8 +660,12 @@
       "/Connectors/3.3v": [
         "Charge Current"
       ],
-      "/Connectors/CC1": "Default",
-      "/Connectors/CC2": "Default",
+      "/Connectors/CC1": [
+        "Default"
+      ],
+      "/Connectors/CC2": [
+        "Default"
+      ],
       "/Connectors/MOTORPWR": [
         "High Current"
       ],
@@ -680,8 +679,12 @@
       "/PSU/Always On PWR": [
         "Logic Pwr"
       ],
-      "GND": "Logic Power",
-      "GNDPWR": "High Current GND",
+      "GND": [
+        "Logic Power"
+      ],
+      "GNDPWR": [
+        "High Current GND"
+      ],
       "Net-(C18-Pad2)": [
         "Logic Pwr"
       ],
@@ -712,28 +715,42 @@
       "Net-(D3-K)": [
         "Logic Pwr"
       ],
-      "Net-(D5-K)": "Logic Pwr",
-      "Net-(L2-Pad2)": "High Current",
+      "Net-(D5-K)": [
+        "Logic Pwr"
+      ],
+      "Net-(L2-Pad2)": [
+        "High Current"
+      ],
       "Net-(NT8-Pad1)": [
         "Logic Pwr"
       ],
-      "Net-(Q1-G)": "USB-C pwr",
+      "Net-(Q1-G)": [
+        "USB-C pwr"
+      ],
       "Net-(Q1-S)": [
         "USB-C pwr"
       ],
       "Net-(Q2-D)": [
         "USB-C pwr"
       ],
-      "Net-(Q2-S)": "USB-C pwr",
-      "Net-(Q3-S)": "High Current",
+      "Net-(Q2-S)": [
+        "USB-C pwr"
+      ],
+      "Net-(Q3-S)": [
+        "High Current"
+      ],
       "Net-(Q4-D)": [
         "Charge Current"
       ],
-      "Net-(Q4-G)": "Charge Current",
+      "Net-(Q4-G)": [
+        "Charge Current"
+      ],
       "Net-(Q4-S)": [
         "Charge Current"
       ],
-      "Net-(Q6-S)": "High Current",
+      "Net-(Q6-S)": [
+        "High Current"
+      ],
       "Net-(U1-BAT)": [
         "Logic Pwr"
       ],
@@ -743,8 +760,12 @@
       "Net-(U2-SW)": [
         "Charge Current"
       ],
-      "Net-(U3-VCC)": "Logic Power",
-      "Net-(U4-VIN)": "Logic Pwr"
+      "Net-(U3-VCC)": [
+        "Logic Power"
+      ],
+      "Net-(U4-VIN)": [
+        "Logic Pwr"
+      ]
     },
     "netclass_patterns": []
   },
