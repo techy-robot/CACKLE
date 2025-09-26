@@ -39,9 +39,9 @@ var __publicField = (obj, key2, value) => {
   return value;
 };
 
-// node_modules/.pnpm/obsidian-dataview@0.5.66/node_modules/obsidian-dataview/lib/index.js
+// node_modules/.pnpm/obsidian-dataview@0.5.68/node_modules/obsidian-dataview/lib/index.js
 var require_lib = __commonJS({
-  "node_modules/.pnpm/obsidian-dataview@0.5.66/node_modules/obsidian-dataview/lib/index.js"(exports) {
+  "node_modules/.pnpm/obsidian-dataview@0.5.68/node_modules/obsidian-dataview/lib/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     require("obsidian");
@@ -7464,7 +7464,7 @@ var require_lib = __commonJS({
       inlineFieldList: (q) => q.atomInlineField.sepBy(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace).lookahead(q.atomInlineField)),
       inlineField: (q) => parsimmon_umd_minExports.alt(parsimmon_umd_minExports.seqMap(q.atomInlineField, parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace), q.inlineFieldList, (f, _s, l3) => [f].concat(l3)), q.atomInlineField),
       atomField: (q) => parsimmon_umd_minExports.alt(
-        // Place embed links above negated fields as they are the special parser case '![[thing]]' and are generally unambigious.
+        // Place embed links above negated fields as they are the special parser case '![[thing]]' and are generally unambiguous.
         q.embedLink.map((l3) => Fields.literal(l3)),
         q.negatedField,
         q.linkField,
@@ -7634,14 +7634,14 @@ var require_lib = __commonJS({
       })
     });
     var optionalWhitespaceOrComment = parsimmon_umd_minExports.alt(parsimmon_umd_minExports.whitespace, QUERY_LANGUAGE.comment).many().map((arr) => arr.join(""));
-    var getAPI4 = (app2) => {
+    var getAPI4 = (app) => {
       var _a;
-      if (app2)
-        return (_a = app2.plugins.plugins.dataview) == null ? void 0 : _a.api;
+      if (app)
+        return (_a = app.plugins.plugins.dataview) == null ? void 0 : _a.api;
       else
         return window.DataviewAPI;
     };
-    var isPluginEnabled = (app2) => app2.plugins.enabledPlugins.has("dataview");
+    var isPluginEnabled = (app) => app.plugins.enabledPlugins.has("dataview");
     exports.DATE_SHORTHANDS = DATE_SHORTHANDS;
     exports.DURATION_TYPES = DURATION_TYPES;
     exports.EXPRESSION = EXPRESSION;
@@ -14192,7 +14192,7 @@ var require_react_development = __commonJS({
           }
           return dispatcher.useContext(Context);
         }
-        function useState9(initialState) {
+        function useState10(initialState) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useState(initialState);
         }
@@ -14200,11 +14200,11 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useReducer(reducer2, initialArg, init);
         }
-        function useRef12(initialValue) {
+        function useRef13(initialValue) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect13(create, deps) {
+        function useEffect14(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -14220,7 +14220,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useCallback(callback, deps);
         }
-        function useMemo4(create, deps) {
+        function useMemo5(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useMemo(create, deps);
         }
@@ -14987,15 +14987,15 @@ var require_react_development = __commonJS({
         exports.useContext = useContext2;
         exports.useDebugValue = useDebugValue2;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect13;
+        exports.useEffect = useEffect14;
         exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect3;
-        exports.useMemo = useMemo4;
+        exports.useMemo = useMemo5;
         exports.useReducer = useReducer2;
-        exports.useRef = useRef12;
-        exports.useState = useState9;
+        exports.useRef = useRef13;
+        exports.useState = useState10;
         exports.useSyncExternalStore = useSyncExternalStore;
         exports.useTransition = useTransition;
         exports.version = ReactVersion;
@@ -15542,7 +15542,7 @@ var require_react_dom_development = __commonJS({
         var HostPortal = 4;
         var HostComponent = 5;
         var HostText = 6;
-        var Fragment10 = 7;
+        var Fragment9 = 7;
         var Mode = 8;
         var ContextConsumer = 9;
         var ContextProvider = 10;
@@ -16698,7 +16698,7 @@ var require_react_dom_development = __commonJS({
               return "DehydratedFragment";
             case ForwardRef:
               return getWrappedName$1(type, type.render, "ForwardRef");
-            case Fragment10:
+            case Fragment9:
               return "Fragment";
             case HostComponent:
               return type;
@@ -25099,7 +25099,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           function updateFragment2(returnFiber, current3, fragment, lanes, key2) {
-            if (current3 === null || current3.tag !== Fragment10) {
+            if (current3 === null || current3.tag !== Fragment9) {
               var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key2);
               created.return = returnFiber;
               return created;
@@ -25502,7 +25502,7 @@ var require_react_dom_development = __commonJS({
               if (child.key === key2) {
                 var elementType = element.type;
                 if (elementType === REACT_FRAGMENT_TYPE) {
-                  if (child.tag === Fragment10) {
+                  if (child.tag === Fragment9) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
                     existing.return = returnFiber;
@@ -30979,7 +30979,7 @@ var require_react_dom_development = __commonJS({
               var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
               return updateForwardRef(current3, workInProgress2, type, _resolvedProps2, renderLanes2);
             }
-            case Fragment10:
+            case Fragment9:
               return updateFragment(current3, workInProgress2, renderLanes2);
             case Mode:
               return updateMode(current3, workInProgress2, renderLanes2);
@@ -31252,7 +31252,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent:
             case FunctionComponent:
             case ForwardRef:
-            case Fragment10:
+            case Fragment9:
             case Mode:
             case Profiler:
             case ContextConsumer:
@@ -35511,7 +35511,7 @@ var require_react_dom_development = __commonJS({
           return fiber;
         }
         function createFiberFromFragment(elements, mode, lanes, key2) {
-          var fiber = createFiber(Fragment10, elements, key2, mode);
+          var fiber = createFiber(Fragment9, elements, key2, mode);
           fiber.lanes = lanes;
           return fiber;
         }
@@ -43010,131 +43010,73 @@ var require_jquery = __commonJS({
   }
 });
 
-// node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js
+// node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js
 var require_use_sync_external_store_shim_development = __commonJS({
-  "node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js"(exports) {
+  "node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js"(exports) {
     "use strict";
-    if (true) {
-      (function() {
-        "use strict";
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+    (function() {
+      function is2(x, y) {
+        return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
+      }
+      function useSyncExternalStore$2(subscribe, getSnapshot) {
+        didWarnOld18Alpha || void 0 === React4.startTransition || (didWarnOld18Alpha = true, console.error(
+          "You are using an outdated, pre-release alpha of React 18 that does not support useSyncExternalStore. The use-sync-external-store shim will not work correctly. Upgrade to a newer pre-release."
+        ));
+        var value = getSnapshot();
+        if (!didWarnUncachedGetSnapshot) {
+          var cachedValue = getSnapshot();
+          objectIs(value, cachedValue) || (console.error(
+            "The result of getSnapshot should be cached to avoid an infinite loop"
+          ), didWarnUncachedGetSnapshot = true);
         }
-        var React4 = require_react();
-        var ReactSharedInternals = React4.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-        function error(format) {
-          {
-            {
-              for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-                args[_key2 - 1] = arguments[_key2];
-              }
-              printWarning("error", format, args);
-            }
-          }
-        }
-        function printWarning(level, format, args) {
-          {
-            var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-            var stack = ReactDebugCurrentFrame.getStackAddendum();
-            if (stack !== "") {
-              format += "%s";
-              args = args.concat([stack]);
-            }
-            var argsWithFormat = args.map(function(item) {
-              return String(item);
-            });
-            argsWithFormat.unshift("Warning: " + format);
-            Function.prototype.apply.call(console[level], console, argsWithFormat);
-          }
-        }
-        function is2(x, y) {
-          return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y;
-        }
-        var objectIs = typeof Object.is === "function" ? Object.is : is2;
-        var useState9 = React4.useState, useEffect13 = React4.useEffect, useLayoutEffect3 = React4.useLayoutEffect, useDebugValue2 = React4.useDebugValue;
-        var didWarnOld18Alpha = false;
-        var didWarnUncachedGetSnapshot = false;
-        function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
-          {
-            if (!didWarnOld18Alpha) {
-              if (React4.startTransition !== void 0) {
-                didWarnOld18Alpha = true;
-                error("You are using an outdated, pre-release alpha of React 18 that does not support useSyncExternalStore. The use-sync-external-store shim will not work correctly. Upgrade to a newer pre-release.");
-              }
-            }
-          }
-          var value = getSnapshot();
-          {
-            if (!didWarnUncachedGetSnapshot) {
-              var cachedValue = getSnapshot();
-              if (!objectIs(value, cachedValue)) {
-                error("The result of getSnapshot should be cached to avoid an infinite loop");
-                didWarnUncachedGetSnapshot = true;
-              }
-            }
-          }
-          var _useState = useState9({
-            inst: {
-              value,
-              getSnapshot
-            }
-          }), inst = _useState[0].inst, forceUpdate = _useState[1];
-          useLayoutEffect3(function() {
+        cachedValue = useState10({
+          inst: { value, getSnapshot }
+        });
+        var inst = cachedValue[0].inst, forceUpdate = cachedValue[1];
+        useLayoutEffect3(
+          function() {
             inst.value = value;
             inst.getSnapshot = getSnapshot;
-            if (checkIfSnapshotChanged(inst)) {
-              forceUpdate({
-                inst
-              });
-            }
-          }, [subscribe, value, getSnapshot]);
-          useEffect13(function() {
-            if (checkIfSnapshotChanged(inst)) {
-              forceUpdate({
-                inst
-              });
-            }
-            var handleStoreChange = function() {
-              if (checkIfSnapshotChanged(inst)) {
-                forceUpdate({
-                  inst
-                });
-              }
-            };
-            return subscribe(handleStoreChange);
-          }, [subscribe]);
-          useDebugValue2(value);
-          return value;
+            checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+          },
+          [subscribe, value, getSnapshot]
+        );
+        useEffect14(
+          function() {
+            checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+            return subscribe(function() {
+              checkIfSnapshotChanged(inst) && forceUpdate({ inst });
+            });
+          },
+          [subscribe]
+        );
+        useDebugValue2(value);
+        return value;
+      }
+      function checkIfSnapshotChanged(inst) {
+        var latestGetSnapshot = inst.getSnapshot;
+        inst = inst.value;
+        try {
+          var nextValue = latestGetSnapshot();
+          return !objectIs(inst, nextValue);
+        } catch (error) {
+          return true;
         }
-        function checkIfSnapshotChanged(inst) {
-          var latestGetSnapshot = inst.getSnapshot;
-          var prevValue = inst.value;
-          try {
-            var nextValue = latestGetSnapshot();
-            return !objectIs(prevValue, nextValue);
-          } catch (error2) {
-            return true;
-          }
-        }
-        function useSyncExternalStore$1(subscribe, getSnapshot, getServerSnapshot) {
-          return getSnapshot();
-        }
-        var canUseDOM2 = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
-        var isServerEnvironment = !canUseDOM2;
-        var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore;
-        var useSyncExternalStore$2 = React4.useSyncExternalStore !== void 0 ? React4.useSyncExternalStore : shim;
-        exports.useSyncExternalStore = useSyncExternalStore$2;
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-        }
-      })();
-    }
+      }
+      function useSyncExternalStore$1(subscribe, getSnapshot) {
+        return getSnapshot();
+      }
+      "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
+      var React4 = require_react(), objectIs = "function" === typeof Object.is ? Object.is : is2, useState10 = React4.useState, useEffect14 = React4.useEffect, useLayoutEffect3 = React4.useLayoutEffect, useDebugValue2 = React4.useDebugValue, didWarnOld18Alpha = false, didWarnUncachedGetSnapshot = false, shim = "undefined" === typeof window || "undefined" === typeof window.document || "undefined" === typeof window.document.createElement ? useSyncExternalStore$1 : useSyncExternalStore$2;
+      exports.useSyncExternalStore = void 0 !== React4.useSyncExternalStore ? React4.useSyncExternalStore : shim;
+      "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
+    })();
   }
 });
 
-// node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/shim/index.js
+// node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/shim/index.js
 var require_shim = __commonJS({
-  "node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/shim/index.js"(exports, module2) {
+  "node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/shim/index.js"(exports, module2) {
     "use strict";
     if (false) {
       module2.exports = null;
@@ -43144,99 +43086,77 @@ var require_shim = __commonJS({
   }
 });
 
-// node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js
+// node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js
 var require_with_selector_development = __commonJS({
-  "node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js"(exports) {
+  "node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js"(exports) {
     "use strict";
-    if (true) {
-      (function() {
-        "use strict";
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-        }
-        var React4 = require_react();
-        var shim = require_shim();
-        function is2(x, y) {
-          return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y;
-        }
-        var objectIs = typeof Object.is === "function" ? Object.is : is2;
-        var useSyncExternalStore = shim.useSyncExternalStore;
-        var useRef12 = React4.useRef, useEffect13 = React4.useEffect, useMemo4 = React4.useMemo, useDebugValue2 = React4.useDebugValue;
-        function useSyncExternalStoreWithSelector2(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
-          var instRef = useRef12(null);
-          var inst;
-          if (instRef.current === null) {
-            inst = {
-              hasValue: false,
-              value: null
-            };
-            instRef.current = inst;
-          } else {
-            inst = instRef.current;
-          }
-          var _useMemo = useMemo4(function() {
-            var hasMemo = false;
-            var memoizedSnapshot;
-            var memoizedSelection;
-            var memoizedSelector = function(nextSnapshot) {
+    (function() {
+      function is2(x, y) {
+        return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
+      }
+      "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
+      var React4 = require_react(), shim = require_shim(), objectIs = "function" === typeof Object.is ? Object.is : is2, useSyncExternalStore = shim.useSyncExternalStore, useRef13 = React4.useRef, useEffect14 = React4.useEffect, useMemo5 = React4.useMemo, useDebugValue2 = React4.useDebugValue;
+      exports.useSyncExternalStoreWithSelector = function(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
+        var instRef = useRef13(null);
+        if (null === instRef.current) {
+          var inst = { hasValue: false, value: null };
+          instRef.current = inst;
+        } else
+          inst = instRef.current;
+        instRef = useMemo5(
+          function() {
+            function memoizedSelector(nextSnapshot) {
               if (!hasMemo) {
                 hasMemo = true;
                 memoizedSnapshot = nextSnapshot;
-                var _nextSelection = selector(nextSnapshot);
-                if (isEqual !== void 0) {
-                  if (inst.hasValue) {
-                    var currentSelection = inst.value;
-                    if (isEqual(currentSelection, _nextSelection)) {
-                      memoizedSelection = currentSelection;
-                      return currentSelection;
-                    }
-                  }
+                nextSnapshot = selector(nextSnapshot);
+                if (void 0 !== isEqual && inst.hasValue) {
+                  var currentSelection = inst.value;
+                  if (isEqual(currentSelection, nextSnapshot))
+                    return memoizedSelection = currentSelection;
                 }
-                memoizedSelection = _nextSelection;
-                return _nextSelection;
+                return memoizedSelection = nextSnapshot;
               }
-              var prevSnapshot = memoizedSnapshot;
-              var prevSelection = memoizedSelection;
-              if (objectIs(prevSnapshot, nextSnapshot)) {
-                return prevSelection;
-              }
+              currentSelection = memoizedSelection;
+              if (objectIs(memoizedSnapshot, nextSnapshot))
+                return currentSelection;
               var nextSelection = selector(nextSnapshot);
-              if (isEqual !== void 0 && isEqual(prevSelection, nextSelection)) {
-                return prevSelection;
-              }
+              if (void 0 !== isEqual && isEqual(currentSelection, nextSelection))
+                return memoizedSnapshot = nextSnapshot, currentSelection;
               memoizedSnapshot = nextSnapshot;
-              memoizedSelection = nextSelection;
-              return nextSelection;
-            };
-            var maybeGetServerSnapshot = getServerSnapshot === void 0 ? null : getServerSnapshot;
-            var getSnapshotWithSelector = function() {
-              return memoizedSelector(getSnapshot());
-            };
-            var getServerSnapshotWithSelector = maybeGetServerSnapshot === null ? void 0 : function() {
-              return memoizedSelector(maybeGetServerSnapshot());
-            };
-            return [getSnapshotWithSelector, getServerSnapshotWithSelector];
-          }, [getSnapshot, getServerSnapshot, selector, isEqual]), getSelection = _useMemo[0], getServerSelection = _useMemo[1];
-          var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
-          useEffect13(function() {
+              return memoizedSelection = nextSelection;
+            }
+            var hasMemo = false, memoizedSnapshot, memoizedSelection, maybeGetServerSnapshot = void 0 === getServerSnapshot ? null : getServerSnapshot;
+            return [
+              function() {
+                return memoizedSelector(getSnapshot());
+              },
+              null === maybeGetServerSnapshot ? void 0 : function() {
+                return memoizedSelector(maybeGetServerSnapshot());
+              }
+            ];
+          },
+          [getSnapshot, getServerSnapshot, selector, isEqual]
+        );
+        var value = useSyncExternalStore(subscribe, instRef[0], instRef[1]);
+        useEffect14(
+          function() {
             inst.hasValue = true;
             inst.value = value;
-          }, [value]);
-          useDebugValue2(value);
-          return value;
-        }
-        exports.useSyncExternalStoreWithSelector = useSyncExternalStoreWithSelector2;
-        if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
-          __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-        }
-      })();
-    }
+          },
+          [value]
+        );
+        useDebugValue2(value);
+        return value;
+      };
+      "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
+    })();
   }
 });
 
-// node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/shim/with-selector.js
+// node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/shim/with-selector.js
 var require_with_selector = __commonJS({
-  "node_modules/.pnpm/use-sync-external-store@1.2.0_react@18.3.1/node_modules/use-sync-external-store/shim/with-selector.js"(exports, module2) {
+  "node_modules/.pnpm/use-sync-external-store@1.5.0_react@18.3.1/node_modules/use-sync-external-store/shim/with-selector.js"(exports, module2) {
     "use strict";
     if (false) {
       module2.exports = null;
@@ -48140,22 +48060,22 @@ var require_jsx_runtime = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-timer-hook@3.0.7_react@18.3.1/node_modules/react-timer-hook/dist/index.js
+// node_modules/.pnpm/react-timer-hook@3.0.8_react@18.3.1/node_modules/react-timer-hook/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/.pnpm/react-timer-hook@3.0.7_react@18.3.1/node_modules/react-timer-hook/dist/index.js"(exports, module2) {
+  "node_modules/.pnpm/react-timer-hook@3.0.8_react@18.3.1/node_modules/react-timer-hook/dist/index.js"(exports, module2) {
     !function(e, t) {
       "object" == typeof exports && "object" == typeof module2 ? module2.exports = t(require_react()) : "function" == typeof define && define.amd ? define(["react"], t) : "object" == typeof exports ? exports["react-timer-hook"] = t(require_react()) : e["react-timer-hook"] = t(e.react);
     }("undefined" != typeof self ? self : exports, (e) => (() => {
       "use strict";
-      var t = { 156: (t2) => {
+      var t = { 155: (t2) => {
         t2.exports = e;
       } }, r = {};
       function o(e2) {
         var n3 = r[e2];
         if (void 0 !== n3)
           return n3.exports;
-        var s2 = r[e2] = { exports: {} };
-        return t[e2](s2, s2.exports, o), s2.exports;
+        var s3 = r[e2] = { exports: {} };
+        return t[e2](s3, s3.exports, o), s3.exports;
       }
       o.d = (e2, t2) => {
         for (var r2 in t2)
@@ -48164,129 +48084,128 @@ var require_dist = __commonJS({
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e2, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e2, "__esModule", { value: true });
       };
       var n2 = {};
-      return (() => {
-        o.r(n2), o.d(n2, { default: () => l2, useStopwatch: () => u, useTime: () => m, useTimer: () => c });
-        var e2 = o(156);
-        class t2 {
-          static expiryTimestamp(e3) {
-            const t3 = new Date(e3).getTime() > 0;
-            return t3 || console.warn("react-timer-hook: { useTimer } Invalid expiryTimestamp settings", e3), t3;
-          }
-          static onExpire(e3) {
-            const t3 = e3 && "function" == typeof e3;
-            return e3 && !t3 && console.warn("react-timer-hook: { useTimer } Invalid onExpire settings function", e3), t3;
-          }
+      o.r(n2), o.d(n2, { default: () => f, useStopwatch: () => d, useTime: () => p, useTimer: () => l2 });
+      var s2 = o(155);
+      class i {
+        static expiryTimestamp(e2) {
+          const t2 = new Date(e2).getTime() > 0;
+          return t2 || console.warn("react-timer-hook: { useTimer } Invalid expiryTimestamp settings", e2), t2;
         }
-        class r2 {
-          static getTimeFromSeconds(e3) {
-            const t3 = Math.ceil(e3), r3 = Math.floor(t3 / 86400), o2 = Math.floor(t3 % 86400 / 3600), n3 = Math.floor(t3 % 3600 / 60);
-            return { totalSeconds: t3, seconds: Math.floor(t3 % 60), minutes: n3, hours: o2, days: r3 };
+        static onExpire(e2) {
+          const t2 = e2 && "function" == typeof e2;
+          return e2 && !t2 && console.warn("react-timer-hook: { useTimer } Invalid onExpire settings function", e2), t2;
+        }
+      }
+      class a {
+        static getTimeFromSeconds(e2) {
+          const t2 = Math.ceil(e2), r2 = Math.floor(t2 / 86400), o2 = Math.floor(t2 % 86400 / 3600), n3 = Math.floor(t2 % 3600 / 60);
+          return { totalSeconds: t2, seconds: Math.floor(t2 % 60), minutes: n3, hours: o2, days: r2 };
+        }
+        static getSecondsFromExpiry(e2, t2) {
+          const r2 = e2 - (/* @__PURE__ */ new Date()).getTime();
+          if (r2 > 0) {
+            const e3 = r2 / 1e3;
+            return t2 ? Math.round(e3) : e3;
           }
-          static getSecondsFromExpiry(e3, t3) {
-            const r3 = e3 - (/* @__PURE__ */ new Date()).getTime();
-            if (r3 > 0) {
-              const e4 = r3 / 1e3;
-              return t3 ? Math.round(e4) : e4;
-            }
-            return 0;
+          return 0;
+        }
+        static getSecondsFromPrevTime(e2, t2) {
+          const r2 = (/* @__PURE__ */ new Date()).getTime() - e2;
+          if (r2 > 0) {
+            const e3 = r2 / 1e3;
+            return t2 ? Math.round(e3) : e3;
           }
-          static getSecondsFromPrevTime(e3, t3) {
-            const r3 = (/* @__PURE__ */ new Date()).getTime() - e3;
-            if (r3 > 0) {
-              const e4 = r3 / 1e3;
-              return t3 ? Math.round(e4) : e4;
-            }
-            return 0;
-          }
-          static getSecondsFromTimeNow() {
-            const e3 = /* @__PURE__ */ new Date();
-            return e3.getTime() / 1e3 - 60 * e3.getTimezoneOffset();
-          }
-          static getFormattedTimeFromSeconds(e3, t3) {
-            const { seconds: o2, minutes: n3, hours: s3 } = r2.getTimeFromSeconds(e3);
-            let i2 = "", a2 = s3;
-            return "12-hour" === t3 && (i2 = s3 >= 12 ? "pm" : "am", a2 = s3 % 12), { seconds: o2, minutes: n3, hours: a2, ampm: i2 };
-          }
+          return 0;
         }
-        function s2(t3, r3) {
-          const o2 = (0, e2.useRef)();
-          (0, e2.useEffect)(() => {
-            o2.current = t3;
-          }), (0, e2.useEffect)(() => {
-            if (!r3)
-              return () => {
-              };
-            const e3 = setInterval(() => {
-              o2.current && o2.current();
-            }, r3);
-            return () => clearInterval(e3);
-          }, [r3]);
+        static getSecondsFromTimeNow() {
+          const e2 = /* @__PURE__ */ new Date();
+          return e2.getTime() / 1e3 - 60 * e2.getTimezoneOffset();
         }
-        const i = 1e3;
-        function a(e3) {
-          if (!t2.expiryTimestamp(e3))
-            return null;
-          const o2 = r2.getSecondsFromExpiry(e3), n3 = Math.floor(1e3 * (o2 - Math.floor(o2)));
-          return n3 > 0 ? n3 : i;
+        static getFormattedTimeFromSeconds(e2, t2) {
+          const { seconds: r2, minutes: o2, hours: n3 } = a.getTimeFromSeconds(e2);
+          let s3 = "", i2 = n3;
+          return "12-hour" === t2 && (s3 = n3 >= 12 ? "pm" : "am", i2 = n3 % 12), { seconds: r2, minutes: o2, hours: i2, ampm: s3 };
         }
-        function c() {
-          let { expiryTimestamp: o2, onExpire: n3, autoStart: c2 = true } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-          const [u2, m2] = (0, e2.useState)(o2), [l3, d] = (0, e2.useState)(r2.getSecondsFromExpiry(u2)), [p, f] = (0, e2.useState)(c2), [g, S] = (0, e2.useState)(c2), [T, y] = (0, e2.useState)(a(u2)), h = (0, e2.useCallback)(() => {
-            t2.onExpire(n3) && n3(), f(false), y(null);
-          }, [n3]), x = (0, e2.useCallback)(() => {
-            f(false);
-          }, []), v = (0, e2.useCallback)(function(e3) {
-            let t3 = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-            y(a(e3)), S(t3), f(t3), m2(e3), d(r2.getSecondsFromExpiry(e3));
-          }, []), F = (0, e2.useCallback)(() => {
-            const e3 = /* @__PURE__ */ new Date();
-            e3.setMilliseconds(e3.getMilliseconds() + 1e3 * l3), v(e3);
-          }, [l3, v]), b = (0, e2.useCallback)(() => {
-            g ? (d(r2.getSecondsFromExpiry(u2)), f(true)) : F();
-          }, [u2, g, F]);
-          return s2(() => {
-            T !== i && y(i);
-            const e3 = r2.getSecondsFromExpiry(u2);
-            d(e3), e3 <= 0 && h();
-          }, p ? T : null), { ...r2.getTimeFromSeconds(l3), start: b, pause: x, resume: F, restart: v, isRunning: p };
+      }
+      function c(e2, t2) {
+        const r2 = (0, s2.useRef)();
+        (0, s2.useEffect)(() => {
+          r2.current = e2;
+        }), (0, s2.useEffect)(() => {
+          if (!t2)
+            return () => {
+            };
+          const e3 = setInterval(() => {
+            r2.current && r2.current();
+          }, t2);
+          return () => clearInterval(e3);
+        }, [t2]);
+      }
+      const u = 1e3;
+      function m(e2) {
+        if (!i.expiryTimestamp(e2))
+          return null;
+        const t2 = a.getSecondsFromExpiry(e2), r2 = Math.floor(1e3 * (t2 - Math.floor(t2)));
+        return r2 > 0 ? r2 : u;
+      }
+      function l2() {
+        let { expiryTimestamp: e2, onExpire: t2, autoStart: r2 = true } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        const [o2, n3] = (0, s2.useState)(e2), [l3, d2] = (0, s2.useState)(a.getSecondsFromExpiry(o2)), [p2, f2] = (0, s2.useState)(r2), [g, S] = (0, s2.useState)(r2), [T, y] = (0, s2.useState)(m(o2)), h = (0, s2.useCallback)(() => {
+          i.onExpire(t2) && t2(), f2(false), y(null);
+        }, [t2]), x = (0, s2.useCallback)(() => {
+          f2(false);
+        }, []), v = (0, s2.useCallback)(function(e3) {
+          let t3 = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+          y(m(e3)), S(t3), f2(t3), n3(e3), d2(a.getSecondsFromExpiry(e3));
+        }, []), F = (0, s2.useCallback)(() => {
+          const e3 = /* @__PURE__ */ new Date();
+          e3.setMilliseconds(e3.getMilliseconds() + 1e3 * l3), v(e3);
+        }, [l3, v]), b = (0, s2.useCallback)(() => {
+          g ? (d2(a.getSecondsFromExpiry(o2)), f2(true)) : F();
+        }, [o2, g, F]);
+        return c(() => {
+          T !== u && y(u);
+          const e3 = a.getSecondsFromExpiry(o2);
+          d2(e3), e3 <= 0 && h();
+        }, p2 ? T : null), { ...a.getTimeFromSeconds(l3), start: b, pause: x, resume: F, restart: v, isRunning: p2 };
+      }
+      function d() {
+        let { autoStart: e2, offsetTimestamp: t2 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        const [r2, o2] = (0, s2.useState)(a.getSecondsFromExpiry(t2, true) || 0), [n3, i2] = (0, s2.useState)(/* @__PURE__ */ new Date()), [u2, m2] = (0, s2.useState)(r2 + a.getSecondsFromPrevTime(n3 || 0, true)), [l3, d2] = (0, s2.useState)(e2);
+        c(() => {
+          m2(r2 + a.getSecondsFromPrevTime(n3, true));
+        }, l3 ? 1e3 : null);
+        const p2 = (0, s2.useCallback)(() => {
+          const e3 = /* @__PURE__ */ new Date();
+          i2(e3), d2(true), m2(r2 + a.getSecondsFromPrevTime(e3, true));
+        }, [r2]), f2 = (0, s2.useCallback)(() => {
+          o2(u2), d2(false);
+        }, [u2]), g = (0, s2.useCallback)(function() {
+          let e3 = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0, t3 = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+          const r3 = a.getSecondsFromExpiry(e3, true) || 0, n4 = /* @__PURE__ */ new Date();
+          i2(n4), o2(r3), d2(t3), m2(r3 + a.getSecondsFromPrevTime(n4, true));
+        }, []);
+        return { ...a.getTimeFromSeconds(u2), start: p2, pause: f2, reset: g, isRunning: l3 };
+      }
+      function p() {
+        let { format: e2 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        const [t2, r2] = (0, s2.useState)(a.getSecondsFromTimeNow());
+        return c(() => {
+          r2(a.getSecondsFromTimeNow());
+        }, 1e3), { ...a.getFormattedTimeFromSeconds(t2, e2) };
+      }
+      function f(e2) {
+        if ((0, s2.useEffect)(() => {
+          console.warn("react-timer-hook: default export useTimer is deprecated, use named exports { useTimer, useStopwatch, useTime } instead");
+        }, []), e2.expiryTimestamp) {
+          const t3 = l2(e2);
+          return { ...t3, startTimer: t3.start, stopTimer: t3.pause, resetTimer: () => {
+          } };
         }
-        function u() {
-          let { autoStart: t3, offsetTimestamp: o2 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-          const [n3, i2] = (0, e2.useState)(r2.getSecondsFromExpiry(o2, true) || 0), [a2, c2] = (0, e2.useState)(/* @__PURE__ */ new Date()), [u2, m2] = (0, e2.useState)(n3 + r2.getSecondsFromPrevTime(a2 || 0, true)), [l3, d] = (0, e2.useState)(t3);
-          s2(() => {
-            m2(n3 + r2.getSecondsFromPrevTime(a2, true));
-          }, l3 ? 1e3 : null);
-          const p = (0, e2.useCallback)(() => {
-            const e3 = /* @__PURE__ */ new Date();
-            c2(e3), d(true), m2(n3 + r2.getSecondsFromPrevTime(e3, true));
-          }, [n3]), f = (0, e2.useCallback)(() => {
-            i2(u2), d(false);
-          }, [u2]), g = (0, e2.useCallback)(function() {
-            let e3 = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0, t4 = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-            const o3 = r2.getSecondsFromExpiry(e3, true) || 0, n4 = /* @__PURE__ */ new Date();
-            c2(n4), i2(o3), d(t4), m2(o3 + r2.getSecondsFromPrevTime(n4, true));
-          }, []);
-          return { ...r2.getTimeFromSeconds(u2), start: p, pause: f, reset: g, isRunning: l3 };
-        }
-        function m() {
-          let { format: t3 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-          const [o2, n3] = (0, e2.useState)(r2.getSecondsFromTimeNow());
-          return s2(() => {
-            n3(r2.getSecondsFromTimeNow());
-          }, 1e3), { ...r2.getFormattedTimeFromSeconds(o2, t3) };
-        }
-        function l2(t3) {
-          if ((0, e2.useEffect)(() => {
-            console.warn("react-timer-hook: default export useTimer is deprecated, use named exports { useTimer, useStopwatch, useTime } instead");
-          }, []), t3.expiryTimestamp) {
-            const e3 = c(t3);
-            return { ...e3, startTimer: e3.start, stopTimer: e3.pause, resetTimer: () => {
-            } };
-          }
-          const r3 = u(t3);
-          return { ...r3, startTimer: r3.start, stopTimer: r3.pause, resetTimer: r3.reset };
-        }
-      })(), n2;
+        const t2 = d(e2);
+        return { ...t2, startTimer: t2.start, stopTimer: t2.pause, resetTimer: t2.reset };
+      }
+      return n2;
     })());
   }
 });
@@ -51058,7 +50977,7 @@ var require_luxon = __commonJS({
         }
         return base;
       };
-      _proto.toISO = function toISO2() {
+      _proto.toISO = function toISO3() {
         if (!this.isValid)
           return null;
         var s3 = "P";
@@ -51683,7 +51602,7 @@ var require_luxon = __commonJS({
           return INVALID$1;
         return "[" + this.s.toISO() + " \u2013 " + this.e.toISO() + ")";
       };
-      _proto.toISO = function toISO2(opts) {
+      _proto.toISO = function toISO3(opts) {
         if (!this.isValid)
           return INVALID$1;
         return this.s.toISO(opts) + "/" + this.e.toISO(opts);
@@ -53101,7 +53020,7 @@ var require_luxon = __commonJS({
         }
         return this.isValid ? Formatter2.create(this.loc.clone(opts), opts).formatDateTimeParts(this) : [];
       };
-      _proto.toISO = function toISO2(opts) {
+      _proto.toISO = function toISO3(opts) {
         if (opts === void 0) {
           opts = {};
         }
@@ -57365,7 +57284,7 @@ __export(main_exports, {
 });
 module.exports = __toCommonJS(main_exports);
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/errors.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/errors.js
 var LuxonError = class extends Error {
 };
 var InvalidDateTimeError = class extends LuxonError {
@@ -57398,7 +57317,7 @@ var ZoneIsAbstractError = class extends LuxonError {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/formats.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/formats.js
 var n = "numeric";
 var s = "short";
 var l = "long";
@@ -57550,7 +57469,7 @@ var DATETIME_HUGE_WITH_SECONDS = {
   timeZoneName: l
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/zone.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/zone.js
 var Zone = class {
   /**
    * The type of zone
@@ -57568,6 +57487,12 @@ var Zone = class {
   get name() {
     throw new ZoneIsAbstractError();
   }
+  /**
+   * The IANA name of this zone.
+   * Defaults to `name` if not overwritten by a subclass.
+   * @abstract
+   * @type {string}
+   */
   get ianaName() {
     return this.name;
   }
@@ -57630,7 +57555,7 @@ var Zone = class {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/zones/systemZone.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/zones/systemZone.js
 var singleton = null;
 var SystemZone = class _SystemZone extends Zone {
   /**
@@ -57677,13 +57602,14 @@ var SystemZone = class _SystemZone extends Zone {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/zones/IANAZone.js
-var dtfCache = {};
-function makeDTF(zone) {
-  if (!dtfCache[zone]) {
-    dtfCache[zone] = new Intl.DateTimeFormat("en-US", {
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/zones/IANAZone.js
+var dtfCache = /* @__PURE__ */ new Map();
+function makeDTF(zoneName) {
+  let dtf = dtfCache.get(zoneName);
+  if (dtf === void 0) {
+    dtf = new Intl.DateTimeFormat("en-US", {
       hour12: false,
-      timeZone: zone,
+      timeZone: zoneName,
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
@@ -57692,8 +57618,9 @@ function makeDTF(zone) {
       second: "2-digit",
       era: "short"
     });
+    dtfCache.set(zoneName, dtf);
   }
-  return dtfCache[zone];
+  return dtf;
 }
 var typeToPos = {
   year: 0,
@@ -57722,32 +57649,33 @@ function partsOffset(dtf, date) {
   }
   return filled;
 }
-var ianaZoneCache = {};
+var ianaZoneCache = /* @__PURE__ */ new Map();
 var IANAZone = class _IANAZone extends Zone {
   /**
    * @param {string} name - Zone name
    * @return {IANAZone}
    */
   static create(name) {
-    if (!ianaZoneCache[name]) {
-      ianaZoneCache[name] = new _IANAZone(name);
+    let zone = ianaZoneCache.get(name);
+    if (zone === void 0) {
+      ianaZoneCache.set(name, zone = new _IANAZone(name));
     }
-    return ianaZoneCache[name];
+    return zone;
   }
   /**
    * Reset local caches. Should only be necessary in testing scenarios.
    * @return {void}
    */
   static resetCache() {
-    ianaZoneCache = {};
-    dtfCache = {};
+    ianaZoneCache.clear();
+    dtfCache.clear();
   }
   /**
    * Returns whether the provided string is a valid specifier. This only checks the string's format, not that the specifier identifies a known zone; see isValidZone for that.
    * @param {string} s - The string to check validity on
    * @example IANAZone.isValidSpecifier("America/New_York") //=> true
    * @example IANAZone.isValidSpecifier("Sport~~blorp") //=> false
-   * @deprecated This method returns false for some valid IANA names. Use isValidZone instead.
+   * @deprecated For backward compatibility, this forwards to isValidZone, better use `isValidZone()` directly instead.
    * @return {boolean}
    */
   static isValidSpecifier(s2) {
@@ -57777,28 +57705,63 @@ var IANAZone = class _IANAZone extends Zone {
     this.zoneName = name;
     this.valid = _IANAZone.isValidZone(name);
   }
-  /** @override **/
+  /**
+   * The type of zone. `iana` for all instances of `IANAZone`.
+   * @override
+   * @type {string}
+   */
   get type() {
     return "iana";
   }
-  /** @override **/
+  /**
+   * The name of this zone (i.e. the IANA zone name).
+   * @override
+   * @type {string}
+   */
   get name() {
     return this.zoneName;
   }
-  /** @override **/
+  /**
+   * Returns whether the offset is known to be fixed for the whole year:
+   * Always returns false for all IANA zones.
+   * @override
+   * @type {boolean}
+   */
   get isUniversal() {
     return false;
   }
-  /** @override **/
+  /**
+   * Returns the offset's common name (such as EST) at the specified timestamp
+   * @override
+   * @param {number} ts - Epoch milliseconds for which to get the name
+   * @param {Object} opts - Options to affect the format
+   * @param {string} opts.format - What style of offset to return. Accepts 'long' or 'short'.
+   * @param {string} opts.locale - What locale to return the offset name in.
+   * @return {string}
+   */
   offsetName(ts, { format, locale }) {
     return parseZoneInfo(ts, format, locale, this.name);
   }
-  /** @override **/
+  /**
+   * Returns the offset's value as a string
+   * @override
+   * @param {number} ts - Epoch milliseconds for which to get the offset
+   * @param {string} format - What style of offset to return.
+   *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
+   * @return {string}
+   */
   formatOffset(ts, format) {
     return formatOffset(this.offset(ts), format);
   }
-  /** @override **/
+  /**
+   * Return the offset in minutes for this zone at the specified timestamp.
+   * @override
+   * @param {number} ts - Epoch milliseconds for which to compute the offset
+   * @return {number}
+   */
   offset(ts) {
+    if (!this.valid)
+      return NaN;
     const date = new Date(ts);
     if (isNaN(date))
       return NaN;
@@ -57822,17 +57785,26 @@ var IANAZone = class _IANAZone extends Zone {
     asTS -= over >= 0 ? over : 1e3 + over;
     return (asUTC - asTS) / (60 * 1e3);
   }
-  /** @override **/
+  /**
+   * Return whether this Zone is equal to another zone
+   * @override
+   * @param {Zone} otherZone - the zone to compare
+   * @return {boolean}
+   */
   equals(otherZone) {
     return otherZone.type === "iana" && otherZone.name === this.name;
   }
-  /** @override **/
+  /**
+   * Return whether this Zone is valid.
+   * @override
+   * @type {boolean}
+   */
   get isValid() {
     return this.valid;
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/locale.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/locale.js
 var intlLFCache = {};
 function getCachedLF(locString, opts = {}) {
   const key2 = JSON.stringify([locString, opts]);
@@ -57843,34 +57815,34 @@ function getCachedLF(locString, opts = {}) {
   }
   return dtf;
 }
-var intlDTCache = {};
+var intlDTCache = /* @__PURE__ */ new Map();
 function getCachedDTF(locString, opts = {}) {
   const key2 = JSON.stringify([locString, opts]);
-  let dtf = intlDTCache[key2];
-  if (!dtf) {
+  let dtf = intlDTCache.get(key2);
+  if (dtf === void 0) {
     dtf = new Intl.DateTimeFormat(locString, opts);
-    intlDTCache[key2] = dtf;
+    intlDTCache.set(key2, dtf);
   }
   return dtf;
 }
-var intlNumCache = {};
+var intlNumCache = /* @__PURE__ */ new Map();
 function getCachedINF(locString, opts = {}) {
   const key2 = JSON.stringify([locString, opts]);
-  let inf = intlNumCache[key2];
-  if (!inf) {
+  let inf = intlNumCache.get(key2);
+  if (inf === void 0) {
     inf = new Intl.NumberFormat(locString, opts);
-    intlNumCache[key2] = inf;
+    intlNumCache.set(key2, inf);
   }
   return inf;
 }
-var intlRelCache = {};
+var intlRelCache = /* @__PURE__ */ new Map();
 function getCachedRTF(locString, opts = {}) {
   const { base, ...cacheKeyOpts } = opts;
   const key2 = JSON.stringify([locString, cacheKeyOpts]);
-  let inf = intlRelCache[key2];
-  if (!inf) {
+  let inf = intlRelCache.get(key2);
+  if (inf === void 0) {
     inf = new Intl.RelativeTimeFormat(locString, opts);
-    intlRelCache[key2] = inf;
+    intlRelCache.set(key2, inf);
   }
   return inf;
 }
@@ -57883,13 +57855,25 @@ function systemLocale() {
     return sysLocaleCache;
   }
 }
-var weekInfoCache = {};
+var intlResolvedOptionsCache = /* @__PURE__ */ new Map();
+function getCachedIntResolvedOptions(locString) {
+  let opts = intlResolvedOptionsCache.get(locString);
+  if (opts === void 0) {
+    opts = new Intl.DateTimeFormat(locString).resolvedOptions();
+    intlResolvedOptionsCache.set(locString, opts);
+  }
+  return opts;
+}
+var weekInfoCache = /* @__PURE__ */ new Map();
 function getCachedWeekInfo(locString) {
-  let data = weekInfoCache[locString];
+  let data = weekInfoCache.get(locString);
   if (!data) {
     const locale = new Intl.Locale(locString);
     data = "getWeekInfo" in locale ? locale.getWeekInfo() : locale.weekInfo;
-    weekInfoCache[locString] = data;
+    if (!("minimalDays" in data)) {
+      data = { ...fallbackWeekSettings, ...data };
+    }
+    weekInfoCache.set(locString, data);
   }
   return data;
 }
@@ -57962,7 +57946,7 @@ function supportsFastNumbers(loc) {
   if (loc.numberingSystem && loc.numberingSystem !== "latn") {
     return false;
   } else {
-    return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || new Intl.DateTimeFormat(loc.intl).resolvedOptions().numberingSystem === "latn";
+    return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || getCachedIntResolvedOptions(loc.locale).numberingSystem === "latn";
   }
 }
 var PolyNumberFormatter = class {
@@ -58096,9 +58080,11 @@ var Locale = class _Locale {
   }
   static resetCache() {
     sysLocaleCache = null;
-    intlDTCache = {};
-    intlNumCache = {};
-    intlRelCache = {};
+    intlDTCache.clear();
+    intlNumCache.clear();
+    intlRelCache.clear();
+    intlResolvedOptionsCache.clear();
+    weekInfoCache.clear();
   }
   static fromObject({ locale, numberingSystem, outputCalendar, weekSettings } = {}) {
     return _Locale.create(locale, numberingSystem, outputCalendar, weekSettings);
@@ -58211,7 +58197,7 @@ var Locale = class _Locale {
     return getCachedLF(this.intl, opts);
   }
   isEnglish() {
-    return this.locale === "en" || this.locale.toLowerCase() === "en-us" || new Intl.DateTimeFormat(this.intl).resolvedOptions().locale.startsWith("en-us");
+    return this.locale === "en" || this.locale.toLowerCase() === "en-us" || getCachedIntResolvedOptions(this.intl).locale.startsWith("en-us");
   }
   getWeekSettings() {
     if (this.weekSettings) {
@@ -58234,9 +58220,12 @@ var Locale = class _Locale {
   equals(other) {
     return this.locale === other.locale && this.numberingSystem === other.numberingSystem && this.outputCalendar === other.outputCalendar;
   }
+  toString() {
+    return `Locale(${this.locale}, ${this.numberingSystem}, ${this.outputCalendar})`;
+  }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/zones/fixedOffsetZone.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/zones/fixedOffsetZone.js
 var singleton2 = null;
 var FixedOffsetZone = class _FixedOffsetZone extends Zone {
   /**
@@ -58278,14 +58267,29 @@ var FixedOffsetZone = class _FixedOffsetZone extends Zone {
     super();
     this.fixed = offset2;
   }
-  /** @override **/
+  /**
+   * The type of zone. `fixed` for all instances of `FixedOffsetZone`.
+   * @override
+   * @type {string}
+   */
   get type() {
     return "fixed";
   }
-  /** @override **/
+  /**
+   * The name of this zone.
+   * All fixed zones' names always start with "UTC" (plus optional offset)
+   * @override
+   * @type {string}
+   */
   get name() {
     return this.fixed === 0 ? "UTC" : `UTC${formatOffset(this.fixed, "narrow")}`;
   }
+  /**
+   * The IANA name of this zone, i.e. `Etc/UTC` or `Etc/GMT+/-nn`
+   *
+   * @override
+   * @type {string}
+   */
   get ianaName() {
     if (this.fixed === 0) {
       return "Etc/UTC";
@@ -58293,33 +58297,66 @@ var FixedOffsetZone = class _FixedOffsetZone extends Zone {
       return `Etc/GMT${formatOffset(-this.fixed, "narrow")}`;
     }
   }
-  /** @override **/
+  /**
+   * Returns the offset's common name at the specified timestamp.
+   *
+   * For fixed offset zones this equals to the zone name.
+   * @override
+   */
   offsetName() {
     return this.name;
   }
-  /** @override **/
+  /**
+   * Returns the offset's value as a string
+   * @override
+   * @param {number} ts - Epoch milliseconds for which to get the offset
+   * @param {string} format - What style of offset to return.
+   *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
+   * @return {string}
+   */
   formatOffset(ts, format) {
     return formatOffset(this.fixed, format);
   }
-  /** @override **/
+  /**
+   * Returns whether the offset is known to be fixed for the whole year:
+   * Always returns true for all fixed offset zones.
+   * @override
+   * @type {boolean}
+   */
   get isUniversal() {
     return true;
   }
-  /** @override **/
+  /**
+   * Return the offset in minutes for this zone at the specified timestamp.
+   *
+   * For fixed offset zones, this is constant and does not depend on a timestamp.
+   * @override
+   * @return {number}
+   */
   offset() {
     return this.fixed;
   }
-  /** @override **/
+  /**
+   * Return whether this Zone is equal to another zone (i.e. also fixed and same offset)
+   * @override
+   * @param {Zone} otherZone - the zone to compare
+   * @return {boolean}
+   */
   equals(otherZone) {
     return otherZone.type === "fixed" && otherZone.fixed === this.fixed;
   }
-  /** @override **/
+  /**
+   * Return whether this Zone is valid:
+   * All fixed offset zones are valid.
+   * @override
+   * @type {boolean}
+   */
   get isValid() {
     return true;
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/zones/invalidZone.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/zones/invalidZone.js
 var InvalidZone = class extends Zone {
   constructor(zoneName) {
     super();
@@ -58359,7 +58396,7 @@ var InvalidZone = class extends Zone {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/zoneUtil.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/zoneUtil.js
 function normalizeZone(input, defaultZone2) {
   let offset2;
   if (isUndefined(input) || input === null) {
@@ -58385,7 +58422,94 @@ function normalizeZone(input, defaultZone2) {
   }
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/settings.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/digits.js
+var numberingSystems = {
+  arab: "[\u0660-\u0669]",
+  arabext: "[\u06F0-\u06F9]",
+  bali: "[\u1B50-\u1B59]",
+  beng: "[\u09E6-\u09EF]",
+  deva: "[\u0966-\u096F]",
+  fullwide: "[\uFF10-\uFF19]",
+  gujr: "[\u0AE6-\u0AEF]",
+  hanidec: "[\u3007|\u4E00|\u4E8C|\u4E09|\u56DB|\u4E94|\u516D|\u4E03|\u516B|\u4E5D]",
+  khmr: "[\u17E0-\u17E9]",
+  knda: "[\u0CE6-\u0CEF]",
+  laoo: "[\u0ED0-\u0ED9]",
+  limb: "[\u1946-\u194F]",
+  mlym: "[\u0D66-\u0D6F]",
+  mong: "[\u1810-\u1819]",
+  mymr: "[\u1040-\u1049]",
+  orya: "[\u0B66-\u0B6F]",
+  tamldec: "[\u0BE6-\u0BEF]",
+  telu: "[\u0C66-\u0C6F]",
+  thai: "[\u0E50-\u0E59]",
+  tibt: "[\u0F20-\u0F29]",
+  latn: "\\d"
+};
+var numberingSystemsUTF16 = {
+  arab: [1632, 1641],
+  arabext: [1776, 1785],
+  bali: [6992, 7001],
+  beng: [2534, 2543],
+  deva: [2406, 2415],
+  fullwide: [65296, 65303],
+  gujr: [2790, 2799],
+  khmr: [6112, 6121],
+  knda: [3302, 3311],
+  laoo: [3792, 3801],
+  limb: [6470, 6479],
+  mlym: [3430, 3439],
+  mong: [6160, 6169],
+  mymr: [4160, 4169],
+  orya: [2918, 2927],
+  tamldec: [3046, 3055],
+  telu: [3174, 3183],
+  thai: [3664, 3673],
+  tibt: [3872, 3881]
+};
+var hanidecChars = numberingSystems.hanidec.replace(/[\[|\]]/g, "").split("");
+function parseDigits(str) {
+  let value = parseInt(str, 10);
+  if (isNaN(value)) {
+    value = "";
+    for (let i = 0; i < str.length; i++) {
+      const code = str.charCodeAt(i);
+      if (str[i].search(numberingSystems.hanidec) !== -1) {
+        value += hanidecChars.indexOf(str[i]);
+      } else {
+        for (const key2 in numberingSystemsUTF16) {
+          const [min, max] = numberingSystemsUTF16[key2];
+          if (code >= min && code <= max) {
+            value += code - min;
+          }
+        }
+      }
+    }
+    return parseInt(value, 10);
+  } else {
+    return value;
+  }
+}
+var digitRegexCache = /* @__PURE__ */ new Map();
+function resetDigitRegexCache() {
+  digitRegexCache.clear();
+}
+function digitRegex({ numberingSystem }, append = "") {
+  const ns = numberingSystem || "latn";
+  let appendCache = digitRegexCache.get(ns);
+  if (appendCache === void 0) {
+    appendCache = /* @__PURE__ */ new Map();
+    digitRegexCache.set(ns, appendCache);
+  }
+  let regex = appendCache.get(append);
+  if (regex === void 0) {
+    regex = new RegExp(`${numberingSystems[ns]}${append}`);
+    appendCache.set(append, regex);
+  }
+  return regex;
+}
+
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/settings.js
 var now2 = () => Date.now();
 var defaultZone = "system";
 var defaultLocale = null;
@@ -58493,17 +58617,18 @@ var Settings = class {
     defaultWeekSettings = validateWeekSettings(weekSettings);
   }
   /**
-   * Get the cutoff year after which a string encoding a year as two digits is interpreted to occur in the current century.
+   * Get the cutoff year for whether a 2-digit year string is interpreted in the current or previous century. Numbers higher than the cutoff will be considered to mean 19xx and numbers lower or equal to the cutoff will be considered 20xx.
    * @type {number}
    */
   static get twoDigitCutoffYear() {
     return twoDigitCutoffYear;
   }
   /**
-   * Set the cutoff year after which a string encoding a year as two digits is interpreted to occur in the current century.
+   * Set the cutoff year for whether a 2-digit year string is interpreted in the current or previous century. Numbers higher than the cutoff will be considered to mean 19xx and numbers lower or equal to the cutoff will be considered 20xx.
    * @type {number}
-   * @example Settings.twoDigitCutoffYear = 0 // cut-off year is 0, so all 'yy' are interpreted as current century
-   * @example Settings.twoDigitCutoffYear = 50 // '49' -> 1949; '50' -> 2050
+   * @example Settings.twoDigitCutoffYear = 0 // all 'yy' are interpreted as 20th century
+   * @example Settings.twoDigitCutoffYear = 99 // all 'yy' are interpreted as 21st century
+   * @example Settings.twoDigitCutoffYear = 50 // '49' -> 2049; '50' -> 1950
    * @example Settings.twoDigitCutoffYear = 1950 // interpreted as 50
    * @example Settings.twoDigitCutoffYear = 2050 // ALSO interpreted as 50
    */
@@ -58531,10 +58656,12 @@ var Settings = class {
   static resetCaches() {
     Locale.resetCache();
     IANAZone.resetCache();
+    DateTime.resetCache();
+    resetDigitRegexCache();
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/invalid.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/invalid.js
 var Invalid = class {
   constructor(reason, explanation) {
     this.reason = reason;
@@ -58549,7 +58676,7 @@ var Invalid = class {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/conversions.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/conversions.js
 var nonLeapLadder = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
 var leapLadder = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 function unitOutOfRange(unit, value) {
@@ -58691,7 +58818,7 @@ function hasInvalidTimeData(obj) {
     return false;
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/util.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/util.js
 function isUndefined(o) {
   return typeof o === "undefined";
 }
@@ -58910,7 +59037,7 @@ function timeObject(obj) {
   return pick(obj, ["hour", "minute", "second", "millisecond"]);
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/english.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/english.js
 var monthsLong = [
   "January",
   "February",
@@ -59037,7 +59164,7 @@ function formatRelativeTime(unit, count, numeric = "always", narrow = false) {
   return isInPast ? `${fmtValue} ${fmtUnit} ago` : `in ${fmtValue} ${fmtUnit}`;
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/formatter.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/formatter.js
 function stringifyTokens(splits, tokenToString) {
   let s2 = "";
   for (const token of splits) {
@@ -59327,7 +59454,7 @@ var Formatter = class _Formatter {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/regexParser.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/regexParser.js
 var ianaRegex = /[A-Za-z_+-]{1,256}(?::?\/[A-Za-z0-9_+-]{1,256}(?:\/[A-Za-z0-9_+-]{1,256})?)?/;
 function combineRegexes(...regexes) {
   const full = regexes.reduce((f, r) => f + r.source, "");
@@ -59563,7 +59690,7 @@ function parseSQL(s2) {
   );
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/duration.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/duration.js
 var INVALID = "Invalid Duration";
 var lowOrderMatrix = {
   weeks: {
@@ -60392,7 +60519,7 @@ var Duration = class _Duration {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/interval.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/interval.js
 var INVALID2 = "Invalid Interval";
 function validateStartEnd(start, end) {
   if (!start || !start.isValid) {
@@ -60536,6 +60663,13 @@ var Interval = class _Interval {
    */
   get end() {
     return this.isValid ? this.e : null;
+  }
+  /**
+   * Returns the last DateTime included in the interval (since end is not part of the interval)
+   * @type {DateTime}
+   */
+  get lastDateTime() {
+    return this.isValid ? this.e ? this.e.minus(1) : null : null;
   }
   /**
    * Returns whether this Interval's end is at least its start, meaning that the Interval isn't 'backwards'.
@@ -60724,7 +60858,7 @@ var Interval = class _Interval {
     return +other.e === +this.s;
   }
   /**
-   * Return whether this Interval engulfs the start and end of the specified Interval.
+   * Returns true if this Interval fully contains the specified Interval, specifically if the intersect (of this Interval and the other Interval) is equal to the other Interval; false otherwise.
    * @param {Interval} other
    * @return {boolean}
    */
@@ -60774,8 +60908,11 @@ var Interval = class _Interval {
     return _Interval.fromDateTimes(s2, e);
   }
   /**
-   * Merge an array of Intervals into a equivalent minimal set of Intervals.
+   * Merge an array of Intervals into an equivalent minimal set of Intervals.
    * Combines overlapping and adjacent Intervals.
+   * The resulting array will contain the Intervals in ascending order, that is, starting with the earliest Interval
+   * and ending with the latest.
+   *
    * @param {Array} intervals
    * @return {Array}
    */
@@ -60950,7 +61087,7 @@ var Interval = class _Interval {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/info.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/info.js
 var Info = class {
   /**
    * Return whether the specified zone contains a DST.
@@ -61123,7 +61260,7 @@ var Info = class {
   }
 };
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/diff.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/diff.js
 function dayDiff(earlier, later) {
   const utcDayStart = (dt) => dt.toUTC(0, { keepLocalTime: true }).startOf("day").valueOf(), ms = utcDayStart(later) - utcDayStart(earlier);
   return Math.floor(Duration.fromMillis(ms).as("days"));
@@ -61187,79 +61324,7 @@ function diff_default(earlier, later, units, opts) {
   }
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/digits.js
-var numberingSystems = {
-  arab: "[\u0660-\u0669]",
-  arabext: "[\u06F0-\u06F9]",
-  bali: "[\u1B50-\u1B59]",
-  beng: "[\u09E6-\u09EF]",
-  deva: "[\u0966-\u096F]",
-  fullwide: "[\uFF10-\uFF19]",
-  gujr: "[\u0AE6-\u0AEF]",
-  hanidec: "[\u3007|\u4E00|\u4E8C|\u4E09|\u56DB|\u4E94|\u516D|\u4E03|\u516B|\u4E5D]",
-  khmr: "[\u17E0-\u17E9]",
-  knda: "[\u0CE6-\u0CEF]",
-  laoo: "[\u0ED0-\u0ED9]",
-  limb: "[\u1946-\u194F]",
-  mlym: "[\u0D66-\u0D6F]",
-  mong: "[\u1810-\u1819]",
-  mymr: "[\u1040-\u1049]",
-  orya: "[\u0B66-\u0B6F]",
-  tamldec: "[\u0BE6-\u0BEF]",
-  telu: "[\u0C66-\u0C6F]",
-  thai: "[\u0E50-\u0E59]",
-  tibt: "[\u0F20-\u0F29]",
-  latn: "\\d"
-};
-var numberingSystemsUTF16 = {
-  arab: [1632, 1641],
-  arabext: [1776, 1785],
-  bali: [6992, 7001],
-  beng: [2534, 2543],
-  deva: [2406, 2415],
-  fullwide: [65296, 65303],
-  gujr: [2790, 2799],
-  khmr: [6112, 6121],
-  knda: [3302, 3311],
-  laoo: [3792, 3801],
-  limb: [6470, 6479],
-  mlym: [3430, 3439],
-  mong: [6160, 6169],
-  mymr: [4160, 4169],
-  orya: [2918, 2927],
-  tamldec: [3046, 3055],
-  telu: [3174, 3183],
-  thai: [3664, 3673],
-  tibt: [3872, 3881]
-};
-var hanidecChars = numberingSystems.hanidec.replace(/[\[|\]]/g, "").split("");
-function parseDigits(str) {
-  let value = parseInt(str, 10);
-  if (isNaN(value)) {
-    value = "";
-    for (let i = 0; i < str.length; i++) {
-      const code = str.charCodeAt(i);
-      if (str[i].search(numberingSystems.hanidec) !== -1) {
-        value += hanidecChars.indexOf(str[i]);
-      } else {
-        for (const key2 in numberingSystemsUTF16) {
-          const [min, max] = numberingSystemsUTF16[key2];
-          if (code >= min && code <= max) {
-            value += code - min;
-          }
-        }
-      }
-    }
-    return parseInt(value, 10);
-  } else {
-    return value;
-  }
-}
-function digitRegex({ numberingSystem }, append = "") {
-  return new RegExp(`${numberingSystems[numberingSystem || "latn"]}${append}`);
-}
-
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/impl/tokenParser.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/impl/tokenParser.js
 var MISSING_FTP = "missing Intl.DateTimeFormat.formatToParts support";
 function intUnit(regex, post = (i) => i) {
   return { regex, deser: ([s2]) => post(parseDigits(s2)) };
@@ -61598,19 +61663,51 @@ function maybeExpandMacroToken(token, locale) {
 function expandMacroTokens(tokens, locale) {
   return Array.prototype.concat(...tokens.map((t) => maybeExpandMacroToken(t, locale)));
 }
-function explainFromTokens(locale, input, format) {
-  const tokens = expandMacroTokens(Formatter.parseFormat(format), locale), units = tokens.map((t) => unitForToken(t, locale)), disqualifyingUnit = units.find((t) => t.invalidReason);
-  if (disqualifyingUnit) {
-    return { input, tokens, invalidReason: disqualifyingUnit.invalidReason };
-  } else {
-    const [regexString, handlers] = buildRegex(units), regex = RegExp(regexString, "i"), [rawMatches, matches] = match(input, regex, handlers), [result, zone, specificOffset] = matches ? dateTimeFromMatches(matches) : [null, null, void 0];
-    if (hasOwnProperty(matches, "a") && hasOwnProperty(matches, "H")) {
-      throw new ConflictingSpecificationError(
-        "Can't include meridiem when specifying 24-hour format"
-      );
+var TokenParser = class {
+  constructor(locale, format) {
+    this.locale = locale;
+    this.format = format;
+    this.tokens = expandMacroTokens(Formatter.parseFormat(format), locale);
+    this.units = this.tokens.map((t) => unitForToken(t, locale));
+    this.disqualifyingUnit = this.units.find((t) => t.invalidReason);
+    if (!this.disqualifyingUnit) {
+      const [regexString, handlers] = buildRegex(this.units);
+      this.regex = RegExp(regexString, "i");
+      this.handlers = handlers;
     }
-    return { input, tokens, regex, rawMatches, matches, result, zone, specificOffset };
   }
+  explainFromTokens(input) {
+    if (!this.isValid) {
+      return { input, tokens: this.tokens, invalidReason: this.invalidReason };
+    } else {
+      const [rawMatches, matches] = match(input, this.regex, this.handlers), [result, zone, specificOffset] = matches ? dateTimeFromMatches(matches) : [null, null, void 0];
+      if (hasOwnProperty(matches, "a") && hasOwnProperty(matches, "H")) {
+        throw new ConflictingSpecificationError(
+          "Can't include meridiem when specifying 24-hour format"
+        );
+      }
+      return {
+        input,
+        tokens: this.tokens,
+        regex: this.regex,
+        rawMatches,
+        matches,
+        result,
+        zone,
+        specificOffset
+      };
+    }
+  }
+  get isValid() {
+    return !this.disqualifyingUnit;
+  }
+  get invalidReason() {
+    return this.disqualifyingUnit ? this.disqualifyingUnit.invalidReason : null;
+  }
+};
+function explainFromTokens(locale, input, format) {
+  const parser = new TokenParser(locale, format);
+  return parser.explainFromTokens(input);
 }
 function parseFromTokens(locale, input, format) {
   const { result, zone, specificOffset, invalidReason } = explainFromTokens(locale, input, format);
@@ -61627,7 +61724,7 @@ function formatOptsToTokens(formatOpts, locale) {
   return parts.map((p) => tokenForPart(p, formatOpts, resolvedOpts));
 }
 
-// node_modules/.pnpm/luxon@3.4.4/node_modules/luxon/src/datetime.js
+// node_modules/.pnpm/luxon@3.6.1/node_modules/luxon/src/datetime.js
 var INVALID3 = "Invalid DateTime";
 var MAX_DATE = 864e13;
 function unsupportedZone(zone) {
@@ -61869,8 +61966,27 @@ function normalizeUnitWithLocalWeeks(unit) {
       return normalizeUnit(unit);
   }
 }
+function guessOffsetForZone(zone) {
+  if (zoneOffsetTs === void 0) {
+    zoneOffsetTs = Settings.now();
+  }
+  if (zone.type !== "iana") {
+    return zone.offset(zoneOffsetTs);
+  }
+  const zoneName = zone.name;
+  let offsetGuess = zoneOffsetGuessCache.get(zoneName);
+  if (offsetGuess === void 0) {
+    offsetGuess = zone.offset(zoneOffsetTs);
+    zoneOffsetGuessCache.set(zoneName, offsetGuess);
+  }
+  return offsetGuess;
+}
 function quickDT(obj, opts) {
-  const zone = normalizeZone(opts.zone, Settings.defaultZone), loc = Locale.fromObject(opts), tsNow = Settings.now();
+  const zone = normalizeZone(opts.zone, Settings.defaultZone);
+  if (!zone.isValid) {
+    return DateTime.invalid(unsupportedZone(zone));
+  }
+  const loc = Locale.fromObject(opts);
   let ts, o;
   if (!isUndefined(obj.year)) {
     for (const u of orderedUnits2) {
@@ -61882,10 +61998,10 @@ function quickDT(obj, opts) {
     if (invalid) {
       return DateTime.invalid(invalid);
     }
-    const offsetProvis = zone.offset(tsNow);
+    const offsetProvis = guessOffsetForZone(zone);
     [ts, o] = objToTS(obj, offsetProvis, zone);
   } else {
-    ts = tsNow;
+    ts = Settings.now();
   }
   return new DateTime({ ts, zone, loc, o });
 }
@@ -61925,6 +62041,8 @@ function lastOpts(argList) {
   }
   return [opts, args];
 }
+var zoneOffsetTs;
+var zoneOffsetGuessCache = /* @__PURE__ */ new Map();
 var DateTime = class _DateTime {
   /**
    * @access private
@@ -61939,7 +62057,7 @@ var DateTime = class _DateTime {
       if (unchanged) {
         [c, o] = [config.old.c, config.old.o];
       } else {
-        const ot = zone.offset(this.ts);
+        const ot = isNumber(config.o) && !config.old ? config.o : zone.offset(this.ts);
         c = tsToObj(this.ts, ot);
         invalid = Number.isNaN(c.year) ? new Invalid("invalid input") : null;
         c = invalid ? null : c;
@@ -62004,6 +62122,7 @@ var DateTime = class _DateTime {
    * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
    * @param {string} [options.outputCalendar] - the output calendar to set on the resulting DateTime instance
    * @param {string} [options.numberingSystem] - the numbering system to set on the resulting DateTime instance
+   * @param {string} [options.weekSettings] - the week settings to set on the resulting DateTime instance
    * @example DateTime.utc()                                              //~> now
    * @example DateTime.utc(2017)                                          //~> 2017-01-01T00:00:00Z
    * @example DateTime.utc(2017, 3)                                       //~> 2017-03-01T00:00:00Z
@@ -62050,6 +62169,7 @@ var DateTime = class _DateTime {
    * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
    * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
+   * @param {string} options.weekSettings - the week settings to set on the resulting DateTime instance
    * @return {DateTime}
    */
   static fromMillis(milliseconds, options = {}) {
@@ -62075,6 +62195,7 @@ var DateTime = class _DateTime {
    * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
    * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
+   * @param {string} options.weekSettings - the week settings to set on the resulting DateTime instance
    * @return {DateTime}
    */
   static fromSeconds(seconds, options = {}) {
@@ -62110,6 +62231,7 @@ var DateTime = class _DateTime {
    * @param {string} [opts.locale='system\'s locale'] - a locale to set on the resulting DateTime instance
    * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
    * @example DateTime.fromObject({ year: 1982, month: 5, day: 25}).toISODate() //=> '1982-05-25'
    * @example DateTime.fromObject({ year: 1982 }).toISODate() //=> '1982-01-01'
    * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }) //~> today at 10:26:06
@@ -62179,6 +62301,9 @@ var DateTime = class _DateTime {
         `you can't specify both a weekday of ${normalized.weekday} and a date of ${inst.toISO()}`
       );
     }
+    if (!inst.isValid) {
+      return _DateTime.invalid(inst.invalid);
+    }
     return inst;
   }
   /**
@@ -62190,6 +62315,7 @@ var DateTime = class _DateTime {
    * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
    * @param {string} [opts.outputCalendar] - the output calendar to set on the resulting DateTime instance
    * @param {string} [opts.numberingSystem] - the numbering system to set on the resulting DateTime instance
+   * @param {string} [opts.weekSettings] - the week settings to set on the resulting DateTime instance
    * @example DateTime.fromISO('2016-05-25T09:08:34.123')
    * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00')
    * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00', {setZone: true})
@@ -62210,6 +62336,7 @@ var DateTime = class _DateTime {
    * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
    * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
    * @example DateTime.fromRFC2822('25 Nov 2016 13:23:12 GMT')
    * @example DateTime.fromRFC2822('Fri, 25 Nov 2016 13:23:12 +0600')
    * @example DateTime.fromRFC2822('25 Nov 2016 13:23 Z')
@@ -62229,6 +62356,7 @@ var DateTime = class _DateTime {
    * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
    * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
    * @example DateTime.fromHTTP('Sun, 06 Nov 1994 08:49:37 GMT')
    * @example DateTime.fromHTTP('Sunday, 06-Nov-94 08:49:37 GMT')
    * @example DateTime.fromHTTP('Sun Nov  6 08:49:37 1994')
@@ -62248,6 +62376,7 @@ var DateTime = class _DateTime {
    * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
    * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
    * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
+   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
    * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @return {DateTime}
    */
@@ -62281,6 +62410,7 @@ var DateTime = class _DateTime {
    * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
    * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
    * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
+   * @param {string} opts.weekSettings - the week settings to set on the resulting DateTime instance
    * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
    * @example DateTime.fromSQL('2017-05-15')
    * @example DateTime.fromSQL('2017-05-15 09:12:34')
@@ -62341,6 +62471,10 @@ var DateTime = class _DateTime {
   static expandFormat(fmt, localeOpts = {}) {
     const expanded = expandMacroTokens(Formatter.parseFormat(fmt), Locale.fromObject(localeOpts));
     return expanded.map((t) => t.val).join("");
+  }
+  static resetCache() {
+    zoneOffsetTs = void 0;
+    zoneOffsetGuessCache.clear();
   }
   // INFO
   /**
@@ -63008,7 +63142,7 @@ var DateTime = class _DateTime {
    * @example DateTime.now().toISO() //=> '2017-04-22T20:47:05.335-04:00'
    * @example DateTime.now().toISO({ includeOffset: false }) //=> '2017-04-22T20:47:05.335'
    * @example DateTime.now().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
-   * @return {string}
+   * @return {string|null}
    */
   toISO({
     format = "extended",
@@ -63032,7 +63166,7 @@ var DateTime = class _DateTime {
    * @param {string} [opts.format='extended'] - choose between the basic and extended format
    * @example DateTime.utc(1982, 5, 25).toISODate() //=> '1982-05-25'
    * @example DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
-   * @return {string}
+   * @return {string|null}
    */
   toISODate({ format = "extended" } = {}) {
     if (!this.isValid) {
@@ -63107,7 +63241,7 @@ var DateTime = class _DateTime {
   /**
    * Returns a string representation of this DateTime appropriate for use in SQL Date
    * @example DateTime.utc(2014, 7, 13).toSQLDate() //=> '2014-07-13'
-   * @return {string}
+   * @return {string|null}
    */
   toSQLDate() {
     if (!this.isValid) {
@@ -63192,7 +63326,7 @@ var DateTime = class _DateTime {
     return this.isValid ? this.ts : NaN;
   }
   /**
-   * Returns the epoch seconds of this DateTime.
+   * Returns the epoch seconds (including milliseconds in the fractional part) of this DateTime.
    * @return {number}
    */
   toSeconds() {
@@ -63282,7 +63416,7 @@ var DateTime = class _DateTime {
   /**
    * Return an Interval spanning between this DateTime and another DateTime
    * @param {DateTime} otherDateTime - the other end point of the Interval
-   * @return {Interval}
+   * @return {Interval|DateTime}
    */
   until(otherDateTime) {
     return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
@@ -63416,6 +63550,66 @@ var DateTime = class _DateTime {
    */
   static fromStringExplain(text, fmt, options = {}) {
     return _DateTime.fromFormatExplain(text, fmt, options);
+  }
+  /**
+   * Build a parser for `fmt` using the given locale. This parser can be passed
+   * to {@link DateTime.fromFormatParser} to a parse a date in this format. This
+   * can be used to optimize cases where many dates need to be parsed in a
+   * specific format.
+   *
+   * @param {String} fmt - the format the string is expected to be in (see
+   * description)
+   * @param {Object} options - options used to set locale and numberingSystem
+   * for parser
+   * @returns {TokenParser} - opaque object to be used
+   */
+  static buildFormatParser(fmt, options = {}) {
+    const { locale = null, numberingSystem = null } = options, localeToUse = Locale.fromOpts({
+      locale,
+      numberingSystem,
+      defaultToEN: true
+    });
+    return new TokenParser(localeToUse, fmt);
+  }
+  /**
+   * Create a DateTime from an input string and format parser.
+   *
+   * The format parser must have been created with the same locale as this call.
+   *
+   * @param {String} text - the string to parse
+   * @param {TokenParser} formatParser - parser from {@link DateTime.buildFormatParser}
+   * @param {Object} opts - options taken by fromFormat()
+   * @returns {DateTime}
+   */
+  static fromFormatParser(text, formatParser, opts = {}) {
+    if (isUndefined(text) || isUndefined(formatParser)) {
+      throw new InvalidArgumentError(
+        "fromFormatParser requires an input string and a format parser"
+      );
+    }
+    const { locale = null, numberingSystem = null } = opts, localeToUse = Locale.fromOpts({
+      locale,
+      numberingSystem,
+      defaultToEN: true
+    });
+    if (!localeToUse.equals(formatParser.locale)) {
+      throw new InvalidArgumentError(
+        `fromFormatParser called with a locale of ${localeToUse}, but the format parser was created for ${formatParser.locale}`
+      );
+    }
+    const { result, zone, specificOffset, invalidReason } = formatParser.explainFromTokens(text);
+    if (invalidReason) {
+      return _DateTime.invalid(invalidReason);
+    } else {
+      return parseDataToDateTime(
+        result,
+        zone,
+        opts,
+        `format ${formatParser.format}`,
+        text,
+        specificOffset
+      );
+    }
   }
   // FORMAT PRESETS
   /**
@@ -63588,16 +63782,16 @@ function friendlyDateTime(dateTimeish) {
 }
 
 // src/main.ts
-var import_obsidian9 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 var import_obsidian_dataview3 = __toESM(require_lib());
 
 // src/index.tsx
 var import_lodash16 = __toESM(require_lodash());
-var import_obsidian7 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 var React3 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
-// node_modules/.pnpm/@dnd-kit+core@6.1.0_react-dom@18.3.1_react@18.3.1/node_modules/@dnd-kit/core/dist/core.esm.js
+// node_modules/.pnpm/@dnd-kit+core@6.3.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@dnd-kit/core/dist/core.esm.js
 var import_react3 = __toESM(require_react());
 var import_react_dom = __toESM(require_react_dom());
 
@@ -63865,7 +64059,7 @@ function findFirstFocusableNode(element) {
   return element.querySelector(SELECTOR);
 }
 
-// node_modules/.pnpm/@dnd-kit+accessibility@3.1.0_react@18.3.1/node_modules/@dnd-kit/accessibility/dist/accessibility.esm.js
+// node_modules/.pnpm/@dnd-kit+accessibility@3.1.1_react@18.3.1/node_modules/@dnd-kit/accessibility/dist/accessibility.esm.js
 var import_react2 = __toESM(require_react());
 var hiddenStyles = {
   display: "none"
@@ -63888,6 +64082,8 @@ function LiveRegion(_ref) {
   } = _ref;
   const visuallyHidden = {
     position: "fixed",
+    top: 0,
+    left: 0,
     width: 1,
     height: 1,
     margin: -1,
@@ -63919,7 +64115,7 @@ function useAnnouncement() {
   };
 }
 
-// node_modules/.pnpm/@dnd-kit+core@6.1.0_react-dom@18.3.1_react@18.3.1/node_modules/@dnd-kit/core/dist/core.esm.js
+// node_modules/.pnpm/@dnd-kit+core@6.3.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@dnd-kit/core/dist/core.esm.js
 var DndMonitorContext = /* @__PURE__ */ (0, import_react3.createContext)(null);
 function useDndMonitor(listener) {
   const registerListener = (0, import_react3.useContext)(DndMonitorContext);
@@ -64735,11 +64931,12 @@ var KeyboardCode;
   KeyboardCode2["Up"] = "ArrowUp";
   KeyboardCode2["Esc"] = "Escape";
   KeyboardCode2["Enter"] = "Enter";
+  KeyboardCode2["Tab"] = "Tab";
 })(KeyboardCode || (KeyboardCode = {}));
 var defaultKeyboardCodes = {
   start: [KeyboardCode.Space, KeyboardCode.Enter],
   cancel: [KeyboardCode.Esc],
-  end: [KeyboardCode.Space, KeyboardCode.Enter]
+  end: [KeyboardCode.Space, KeyboardCode.Enter, KeyboardCode.Tab]
 };
 var defaultKeyboardCoordinateGetter = (event, _ref) => {
   let {
@@ -65034,6 +65231,9 @@ var AbstractPointerSensor = class {
       passive: false
     });
     this.listeners.add(events2.end.name, this.handleEnd);
+    if (events2.cancel) {
+      this.listeners.add(events2.cancel.name, this.handleCancel);
+    }
     this.windowListeners.add(EventName.Resize, this.handleCancel);
     this.windowListeners.add(EventName.DragStart, preventDefault);
     this.windowListeners.add(EventName.VisibilityChange, this.handleCancel);
@@ -65049,9 +65249,11 @@ var AbstractPointerSensor = class {
       }
       if (isDelayConstraint(activationConstraint)) {
         this.timeoutId = setTimeout(this.handleStart, activationConstraint.delay);
+        this.handlePending(activationConstraint);
         return;
       }
       if (isDistanceConstraint(activationConstraint)) {
+        this.handlePending(activationConstraint);
         return;
       }
     }
@@ -65065,6 +65267,13 @@ var AbstractPointerSensor = class {
       clearTimeout(this.timeoutId);
       this.timeoutId = null;
     }
+  }
+  handlePending(constraint, offset2) {
+    const {
+      active,
+      onPending
+    } = this.props;
+    onPending(active, constraint, this.initialCoordinates, offset2);
   }
   handleStart() {
     const {
@@ -65115,6 +65324,7 @@ var AbstractPointerSensor = class {
           return this.handleCancel();
         }
       }
+      this.handlePending(activationConstraint, delta);
       return;
     }
     if (event.cancelable) {
@@ -65124,16 +65334,24 @@ var AbstractPointerSensor = class {
   }
   handleEnd() {
     const {
+      onAbort,
       onEnd
     } = this.props;
     this.detach();
+    if (!this.activated) {
+      onAbort(this.props.active);
+    }
     onEnd();
   }
   handleCancel() {
     const {
+      onAbort,
       onCancel
     } = this.props;
     this.detach();
+    if (!this.activated) {
+      onAbort(this.props.active);
+    }
     onCancel();
   }
   handleKeydown(event) {
@@ -65147,6 +65365,9 @@ var AbstractPointerSensor = class {
   }
 };
 var events = {
+  cancel: {
+    name: "pointercancel"
+  },
   move: {
     name: "pointermove"
   },
@@ -65217,6 +65438,9 @@ MouseSensor.activators = [{
   }
 }];
 var events$2 = {
+  cancel: {
+    name: "touchcancel"
+  },
   move: {
     name: "touchmove"
   },
@@ -65425,11 +65649,11 @@ function useScrollIntent(_ref2) {
   }, [disabled, delta, previousDelta]);
 }
 function useCachedNode(draggableNodes, id) {
-  const draggableNode = id !== null ? draggableNodes.get(id) : void 0;
+  const draggableNode = id != null ? draggableNodes.get(id) : void 0;
   const node = draggableNode ? draggableNode.node.current : null;
   return useLazyMemo((cachedNode) => {
     var _ref;
-    if (id === null) {
+    if (id == null) {
       return null;
     }
     return (_ref = node != null ? node : cachedNode) != null ? _ref : null;
@@ -65629,7 +65853,23 @@ function useRect(element, measure, fallbackRect) {
   if (measure === void 0) {
     measure = defaultMeasure;
   }
-  const [rect, measureRect] = (0, import_react3.useReducer)(reducer2, null);
+  const [rect, setRect] = (0, import_react3.useState)(null);
+  function measureRect() {
+    setRect((currentRect) => {
+      if (!element) {
+        return null;
+      }
+      if (element.isConnected === false) {
+        var _ref;
+        return (_ref = currentRect != null ? currentRect : fallbackRect) != null ? _ref : null;
+      }
+      const newRect = measure(element);
+      if (JSON.stringify(currentRect) === JSON.stringify(newRect)) {
+        return currentRect;
+      }
+      return newRect;
+    });
+  }
   const mutationObserver = useMutationObserver({
     callback(records) {
       if (!element) {
@@ -65664,20 +65904,6 @@ function useRect(element, measure, fallbackRect) {
     }
   }, [element]);
   return rect;
-  function reducer2(currentRect) {
-    if (!element) {
-      return null;
-    }
-    if (element.isConnected === false) {
-      var _ref;
-      return (_ref = currentRect != null ? currentRect : fallbackRect) != null ? _ref : null;
-    }
-    const newRect = measure(element);
-    if (JSON.stringify(currentRect) === JSON.stringify(newRect)) {
-      return currentRect;
-    }
-    return newRect;
-  }
 }
 function useRectDelta(rect) {
   const initialRect = useInitialValue(rect);
@@ -65826,28 +66052,24 @@ function useRects(elements, measure) {
   }
   const [firstElement] = elements;
   const windowRect = useWindowRect(firstElement ? getWindow(firstElement) : null);
-  const [rects, measureRects] = (0, import_react3.useReducer)(reducer2, defaultValue$2);
+  const [rects, setRects] = (0, import_react3.useState)(defaultValue$2);
+  function measureRects() {
+    setRects(() => {
+      if (!elements.length) {
+        return defaultValue$2;
+      }
+      return elements.map((element) => isDocumentScrollingElement(element) ? windowRect : new Rect(measure(element), element));
+    });
+  }
   const resizeObserver = useResizeObserver({
     callback: measureRects
   });
-  if (elements.length > 0 && rects === defaultValue$2) {
-    measureRects();
-  }
   useIsomorphicLayoutEffect(() => {
-    if (elements.length) {
-      elements.forEach((element) => resizeObserver == null ? void 0 : resizeObserver.observe(element));
-    } else {
-      resizeObserver == null ? void 0 : resizeObserver.disconnect();
-      measureRects();
-    }
+    resizeObserver == null ? void 0 : resizeObserver.disconnect();
+    measureRects();
+    elements.forEach((element) => resizeObserver == null ? void 0 : resizeObserver.observe(element));
   }, [elements]);
   return rects;
-  function reducer2() {
-    if (!elements.length) {
-      return defaultValue$2;
-    }
-    return elements.map((element) => isDocumentScrollingElement(element) ? windowRect : new Rect(measure(element), element));
-  }
 }
 function getMeasurableNode(node) {
   if (!node) {
@@ -66014,7 +66236,7 @@ function reducer(state, action) {
         }
       };
     case Action.DragMove:
-      if (!state.draggable.active) {
+      if (state.draggable.active == null) {
         return state;
       }
       return {
@@ -66276,7 +66498,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
       containers: droppableContainers
     }
   } = state;
-  const node = activeId ? draggableNodes.get(activeId) : null;
+  const node = activeId != null ? draggableNodes.get(activeId) : null;
   const activeRects = (0, import_react3.useRef)({
     initial: null,
     translated: null
@@ -66311,7 +66533,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
   const autoScrollOptions = getAutoScrollerOptions();
   const initialActiveNodeRect = useInitialRect(activeNode, measuringConfiguration.draggable.measure);
   useLayoutShiftScrollCompensation({
-    activeNode: activeId ? draggableNodes.get(activeId) : null,
+    activeNode: activeId != null ? draggableNodes.get(activeId) : null,
     config: autoScrollOptions.layoutShiftCompensation,
     initialRect: initialActiveNodeRect,
     measure: measuringConfiguration.draggable.measure
@@ -66379,6 +66601,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
   const [over, setOver] = (0, import_react3.useState)(null);
   const appliedTranslate = usesDragOverlay ? modifiedTranslate : add(modifiedTranslate, activeNodeScrollDelta);
   const transform = adjustScale(appliedTranslate, (_over$rect = over == null ? void 0 : over.rect) != null ? _over$rect : null, activeNodeRect);
+  const activeSensorRef = (0, import_react3.useRef)(null);
   const instantiateSensor = (0, import_react3.useCallback)(
     (event, _ref2) => {
       let {
@@ -66401,6 +66624,43 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
         // Sensors need to be instantiated with refs for arguments that change over time
         // otherwise they are frozen in time with the stale arguments
         context: sensorContext,
+        onAbort(id2) {
+          const draggableNode = draggableNodes.get(id2);
+          if (!draggableNode) {
+            return;
+          }
+          const {
+            onDragAbort
+          } = latestProps.current;
+          const event2 = {
+            id: id2
+          };
+          onDragAbort == null ? void 0 : onDragAbort(event2);
+          dispatchMonitorEvent({
+            type: "onDragAbort",
+            event: event2
+          });
+        },
+        onPending(id2, constraint, initialCoordinates, offset2) {
+          const draggableNode = draggableNodes.get(id2);
+          if (!draggableNode) {
+            return;
+          }
+          const {
+            onDragPending
+          } = latestProps.current;
+          const event2 = {
+            id: id2,
+            constraint,
+            initialCoordinates,
+            offset: offset2
+          };
+          onDragPending == null ? void 0 : onDragPending(event2);
+          dispatchMonitorEvent({
+            type: "onDragPending",
+            event: event2
+          });
+        },
         onStart(initialCoordinates) {
           const id2 = activeRef.current;
           if (id2 == null) {
@@ -66414,6 +66674,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
             onDragStart: onDragStart2
           } = latestProps.current;
           const event2 = {
+            activatorEvent: activatorEvent2,
             active: {
               id: id2,
               data: draggableNode.data,
@@ -66432,6 +66693,8 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
               type: "onDragStart",
               event: event2
             });
+            setActiveSensor(activeSensorRef.current);
+            setActivatorEvent(activatorEvent2);
           });
         },
         onMove(coordinates) {
@@ -66443,10 +66706,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
         onEnd: createHandler(Action.DragEnd),
         onCancel: createHandler(Action.DragCancel)
       });
-      (0, import_react_dom.unstable_batchedUpdates)(() => {
-        setActiveSensor(sensorInstance);
-        setActivatorEvent(event.nativeEvent);
-      });
+      activeSensorRef.current = sensorInstance;
       function createHandler(type) {
         return async function handler() {
           const {
@@ -66483,6 +66743,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
             setOver(null);
             setActiveSensor(null);
             setActivatorEvent(null);
+            activeSensorRef.current = null;
             const eventName = type === Action.DragEnd ? "onDragEnd" : "onDragCancel";
             if (event2) {
               const handler2 = latestProps.current[eventName];
@@ -66708,7 +66969,7 @@ var DndContext = /* @__PURE__ */ (0, import_react3.memo)(function DndContext2(_r
 });
 var NullContext = /* @__PURE__ */ (0, import_react3.createContext)(null);
 var defaultRole = "button";
-var ID_PREFIX = "Droppable";
+var ID_PREFIX = "Draggable";
 function useDraggable(_ref) {
   let {
     id,
@@ -66857,7 +67118,7 @@ function useDroppable(_ref) {
     resizeObserverConnected.current = false;
     resizeObserver.observe(nodeRef.current);
   }, [nodeRef, resizeObserver]);
-  useIsomorphicLayoutEffect(
+  (0, import_react3.useEffect)(
     () => {
       dispatch({
         type: Action.RegisterDroppable,
@@ -67253,9 +67514,9 @@ var DragOverlay = /* @__PURE__ */ import_react3.default.memo((_ref) => {
 // src/components/App.tsx
 var import_jquery = __toESM(require_jquery());
 var import_lodash14 = __toESM(require_lodash());
-var import_obsidian5 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 var import_obsidian_dataview2 = __toESM(require_lib());
-var import_react19 = __toESM(require_react());
+var import_react20 = __toESM(require_react());
 
 // src/assets/assets.ts
 var import_lodash = __toESM(require_lodash());
@@ -67958,11 +68219,11 @@ var finishDraft = immer.finishDraft.bind(immer);
 // src/app/store.ts
 var import_react5 = __toESM(require_react());
 
-// node_modules/.pnpm/zustand@4.5.2_@types+react@18.3.3_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/traditional.mjs
+// node_modules/.pnpm/zustand@4.5.6_@types+react@18.3.20_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/traditional.mjs
 var import_react4 = __toESM(require_react(), 1);
 var import_with_selector = __toESM(require_with_selector(), 1);
 
-// node_modules/.pnpm/zustand@4.5.2_@types+react@18.3.3_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/vanilla.mjs
+// node_modules/.pnpm/zustand@4.5.6_@types+react@18.3.20_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/vanilla.mjs
 var import_meta = {};
 var createStoreImpl = (createState) => {
   let state;
@@ -67995,7 +68256,7 @@ var createStoreImpl = (createState) => {
 };
 var createStore = (createState) => createState ? createStoreImpl(createState) : createStoreImpl;
 
-// node_modules/.pnpm/zustand@4.5.2_@types+react@18.3.3_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/traditional.mjs
+// node_modules/.pnpm/zustand@4.5.6_@types+react@18.3.20_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/traditional.mjs
 var { useDebugValue } = import_react4.default;
 var { useSyncExternalStoreWithSelector } = import_with_selector.default;
 var identity = (arg) => arg;
@@ -68125,6 +68386,7 @@ var useAppStore = createWithEqualityFn(() => ({
   inScroll: 0,
   searchStatus: false,
   viewMode: "hour",
+  dragMode: "normal",
   fileOrder: [],
   dailyNoteInfo: {
     format: "YYYY-MM-DD",
@@ -68155,7 +68417,8 @@ var useAppStore = createWithEqualityFn(() => ({
     startISO: void 0,
     playing: false
   },
-  recreateWindow: 0
+  recreateWindow: 0,
+  dragOffset: 0
 }));
 var useAppStoreRef = (callback) => {
   const storeValue = useAppStore(callback);
@@ -68199,7 +68462,8 @@ var getters = {
   getTask: (id) => useAppStore.getState().tasks[id],
   getObsidianAPI: () => useAppStore.getState().apis.obsidian,
   getCalendarAPI: () => useAppStore.getState().apis.calendar,
-  get: (key2) => useAppStore.getState()[key2]
+  get: (key2) => useAppStore.getState()[key2],
+  getApp: () => useAppStore.getState().apis.obsidian.app
 };
 
 // src/services/dragging.ts
@@ -68208,15 +68472,14 @@ var import_lodash10 = __toESM(require_lodash());
 // src/services/util.ts
 var import_lodash9 = __toESM(require_lodash());
 var import_moment = __toESM(require_moment());
-var import_obsidian3 = require("obsidian");
-var import_react13 = __toESM(require_react());
+var import_react14 = __toESM(require_react());
 
 // src/components/Block.tsx
 var import_lodash8 = __toESM(require_lodash());
-var import_react12 = __toESM(require_react());
+var import_react13 = __toESM(require_react());
 var import_react_dom2 = __toESM(require_react_dom());
 
-// node_modules/.pnpm/zustand@4.5.2_@types+react@18.3.3_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/shallow.mjs
+// node_modules/.pnpm/zustand@4.5.6_@types+react@18.3.20_immer@10.1.1_react@18.3.1/node_modules/zustand/esm/shallow.mjs
 function shallow$1(objA, objB) {
   if (Object.is(objA, objB)) {
     return true;
@@ -68363,9 +68626,8 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
   var _a, _b, _c, _d, _e;
   const { main: mainFormat } = detectFieldFormat(item.text, defaultFormat);
   const INLINE_FIELD_SEARCH = /[\[\(][^\]\)]+:: [^\]\)]+[\]\)] */gu;
-  const HASHTAG_SEARCH = /#[\w_\-\/]+\s?/gu;
+  const HASHTAG_SEARCH = /#[^\s]+\s?/gu;
   const MD_LINK_LINE_SEARCH = /\[\[.*?\|(.*?)\]\]/gu;
-  const MD_LINK_SEARCH = /\[\[(.*?)\]\]/gu;
   const LINK_SEARCH = /\[(.*?)\]\(.*?\)/gu;
   const REMINDER_MATCH = new RegExp(
     ` ?${keyToTasksEmoji.reminder} ?(${ISO_MATCH}( \\d{2}:\\d{2})?)|\\(@(\\d{4}-\\d{2}-\\d{2}( \\d{2}:\\d{2})?)\\)|@\\{(\\d{4}-\\d{2}-\\d{2}( \\d{2}:\\d{2})?)\\}`,
@@ -68381,7 +68643,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
   } else if (mainFormat === "kanban") {
     originalTitle = originalTitle.replace(KANBAN_DATE, "").replace(KANBAN_TIME, "");
   }
-  let title = originalTitle.replace(MD_LINK_LINE_SEARCH, "$1").replace(MD_LINK_SEARCH, "$1").replace(LINK_SEARCH, "[$1]").replace(/^\s+/u, "").replace(/\s+$/u, "");
+  let title = originalTitle.replace(MD_LINK_LINE_SEARCH, "$1").replace(LINK_SEARCH, "[$1]").replace(/^\s+/u, "").replace(/\s+$/u, "");
   let notes = item.text.includes("\n") ? (_c = item.text.match(/\n((.|\n)*$)/)) == null ? void 0 : _c[1] : void 0;
   if (notes)
     notes = notes.replace(LINK_SEARCH, "[$1]");
@@ -68440,7 +68702,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
     if (rawScheduled) {
       let hour, minute = 0;
       let endHour, endMinute = 0;
-      if (item["startTime"]) {
+      if (item["startTime"] && typeof item["startTime"] === "string") {
         const splitStartTime = item["startTime"].split(":");
         hour = parseInt(splitStartTime[0]);
         minute = parseInt(splitStartTime[1]);
@@ -68566,6 +68828,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
   const reminder = parseReminder();
   const query = parseQuery();
   let filteredTags = [...item.tags];
+  let links = item.outlinks.map((x) => `"${x.path}"`);
   const textString = item.text;
   let firstBracket = textString.indexOf("[[");
   let secondBracket = textString.indexOf("]]", firstBracket);
@@ -68603,7 +68866,8 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
     created,
     blockReference: (_e = titleLine.match(BLOCK_REFERENCE)) == null ? void 0 : _e[0],
     completed: item.completed,
-    query
+    query,
+    links
   };
 }
 function pageToTask(item, defaultFieldFormat) {
@@ -68687,7 +68951,8 @@ function pageToTask(item, defaultFieldFormat) {
     created: testDateTime(item.created),
     blockReference: void 0,
     fieldFormat,
-    query: (_c = item.query) != null ? _c : void 0
+    query: (_c = item.query) != null ? _c : void 0,
+    links: []
   };
 }
 var detectFieldFormat = (text, defaultFormat) => {
@@ -68927,7 +69192,6 @@ function taskToPage(task, frontmatter) {
   }
   for (let property of [
     "due",
-    "completion",
     "reminder",
     "completed",
     "completion",
@@ -68969,7 +69233,7 @@ function getProperty(page, property) {
 // src/services/obsidianApi.ts
 var dv;
 var ObsidianAPI = class extends import_obsidian2.Component {
-  constructor(settings, setSetting, app2) {
+  constructor(settings, setSetting, app) {
     super();
     this.getSetting = (setting) => this.settings[setting];
     this.createNewTask = (newTask, selectedHeading, dailyNoteInfo2) => {
@@ -68990,7 +69254,7 @@ var ObsidianAPI = class extends import_obsidian2.Component {
     dv = (0, import_obsidian_dataview.getAPI)();
     this.settings = settings;
     this.setSetting = setSetting;
-    this.app = app2;
+    this.app = app;
   }
   playComplete() {
     if (this.settings.muted)
@@ -69088,6 +69352,15 @@ var ObsidianAPI = class extends import_obsidian2.Component {
     }
     return processedTasks;
   }
+  forgetTasks(path2) {
+    const newTasks = { ...getters.get("tasks") };
+    for (let [title, task] of Object.entries(newTasks).filter(
+      ([title2, task2]) => task2.path.includes(path2)
+    )) {
+      delete newTasks[title];
+    }
+    setters.set({ tasks: newTasks });
+  }
   loadTasks(path2, completed2) {
     if (!dv.index.initialized) {
       return;
@@ -69103,18 +69376,14 @@ var ObsidianAPI = class extends import_obsidian2.Component {
       DateTime.now().plus({ weeks: searchWithinWeeks[1] }).toISODate()
     ];
     const tasks = this.searchTasks(path2, dailyNoteInfo2, completed2, dateBounds2);
-    this.updateTasks([...tasks], path2, dailyNoteInfo2, completed2);
+    this.updateTasks([...tasks], path2, completed2);
   }
-  updateTasks(processedTasks2, path2, dailyNoteInfo2, completed2) {
+  updateTasks(processedTasks2, path2, completed2) {
     const updatedTasks = {
       ...getters.get("tasks")
     };
     const newFiles = import_lodash4.default.uniq(
-      processedTasks2.map(
-        (task) => parseFileFromPath(
-          getHeading(task, dailyNoteInfo2, getters.get("settings").groupBy)
-        )
-      )
+      processedTasks2.map((task) => parseFileFromPath(task.path))
     ).filter((heading) => !this.settings.fileOrder.includes(heading)).sort();
     if (newFiles.length > 0) {
       const newHeadingOrder = [...this.settings.fileOrder];
@@ -69150,7 +69419,10 @@ var ObsidianAPI = class extends import_obsidian2.Component {
     if (!updated)
       return;
     const queries = import_lodash4.default.sortBy(
-      import_lodash4.default.filter(updatedTasks, (task) => !task.completed && !!task.query),
+      import_lodash4.default.filter(
+        updatedTasks,
+        (task) => !task.completed && !!(task.query || task.links.length > 0)
+      ),
       (task) => {
         var _a;
         return (_a = getParentScheduled(task, updatedTasks)) != null ? _a : "99999";
@@ -69162,8 +69434,7 @@ var ObsidianAPI = class extends import_obsidian2.Component {
     );
     const alreadyQueried = /* @__PURE__ */ new Set();
     for (const task of queries) {
-      invariant(task.query);
-      const queriedTasks = queryTasks(task.id, task.query, updatedTasks);
+      const queriedTasks = task.query ? queryTasks(task.id, task.query, updatedTasks) : [];
       const queryChildren = [];
       for (let queriedTask of queriedTasks) {
         if (alreadyQueried.has(queriedTask.id)) {
@@ -69210,32 +69481,32 @@ var ObsidianAPI = class extends import_obsidian2.Component {
   }
   async moveTask(task, selectedHeading) {
     if (task.page) {
-      alert("Moving pages isn't supported yet.");
+      alert("Moving pages isn't supported.");
       return;
     }
     const file = await this.getFile(task.path);
     invariant(file);
     const fileText = await this.app.vault.read(file);
     const lines = fileText.split("\n");
-    let subtask = task;
-    while (subtask.children.length > 0) {
-      subtask = getters.getTask(import_lodash4.default.last(subtask.children));
-    }
-    const end = subtask.position.end.line;
+    const followingLines = lines.slice(task.position.start.line + 1);
+    const nextLine = followingLines.findIndex((line) => !line.startsWith(" "));
     const copyLines = lines.splice(
       task.position.start.line,
-      end + 1 - task.position.start.line
+      (nextLine === -1 ? followingLines.length : nextLine) + 1
     );
     await this.app.vault.modify(file, lines.join("\n"));
-    const { fileName, position } = await this.findPosition(selectedHeading);
-    const moveFile = await this.getFile(fileName);
+    const { filePath, position } = await this.findPosition(selectedHeading);
+    const moveFile = await this.getFile(filePath);
     invariant(moveFile);
+    const copyTask = { ...task, path: filePath };
+    const textTask = taskToText(copyTask, this.settings.fieldFormat);
+    const pasteLines = [textTask].concat(copyLines.slice(1));
     await this.app.vault.process(moveFile, (text) => {
       const lines2 = text.split("\n");
-      lines2.splice(position.start.line, 0, ...copyLines);
+      lines2.splice(position.start.line, 0, ...pasteLines);
       return lines2.join("\n");
     });
-    openTask({ ...task, path: fileName, position });
+    openTask({ ...task, path: filePath, position });
   }
   async createFileFromPath(path2) {
     let [fileName] = path2.split("#");
@@ -69262,9 +69533,8 @@ var ObsidianAPI = class extends import_obsidian2.Component {
     return file;
   }
   async findPosition(path2) {
-    let [fileName, heading] = path2.split("#");
-    if (!fileName.endsWith(".md"))
-      fileName += ".md";
+    let filePath = parseFileFromPath(path2);
+    let heading = path2.split("#")[1];
     let position = {
       start: { col: 0, line: 0, offset: 0 },
       end: { col: 0, line: 0, offset: 0 }
@@ -69310,10 +69580,10 @@ var ObsidianAPI = class extends import_obsidian2.Component {
         end: { col: 0, line: targetLine, offset: 0 }
       };
     }
-    return { position, fileName };
+    return { position, filePath };
   }
   async createTaskInPath(path2, dropData, completed2 = false) {
-    const { position, fileName } = await this.findPosition(path2);
+    const { position, filePath: fileName } = await this.findPosition(path2);
     const defaultTask = {
       page: false,
       children: [],
@@ -69329,6 +69599,7 @@ var ObsidianAPI = class extends import_obsidian2.Component {
       status: " ",
       fieldFormat: this.settings.fieldFormat,
       completed: completed2,
+      links: [],
       ...dropData
     };
     await this.saveTask(defaultTask, true);
@@ -69424,7 +69695,15 @@ var ObsidianAPI = class extends import_obsidian2.Component {
         // @ts-ignore
         "dataview:metadata-change",
         (...args) => {
-          this.loadTasks(args[1].path, getters.get("showingPastDates"));
+          switch (args[0]) {
+            case "update":
+              this.loadTasks(args[1].path, getters.get("showingPastDates"));
+              break;
+            case "rename":
+              this.forgetTasks(args[2]);
+              this.loadTasks(args[1].path, getters.get("showingPastDates"));
+              break;
+          }
         }
       )
     );
@@ -69475,7 +69754,7 @@ async function openTask(task) {
   );
   cmEditor.focus();
   if (import_obsidian2.Platform.isMobile) {
-    app["mobileNavbar"].show();
+    getters.getApp()["mobileNavbar"].show();
   }
 }
 function openTaskInRuler(id) {
@@ -69531,29 +69810,36 @@ function openTaskInRuler(id) {
 }
 
 // src/components/Task.tsx
+var import_react9 = __toESM(require_react());
 var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 function Task({
   dragContainer,
   startISO,
   subtasks,
   renderType,
+  dragging,
   ...task
 }) {
-  var _a, _b, _c, _d, _e, _f;
+  var _a, _b, _c, _d, _e, _f, _g;
   const completeTask = () => {
     setters.patchTasks([task.id], {
-      completion: toISO(roundMinutes(DateTime.now())),
+      completion: toISO(roundMinutes(DateTime.now()), true),
       completed: true
     });
   };
   subtasks = useAppStore((state) => {
     var _a2;
+    const taskDate = parseTaskDate2(task, state.tasks);
     let newSubtasks = import_lodash5.default.flatMap(
       subtasks != null ? subtasks : task.children.concat((_a2 = task.queryChildren) != null ? _a2 : []).map((id) => state.tasks[id]),
       (subtask) => {
         if (!subtask)
           return [];
-        if (!nestedScheduled(parseTaskDate2(task), subtask.scheduled)) {
+        if (!subtask.scheduled && !subtask.due && !state.settings.scheduledSubtasks)
+          return [];
+        if (subtask.due && !task.scheduled)
+          return [];
+        if (!nestedScheduled(taskDate, parseTaskDate2(subtask, state.tasks))) {
           return [];
         }
         if (subtask.completed !== state.showingPastDates)
@@ -69561,7 +69847,7 @@ function Task({
         return subtask;
       }
     );
-    if (!state.settings.scheduledSubtasks)
+    if (!state.settings.scheduledSubtasks && task.scheduled)
       newSubtasks = newSubtasks.filter((task2) => task2.scheduled);
     return newSubtasks;
   });
@@ -69571,11 +69857,51 @@ function Task({
     dragContainer,
     ...task
   };
-  const { setNodeRef, setActivatorNodeRef, attributes, listeners } = useDraggable({
+  const {
+    setNodeRef,
+    attributes,
+    listeners,
+    transform,
+    isDragging,
+    node,
+    activatorEvent
+  } = useDraggable({
     id: `${task.id}::${renderType}::${dragContainer}`,
     data: dragData
   });
+  let dragOffsetRef = (0, import_react9.useRef)(0);
+  (0, import_react9.useEffect)(() => {
+    if (!isDragging || !activatorEvent)
+      return;
+    const target = activatorEvent.target;
+    let taskElement = target;
+    while (taskElement && !taskElement.hasAttribute("data-task") && taskElement.parentElement) {
+      taskElement = taskElement.parentElement;
+    }
+    if (taskElement && taskElement.hasAttribute("data-task")) {
+      const rect = taskElement.getBoundingClientRect();
+      if (activatorEvent instanceof MouseEvent) {
+        const dragOffset = rect.right - activatorEvent.clientX;
+        if (dragOffset !== dragOffsetRef.current) {
+          dragOffsetRef.current = dragOffset;
+          setters.set({
+            dragOffset
+          });
+        }
+      } else if (activatorEvent instanceof TouchEvent) {
+        const dragOffset = rect.right - activatorEvent.touches[0].clientX;
+        if (dragOffset !== dragOffsetRef.current) {
+          dragOffsetRef.current = dragOffset;
+          setters.set({
+            dragOffset
+          });
+        }
+      }
+    }
+  }, [isDragging]);
   const isLink = renderType && ["parent", "deadline"].includes(renderType);
+  const isCalendar = useAppStore((state) => state.settings.viewMode === "week");
+  const smallText = isLink || isCalendar;
   if (!startISO)
     startISO = task.scheduled;
   const collapsed = useAppStore((state) => {
@@ -69612,18 +69938,74 @@ function Task({
   const groupBy = useAppStore((state) => state.settings.groupBy);
   if (!task)
     return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, {});
-  const hasLengthDrag = task.duration || task.scheduled && !isDateISO(task.scheduled);
+  const childWidth = useAppStore((state) => state.childWidth);
+  const [isWide, setIsWide] = (0, import_react9.useState)(false);
+  (0, import_react9.useEffect)(() => {
+    const tR = document.getElementById("#time-ruler");
+    if (!tR)
+      return;
+    const width = tR.clientWidth / childWidth;
+    if (width > 400 && !isWide)
+      setIsWide(true);
+    else if (width < 400 && isWide)
+      setIsWide(false);
+  }, [childWidth, isWide]);
+  const showingPastDates = useAppStore((state) => state.showingPastDates);
+  const today = getToday();
+  const now3 = DateTime.now().toISO();
+  const hasLengthDrag = task.scheduled && !isDateISO(task.scheduled) && !(showingPastDates ? task.scheduled > today : task.scheduled < now3);
+  const computedStyle = getComputedStyle(document.body);
+  const lineHeightNormal = computedStyle.getPropertyValue("--line-height-normal").trim();
+  const taskTitle = () => {
+    const title = task.title || "";
+    const regex = /\[\[(.*?)\]\]/g;
+    if (!regex.test(title)) {
+      return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, { children: title });
+    }
+    regex.lastIndex = 0;
+    const parts = [];
+    let lastIndex = 0;
+    let match2 = null;
+    while ((match2 = regex.exec(title)) !== null) {
+      if (match2.index > lastIndex) {
+        parts.push(
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: title.substring(lastIndex, match2.index) }, match2.index)
+        );
+      }
+      const linkText = match2[1];
+      parts.push(
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+          "span",
+          {
+            className: "text-accent",
+            onClick: (ev) => {
+              ev.stopPropagation();
+              getters.get("apis").obsidian.app.workspace.openLinkText(linkText, task.path);
+            },
+            children: linkText
+          },
+          match2.index + "-link"
+        )
+      );
+      lastIndex = regex.lastIndex;
+    }
+    if (lastIndex < title.length) {
+      parts.push(/* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: title.substring(lastIndex) }, lastIndex));
+    }
+    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, { children: parts });
+  };
+  const isMobile = (0, import_react9.useMemo)(() => getters.getObsidianAPI().app.isMobile, []);
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
     "div",
     {
-      className: `relative rounded-icon py-0.5 transition-colors duration-300 w-full min-h-line`,
+      className: `relative rounded-icon transition-colors duration-300 w-full min-h-line`,
       "data-id": isLink ? "" : task.id,
       "data-task": task.status === " " ? "" : task.status,
       children: [
         /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
           "div",
           {
-            className: `selectable group flex items-start rounded-icon pr-2 font-sans ${isLink ? "text-sm" : ""}`,
+            className: `pt-0.5 selectable group flex items-start rounded-icon pr-2 font-sans overflow-hidden ${smallText ? "text-sm" : ""}`,
             ref: setNodeRef,
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "flex h-line w-indent flex-none items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
@@ -69631,36 +70013,70 @@ function Task({
                 {
                   onPointerDown: () => false,
                   onClick: () => completeTask(),
-                  className: `task-list-item-checkbox selectable flex flex-none items-center justify-center rounded-checkbox border border-solid border-faint p-0 text-xs shadow-none hover:border-normal cursor-pointer ${isLink ? "h-2 w-2" : app.isMobile ? "h-5 w-5" : "h-4 w-4"} ${task.completed ? "bg-faint" : "bg-transparent"}`,
+                  className: `task-list-item-checkbox selectable flex flex-none items-center justify-center rounded-checkbox border border-solid border-faint p-0 text-xs shadow-none hover:border-normal cursor-pointer ${isLink ? "h-2 w-2" : isMobile ? "h-5 w-5" : "h-4 w-4"} ${task.completed ? "bg-faint" : "bg-transparent"}`,
                   "data-task": task.status === " " ? "" : task.status,
                   children: task.status === "x" ? /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, {}) : task.status
                 }
               ) }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: `flex w-full`, children: [
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
-                  "div",
-                  {
-                    className: `w-fit cursor-pointer break-words leading-line hover:underline ${[1 /* HIGH */, 0 /* HIGHEST */].includes(
-                      task.priority
-                    ) ? "text-accent" : renderType === "deadline" ? "" : task.priority === 4 /* LOW */ || isLink || task.status === "x" ? "text-faint" : ""}`,
-                    onClick: () => openTask(task),
-                    children: task.title || "Untitled"
-                  }
-                ),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
-                  "div",
-                  {
-                    className: `h-line grow items-center space-x-1 font-menu child:my-1 justify-end flex`,
-                    children: [
-                      task.priority !== 3 /* DEFAULT */ && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "task-priority whitespace-nowrap rounded-full px-1 font-menu text-xs font-bold text-accent", children: priorityNumberToSimplePriority[task.priority] }),
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
+                "div",
+                {
+                  className: "flex w-full h-full cursor-grab",
+                  ...attributes,
+                  ...listeners,
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: `flex w-full h-full`, children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "flex w-full mr-4", children: [
+                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                          "div",
+                          {
+                            style: { maxHeight: `calc( ${lineHeightNormal}em * 2 )` },
+                            className: `w-fit max-w-full cursor-pointer overflow-hidden text-ellipsis ${((_c = task.title) == null ? void 0 : _c.split(" ").find((x) => x.length > 20)) ? "break-all" : "break-words"} leading-line whitespace-normal ${[0 /* HIGHEST */].includes(task.priority) ? "text-accent" : renderType === "deadline" ? "" : task.priority === 4 /* LOW */ || isLink || task.status === "x" || !task.title ? "text-faint" : ""}`,
+                            onMouseDown: () => {
+                              openTask(task);
+                              return false;
+                            },
+                            onClick: () => false,
+                            onMouseUp: () => false,
+                            children: taskTitle()
+                          }
+                        ),
+                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                          "div",
+                          {
+                            className: "h-full w-0 grow",
+                            ...attributes,
+                            ...listeners
+                          }
+                        )
+                      ] }),
+                      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
+                        "div",
+                        {
+                          className: `h-line w-fit items-center space-x-1 font-menu child:my-1 justify-end flex`,
+                          ...attributes,
+                          ...listeners,
+                          children: [
+                            task.priority !== 3 /* DEFAULT */ && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "task-priority whitespace-nowrap rounded-full px-1 font-menu text-xs font-bold text-accent", children: priorityNumberToSimplePriority[task.priority] }),
+                            !task.completed && task.reminder && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "task-reminder ml-2 flex items-center whitespace-nowrap font-menu text-xs text-normal", children: [
+                              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "alarm-clock", className: "mr-1" }),
+                              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: `${DateTime.fromISO(
+                                task.reminder.slice(0, 10)
+                              ).toFormat("M/d")}${task.reminder.slice(10)}` })
+                            ] })
+                          ]
+                        }
+                      )
+                    ] }),
+                    !dragging && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "flex h-full", children: [
                       hasLengthDrag && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                         "div",
                         {
-                          className: `task-duration cursor-ns-resize whitespace-nowrap font-menu text-xs text-accent group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.duration ? "hidden group-hover:block" : ""}`,
+                          className: `mt-1 task-duration cursor-ns-resize whitespace-nowrap font-menu text-xs text-accent group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.duration ? "hidden group-hover:block" : ""}`,
                           ref: setLengthNodeRef,
                           ...lengthAttributes,
                           ...lengthListeners,
-                          children: !task.duration ? "length" : `${((_c = task.duration) == null ? void 0 : _c.hour) ? `${(_d = task.duration) == null ? void 0 : _d.hour}h` : ""}${((_e = task.duration) == null ? void 0 : _e.minute) ? `${(_f = task.duration) == null ? void 0 : _f.minute}m` : ""}`
+                          children: !task.duration ? "length" : `${((_d = task.duration) == null ? void 0 : _d.hour) ? `${(_e = task.duration) == null ? void 0 : _e.hour}h` : ""}${((_f = task.duration) == null ? void 0 : _f.minute) ? `${(_g = task.duration) == null ? void 0 : _g.minute}m` : ""}`
                         }
                       ),
                       !task.completed && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
@@ -69669,34 +70085,30 @@ function Task({
                           ref: setDeadlineNodeRef,
                           ...deadlineAttributes,
                           ...deadlineListeners,
-                          className: `task-due ml-2 cursor-grab whitespace-nowrap font-menu text-xs text-accent hover:underline group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.due ? "hidden group-hover:block" : ""}`,
-                          children: !task.due ? "due" : DateTime.fromISO(task.due).toFormat("EEEEE M/d")
+                          className: `mt-1 task-due ml-2 cursor-grab whitespace-nowrap font-menu text-xs text-accent hover:underline group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.due ? "hidden group-hover:block" : ""}`,
+                          children: !task.due ? "due" : `${Math.ceil(
+                            DateTime.fromISO(task.due).diff(
+                              DateTime.fromISO(
+                                startISO != null ? startISO : (/* @__PURE__ */ new Date()).toISOString().slice(0, 10)
+                              )
+                            ).shiftTo("days").days
+                          )}d`
                         }
-                      ),
-                      !task.completed && task.reminder && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "task-reminder ml-2 flex items-center whitespace-nowrap font-menu text-xs text-normal", children: [
-                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "alarm-clock", className: "mr-1" }),
-                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: `${DateTime.fromISO(task.reminder.slice(0, 10)).toFormat(
-                          "M/d"
-                        )}${task.reminder.slice(10)}` })
-                      ] })
-                    ]
-                  }
-                )
-              ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
-                "div",
-                {
-                  className: "hidden group-hover:flex cursor-grab grow items-center ml-1 h-line",
-                  ...attributes,
-                  ...listeners,
-                  ref: setActivatorNodeRef,
-                  children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "align-justify", className: "py-2 px-1 h-full" })
+                      )
+                    ] }),
+                    !task.completed && task.reminder && !dragging && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "task-reminder ml-2 flex items-center whitespace-nowrap font-menu text-xs text-normal", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "alarm-clock", className: "mr-1" }),
+                      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: `${DateTime.fromISO(task.reminder.slice(0, 10)).toFormat(
+                        "M/d"
+                      )}${task.reminder.slice(10)}` })
+                    ] })
+                  ]
                 }
               )
             ]
           }
         ),
-        task.tags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "no-scrollbar flex space-x-2 overflow-x-auto pl-indent text-xs child:whitespace-nowrap", children: task.tags.map((tag) => /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+        task.tags.length > 0 && groupBy !== "tags" && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "no-scrollbar flex space-x-2 overflow-x-auto pl-indent text-xs child:whitespace-nowrap", children: task.tags.map((tag) => /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
           "div",
           {
             className: "cm-hashtag cm-hashtag-end cm-hashtag-begin !h-fit !text-xs",
@@ -69713,7 +70125,7 @@ function Task({
               children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                 "div",
                 {
-                  className: "h-full w-full transition-colors duration-300 hover:bg-selection rounded-icon flex items-center justify-center cursor-pointer",
+                  className: "h-full w-full transition-colors duration-200 hover:bg-selection rounded-icon flex items-center justify-center cursor-pointer",
                   onClick: () => setters.patchCollapsed([task.id], !collapsed),
                   children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                     "div",
@@ -69729,11 +70141,7 @@ function Task({
             Block,
             {
               dragContainer: `${dragContainer}::${task.id}`,
-              hidePaths: [
-                getHeading(task, dailyNoteInfo2, groupBy),
-                getHeading(task, dailyNoteInfo2, "path"),
-                getHeading({ ...task, page: false }, dailyNoteInfo2, "path")
-              ],
+              hidePaths: [getHeading2(task, dailyNoteInfo2, groupBy), task.path],
               startISO,
               tasks: subtasks,
               events: [],
@@ -69756,8 +70164,10 @@ function Group({
   tasks,
   type,
   hidePaths,
-  dragContainer
+  dragContainer,
+  startISO
 }) {
+  var _a;
   const dragData = {
     dragType: "group",
     tasks,
@@ -69770,28 +70180,39 @@ function Group({
     id: `${headingPath}::${dragContainer}::${type}`,
     data: dragData
   });
-  const [container, heading] = splitHeading(headingPath);
-  let formattedContainer = container.slice(
-    container.includes("/") ? container.lastIndexOf("/") + 1 : 0
+  const [myContainer, heading] = splitHeading(headingPath);
+  let formattedContainer = myContainer.slice(
+    myContainer.includes("/") ? myContainer.lastIndexOf("/") + 1 : 0
   );
   if (formattedContainer.length > 25)
     formattedContainer = formattedContainer.slice(0, 25) + "...";
   formattedContainer = formattedContainer.replace(".md", "");
   const collapsed = useAppStore(
     (state) => {
-      var _a;
-      return (_a = state.collapsed[headingPath]) != null ? _a : false;
+      var _a2;
+      return (_a2 = state.collapsed[headingPath]) != null ? _a2 : false;
     }
   );
   const dragging = useAppStore(
     (state) => state.dragData && state.dragData.dragType === "group" && !import_lodash6.default.keys(simplePriorityToNumber).includes(heading) && parseFileFromPath(state.dragData.headingPath) !== parseFileFromPath(headingPath)
   );
-  const sortedTasks = import_lodash6.default.sortBy(
-    tasks,
-    (task) => task.due ? `0::${task.due}` : "1",
-    "priority",
-    "path",
-    "position.start.line"
+  const groupBySetting = useAppStore((state) => state.settings.groupBy);
+  const groupedTasks = import_lodash6.default.groupBy(tasks, (task) => {
+    if (type === "upcoming")
+      return UNGROUPED;
+    return getSubHeading(task, groupBySetting, hidePaths);
+  });
+  const sortedTasks = import_lodash6.default.sortBy(Object.entries(groupedTasks), 0).map(
+    ([heading2, tasks2]) => [
+      heading2,
+      type === "upcoming" ? import_lodash6.default.sortBy(tasks2, "due", "priority") : import_lodash6.default.sortBy(
+        tasks2,
+        "path",
+        "position.start.line"
+        // 'priority',
+        // (task) => (task.due ? `0::${task.due}` : '1')
+      )
+    ]
   );
   const isPriority = import_lodash6.default.keys(simplePriorityToNumber).includes(heading);
   return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
@@ -69836,9 +70257,15 @@ function Group({
                     className: `w-full flex items-center ${!isPriority ? "cursor-grab" : ""}`,
                     ...!isPriority ? { ...attributes, ...listeners, ref: setActivatorNodeRef } : void 0,
                     children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: `w-fit flex-none max-w-[50%] text-normal`, children: heading.slice(0, 40) + (heading.length > 40 ? "..." : "") }),
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+                        "div",
+                        {
+                          className: `w-fit flex-none max-w-[50%] text-normal truncate`,
+                          children: heading
+                        }
+                      ),
                       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("hr", { className: "border-t border-t-faint opacity-50 mx-2 h-0 my-0 w-full" }),
-                      container && !hidePaths.includes(container) && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "w-fit flex-none text-right pr-2", children: formattedContainer })
+                      myContainer && !hidePaths.includes(myContainer) && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "w-fit flex-none text-right pr-2", children: formattedContainer })
                     ]
                   }
                 )
@@ -69846,17 +70273,40 @@ function Group({
             }
           )
         ] }),
-        !collapsed && sortedTasks.map((task) => /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Task, { dragContainer, ...task }, task.id))
+        !collapsed && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(import_jsx_runtime4.Fragment, { children: [
+          (_a = sortedTasks.find(([heading2]) => heading2 === UNGROUPED)) == null ? void 0 : _a[1].map((task) => /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+            Task,
+            {
+              dragContainer,
+              startISO,
+              ...task
+            },
+            task.path + task.id
+          )),
+          sortedTasks.filter(([heading2]) => heading2 !== UNGROUPED).map(([heading2, tasks2]) => {
+            return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+              Group,
+              {
+                headingPath: heading2,
+                dragContainer,
+                hidePaths: [...hidePaths, headingPath],
+                tasks: tasks2,
+                type
+              },
+              heading2
+            );
+          })
+        ] })
       ]
     }
   );
 }
 
 // src/components/Hours.tsx
-var import_react10 = __toESM(require_react());
+var import_react11 = __toESM(require_react());
 
 // src/components/Minutes.tsx
-var import_react9 = __toESM(require_react());
+var import_react10 = __toESM(require_react());
 var import_jsx_runtime5 = __toESM(require_jsx_runtime());
 function Minutes({
   startISO,
@@ -69865,10 +70315,7 @@ function Minutes({
   chopStart,
   dragContainer
 }) {
-  const hideTimes = useAppStore((state) => state.settings.hideTimes);
   const dayEnd = useAppStore((state) => state.settings.dayStartEnd[1]);
-  if (hideTimes)
-    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_jsx_runtime5.Fragment, {});
   const times = [];
   const givenStart = DateTime.fromISO(startISO);
   const givenEnd = DateTime.fromISO(endISO);
@@ -69897,7 +70344,7 @@ function Minutes({
     );
   }
   const startISOs = times.map((time) => toISO(time));
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: `min-h-[4px]`, children: times.map((time, i) => /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Time, { ...{ type, time, dragContainer } }, startISOs[i])) });
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { children: times.map((time, i) => /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Time, { ...{ type, time, dragContainer } }, startISOs[i])) });
 }
 function Time({ time, type, dragContainer }) {
   const minutes = time.minute;
@@ -69925,7 +70372,7 @@ function Time({ time, type, dragContainer }) {
       return isLengthType((_a = state.dragData) == null ? void 0 : _a.dragType);
     }
   );
-  (0, import_react9.useEffect)(() => {
+  (0, import_react10.useEffect)(() => {
     if (isDraggingTime && isOver) {
       setters.set({
         dragData: { ...getters.get("dragData"), end: iso }
@@ -70015,9 +70462,11 @@ function Hours({
       blocks: nestedBlocks
     });
   }
-  const hideTimes = useAppStore((state) => state.settings.hideTimes);
+  const hideTimes = useAppStore(
+    (state) => state.settings.hideTimes || state.settings.viewMode === "week"
+  );
   return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: `pb-1 relative ${hideTimes ? "space-y-1" : ""}`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+    !hideTimes && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
       Minutes,
       {
         dragContainer: dragContainer + "::" + startISO,
@@ -70036,7 +70485,7 @@ function Hours({
         blocks: blocks2
       }, i) => {
         var _a2, _b2, _c2;
-        return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_react10.Fragment, { children: [
+        return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_react11.Fragment, { children: [
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             Block,
             {
@@ -70049,7 +70498,7 @@ function Hours({
               type: "event"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+          !hideTimes && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             Minutes,
             {
               dragContainer: dragContainer + "::" + blockStartISO,
@@ -70067,9 +70516,9 @@ function Hours({
 
 // src/components/Unscheduled.tsx
 var import_lodash7 = __toESM(require_lodash());
-var import_react11 = __toESM(require_react());
+var import_react12 = __toESM(require_react());
 var import_jsx_runtime7 = __toESM(require_jsx_runtime());
-var Unscheduled = (0, import_react11.memo)(_Unscheduled, () => true);
+var Unscheduled = (0, import_react12.memo)(_Unscheduled, () => true);
 var Unscheduled_default = Unscheduled;
 var COLLAPSE_UNSCHEDULED = "tr-collapse-unscheduled";
 function _Unscheduled() {
@@ -70078,13 +70527,13 @@ function _Unscheduled() {
   const tasks = useAppStore(
     (state) => import_lodash7.default.filter(
       state.tasks,
-      (task) => (showCompleted || (showingPastDates ? task.completed : !task.completed)) && !task.parent && !task.queryParent && !parseTaskDate2(task) && !task.due
+      (task) => (showCompleted || (showingPastDates ? task.completed : !task.completed)) && !task.parent && !task.queryParent && !parseTaskDate2(task, state.tasks) && !task.due
     )
   );
   const childWidth = useAppStore(
     (state) => (state.settings.viewMode === "week" || state.settings.viewMode === "hour") && state.childWidth > 1 ? state.childWidth : 1
   );
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: `h-0 grow flex flex-col`, children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: `h-0 grow flex flex-col w-full`, children: [
     /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex items-center space-x-1 group flex-none", children: [
       /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
         "div",
@@ -70098,14 +70547,14 @@ function _Unscheduled() {
     /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
       "div",
       {
-        className: `h-0 grow w-full mt-1 rounded-icon ${childWidth > 1 ? `unscheduled child:h-full child:child:h-full ${[
+        className: `h-0 grow w-full flex-none mt-1 rounded-icon unscheduled child:h-full child:child:h-full ${[
           "",
           "child:child:child:child:w-full",
           "child:child:child:child:w-1/2",
           "child:child:child:child:w-1/3",
           "child:child:child:child:w-1/4"
-        ][childWidth]}` : "overflow-x-hidden overflow-y-auto"}`,
-        "data-auto-scroll": childWidth > 1 ? "x" : "y",
+        ][childWidth]}`,
+        "data-auto-scroll": "x",
         children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
           Block,
           {
@@ -70136,7 +70585,8 @@ function Block({
   parentId,
   events: events2,
   dragging,
-  blocks
+  blocks,
+  title
 }) {
   var _a, _b, _c, _d;
   let showingTasks = useAppStore((state) => {
@@ -70147,41 +70597,30 @@ function Block({
   const groupedTasks = useAppStore((state) => {
     return import_lodash8.default.groupBy(
       topLevel,
-      (task) => getHeading(task, state.dailyNoteInfo, state.settings.groupBy, hidePaths)
+      (task) => getHeading2(
+        task,
+        state.dailyNoteInfo,
+        type === "upcoming" ? false : state.settings.groupBy,
+        hidePaths
+      )
     );
   });
   const sortedGroups = useAppStore((state) => {
     switch (state.settings.groupBy) {
-      case "priority":
+      case false:
+        return import_lodash8.default.entries(groupedTasks);
+      default:
         return import_lodash8.default.sortBy(
           import_lodash8.default.entries(groupedTasks),
           ([group]) => group === UNGROUPED2 ? 0 : 1,
-          0
-        );
-      case "path":
-        return import_lodash8.default.sortBy(
-          import_lodash8.default.entries(groupedTasks),
-          ([group, _tasks]) => group === UNGROUPED2 ? 0 : 1,
-          ([group, _tasks]) => state.fileOrder.indexOf(parseFileFromPath(group)),
-          "1.0.position.start.line"
-        );
-      case "hybrid":
-        return import_lodash8.default.sortBy(
-          import_lodash8.default.entries(groupedTasks),
-          ([group, _tasks]) => group === UNGROUPED2 ? 0 : 1,
           "1.0.priority",
-          ([group, _tasks]) => state.fileOrder.indexOf(parseFileFromPath(group)),
+          ([group, _tasks]) => {
+            return state.fileOrder.indexOf(parseFileFromPath(group));
+          },
           "1.0.position.start.line"
         );
-      case false:
-        return import_lodash8.default.entries(groupedTasks);
     }
   }, shallow$1);
-  const expanded = useAppStore(
-    (state) => import_lodash8.default.sum(
-      sortedGroups.filter(([group]) => group !== UNGROUPED2).map(([group]) => state.collapsed[group] ? 0 : 1)
-    ) > 0
-  );
   const dragData = {
     dragType: "block",
     hidePaths,
@@ -70206,41 +70645,30 @@ function Block({
     const isDate2 = isDateISO(date);
     return isDate2 ? "all day" : DateTime.fromISO(date).toFormat(twentyFourHourFormat ? "T" : "t");
   };
-  const hideTimes = useAppStore((state) => state.settings.hideTimes);
+  const hideTimes = useAppStore(
+    (state) => state.settings.hideTimes || state.settings.viewMode === "week"
+  );
   const draggable = tasks.length > 0;
-  const onlyPath = events2.length === 0 && type === "event" && sortedGroups.length === 1 && sortedGroups[0][0] !== UNGROUPED2 ? sortedGroups[0][0] : void 0;
-  const onlyPathTitle = onlyPath ? splitHeading(onlyPath)[1] : void 0;
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const firstEndISO = ((_a = blocks[0]) == null ? void 0 : _a.startISO) || endISO;
   const firstStartISO = showingPastDates || !startISO ? startISO : import_lodash8.default.max([startISO, toISO(roundMinutes(DateTime.now()))]);
-  const collapseButton = () => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-    Button_default,
-    {
-      className: "group-hover:opacity-100 opacity-0 transition-opacity duration-200 h-4 py-0.5 flex-none",
-      src: expanded ? "chevron-down" : "chevron-right",
-      onClick: () => {
-        setters.patchCollapsed(
-          import_lodash8.default.map(sortedGroups, 0).filter((x) => x !== UNGROUPED2),
-          expanded
-        );
-        return false;
-      },
-      onPointerDown: () => false
-    }
-  ) });
-  const collapsed = useAppStore(
-    (state) => type === "unscheduled" ? import_lodash8.default.sum(
-      sortedGroups.map(([title]) => state.collapsed[title] ? 1 : 0)
-    ) === sortedGroups.length : false
-  );
-  const [unscheduledPortal, setUnscheduledPortal] = (0, import_react12.useState)(null);
-  (0, import_react12.useEffect)(() => {
+  const [unscheduledPortal, setUnscheduledPortal] = (0, import_react13.useState)(null);
+  (0, import_react13.useEffect)(() => {
     if (type === "unscheduled") {
       setUnscheduledPortal(
         document.getElementById(COLLAPSE_UNSCHEDULED)
       );
     }
   }, []);
+  const collapsed = useAppStore((state) => {
+    if (sortedGroups.length === 0)
+      return false;
+    for (let heading of sortedGroups) {
+      if (!state.collapsed[heading[0]])
+        return false;
+    }
+    return true;
+  });
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
     type === "unscheduled" && unscheduledPortal && (0, import_react_dom2.createPortal)(
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
@@ -70261,10 +70689,10 @@ function Block({
       {
         id,
         "data-role": "block",
-        className: `relative w-full rounded-icon ${["event", "unscheduled", "all-day"].includes(type) ? "bg-code pb-2" : ""} `,
+        className: `relative w-full rounded-icon ${type !== "child" ? "bg-code pb-2" : ""} ${type === "event" ? "mt-1" : ""}`,
         ref: draggable ? setNodeRef : void 0,
         children: [
-          (type === "event" || type === "all-day") && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+          !["child", "unscheduled"].includes(type) && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
             Droppable,
             {
               data: { scheduled: startISO != null ? startISO : "" },
@@ -70274,12 +70702,23 @@ function Block({
                 {
                   className: `selectable flex rounded-icon font-menu text-xs w-full py-0.5 group`,
                   children: [
-                    collapseButton(),
+                    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                      Button_default,
+                      {
+                        className: "group-hover:opacity-100 opacity-0 transition-opacity duration-200 h-4 py-0.5 flex-none",
+                        src: !collapsed ? "chevron-down" : "chevron-right",
+                        onClick: () => {
+                          setters.patchCollapsed(
+                            sortedGroups.map((x) => x[0]),
+                            !collapsed
+                          );
+                          return false;
+                        },
+                        onPointerDown: () => false
+                      }
+                    ) }),
                     /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "w-full flex", children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: `w-fit flex-none max-w-[80%] mr-2`, children: [
-                        onlyPathTitle && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: onlyPathTitle.slice(0, 40) + (onlyPathTitle.length > 40 ? "..." : "") }),
-                        events2.map(({ title, id: id2 }) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: title.slice(0, 40) + (title.length > 40 ? "..." : "") }, id2))
-                      ] }),
+                      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: `w-fit flex-none max-w-[80%] mr-2`, children: events2.map(({ title: title2, id: id2 }) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: title2.slice(0, 40) + (title2.length > 40 ? "..." : "") }, id2)) }),
                       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
                         "div",
                         {
@@ -70289,7 +70728,7 @@ function Block({
                           ref: setActivatorNodeRef,
                           children: [
                             /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("hr", { className: "border-t border-t-faint opacity-50 h-0 my-0 w-full" }),
-                            startISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap flex-none", children: formatStart(startISO) }),
+                            startISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap flex-none", children: title != null ? title : formatStart(startISO) }),
                             hideTimes && startISO && endISO && !isDateISO(startISO) && DateTime.fromISO(startISO).diff(
                               DateTime.fromISO(endISO)
                             ) && /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
@@ -70310,22 +70749,25 @@ function Block({
               "div",
               {
                 className: `time-ruler-groups w-full relative z-10 h-fit ${type === "event" ? "pt-1 pl-1 pb-1" : ""}`,
-                children: sortedGroups.map(([path2, tasks2]) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                  Group,
-                  {
-                    ...{
-                      headingPath: path2,
-                      tasks: tasks2,
-                      type,
-                      hidePaths: onlyPath ? [...hidePaths, onlyPath] : hidePaths,
-                      dragContainer: `${dragContainer}::${startISO}`
-                    }
-                  },
-                  path2
-                ))
+                children: sortedGroups.map(([path2, tasks2]) => {
+                  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                    Group,
+                    {
+                      ...{
+                        headingPath: path2,
+                        tasks: tasks2,
+                        type,
+                        hidePaths,
+                        dragContainer: `${dragContainer}::${startISO}`,
+                        startISO
+                      }
+                    },
+                    path2
+                  );
+                })
               }
             ),
-            firstStartISO && firstEndISO && firstStartISO < firstEndISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-10 flex-none", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            !hideTimes && firstStartISO && firstEndISO && firstStartISO < firstEndISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-10 flex-none", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
               Minutes,
               {
                 startISO: firstStartISO,
@@ -70376,7 +70818,11 @@ var getEndISO = ({ tasks, events: events2, startISO, endISO }) => {
 var parseFolderFromPath = (path2) => {
   if (path2.endsWith("/"))
     path2 = path2.slice(0, path2.length - 1);
-  return path2.includes("/") ? path2.slice(0, path2.lastIndexOf("/")) : "";
+  if (path2.includes("/"))
+    path2 = path2.slice(0, path2.lastIndexOf("/"));
+  if (!path2.includes("/"))
+    return path2;
+  return path2.slice(path2.lastIndexOf("/") + 1);
 };
 var parseFileFromPath = (path2) => {
   if (path2.includes("#"))
@@ -70385,9 +70831,16 @@ var parseFileFromPath = (path2) => {
     path2 = path2.slice(0, path2.indexOf(">"));
   if (path2.includes("::"))
     path2 = path2.slice(0, path2.indexOf("::"));
+  if (path2 === "Daily") {
+    path2 = parsePathFromDate((/* @__PURE__ */ new Date()).toISOString().slice(0, 10));
+  }
+  if (!path2.endsWith(".md"))
+    path2 += ".md";
   return path2;
 };
 var parsePathFromDate = (date, dailyNoteInfo2) => {
+  if (!dailyNoteInfo2)
+    dailyNoteInfo2 = getters.get("dailyNoteInfo");
   const formattedDate = (0, import_moment.default)(date).format(dailyNoteInfo2.format);
   return dailyNoteInfo2.folder + formattedDate + ".md";
 };
@@ -70405,24 +70858,53 @@ var parseDateFromPath = (path2, dailyNoteInfo2) => {
   return date;
 };
 var splitHeading = (heading) => {
-  return heading.includes(">") ? heading.split(">", 2) : heading.includes("#") ? heading.split("#", 2) : heading.includes("/") ? heading.split("/", 2) : ["", heading];
+  return heading.includes(">") ? heading.split(">", 2) : heading.includes("#") ? heading.split("#", 2) : heading.includes("/") ? [
+    heading.slice(0, heading.lastIndexOf("/")),
+    heading.slice(heading.lastIndexOf("/") + 1)
+  ] : ["", heading];
 };
-var getHeading = ({ path: path2, page, priority }, dailyNoteInfo2, groupBy, hidePaths = []) => {
+var getSubHeading = (task, groupBy, hidePaths) => {
+  switch (groupBy) {
+    case "hybrid":
+    case "path":
+    case "priority":
+      if (!task.path.includes("#"))
+        return UNGROUPED2;
+      const slicedPath = task.path.slice(task.path.indexOf("#") + 1);
+      if (hidePaths.find((path2) => path2.includes(slicedPath)))
+        return UNGROUPED2;
+      return slicedPath;
+    case "tags":
+      return UNGROUPED2;
+  }
+};
+var getHeading2 = ({
+  path: path2,
+  page,
+  priority,
+  tags
+}, dailyNoteInfo2, groupBy, hidePaths = []) => {
+  var _a, _b;
   path2 = path2.replace(".md", "");
   let heading = path2;
-  if (groupBy === "priority" || groupBy === "hybrid" && priority !== 3 /* DEFAULT */)
+  if (groupBy === "priority" || groupBy === "hybrid" && priority !== 3 /* DEFAULT */) {
     heading = priorityNumberToSimplePriority[priority];
-  else if (groupBy === "path" || groupBy === "hybrid") {
-    const file = parseFileFromPath(heading);
-    const date = parseDateFromPath(file, dailyNoteInfo2);
-    if (date)
-      heading = heading.replace(file, `Daily: ${date.format("MMM DD")}`);
+  } else if (groupBy === "tags") {
+    heading = [...tags].map((x) => x.replace("#", "")).sort().join(", ");
+  } else if (groupBy === "path" || groupBy === "hybrid") {
     if (page) {
       heading = parseFolderFromPath(path2);
+    } else {
+      const file = parseFileFromPath(heading);
+      const date = parseDateFromPath(file, dailyNoteInfo2);
+      if (date)
+        heading = "Daily" + ((_b = (_a = heading.match(/#.+$/)) == null ? void 0 : _a[0]) != null ? _b : "");
+      else
+        heading = file.replace(".md", "");
     }
   } else
     heading = UNGROUPED2;
-  if (hidePaths.includes(heading))
+  if (hidePaths.find((path3) => path3.includes(heading)))
     heading = UNGROUPED2;
   return heading;
 };
@@ -70431,12 +70913,28 @@ var convertSearchToRegExp = (search) => new RegExp(
   "i"
 );
 var isLengthType = (type) => type && type === "task-length" || type === "time";
-var parseTaskDate2 = (task) => task.scheduled || task.completion;
-var toISO = (date) => date.toISO({
-  suppressMilliseconds: true,
-  suppressSeconds: true,
-  includeOffset: false
-});
+var parseTaskDate2 = (task, tasks) => {
+  let currentParent = task;
+  const parseDate = (task2) => task2.scheduled || task2.completion;
+  while (currentParent.parent) {
+    const nextScheduled = parseDate(tasks[currentParent.parent]);
+    if (!nextScheduled || nextScheduled < parseDate(currentParent))
+      break;
+    currentParent = tasks[currentParent.parent];
+  }
+  return parseDate(currentParent);
+};
+var toISO = (date, isDate2) => {
+  const d = date.toISO({
+    suppressMilliseconds: true,
+    suppressSeconds: true,
+    includeOffset: false
+  });
+  if (isDate2)
+    return d.slice(0, 10);
+  else
+    return d;
+};
 var useHourDisplay = (hours) => {
   const twentyFourHourFormat = useAppStore(
     (state) => state.settings.twentyFourHourFormat
@@ -70463,12 +70961,8 @@ var useChildWidth = () => {
     "child:w-1/3",
     "child:w-1/4"
   ];
-  (0, import_react13.useEffect)(() => {
+  (0, import_react14.useEffect)(() => {
     function outputSize() {
-      if (import_obsidian3.Platform.isMobile) {
-        setChildWidth(1);
-        return;
-      }
       const timeRuler = document.querySelector("#time-ruler");
       if (!timeRuler) {
         window.setTimeout(outputSize, 500);
@@ -70476,7 +70970,7 @@ var useChildWidth = () => {
       }
       invariant(timeRuler);
       const width = timeRuler.clientWidth;
-      const newChildWidth = width < 500 ? 1 : width < 800 ? 2 : width < 1200 && viewModeRef.current !== "week" ? 3 : 4;
+      const newChildWidth = width < 500 ? 1 : width < 800 ? 2 : width < 1200 ? 3 : 4;
       setChildWidth(newChildWidth);
     }
     outputSize();
@@ -70498,7 +70992,6 @@ var scrollToSection = async (id) => {
       return;
     }
     child.scrollIntoView({
-      block: "start",
       inline: "start",
       behavior: "smooth"
     });
@@ -70589,13 +71082,13 @@ var queryTasks = (id, query, tasks) => {
 var getChildren = (task, tasks) => !task ? [] : task.children.flatMap((id) => [id, ...getChildren(tasks[id], tasks)]).concat(task.queryChildren ? task.queryChildren : []);
 var getParentScheduled = (task, tasks) => {
   var _a, _b;
-  if (parseTaskDate2(task))
-    return parseTaskDate2(task);
+  if (parseTaskDate2(task, tasks))
+    return parseTaskDate2(task, tasks);
   let parent = (_a = task.parent) != null ? _a : task.queryParent;
   while (parent) {
     task = tasks[parent];
-    if (parseTaskDate2(task))
-      return parseTaskDate2(task);
+    if (parseTaskDate2(task, tasks))
+      return parseTaskDate2(task, tasks);
     parent = (_b = task.parent) != null ? _b : task.queryParent;
   }
   return void 0;
@@ -70625,13 +71118,12 @@ var onDragEnd = async (ev, activeDragRef) => {
   var _a, _b;
   const dropData = (_a = ev.over) == null ? void 0 : _a.data.current;
   const dragData = activeDragRef.current;
+  const dragMode = getters.get("dragMode");
   if (ev.active.id === ((_b = ev.over) == null ? void 0 : _b.id)) {
     setters.set({ dragData: null });
     return;
   }
-  if ((dragData == null ? void 0 : dragData.dragType) === "new_button" && !dropData) {
-    setters.set({ newTask: { task: { scheduled: void 0 }, type: "new" } });
-  } else if ((dragData == null ? void 0 : dragData.dragType) === "task" && (dropData == null ? void 0 : dropData.type) === "move") {
+  if ((dragData == null ? void 0 : dragData.dragType) === "task" && (dropData == null ? void 0 : dropData.type) === "move") {
     setters.set({ newTask: { task: dragData, type: "move" } });
   } else if (dropData && dragData) {
     if (!isTaskProps(dropData)) {
@@ -70665,52 +71157,6 @@ var onDragEnd = async (ev, activeDragRef) => {
       }
     } else {
       switch (dragData.dragType) {
-        case "now":
-          if (!dropData.scheduled)
-            break;
-          const dayStart = getters.get("settings").dayStartEnd[0];
-          const startOfDay = DateTime.now().startOf("day").plus({ hours: dayStart });
-          const today = toISO(startOfDay);
-          const tomorrow = toISO(startOfDay.plus({ days: 1 }));
-          const tasks = getters.get("tasks");
-          const futureTasks = {};
-          for (let task of import_lodash10.default.values(tasks)) {
-            if (task.completed)
-              continue;
-            const scheduled = parseTaskDate2(task);
-            if (scheduled && !isDateISO(scheduled) && scheduled >= today && scheduled < tomorrow) {
-              if (task.queryParent)
-                continue;
-              let parent = task.parent;
-              while (parent) {
-                if (tasks[parent].queryParent)
-                  continue;
-                parent = tasks[parent].parent;
-              }
-              if (futureTasks[scheduled])
-                futureTasks[scheduled].push(task);
-              else
-                futureTasks[scheduled] = [task];
-            }
-          }
-          const tasksByTime = import_lodash10.default.sortBy(import_lodash10.default.entries(futureTasks), 0);
-          const { hours: shiftHours, minutes: shiftMinutes } = DateTime.fromISO(
-            dropData.scheduled
-          ).diff(DateTime.fromISO(tasksByTime[0][0])).shiftTo("hours", "minutes");
-          if (!confirm(`Shift tasks by ${shiftHours}h${shiftMinutes}m?`))
-            break;
-          for (let [time, tasks2] of tasksByTime) {
-            const timeParse = DateTime.fromISO(time);
-            await setters.patchTasks(
-              tasks2.map((task) => task.id),
-              {
-                scheduled: toISO(
-                  timeParse.plus({ hours: shiftHours, minutes: shiftMinutes })
-                )
-              }
-            );
-          }
-          break;
         case "new_button":
           setters.set({
             newTask: { task: { scheduled: dropData.scheduled }, type: "new" }
@@ -70760,14 +71206,14 @@ var onDragStart = (ev) => {
 };
 
 // src/services/autoScroll.ts
-var import_obsidian4 = require("obsidian");
-var import_react14 = __toESM(require_react());
+var import_obsidian3 = require("obsidian");
+var import_react15 = __toESM(require_react());
 var useAutoScroll = () => {
   const dragging = useAppStore((state) => !!state.dragData);
-  let scrolling2 = (0, import_react14.useRef)(false);
-  let timeout = (0, import_react14.useRef)(null);
+  let scrolling2 = (0, import_react15.useRef)(false);
+  let timeout = (0, import_react15.useRef)(null);
   const WAIT_TIME = 500;
-  (0, import_react14.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     const scrollBy = (el, object) => {
       scrolling2.current = true;
       timeout.current = null;
@@ -70845,12 +71291,12 @@ var useAutoScroll = () => {
     };
     if (dragging)
       window.addEventListener(
-        import_obsidian4.Platform.isMobile ? "touchmove" : "mousemove",
+        import_obsidian3.Platform.isMobile ? "touchmove" : "mousemove",
         autoScroll
       );
     return () => {
       window.removeEventListener(
-        import_obsidian4.Platform.isMobile ? "touchmove" : "mousemove",
+        import_obsidian3.Platform.isMobile ? "touchmove" : "mousemove",
         autoScroll
       );
     };
@@ -70859,14 +71305,14 @@ var useAutoScroll = () => {
 
 // src/components/Day.tsx
 var import_lodash11 = __toESM(require_lodash());
-var import_react16 = __toESM(require_react());
+var import_react17 = __toESM(require_react());
 
 // src/components/Timer.tsx
-var import_react15 = __toESM(require_react());
+var import_react16 = __toESM(require_react());
 var import_react_timer_hook = __toESM(require_dist());
 var import_jsx_runtime9 = __toESM(require_jsx_runtime());
 function Timer() {
-  const pauseExpiration = (0, import_react15.useRef)(true);
+  const pauseExpiration = (0, import_react16.useRef)(true);
   const { negative, startISO, maxSeconds, playing } = useAppStore(
     (state) => state.timer
   );
@@ -70887,7 +71333,7 @@ function Timer() {
     autoStart: false,
     offsetTimestamp: startISO ? new Date(startISO) : /* @__PURE__ */ new Date()
   });
-  (0, import_react15.useEffect)(() => {
+  (0, import_react16.useEffect)(() => {
     pauseExpiration.current = false;
     if (!startISO)
       return;
@@ -70898,12 +71344,12 @@ function Timer() {
       stopwatch.reset(DateTime.now().plus({ seconds: seconds2 }).toJSDate(), true);
     }
   }, []);
-  (0, import_react15.useEffect)(() => {
+  (0, import_react16.useEffect)(() => {
     const newPlaying = stopwatch.isRunning || timer.isRunning;
     if (newPlaying !== playing)
       setters.patchTimer({ playing: newPlaying });
   }, [stopwatch.isRunning, timer.isRunning]);
-  const [input, setInput] = (0, import_react15.useState)("");
+  const [input, setInput] = (0, import_react16.useState)("");
   const seconds = maxSeconds ? timer.seconds : stopwatch.seconds;
   const minutes = maxSeconds ? timer.minutes : stopwatch.minutes;
   const hours = maxSeconds ? timer.hours : stopwatch.hours;
@@ -71049,10 +71495,25 @@ function Day({
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const now3 = toISO(roundMinutes(DateTime.now()));
   const startDate = getStartDate(DateTime.fromISO(startISO));
+  const endDate = getStartDate(DateTime.fromISO(startISO).plus({ day: 1 }));
   const showCompleted = useAppStore((state) => state.settings.showCompleted);
   const id = startDate;
-  const [allDay, blocksByTime] = useAppStore((state) => {
+  const [allDay, blocksByTime, pastTasks, upcoming] = useAppStore((state) => {
     const allDay2 = {
+      startISO: startDate,
+      endISO: startDate,
+      blocks: [],
+      tasks: [],
+      events: []
+    };
+    const pastTasks2 = {
+      startISO: startDate,
+      endISO: startDate,
+      blocks: [],
+      tasks: [],
+      events: []
+    };
+    const upcoming2 = {
       startISO: startDate,
       endISO: startDate,
       blocks: [],
@@ -71061,13 +71522,17 @@ function Day({
     };
     const blocksByTime2 = {};
     import_lodash11.default.forEach(state.tasks, (task) => {
-      const scheduled = parseTaskDate2(task);
-      const isShown = (task.due || scheduled) && !task.queryParent && (showCompleted || task.completed === showingPastDates);
+      const scheduled = parseTaskDate2(task, state.tasks);
+      const isShown = (task.due || scheduled) && !task.queryParent && (showCompleted && scheduled === startDate || task.completed === showingPastDates);
       if (!isShown)
         return;
-      const scheduledForToday = !scheduled ? false : isNow ? isDateISO(scheduled) ? showingPastDates ? scheduled >= startDate : scheduled <= startDate : showingPastDates ? scheduled >= startISO : scheduled < endISO : isDateISO(scheduled) ? scheduled === startDate : scheduled >= startISO && scheduled < endISO;
+      const scheduledPast = !isNow || !scheduled ? false : showingPastDates ? scheduled >= endDate : scheduled < startDate;
+      const scheduledForToday = !scheduled ? false : isDateISO(scheduled) ? scheduled === startDate : (isNow ? scheduled > startDate : scheduled >= startISO) && scheduled < endISO;
       const dueToday = !showingPastDates && (!task.due ? false : isNow || task.due >= startDate) && (!task.scheduled || task.scheduled < startDate);
-      if (scheduledForToday) {
+      if (scheduledPast) {
+        invariant(scheduled);
+        pastTasks2.tasks.push(task);
+      } else if (scheduledForToday) {
         invariant(scheduled);
         if (isDateISO(scheduled) || scheduled < startDate || scheduled > endISO) {
           allDay2.tasks.push(task);
@@ -71084,13 +71549,13 @@ function Day({
             };
         }
       } else if (dueToday) {
-        allDay2.tasks.push(task);
+        upcoming2.tasks.push(task);
       }
     });
-    for (let event of import_lodash11.default.filter(
-      state.events,
-      (event2) => isDateISO(event2.startISO) ? event2.startISO <= startDate && event2.endISO >= startDate : event2.endISO > startISO && event2.startISO < endISO && (showingPastDates ? event2.startISO <= now3 : event2.endISO >= now3)
-    )) {
+    for (let event of import_lodash11.default.filter(state.events, (event2) => {
+      const shouldInclude = isDateISO(event2.startISO) ? event2.startISO <= startDate && event2.endISO > startDate : event2.startISO < endISO && event2.endISO > startISO && (showingPastDates ? event2.startISO <= now3 : event2.endISO >= now3);
+      return shouldInclude;
+    })) {
       if (isDateISO(event.startISO))
         allDay2.events.push(event);
       else if (blocksByTime2[event.startISO])
@@ -71104,12 +71569,12 @@ function Day({
           blocks: []
         };
     }
-    return [allDay2, blocksByTime2];
+    return [allDay2, blocksByTime2, pastTasks2, upcoming2];
   }, shallow$1);
   let blocks = import_lodash11.default.map(import_lodash11.default.sortBy(import_lodash11.default.entries(blocksByTime), 0), 1);
   const viewMode = useAppStore((state) => state.settings.viewMode);
   const calendarMode = viewMode === "week";
-  let title = isNow ? "Today" : DateTime.fromISO(startISO || endISO).toFormat(
+  let title = DateTime.fromISO(startISO || endISO).toFormat(
     calendarMode ? "EEE d" : "EEE, MMM d"
   );
   const collapsed = useAppStore((state) => state.collapsed[id]);
@@ -71128,9 +71593,8 @@ function Day({
       setTimeout(() => openTaskInRuler(foundTask.id));
     }
   };
-  (0, import_react16.useEffect)(expandIfFound, [foundTaskInAllDay]);
-  const allDayFrame = (0, import_react16.useRef)(null);
-  const [allDayHeight, setAllDayHeight] = (0, import_react16.useState)();
+  (0, import_react17.useEffect)(expandIfFound, [foundTaskInAllDay]);
+  const allDayFrame = (0, import_react17.useRef)(null);
   const wide = useAppStore((state) => state.childWidth > 1);
   const TR_NOW = "TR::NOW";
   const focus = useAppStore((state) => isNow && state.collapsed[TR_NOW]);
@@ -71148,7 +71612,7 @@ function Day({
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "flex-none w-indent pr-1", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
             Button_default,
             {
-              className: "flex-none w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+              className: "flex-none w-full",
               src: collapsed ? "chevron-right" : "chevron-down",
               onClick: () => {
                 setters.patchCollapsed([id], !collapsed);
@@ -71163,11 +71627,11 @@ function Day({
               onClick: async () => {
                 const dailyNoteInfo2 = getters.get("dailyNoteInfo");
                 const path2 = parsePathFromDate(startDate, dailyNoteInfo2);
-                const thisNote = app.vault.getAbstractFileByPath(path2);
+                const thisNote = getters.getApp().vault.getAbstractFileByPath(path2);
                 if (!thisNote) {
                   await getters.getObsidianAPI().createFileFromPath(path2);
                 }
-                app.workspace.openLinkText(
+                getters.getApp().workspace.openLinkText(
                   parsePathFromDate(startDate, dailyNoteInfo2),
                   ""
                 );
@@ -71189,7 +71653,7 @@ function Day({
         }[viewMode]}`,
         "data-auto-scroll": calendarMode ? "y" : void 0,
         children: [
-          allDay.tasks.length + allDay.events.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
+          allDay.tasks.length + allDay.events.length + pastTasks.tasks.length + upcoming.tasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
             "div",
             {
               className: `relative w-full child:mb-1 overflow-x-hidden rounded-icon mt-1 ${{
@@ -71197,12 +71661,22 @@ function Day({
                 day: "h-fit",
                 week: "h-fit"
               }[viewMode]} ${collapsed ? "hidden" : "block"}`,
-              style: {
-                height: viewMode === "hour" ? allDayHeight : ""
-              },
               "data-auto-scroll": calendarMode ? void 0 : "y",
               ref: allDayFrame,
               children: [
+                pastTasks.tasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                  Block,
+                  {
+                    type: "all-day",
+                    title: "past",
+                    events: [],
+                    tasks: pastTasks.tasks,
+                    startISO: startDate,
+                    endISO: startDate,
+                    dragContainer: dragContainer + "-past",
+                    blocks: []
+                  }
+                ),
                 allDay.events.map((event) => /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                   Block,
                   {
@@ -71221,11 +71695,25 @@ function Day({
                   Block,
                   {
                     type: "all-day",
+                    title: "today",
                     events: [],
                     tasks: allDay.tasks,
                     startISO: startDate,
                     endISO: startDate,
-                    dragContainer,
+                    dragContainer: dragContainer + "-allDay",
+                    blocks: []
+                  }
+                ),
+                upcoming.tasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                  Block,
+                  {
+                    type: "upcoming",
+                    title: "upcoming",
+                    events: [],
+                    tasks: upcoming.tasks,
+                    startISO: startDate,
+                    endISO: startDate,
+                    dragContainer: dragContainer + "-upcoming",
                     blocks: []
                   }
                 )
@@ -71239,7 +71727,7 @@ function Day({
                 hour: "h-0 grow overflow-y-auto",
                 day: "h-fit",
                 week: "h-fit"
-              }[viewMode]}`,
+              }[viewMode]} ${isNow && focus ? "border border-solid border-accent rounded-lg px-1" : ""}`,
               children: [
                 isNow && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "w-full flex flex-none h-6 mt-1 items-center", children: [
                   /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
@@ -71250,7 +71738,7 @@ function Day({
                         scheduled: now3
                       },
                       children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "h-full grow flex font-menu items-center space-x-2 pl-indent", children: [
-                        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-xs", children: "Now" }),
+                        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-xs text-accent", children: "Now" }),
                         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("hr", { className: "w-full border-selection" })
                       ] })
                     }
@@ -71258,8 +71746,9 @@ function Day({
                   /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                     Button_default,
                     {
-                      className: "",
-                      src: focus ? "maximize-2" : "minimize-2",
+                      className: `ml-1 ${isNow && focus ? "bg-accent" : ""}`,
+                      src: focus ? "minimize-2" : "maximize-2",
+                      title: "focus on now",
                       onClick: () => {
                         if (!focus) {
                           setters.patchCollapsed([id], true);
@@ -71309,7 +71798,7 @@ function Day({
 
 // src/components/NewTask.tsx
 var import_lodash12 = __toESM(require_lodash());
-var import_react17 = __toESM(require_react());
+var import_react18 = __toESM(require_react());
 var import_jsx_runtime11 = __toESM(require_jsx_runtime());
 function NewTask({ dragContainer }) {
   var _a, _b;
@@ -71323,8 +71812,9 @@ function NewTask({ dragContainer }) {
   const newTaskData = useAppStore((state) => state.newTask);
   const newTask = newTaskData ? newTaskData.task : false;
   const newTaskMode = newTaskData ? newTaskData.type : void 0;
-  const frame = (0, import_react17.useRef)(null);
-  const inputFrame = (0, import_react17.useRef)(null);
+  const frame = (0, import_react18.useRef)(null);
+  const inputFrame = (0, import_react18.useRef)(null);
+  const inputRef = (0, import_react18.useRef)(null);
   const checkShowing = (ev) => {
     invariant(frame.current);
     const els = document.elementsFromPoint(ev.clientX, ev.clientY);
@@ -71332,7 +71822,7 @@ function NewTask({ dragContainer }) {
       setters.set({ newTask: null });
     }
   };
-  (0, import_react17.useEffect)(() => {
+  (0, import_react18.useEffect)(() => {
     window.removeEventListener("mousedown", checkShowing);
     if (newTask) {
       window.addEventListener("mousedown", checkShowing);
@@ -71343,57 +71833,82 @@ function NewTask({ dragContainer }) {
     }
     return () => window.removeEventListener("mousedown", checkShowing);
   }, [!!newTask]);
-  const [search, setSearch] = (0, import_react17.useState)("");
+  const [search, setSearch] = (0, import_react18.useState)("");
   const dailyNoteInfo2 = useAppStore((state) => state.dailyNoteInfo);
   const allHeadings = useAppStore((state) => {
     if (!newTask)
       return [];
     return import_lodash12.default.uniq(
       import_lodash12.default.flatMap(state.tasks, (task) => {
-        if (task.completed)
+        if (task.completed || task.page)
           return [];
-        if (task.page && newTaskMode === "move")
-          return [];
-        return getHeading(task, dailyNoteInfo2, "path");
-      })
+        return task.path.replace(".md", "");
+      }).concat(["Daily"])
     ).sort();
   }, shallow$1);
   const searchExp = convertSearchToRegExp(search);
   const filteredHeadings = allHeadings.filter(
     (heading) => searchExp.test(heading)
   );
-  (0, import_react17.useEffect)(() => {
+  (0, import_react18.useEffect)(() => {
     setSearch("");
   }, [newTask]);
   const draggingTask = useAppStore(
     (state) => state.dragData && ["task", "group", "block"].includes(state.dragData.dragType) ? state.dragData : void 0
   );
-  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex relative z-30 pl-2", children: [
+  const checkForClick = () => {
+    if (!getters.get("dragData") && !getters.get("newTask")) {
+      setters.set({ newTask: { task: { scheduled: void 0 }, type: "new" } });
+    }
+    window.removeEventListener("mouseup", checkForClick);
+  };
+  const calendarMode = useAppStore(
+    (state) => state.settings.viewMode === "week"
+  );
+  const [focus, setFocus] = (0, import_react18.useState)(false);
+  (0, import_react18.useEffect)(() => {
+    const onFocus = (ev) => {
+      if (ev.key === "Tab") {
+        ev.stopPropagation();
+        inputRef.current.focus();
+      }
+    };
+    if (focus) {
+      window.addEventListener("keydown", onFocus, { capture: true });
+    }
+    return () => {
+      window.removeEventListener("keydown", onFocus);
+    };
+  }, [focus]);
+  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: `relative z-30 ${calendarMode ? "" : "flex pl-2"}`, children: [
     draggingTask ? /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(import_jsx_runtime11.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Droppable, { id: `delete-task`, data: { type: "delete" }, children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
         Button_default,
         {
           src: "x",
-          className: "!rounded-full h-10 w-10 bg-red-900 mr-2 flex-none"
+          className: `!rounded-full ${calendarMode ? "h-8 w-8 mb-2" : "h-10 w-10 mr-2"} bg-red-900 flex-none`
         }
       ) }),
       draggingTask.dragType === "task" && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Droppable, { id: `move-task`, data: { type: "move" }, children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
         Button_default,
         {
           src: "move-right",
-          className: "!rounded-full h-10 w-10 bg-blue-900 mr-2 flex-none"
+          className: `!rounded-full ${calendarMode ? "h-8 w-8" : "h-10 w-10"} bg-blue-900 flex-none`
         }
       ) })
-    ] }) : /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(import_jsx_runtime11.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
       Button_default,
       {
         ...attributes,
         ...listeners,
+        onMouseDown: () => {
+          window.addEventListener("mouseup", checkForClick);
+        },
         ref: setNodeRef,
-        className: "relative flex-none h-10 w-10 cursor-grab !rounded-full bg-accent child:invert",
+        className: `relative flex-none cursor-grab !rounded-full bg-accent child:invert ${calendarMode ? "h-8 w-8" : "h-10 w-10"}`,
         src: "plus"
       }
-    ),
+    ) }),
     newTaskData && newTask && newTaskMode && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "fixed left-0 top-0 z-40 !mx-0 flex h-full w-full items-center justify-center p-8 space-y-2 ", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(
       "div",
       {
@@ -71425,7 +71940,15 @@ function NewTask({ dragContainer }) {
                   type: newTaskMode
                 }
               }),
-              onKeyDown: (ev) => ev.key === "Enter" && getters.getObsidianAPI().createNewTask(newTask, null, dailyNoteInfo2)
+              onFocus: () => setFocus(true),
+              onBlur: () => setFocus(false),
+              onKeyDown: (ev) => {
+                if (ev.key === "Tab") {
+                  ev.preventDefault();
+                }
+                if (ev.key === "Enter")
+                  getters.getObsidianAPI().createNewTask(newTask, null, dailyNoteInfo2);
+              }
             }
           ),
           /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
@@ -71434,6 +71957,7 @@ function NewTask({ dragContainer }) {
               placeholder: "search files...",
               className: "w-full rounded-icon border border-solid border-faint bg-transparent p-1 font-menu backdrop-blur",
               value: search,
+              ref: inputRef,
               onChange: (ev) => setSearch(ev.target.value),
               onKeyDown: (ev) => {
                 if (ev.key === "Enter") {
@@ -71460,7 +71984,7 @@ function NewTaskHeading({
   newTaskData
 }) {
   const dailyNoteInfo2 = useAppStore((state) => state.dailyNoteInfo);
-  const [container, title] = splitHeading(headingPath);
+  const [myContainer, title] = splitHeading(headingPath);
   const newTask = newTaskData.task;
   const newTaskType = newTaskData.type;
   return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(
@@ -71477,8 +72001,8 @@ function NewTaskHeading({
       },
       className: `flex items-center w-full selectable cursor-pointer rounded-icon px-2 hover:underline ${headingPath.includes("#") ? "text-muted" : "font-bold text-accent"}`,
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "grow", children: title }),
-        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-faint text-xs", children: container })
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "grow mr-2 whitespace-nowrap", children: title.slice(0, 30) + (title.length > 30 ? "..." : "") }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-faint text-xs whitespace-nowrap text-right", children: (myContainer.length > 30 ? "..." : "") + myContainer.slice(Math.max(0, myContainer.length - 30)) })
       ]
     },
     headingPath
@@ -71487,14 +72011,14 @@ function NewTaskHeading({
 
 // src/components/Search.tsx
 var import_lodash13 = __toESM(require_lodash());
-var import_react18 = __toESM(require_react());
+var import_react19 = __toESM(require_react());
 var import_react_dom3 = __toESM(require_react_dom());
 var import_jsx_runtime12 = __toESM(require_jsx_runtime());
 function Search() {
   const tasks = useAppStore((state) => state.tasks);
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const showCompleted = useAppStore((state) => state.settings.showCompleted);
-  const allTasks = (0, import_react18.useMemo)(
+  const allTasks = (0, import_react19.useMemo)(
     () => import_lodash13.default.sortBy(
       import_lodash13.default.values(tasks).filter(
         (task) => showCompleted || task.completed === showingPastDates
@@ -71515,7 +72039,7 @@ function Search() {
     }),
     [tasks]
   );
-  const [search, setSearch] = (0, import_react18.useState)("");
+  const [search, setSearch] = (0, import_react19.useState)("");
   const searchExp = convertSearchToRegExp(search);
   const splitSearch = search.split("");
   const foundTasks = import_lodash13.default.sortBy(
@@ -71538,8 +72062,8 @@ function Search() {
       return notFound * 25 + total;
     }
   );
-  const input = (0, import_react18.useRef)(null);
-  (0, import_react18.useEffect)(() => {
+  const input = (0, import_react19.useRef)(null);
+  (0, import_react19.useEffect)(() => {
     var _a;
     return (_a = input.current) == null ? void 0 : _a.focus();
   }, []);
@@ -71629,7 +72153,7 @@ function App2({ apis }) {
     const dv2 = (0, import_obsidian_dataview2.getAPI)();
     invariant(dv2, "please install Dataview to use Time Ruler.");
     if (!dv2.index.initialized) {
-      app.metadataCache.on("dataview:index-ready", () => {
+      getters.getApp().metadataCache.on("dataview:index-ready", () => {
         reload();
       });
       return;
@@ -71657,11 +72181,11 @@ function App2({ apis }) {
     apis.calendar.loadEvents();
     apis.obsidian.loadTasks("", getters.get("showingPastDates"));
   };
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     reload();
   }, [apis]);
-  const [now3, setNow] = (0, import_react19.useState)(DateTime.now());
-  (0, import_react19.useEffect)(() => {
+  const [now3, setNow] = (0, import_react20.useState)(DateTime.now());
+  (0, import_react20.useEffect)(() => {
     const update = () => {
       setNow(DateTime.now());
     };
@@ -71675,9 +72199,9 @@ function App2({ apis }) {
           negative: true,
           playing: true
         });
-        if (app.isMobile) {
+        if (getters.getApp().isMobile) {
           sounds.timer.play();
-          new import_obsidian5.Notice("Timer complete");
+          new import_obsidian4.Notice("Timer complete");
         } else {
           switch (getters.get("settings").timerEvent) {
             case "notification":
@@ -71685,7 +72209,7 @@ function App2({ apis }) {
               break;
             case "sound":
               sounds.timer.play();
-              new import_obsidian5.Notice("Timer complete");
+              new import_obsidian4.Notice("Timer complete");
               break;
           }
         }
@@ -71697,7 +72221,7 @@ function App2({ apis }) {
       window.clearInterval(timerInterval);
     };
   }, []);
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     const timeout = setTimeout(() => {
       scrollToSection(getToday());
     }, 1e3);
@@ -71707,21 +72231,27 @@ function App2({ apis }) {
   }, []);
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const today = DateTime.fromISO(getToday());
-  const [weeksShownState, setWeeksShown] = (0, import_react19.useState)(1);
+  const [weeksShownState, setWeeksShown] = (0, import_react20.useState)(1);
   const viewMode = useAppStore((state) => state.settings.viewMode);
+  const calendarMode = viewMode === "week";
   const datesShown = weeksShownState * 7 * (showingPastDates ? -1 : 1);
-  (0, import_react19.useEffect)(
-    () => {
-      var _a;
-      return (_a = getters.getObsidianAPI()) == null ? void 0 : _a.loadTasks("", showingPastDates);
-    },
-    [weeksShownState, showingPastDates]
-  );
+  (0, import_react20.useEffect)(() => {
+    if (calendarMode) {
+      setWeeksShown(4);
+    } else {
+      setWeeksShown(1);
+    }
+  }, [calendarMode]);
+  (0, import_react20.useEffect)(() => {
+    var _a;
+    (_a = getters.getObsidianAPI()) == null ? void 0 : _a.loadTasks("", showingPastDates);
+  }, [weeksShownState, showingPastDates]);
   const dayStart = useAppStore((state) => state.settings.dayStartEnd[0]);
+  const showCompleted = useAppStore((state) => state.settings.showCompleted);
   const times = [
     { type: "unscheduled" },
     {
-      startISO: showingPastDates ? toISO(today.startOf("day").plus({ hours: dayStart })) : toISO(now3),
+      startISO: showingPastDates || showCompleted ? toISO(today.startOf("day").plus({ hours: dayStart })) : toISO(now3),
       endISO: showingPastDates ? toISO(now3) : toISO(today.plus({ days: 1, hours: dayStart })),
       type: "minutes",
       dragContainer: "app",
@@ -71737,11 +72267,11 @@ function App2({ apis }) {
   if (showingPastDates)
     times.reverse();
   const searchWithinWeeks = useAppStore((state) => state.searchWithinWeeks);
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     var _a;
     (_a = getters.getObsidianAPI()) == null ? void 0 : _a.loadTasks("", showingPastDates);
   }, [searchWithinWeeks, showingPastDates]);
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     if (showingPastDates && -weeksShownState < searchWithinWeeks[0]) {
       setters.set({
         searchWithinWeeks: [-weeksShownState, searchWithinWeeks[1]]
@@ -71784,7 +72314,7 @@ function App2({ apis }) {
       return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, {});
     switch (activeDrag.dragType) {
       case "task":
-        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Task, { ...activeDrag });
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Task, { ...activeDrag, dragging: true });
       case "task-length":
       case "time":
         return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, {});
@@ -71798,63 +72328,64 @@ function App2({ apis }) {
         return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "h-line p-2 text-accent", children: "due" });
     }
   };
-  const scroller = (0, import_react19.useRef)(null);
-  const [scrollViews, setScrollViews] = (0, import_react19.useState)([-1, 1]);
-  const calendarMode = viewMode === "week";
+  const scroller = (0, import_react20.useRef)(null);
+  const [scrollViews, setScrollViews] = (0, import_react20.useState)([-1, 1]);
   const { childWidth, childClass } = useChildWidth();
   const trueChildWidth = useAppStore((state) => state.childWidth);
   const updateScroll = () => {
     if (!scroller.current)
       return;
     const scrollWidth = scroller.current.getBoundingClientRect().width;
+    const unscheduledWidth = scrollWidth;
     if (scrollWidth === 0)
       return;
-    const scrolledToChild = scroller.current.scrollLeft / (scrollWidth / childWidth);
+    const scrolledToChild = scroller.current.scrollLeft > 0 ? (scroller.current.scrollLeft - unscheduledWidth) / (scrollWidth / childWidth) + 1 : 0;
     const leftLevel = Math.floor(scrolledToChild);
     const rightLevel = Math.ceil(scrolledToChild + childWidth);
     if (leftLevel !== scrollViews[0] || rightLevel !== scrollViews[1]) {
       setScrollViews([leftLevel, rightLevel]);
     }
   };
-  (0, import_react19.useEffect)(updateScroll, [childWidth, calendarMode]);
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(updateScroll, [childWidth, calendarMode]);
+  (0, import_react20.useEffect)(() => {
     updateScroll();
   }, []);
-  (0, import_react19.useEffect)(() => {
-    const childNodes = (0, import_jquery.default)("#time-ruler-times")[0].childNodes;
+  (0, import_react20.useEffect)(() => {
+    var _a;
+    const childNodes = (_a = (0, import_jquery.default)("#time-ruler-times")[0]) == null ? void 0 : _a.childNodes;
+    if (!childNodes)
+      return;
     const firstElement = childNodes.item(
       showingPastDates ? childNodes.length - 2 : 1
     );
     (0, import_jquery.default)("#time-ruler-times").scrollLeft(firstElement.offsetLeft);
   }, [calendarMode, showingPastDates]);
   const sensors = useSensors(
-    ...import_obsidian5.Platform.isMobile ? [
+    ...import_obsidian4.Platform.isMobile ? [
       useSensor(TouchSensor, {
         activationConstraint: {
           delay: 250,
           tolerance: 5
         }
       })
-    ] : [useSensor(PointerSensor), useSensor(MouseSensor)]
+    ] : [
+      useSensor(PointerSensor, {
+        activationConstraint: { delay: 100, tolerance: 50 }
+      }),
+      useSensor(MouseSensor, {
+        activationConstraint: { delay: 100, tolerance: 50 }
+      })
+    ]
   );
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     var _a, _b, _c, _d;
     (_b = (_a = (0, import_jquery.default)("#time-ruler").parent()[0]) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("overflow", "clip", "important");
     (_d = (_c = (0, import_jquery.default)("#time-ruler").parent()[0]) == null ? void 0 : _c.style) == null ? void 0 : _d.setProperty("padding", "4px 8px 8px", "important");
   }, []);
   const borders = useAppStore((state) => state.settings.borders);
   const frameClass = `p-0.5 child:p-1 child:bg-primary child:rounded-icon child:h-full child:w-full ${borders ? "child:border-solid child:border-divider child:border-[1px]" : ""}`;
-  const dayPadding = (time) => {
-    invariant(time.type !== "unscheduled");
-    const startDate = DateTime.fromISO(time.startISO);
-    return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, { children: import_lodash14.default.range(startDate.weekday < 4 ? 1 : 5, startDate.weekday).map(
-      (day) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: `${frameClass}`, children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "font-menu pl-8 text-faint flex-none", children: now3.startOf("week").plus({ days: day - 1 }).toFormat("EEE d") }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "grow h-0 w-full rounded-icon bg-code" })
-      ] }) }, day)
-    ) });
-  };
   const searchStatus = useAppStore((state) => state.searchStatus);
+  const dragOffset = useAppStore((state) => state.dragOffset);
   return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(import_jsx_runtime13.Fragment, { children: [
     /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       DndContext,
@@ -71886,7 +72417,8 @@ function App2({ apis }) {
                   dropAnimation: null,
                   className: "backdrop-blur opacity-50",
                   style: {
-                    width: (activeDrag == null ? void 0 : activeDrag.dragType) === "due" ? void 0 : `calc((100% - 48px) / ${trueChildWidth})`
+                    width: (activeDrag == null ? void 0 : activeDrag.dragType) === "due" ? void 0 : `calc((100% - 48px) / ${trueChildWidth})`,
+                    marginLeft: (activeDrag == null ? void 0 : activeDrag.dragType) === "task" ? `${Math.floor(dragOffset)}px` : ""
                   },
                   children: getDragElement()
                 }
@@ -71907,23 +72439,22 @@ function App2({ apis }) {
               /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                 "div",
                 {
-                  className: `flex h-full w-full snap-mandatory rounded-icon text-base child:flex-none child:snap-start ${childClass} ${calendarMode ? "flex-wrap overflow-y-auto overflow-x-hidden snap-y justify-center child:h-1/2" : "snap-x !overflow-x-auto overflow-y-clip child:h-full"}`,
+                  className: `flex h-full w-full snap-mandatory rounded-icon text-base child:flex-none child:snap-start ${childClass} !overflow-x-auto overflow-y-clip child:h-full snap-x`,
                   id: "time-ruler-times",
                   "data-auto-scroll": calendarMode ? "y" : "x",
                   ref: scroller,
                   onScroll: updateScroll,
                   children: times.map((time, i) => {
-                    const isShowing = calendarMode || i >= scrollViews[0] && i <= scrollViews[1];
+                    const isShowing = i >= scrollViews[0] && i <= scrollViews[1];
                     return time.type === "unscheduled" ? /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                       "div",
                       {
                         id: "time-ruler-unscheduled",
-                        className: `${frameClass} ${calendarMode ? "!w-full" : ""}`,
+                        className: `${frameClass} !w-full flex-none`,
                         children: isShowing && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Unscheduled_default, {})
                       },
                       "unscheduled"
-                    ) : /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(import_react19.Fragment, { children: [
-                      calendarMode && i === (showingPastDates ? 0 : 1) && childWidth > 1 && dayPadding(time),
+                    ) : /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(import_react20.Fragment, { children: [
                       /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                         "div",
                         {
@@ -71956,7 +72487,8 @@ var Buttons = ({
 }) => {
   const now3 = DateTime.now();
   const viewMode = useAppStore((state) => state.settings.viewMode);
-  (0, import_react19.useEffect)(() => {
+  const calendarMode = viewMode === "week";
+  (0, import_react20.useEffect)(() => {
     var _a;
     (_a = (0, import_jquery.default)(`#time-ruler-${getToday()}`)[0]) == null ? void 0 : _a.scrollIntoView();
   }, [viewMode, showingPastDates]);
@@ -71964,21 +72496,21 @@ var Buttons = ({
     /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Button_default,
       {
-        onClick: () => setWeeksShown(weeksShownState + 1),
+        onClick: () => setWeeksShown(weeksShownState + (calendarMode ? 4 : 1)),
         src: "chevron-right"
       }
     ),
-    weeksShownState > 0 && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+    weeksShownState > (calendarMode ? 4 : 0) && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Button_default,
       {
         className: `force-hover rounded-icon`,
-        onClick: () => setWeeksShown(weeksShownState - 1),
+        onClick: () => setWeeksShown(weeksShownState - (calendarMode ? 4 : 1)),
         src: "chevron-left"
       }
     )
   ] });
-  const [showingModal, setShowingModal] = (0, import_react19.useState)(false);
-  const modalFrame = (0, import_react19.useRef)(null);
+  const [showingModal, setShowingModal] = (0, import_react20.useState)(false);
+  const modalFrame = (0, import_react20.useRef)(null);
   const checkShowing = (ev) => {
     invariant(modalFrame.current);
     const els = document.elementsFromPoint(ev.clientX, ev.clientY);
@@ -71986,7 +72518,7 @@ var Buttons = ({
       setShowingModal(false);
     }
   };
-  (0, import_react19.useEffect)(() => {
+  (0, import_react20.useEffect)(() => {
     window.removeEventListener("click", checkShowing);
     if (showingModal) {
       window.addEventListener("click", checkShowing);
@@ -72013,7 +72545,7 @@ var Buttons = ({
             onClick: () => scrollToSection(
               time.type === "unscheduled" ? "unscheduled" : start
             ),
-            children: time.type === "unscheduled" ? "Unscheduled" : start === today ? "Today" : start === yesterday ? "Yesterday" : start === tomorrow ? "Tomorrow" : thisDate.toFormat("EEE MMM d")
+            children: time.type === "unscheduled" ? "None" : thisDate.toFormat("EEE MMM d")
           }
         )
       },
@@ -72021,138 +72553,150 @@ var Buttons = ({
     );
   };
   const hideTimes = useAppStore((state) => state.settings.hideTimes);
+  const childWidth = useAppStore((state) => state.childWidth);
   return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: `flex w-full items-center space-x-1 rounded-icon`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "group relative", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-        Button_default,
-        {
-          src: "more-horizontal",
-          onClick: (ev) => {
-            setShowingModal(!showingModal);
-            ev.stopPropagation();
-          }
-        }
-      ),
-      showingModal && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-        "div",
-        {
-          className: "tr-menu",
-          ref: modalFrame,
-          onClick: () => setShowingModal(false),
-          children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
+      "div",
+      {
+        className: `${calendarMode ? "" : "flex justify-center h-full space-x-1 items-center"}`,
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "group relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+              Button_default,
+              {
+                src: "more-horizontal",
+                onClick: (ev) => {
+                  setShowingModal(!showingModal);
+                  ev.stopPropagation();
+                }
+              }
+            ),
+            showingModal && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
               "div",
               {
-                className: "clickable-icon w-full",
-                onClick: () => {
-                  setters.set({ showingPastDates: !showingPastDates });
-                },
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-                    Logo,
+                className: "tr-menu",
+                ref: modalFrame,
+                onClick: () => setShowingModal(false),
+                children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
+                    "div",
                     {
-                      src: showingPastDates ? "chevron-right" : "chevron-left",
-                      className: "w-6 flex-none"
+                      className: "clickable-icon w-full",
+                      onClick: () => {
+                        setters.set({ showingPastDates: !showingPastDates });
+                      },
+                      children: [
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                          Logo,
+                          {
+                            src: showingPastDates ? "chevron-right" : "chevron-left",
+                            className: "w-6 flex-none"
+                          }
+                        ),
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: showingPastDates ? "Future" : "Past" })
+                      ]
                     }
                   ),
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: showingPastDates ? "Future" : "Past" })
-                ]
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
-              "div",
-              {
-                className: "clickable-icon w-full",
-                onClick: async () => {
-                  setupStore();
-                },
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "rotate-cw", className: "w-6 flex-none" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: "Reload" })
-                ]
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
-              "div",
-              {
-                className: "clickable-icon w-full",
-                onClick: () => {
-                  getters.getObsidianAPI().setSetting({
-                    hideTimes: !hideTimes
-                  });
-                },
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "kanban", className: "w-6 flex-none rotate-90" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("span", { className: "whitespace-nowrap", children: [
-                    hideTimes ? "Show" : "Hide",
-                    " Times"
-                  ] })
-                ]
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Group By" }),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
-              ["path", "Path", "folder-tree"],
-              ["priority", "Priority", "alert-circle"],
-              ["hybrid", "Hybrid", "arrow-down-narrow-wide"],
-              [false, "None", "x"]
-            ].map(
-              ([groupBy, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-                  Button_default,
-                  {
-                    src,
-                    title,
-                    className: `${app.isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
-                    onClick: () => {
-                      getters.getObsidianAPI().setSetting({
-                        groupBy
-                      });
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
+                    "div",
+                    {
+                      className: "clickable-icon w-full",
+                      onClick: async () => {
+                        setupStore();
+                      },
+                      children: [
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "rotate-cw", className: "w-6 flex-none" }),
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: "Reload" })
+                      ]
                     }
-                  }
-                ),
-                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
-              ] }, title)
-            ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Layout" }),
-            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
-              ["hour", "Hours", "square"],
-              ["day", "Days", "gallery-horizontal"],
-              ["week", "Weeks", "layout-grid"]
-            ].map(
-              ([viewMode2, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-                  Button_default,
-                  {
-                    src,
-                    title,
-                    className: `${app.isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
-                    onClick: () => {
-                      getters.getObsidianAPI().setSetting({
-                        viewMode: viewMode2
-                      });
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
+                    "div",
+                    {
+                      className: "clickable-icon w-full",
+                      onClick: () => {
+                        getters.getObsidianAPI().setSetting({
+                          hideTimes: !hideTimes
+                        });
+                      },
+                      children: [
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "kanban", className: "w-6 flex-none rotate-90" }),
+                        /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("span", { className: "whitespace-nowrap", children: [
+                          hideTimes ? "Show" : "Hide",
+                          " Times"
+                        ] })
+                      ]
                     }
-                  }
-                ),
-                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
-              ] }, title)
-            ) })
-          ] })
-        }
-      )
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-      Button_default,
-      {
-        src: "search",
-        onClick: () => setters.set({ searchStatus: true })
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Group By" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
+                    ["path", "Path", "folder-tree"],
+                    ["priority", "Priority", "alert-circle"],
+                    ["hybrid", "Hybrid", "arrow-down-narrow-wide"],
+                    ["tags", "Tags", "hash"],
+                    [false, "None", "x"]
+                  ].map(
+                    ([groupBy, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                        Button_default,
+                        {
+                          src,
+                          title,
+                          className: `${getters.getApp().isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
+                          onClick: () => {
+                            getters.getObsidianAPI().setSetting({
+                              groupBy
+                            });
+                          }
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
+                    ] }, title)
+                  ) }),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Layout" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
+                    ["hour", "Hours", "square"],
+                    ["day", "Days", "gallery-horizontal"],
+                    ["week", "Weeks", "layout-grid"]
+                  ].map(
+                    ([viewMode2, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                        Button_default,
+                        {
+                          src,
+                          title,
+                          className: `${getters.getApp().isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
+                          onClick: () => {
+                            getters.getObsidianAPI().setSetting({
+                              viewMode: viewMode2
+                            });
+                          }
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
+                    ] }, title)
+                  ) })
+                ] })
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+            Button_default,
+            {
+              src: "search",
+              className: `${calendarMode ? "mb-2" : ""}`,
+              onClick: () => setters.set({ searchStatus: true })
+            }
+          ),
+          calendarMode && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(NewTask, { dragContainer: "buttons" })
+        ]
       }
     ),
     /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
       "div",
       {
-        className: `no-scrollbar flex w-full snap-mandatory rounded-icon pb-0.5 child:snap-start snap-x items-center space-x-2 overflow-x-auto`,
-        "data-auto-scroll": "x",
+        className: `no-scrollbar flex w-full snap-mandatory rounded-icon pb-0.5 child:snap-start overflow-x-auto ${calendarMode ? `overflow-y-auto snap-y flex-wrap h-[152px] ${childWidth > 1 ? "*:w-[14.2%] *:!justify-start" : ""}` : "overflow-x-auto snap-x space-x-2 items-center"}`,
+        "data-auto-scroll": calendarMode ? "y" : "x",
         children: [
           times.map((time, i) => {
             return renderButton(time, i);
@@ -72161,16 +72705,16 @@ var Buttons = ({
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(NewTask, { dragContainer: "buttons" })
+    !calendarMode && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(NewTask, { dragContainer: "buttons" })
   ] }) });
 };
 
 // src/services/calendarApi.ts
 var import_ical = __toESM(require_ical2());
 var import_lodash15 = __toESM(require_lodash());
-var import_obsidian6 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 var reportedOffline = false;
-var CalendarAPI = class extends import_obsidian6.Component {
+var CalendarAPI = class extends import_obsidian5.Component {
   constructor(settings, removeCalendar) {
     super();
     this.settings = settings;
@@ -72196,7 +72740,7 @@ var CalendarAPI = class extends import_obsidian6.Component {
     const calendarLoads = this.settings.calendars.map(async (calendar) => {
       var _a, _b, _c, _d;
       try {
-        const data = await (0, import_obsidian6.request)(calendar);
+        const data = await (0, import_obsidian5.request)(calendar);
         const icsEvents = import_ical.default.parseICS(data);
         const calendarName = (_b = (_a = data.match(/CALNAME:(.*)/)) == null ? void 0 : _a[1]) != null ? _b : "Default";
         for (let [id, event] of import_lodash15.default.entries(icsEvents)) {
@@ -72207,9 +72751,17 @@ var CalendarAPI = class extends import_obsidian6.Component {
               dateBounds2[0].toJSDate(),
               dateBounds2[1].toJSDate()
             );
+            if (dates.length > 0) {
+              const timeDifference = event.start.getTimezoneOffset() - dates[0].getTimezoneOffset();
+              dates.forEach((x) => {
+                x.setTime(x.getTime() - timeDifference * 60 * 1e3);
+              });
+            }
             if (event.recurrences != void 0) {
               for (var r in event.recurrences) {
-                const dateTime = DateTime.fromJSDate(new Date(r));
+                const dateTime = DateTime.fromJSDate(new Date(r)).setZone(
+                  "local"
+                );
                 if (dateTime < dateBounds2[1] && dateTime >= dateBounds2[0]) {
                   dates.push(new Date(r));
                 }
@@ -72233,8 +72785,8 @@ var CalendarAPI = class extends import_obsidian6.Component {
                 start = DateTime.fromJSDate(date).setZone("local");
                 end = start.plus({ milliseconds: duration });
               }
-              const startString = event.start["dateOnly"] ? start.toISODate() : toISO(start);
-              const endString = event.start["dateOnly"] ? end.toISODate() : toISO(end);
+              const startString = event.start["dateOnly"] ? start.toISODate() : toISO(start.setZone("local"));
+              const endString = event.start["dateOnly"] ? end.toISODate() : toISO(end.setZone("local"));
               const thisId = `${id}-${startString}`;
               const props = {
                 id: thisId,
@@ -72281,7 +72833,7 @@ var CalendarAPI = class extends import_obsidian6.Component {
       }
       if (offline && !reportedOffline) {
         reportedOffline = true;
-        new import_obsidian6.Notice("Time Ruler: calendars offline.");
+        new import_obsidian5.Notice("Time Ruler: calendars offline.");
       }
     });
     await Promise.all(calendarLoads);
@@ -72292,7 +72844,7 @@ var CalendarAPI = class extends import_obsidian6.Component {
 // src/index.tsx
 var import_jsx_runtime14 = __toESM(require_jsx_runtime());
 var TIME_RULER_VIEW = "time-ruler-view";
-var TimeRulerView = class extends import_obsidian7.ItemView {
+var TimeRulerView = class extends import_obsidian6.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -72348,8 +72900,8 @@ var TimeRulerView = class extends import_obsidian7.ItemView {
 // src/plugin/SettingsTab.tsx
 var import_jquery2 = __toESM(require_jquery());
 var import_lodash17 = __toESM(require_lodash());
-var import_obsidian8 = require("obsidian");
-var import_react20 = __toESM(require_react());
+var import_obsidian7 = require("obsidian");
+var import_react21 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
 var import_jsx_runtime15 = __toESM(require_jsx_runtime());
 var WEBCAL = "webcal";
@@ -72358,10 +72910,10 @@ function Calendars({
   names,
   updateCalendars
 }) {
-  (0, import_react20.useEffect)(() => {
-    (0, import_jquery2.default)(frameRef.current).find("button").each((_i, el) => (0, import_obsidian8.setIcon)(el, "x"));
+  (0, import_react21.useEffect)(() => {
+    (0, import_jquery2.default)(frameRef.current).find("button").each((_i, el) => (0, import_obsidian7.setIcon)(el, "x"));
   });
-  const frameRef = (0, import_react20.useRef)(null);
+  const frameRef = (0, import_react21.useRef)(null);
   return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { ref: frameRef, style: { paddingBottom: "8px" }, children: plugin.settings.calendars.map((calendar) => /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(
     "div",
     {
@@ -72374,7 +72926,10 @@ function Calendars({
             onClick: () => {
               if (!confirm("Remove this calendar?"))
                 return;
-              import_lodash17.default.pull(plugin.settings.calendars, calendar);
+              plugin.settings.calendars = import_lodash17.default.pull(
+                [...plugin.settings.calendars],
+                calendar
+              );
               plugin.saveSettings();
               updateCalendars();
             },
@@ -72387,8 +72942,8 @@ function Calendars({
     calendar
   )) });
 }
-var SettingsTab = class extends import_obsidian8.PluginSettingTab {
-  constructor(plugin) {
+var SettingsTab = class extends import_obsidian7.PluginSettingTab {
+  constructor(plugin, app) {
     super(app, plugin);
     this.plugin = plugin;
     this.names = {};
@@ -72407,17 +72962,17 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
   }
   async addCalendarName(calendar) {
     var _a, _b;
-    const data = await (0, import_obsidian8.request)(calendar);
+    const data = await (0, import_obsidian7.request)(calendar);
     const name = (_b = (_a = data.match(/CALNAME:(.*)/)) == null ? void 0 : _a[1]) != null ? _b : "Default";
     this.names[calendar] = name;
   }
   async display() {
     let { containerEl } = this;
     containerEl.empty();
-    new import_obsidian8.Setting(containerEl).setDesc(
+    new import_obsidian7.Setting(containerEl).setDesc(
       "Reload the Time Ruler view for changes to take effect."
     );
-    const format = new import_obsidian8.Setting(containerEl).setName("Preferred Field Format").setDesc(
+    const format = new import_obsidian7.Setting(containerEl).setName("Preferred Field Format").setDesc(
       "Choose which style of inline fields to use as a default (parses scheduled date/time, due, priority, completion, reminder, and start)."
     );
     format.addDropdown((dropdown) => {
@@ -72433,14 +72988,14 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Muted").setDesc("Turn off playing sounds on task completion.").addToggle((toggle) => {
+    new import_obsidian7.Setting(containerEl).setName("Muted").setDesc("Turn off playing sounds on task completion.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.muted);
       toggle.onChange((value) => {
         this.plugin.settings.muted = value;
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Timer Event").setDesc("Toggle the event triggered on timer end.").addDropdown((dropdown) => {
+    new import_obsidian7.Setting(containerEl).setName("Timer Event").setDesc("Toggle the event triggered on timer end.").addDropdown((dropdown) => {
       dropdown.addOptions({
         notification: "Notification",
         sound: "Sound"
@@ -72451,14 +73006,14 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Borders").setDesc("Toggle borders around days.").addToggle((toggle) => {
+    new import_obsidian7.Setting(containerEl).setName("Borders").setDesc("Toggle borders around days.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.borders);
       toggle.onChange((value) => {
         this.plugin.settings.borders = value;
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("24 Hour Format").setDesc(
+    new import_obsidian7.Setting(containerEl).setName("24 Hour Format").setDesc(
       "Toggle between AM/PM hours and 24-hour format in the Time Ruler."
     ).addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.twentyFourHourFormat).onChange((value) => {
@@ -72466,7 +73021,7 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    const dayStartEnd = new import_obsidian8.Setting(containerEl).setName("Day Start & End").setDesc("Choose the boundaries of the Time Ruler hour tick-marks.");
+    const dayStartEnd = new import_obsidian7.Setting(containerEl).setName("Day Start & End").setDesc("Choose the boundaries of the Time Ruler hour tick-marks.");
     const hourStart = createSpan();
     hourStart.setText("start");
     dayStartEnd.controlEl.appendChild(hourStart);
@@ -72499,7 +73054,7 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Extend Blocks to Next").setDesc(
+    new import_obsidian7.Setting(containerEl).setName("Extend Blocks to Next").setDesc(
       "Extend blocks without defined length to the start of the next block."
     ).addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.extendBlocks).onChange((value) => {
@@ -72507,13 +73062,13 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       })
     );
-    new import_obsidian8.Setting(containerEl).setName("Show Unscheduled Subtasks").setDesc("Show subtasks without a set scheduled date.").addToggle(
+    new import_obsidian7.Setting(containerEl).setName("Show Unscheduled Subtasks").setDesc("Show subtasks without a set scheduled date.").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.scheduledSubtasks).onChange((value) => {
         this.plugin.settings.scheduledSubtasks = value;
         this.plugin.saveSettings();
       })
     );
-    new import_obsidian8.Setting(containerEl).setName("Custom Filter").setDesc(
+    new import_obsidian7.Setting(containerEl).setName("Custom Filter").setDesc(
       `Enable a custom Dataview filter to filter tasks (at the document level) which is passed to dv.pages('<custom filter>')`
     ).addText((text) => {
       text.setPlaceholder(`dv.pages('<custom filter>')`).setValue(this.plugin.settings.search).onChange((value) => {
@@ -72521,7 +73076,7 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Filter Function").setDesc(
+    new import_obsidian7.Setting(containerEl).setName("Filter Function").setDesc(
       `Provide a filter function that takes a task DataArray from dv.pages()['file']['tasks'] and returns the filtered array.`
     ).addTextArea((text) => {
       text.setPlaceholder(
@@ -72531,13 +73086,13 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       }).inputEl.style.setProperty("width", "100%");
     }).controlEl.style.setProperty("width", "100%");
-    new import_obsidian8.Setting(containerEl).setName("Task Filter").setDesc("Only include tasks which match the following search.").addText(
+    new import_obsidian7.Setting(containerEl).setName("Task Filter").setDesc("Only include tasks which match the following search.").addText(
       (text) => text.setPlaceholder("Match text in tasks").setValue(this.plugin.settings.taskSearch).onChange((value) => {
         this.plugin.settings.taskSearch = value;
         this.plugin.saveSettings();
       })
     );
-    const customStatuses2 = new import_obsidian8.Setting(containerEl).setName("Custom Statuses").setDesc(
+    const customStatuses2 = new import_obsidian7.Setting(containerEl).setName("Custom Statuses").setDesc(
       "Include only, or exclude certain, characters between the double brackets [ ] of a task. Write characters with no separation."
     );
     customStatuses2.controlEl.appendChild((0, import_jquery2.default)(
@@ -72557,20 +73112,26 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         this.plugin.saveSettings();
       });
     });
-    new import_obsidian8.Setting(containerEl).setName("Show Completed").setDesc("Show completed tasks").addToggle(
+    new import_obsidian7.Setting(containerEl).setName("Show Completed").setDesc("Show completed tasks").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.showCompleted).onChange((value) => {
         this.plugin.settings.showCompleted = value;
         this.plugin.saveSettings();
       })
     );
-    new import_obsidian8.Setting(containerEl).setName("Add Tasks to End").setDesc("Toggle adding new tasks to the start or end of headings/files.").addToggle(
+    new import_obsidian7.Setting(containerEl).setName("Add Tasks to End").setDesc("Toggle adding new tasks to the start or end of headings/files.").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.addTaskToEnd).onChange((value) => {
         this.plugin.settings.addTaskToEnd = value;
         this.plugin.saveSettings();
       })
     );
+    new import_obsidian7.Setting(containerEl).setName("Open in Main Tab").setDesc("Toggle opening Time Ruler in the main view vs. the sidebar.").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.openInMain).onChange((value) => {
+        this.plugin.settings.openInMain = value;
+        this.plugin.saveSettings();
+      })
+    );
     let newCalendarLink;
-    new import_obsidian8.Setting(containerEl).setName("Calendars").setDesc("View readonly calendars in Time Ruler.").addText((text) => {
+    new import_obsidian7.Setting(containerEl).setName("Calendars").setDesc("View readonly calendars in Time Ruler.").addText((text) => {
       newCalendarLink = text;
       text.inputEl.style.width = "100%";
       text.setPlaceholder("Calendar Share Link (iCal format)");
@@ -72583,15 +73144,14 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         }
         try {
           await this.addCalendarName(newValue);
-          this.plugin.settings.calendars.push(newValue);
-          this.plugin.settings.calendars = import_lodash17.default.uniq(
-            this.plugin.settings.calendars
-          );
+          const newCalendars = [...this.plugin.settings.calendars];
+          newCalendars.push(newValue);
+          this.plugin.settings.calendars = import_lodash17.default.uniq(newCalendars);
           this.plugin.saveSettings();
           newCalendarLink.setValue("");
           this.updateCalendars();
         } catch (err) {
-          new import_obsidian8.Notice("Time Ruler: Error creating calendar - " + err.message);
+          new import_obsidian7.Notice("Time Ruler: Error creating calendar - " + err.message);
         }
       });
     });
@@ -72630,20 +73190,21 @@ var DEFAULT_SETTINGS = {
   hideTimes: false,
   borders: true,
   viewMode: "day",
-  scheduledSubtasks: true
+  scheduledSubtasks: true,
+  openInMain: false
 };
-var TimeRulerPlugin = class extends import_obsidian9.Plugin {
-  constructor(app2, manifest) {
-    super(app2, manifest);
+var TimeRulerPlugin = class extends import_obsidian8.Plugin {
+  constructor(app, manifest) {
+    super(app, manifest);
     this.saveSettings = this.saveSettings.bind(this);
   }
   async onload() {
     await this.loadSettings();
-    this.addSettingTab(new SettingsTab(this));
+    this.addSettingTab(new SettingsTab(this, this.app));
     this.registerView(TIME_RULER_VIEW, (leaf) => new TimeRulerView(leaf, this));
     this.addCommand({
       icon: "ruler",
-      callback: () => this.activateView(),
+      callback: () => this.activateView(this.settings.openInMain),
       id: "activate-view",
       name: "Open Time Ruler"
     });
@@ -72653,7 +73214,15 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
       id: "activate-view-main",
       name: "Open Time Ruler in Main Tab"
     });
-    this.addRibbonIcon("ruler", "Open Time Ruler", () => this.activateView());
+    this.addCommand({
+      icon: "ruler",
+      callback: () => this.activateView(false),
+      id: "activate-view-sidebar",
+      name: "Open Time Ruler in Sidebar"
+    });
+    this.addRibbonIcon("ruler", "Open Time Ruler", () => {
+      this.activateView(this.settings.openInMain);
+    });
     this.registerEvent(
       this.app.workspace.on(
         "editor-menu",
@@ -72682,7 +73251,7 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
       return;
     const line = context.editor.getLine(cursor.line);
     if (!line || !/ *- \[ \] /.test(line)) {
-      new import_obsidian9.Notice("cursor is not on task");
+      new import_obsidian8.Notice("cursor is not on task");
       return;
     }
     const leaf = (_a = this.app.workspace.getLeavesOfType(TIME_RULER_VIEW)) == null ? void 0 : _a[0];
@@ -72696,7 +73265,7 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
   openMenu(menu, context) {
     var _a;
     const cursor = (_a = context.editor) == null ? void 0 : _a.getCursor();
-    if (!cursor || !(context instanceof import_obsidian9.MarkdownView))
+    if (!cursor || !(context instanceof import_obsidian8.MarkdownView))
       return;
     const line = context.editor.getLine(cursor.line);
     if (!line || !/ *- \[ \] /.test(line))
@@ -72704,12 +73273,26 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
     menu.addItem(
       (item) => item.setIcon("ruler").setTitle("Reveal in Time Ruler").onClick(() => this.jumpToTask(context))
     );
-    menu.addItem(
-      (item) => item.setIcon("ruler").setTitle("Do now").onClick(() => this.editTask(context, cursor.line, "now"))
-    );
-    menu.addItem(
-      (item) => item.setIcon("ruler").setTitle("Unschedule").onClick(() => this.editTask(context, cursor.line, "unschedule"))
-    );
+    menu.addItem((menu2) => {
+      const submenu = menu2.setTitle("Do").setIcon("ruler").setSubmenu();
+      submenu.addItem(
+        (item) => item.setTitle("Today").onClick(() => this.editTask(context, cursor.line, "today"))
+      );
+      submenu.addItem(
+        (item) => item.setTitle("Tomorrow").onClick(() => this.editTask(context, cursor.line, "tomorrow"))
+      );
+      submenu.addItem(
+        (item) => item.setTitle("Now").onClick(() => this.editTask(context, cursor.line, "now"))
+      );
+      submenu.addItem(
+        (item) => item.setTitle("Next week").onClick(() => this.editTask(context, cursor.line, "next-week"))
+      );
+      if (line.match(new RegExp(ISO_MATCH))) {
+        submenu.addItem(
+          (item) => item.setTitle("Unschedule").onClick(() => this.editTask(context, cursor.line, "unschedule"))
+        );
+      }
+    });
   }
   async editTask(context, line, modification) {
     invariant(context.file);
@@ -72719,8 +73302,18 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
       case "now":
         scheduled = toISO(roundMinutes(DateTime.now()));
         break;
+      case "today":
+        scheduled = toISO(roundMinutes(DateTime.now()), true);
+        break;
+      case "tomorrow":
+        scheduled = toISO(roundMinutes(DateTime.now().plus({ day: 1 })), true);
+        break;
+      case "next-week":
+        scheduled = toISO(roundMinutes(DateTime.now().plus({ week: 1 })), true);
+        break;
       case "unschedule":
         scheduled = "";
+        break;
     }
     setters.patchTasks([id], { scheduled });
   }
@@ -72731,7 +73324,7 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
         setTimeout(() => resolve((0, import_obsidian_dataview3.getAPI)(this.app)), 350);
       });
       if (!dataViewPlugin) {
-        new import_obsidian9.Notice("Please enable the DataView plugin for Time Ruler to work.");
+        new import_obsidian8.Notice("Please enable the DataView plugin for Time Ruler to work.");
         return;
       }
     }
@@ -72826,7 +73419,7 @@ use-sync-external-store/cjs/use-sync-external-store-shim.development.js:
    * @license React
    * use-sync-external-store-shim.development.js
    *
-   * Copyright (c) Facebook, Inc. and its affiliates.
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
    *
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
@@ -72837,7 +73430,7 @@ use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.developme
    * @license React
    * use-sync-external-store-shim/with-selector.development.js
    *
-   * Copyright (c) Facebook, Inc. and its affiliates.
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
    *
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
@@ -72887,3 +73480,6 @@ rrule/dist/es5/rrule.js:
   *
   *)
 */
+
+
+/* nosourcemap */

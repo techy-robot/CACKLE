@@ -25415,12 +25415,12 @@ var FileClassFolderButton = class extends import_obsidian80.Component {
     );
   }
   addButton() {
-    var _a, _b, _c;
+    var _a, _b, _c, _d;
     const fCFolderPath = (_a = this.plugin.settings.classFilesPath) == null ? void 0 : _a.replace(/\/$/, "");
     const explorerView = (_c = (_b = this.plugin.app.workspace.getLeavesOfType("file-explorer")) == null ? void 0 : _b[0]) == null ? void 0 : _c.view;
     if (!explorerView || !fCFolderPath)
       return;
-    const fCFolder = explorerView.fileItems[fCFolderPath];
+    const fCFolder = (_d = explorerView == null ? void 0 : explorerView.fileItems) == null ? void 0 : _d[fCFolderPath];
     if (!fCFolder)
       return;
     const container = fCFolder.selfEl;
@@ -25855,3 +25855,5 @@ Install and enable dataview and dataviewJS for extra Metadata Menu features
     FileClassFolderButton.removeBtn(this);
   }
 };
+
+/* nosourcemap */
