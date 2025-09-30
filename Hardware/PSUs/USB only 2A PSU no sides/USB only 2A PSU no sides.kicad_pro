@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 0.9
+          "height": 0.83,
+          "width": 0.42
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|117727145|120955000|1ac93a02-bc3b-4203-948d-1b63a892e13b|b87fc456-48aa-44af-8018-44eb7a1243bc",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -198,6 +193,7 @@
         0.2,
         0.28,
         0.5,
+        0.8,
         1.0,
         2.8
       ],
@@ -497,9 +493,9 @@
       {
         "bus_width": 12,
         "clearance": 0.16,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.16,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.16,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -516,7 +512,6 @@
         "bus_width": 18,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -534,7 +529,6 @@
         "bus_width": 24,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -552,7 +546,6 @@
         "bus_width": 24,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -570,7 +563,6 @@
         "bus_width": 12,
         "clearance": 0.16,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -588,7 +580,6 @@
         "bus_width": 18,
         "clearance": 0.16,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -654,10 +645,14 @@
         "High Current"
       ],
       "/Connectors/USBPWR": [
+        "High Current",
         "USB-C pwr"
       ],
       "/MCU/3.3v": [
         "Logic Pwr"
+      ],
+      "/PSU/5V Out": [
+        "High Current"
       ],
       "/PSU/Always On PWR": [
         "Logic Pwr"
@@ -750,6 +745,9 @@
         "Logic Power"
       ],
       "Net-(U4-VIN)": [
+        "Logic Pwr"
+      ],
+      "Net-(U7-EN)": [
         "Logic Pwr"
       ]
     },
