@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 2,
-    "active_layer_preset": "All Layers",
+    "active_layer": 0,
+    "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -73,8 +73,6 @@
       false,
       false,
       false,
-      false,
-      false,
       false
     ],
     "col_order": [
@@ -87,13 +85,9 @@
       6,
       7,
       8,
-      9,
-      10,
-      11
+      9
     ],
     "col_widths": [
-      0,
-      0,
       0,
       0,
       0,
@@ -122,14 +116,26 @@
     "files": [
       {
         "name": "USB only 2A PSU no sides.kicad_sch",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
           "pos_x": 367,
-          "pos_y": 175,
+          "pos_y": 207,
           "size_x": 768,
           "size_y": 690
+        }
+      },
+      {
+        "name": "USB only 2A PSU no sides.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 32,
+          "size_x": 1280,
+          "size_y": 529
         }
       }
     ]
