@@ -2507,6 +2507,42 @@
 		(at 142.24 85.09)
 		(uuid "b9c3a531-ad28-484c-a43a-02dd87b901e9")
 	)
+	(bus_entry
+		(at 238.76 121.92)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f0e9160-fba1-42bd-bf16-53759f6fbec2")
+	)
+	(bus_entry
+		(at 256.54 64.77)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae038562-28cd-40ca-943f-3810f6b17cb8")
+	)
+	(bus_entry
+		(at 238.76 124.46)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf0bc3c8-6712-4672-89f2-877f3dd7477e")
+	)
+	(bus_entry
+		(at 256.54 62.23)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51ffc29-0a8e-413d-8fbb-36e1ce7e7b4e")
+	)
 	(polyline
 		(pts
 			(xy 67.31 130.81) (xy 77.47 120.65)
@@ -2547,6 +2583,26 @@
 		)
 		(uuid "1c649372-bc39-479b-b651-fe97c74fab95")
 	)
+	(bus
+		(pts
+			(xy 259.08 64.77) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d34de6d-1d5a-48d8-a7fb-5dab90380ed3")
+	)
+	(wire
+		(pts
+			(xy 236.22 124.46) (xy 238.76 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2091bcc4-ca2a-4517-b266-ee69a0a92a18")
+	)
 	(wire
 		(pts
 			(xy 160.02 76.2) (xy 160.02 77.47)
@@ -2567,6 +2623,16 @@
 		)
 		(uuid "236f1407-aa46-4673-8d2e-3a8d27c45e95")
 	)
+	(bus
+		(pts
+			(xy 259.08 67.31) (xy 259.08 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2483268f-a98f-4657-9e40-faf534e65321")
+	)
 	(wire
 		(pts
 			(xy 165.1 69.85) (xy 165.1 76.2)
@@ -2586,6 +2652,16 @@
 			(type default)
 		)
 		(uuid "28445652-5ca7-4528-8c4b-dcb7146d4c20")
+	)
+	(bus
+		(pts
+			(xy 241.3 124.46) (xy 241.3 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae88422-7226-4c6d-ae24-f2da2df7688d")
 	)
 	(wire
 		(pts
@@ -2777,6 +2853,36 @@
 		)
 		(uuid "8e06ea9b-0127-429b-a78d-f13a8b96af86")
 	)
+	(bus
+		(pts
+			(xy 241.3 127) (xy 241.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93339d94-75ed-4c8c-9150-5af1ae41642c")
+	)
+	(wire
+		(pts
+			(xy 236.22 121.92) (xy 238.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "962ec664-7ef1-4d7c-a51d-af9653f6b86e")
+	)
+	(wire
+		(pts
+			(xy 247.65 62.23) (xy 256.54 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc74c7f-da9e-4ca2-882f-c178f32d03d0")
+	)
 	(wire
 		(pts
 			(xy 160.02 66.04) (xy 160.02 69.85)
@@ -2826,6 +2932,16 @@
 			(type default)
 		)
 		(uuid "b93c8a72-1a2d-4d11-831d-842b6483530b")
+	)
+	(wire
+		(pts
+			(xy 247.65 64.77) (xy 256.54 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc29f6ba-9bc3-4acf-8804-9c80b34b5a0b")
 	)
 	(wire
 		(pts
@@ -2967,6 +3083,16 @@
 		)
 		(uuid "ff3eda7f-d538-4664-a1aa-b43d759cf10b")
 	)
+	(label "USB"
+		(at 241.3 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "117bb603-71c8-43fa-978d-512b2111f330")
+	)
 	(label "UART1-RTS"
 		(at 48.26 149.86 180)
 		(effects
@@ -3017,6 +3143,16 @@
 		)
 		(uuid "a3c4a044-c40d-43e0-9d6e-d79268ea581b")
 	)
+	(label "USB"
+		(at 259.08 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aaef5f9e-5de2-4436-82cb-3e04b888b567")
+	)
 	(label "UART1_TX"
 		(at 48.26 154.94 180)
 		(effects
@@ -3058,6 +3194,17 @@
 		)
 		(uuid "185debd5-7c41-481c-bd18-8426089cc222")
 	)
+	(hierarchical_label "D-"
+		(shape bidirectional)
+		(at 236.22 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "202c9c3e-43c4-4fdd-b0b3-1f27639fb85f")
+	)
 	(hierarchical_label "SDA"
 		(shape output)
 		(at 50.8 66.04 270)
@@ -3079,6 +3226,17 @@
 			(justify left)
 		)
 		(uuid "376618ee-b530-49ce-9f88-a1f2ee492079")
+	)
+	(hierarchical_label "D-"
+		(shape bidirectional)
+		(at 256.54 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4aad65ec-1683-405e-8e75-75dc79e4e0ef")
 	)
 	(hierarchical_label "SDA"
 		(shape output)
@@ -3134,6 +3292,17 @@
 			(justify left)
 		)
 		(uuid "860e0a52-fb1c-40ae-9516-0868ebc8434f")
+	)
+	(hierarchical_label "D+{slash}BOOT"
+		(shape bidirectional)
+		(at 256.54 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8aea1ba5-6601-4092-a10b-f4fc2d088e5a")
 	)
 	(hierarchical_label "RS485-"
 		(shape bidirectional)
@@ -3214,14 +3383,14 @@
 	)
 	(hierarchical_label "D+{slash}BOOT"
 		(shape bidirectional)
-		(at 242.57 64.77 0)
+		(at 236.22 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "d46436a6-eea1-42d5-b4d1-67e92199e3ab")
+		(uuid "b9128320-0c38-4a8a-b76a-a297de4537b9")
 	)
 	(hierarchical_label "3.3v"
 		(shape input)
@@ -3255,17 +3424,6 @@
 			(justify right)
 		)
 		(uuid "e5357d40-92d7-4758-88b5-5278aadb8cde")
-	)
-	(hierarchical_label "D-"
-		(shape bidirectional)
-		(at 242.57 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed598f7c-42da-4233-afdc-a43081c20442")
 	)
 	(hierarchical_label "3.3v"
 		(shape input)
@@ -4049,7 +4207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.4x2.4mm"
+		(property "Footprint" "qfn_custom:QFN-28-1EP_4x4mm_P0.4mm_EP2.8x2.8mm"
 			(at 165.1 153.67 0)
 			(effects
 				(font
@@ -4551,7 +4709,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 237.49 64.77 180)
+		(at 242.57 62.23 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4560,7 +4719,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4dc8018-42f2-4d19-96b1-366b0ca276d6")
 		(property "Reference" "J12"
-			(at 238.125 57.15 0)
+			(at 243.205 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4727,7 @@
 			)
 		)
 		(property "Value" "USB"
-			(at 238.125 59.69 0)
+			(at 243.205 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4735,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
-			(at 237.49 64.77 0)
+			(at 242.57 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4744,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 64.77 0)
+			(at 242.57 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +4753,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 237.49 64.77 0)
+			(at 242.57 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
