@@ -1252,371 +1252,6 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_DIP_x04"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_DIP_x04"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "dip switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SW?DIP?x4*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_DIP_x04_0_0"
-				(circle
-					(center -2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 5.08)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.3876) (xy 2.3622 -1.3462)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.127) (xy 2.3622 1.1684)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 2.667) (xy 2.3622 3.7084)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 5.207) (xy 2.3622 6.2484)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 5.08)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_DIP_x04_0_1"
-				(rectangle
-					(start -3.81 7.62)
-					(end 3.81 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SW_DIP_x04_1_1"
-				(pin passive line
-					(at -7.62 5.08 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -1998,12 +1633,6 @@
 		(uuid "6204f7ea-2d08-464f-a7e0-851d7793ab2d")
 	)
 	(junction
-		(at 224.79 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92a09d73-81ec-44ac-8605-de2aa457c36b")
-	)
-	(junction
 		(at 69.85 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2012,14 +1641,6 @@
 	(no_connect
 		(at 67.31 93.98)
 		(uuid "32db88d9-7a1d-4a90-8ce3-19b761a96073")
-	)
-	(no_connect
-		(at 224.79 106.68)
-		(uuid "808000f4-acf1-4e12-9048-bd5e1c4d0a0a")
-	)
-	(no_connect
-		(at 240.03 106.68)
-		(uuid "a30387ff-69b1-4dd1-9555-0594e30b795c")
 	)
 	(no_connect
 		(at 46.99 78.74)
@@ -2037,16 +1658,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 109.22) (xy 252.73 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10b188c5-8ec0-4d94-9af4-0c40bc768bed")
-	)
-	(wire
-		(pts
 			(xy 67.31 88.9) (xy 69.85 88.9)
 		)
 		(stroke
@@ -2054,36 +1665,6 @@
 			(type default)
 		)
 		(uuid "2e26070c-33c9-4c2f-9732-21ed3dfcf46d")
-	)
-	(wire
-		(pts
-			(xy 224.79 111.76) (xy 224.79 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d78751c-4161-4a79-8781-ed0fa71dc2fd")
-	)
-	(wire
-		(pts
-			(xy 214.63 109.22) (xy 217.17 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fb3a07d-a567-440f-bbc1-d1162a894d64")
-	)
-	(wire
-		(pts
-			(xy 222.25 109.22) (xy 224.79 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40653db4-fa6b-4f13-896c-b18c2686f5b0")
 	)
 	(wire
 		(pts
@@ -2114,26 +1695,6 @@
 			(type default)
 		)
 		(uuid "4941543c-70e0-4868-bd0e-f8f8d1d18384")
-	)
-	(wire
-		(pts
-			(xy 240.03 118.11) (xy 240.03 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c9f3a94-e903-45e9-8b0c-e1d0e4eba3a8")
-	)
-	(wire
-		(pts
-			(xy 248.92 118.11) (xy 252.73 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "560ba20d-b11f-4785-849a-2142b486bcb1")
 	)
 	(wire
 		(pts
@@ -2177,16 +1738,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 114.3) (xy 224.79 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "680ab842-fcbf-4023-80c6-6b88d263c0ad")
-	)
-	(wire
-		(pts
 			(xy 161.29 31.75) (xy 161.29 34.29)
 		)
 		(stroke
@@ -2204,16 +1755,6 @@
 			(type default)
 		)
 		(uuid "76f9d86a-1b64-44ff-b4c0-2971f5aa5a7e")
-	)
-	(wire
-		(pts
-			(xy 252.73 111.76) (xy 247.65 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "789fe5f7-61ee-4a47-b1ae-b3daa53203e6")
 	)
 	(wire
 		(pts
@@ -2267,26 +1808,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 111.76) (xy 242.57 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9361a88e-cb65-441a-97bc-5af40af48c95")
-	)
-	(wire
-		(pts
-			(xy 243.84 118.11) (xy 240.03 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a3a7160-50fa-4705-8ebf-8fba18a857a1")
-	)
-	(wire
-		(pts
 			(xy 152.4 41.91) (xy 156.21 41.91)
 		)
 		(stroke
@@ -2334,16 +1855,6 @@
 			(type default)
 		)
 		(uuid "ba175b5f-cfa7-493d-8702-a426b971952a")
-	)
-	(wire
-		(pts
-			(xy 252.73 109.22) (xy 240.03 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb90a5ba-2259-4550-a45b-e98c4a40c136")
 	)
 	(wire
 		(pts
@@ -2443,25 +1954,6 @@
 		)
 		(uuid "acc9dc4a-6388-42d8-a5ed-6c17316de1ab")
 	)
-	(text_box "I really wanted to have Bias and termination resistors optional per device, but space constraints are real, and extra switches on board really does not make sense"
-		(exclude_from_sim no)
-		(at 220.98 86.36 0)
-		(size 38.1 11.43)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "f9b48dda-480d-43c6-8b06-f3f051f7a736")
-	)
 	(text "RC circuit for delayed power on"
 		(exclude_from_sim no)
 		(at 181.864 40.64 0)
@@ -2556,28 +2048,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RS485+"
-		(shape bidirectional)
-		(at 218.44 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6d22afdc-92f0-4b03-98ec-ea9181ca851e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.6631 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2771,28 +2241,6 @@
 		(uuid "b212afdd-eb3d-4a08-be7b-fb841265b864")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 166.7169 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RS485-"
-		(shape bidirectional)
-		(at 252.73 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b543c99b-cb8d-41c8-bde6-460ef8156808")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.5069 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3074,73 +2522,6 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 219.71 109.22 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "129b5aaa-ac56-4688-bc02-40b4c51aeab2")
-		(property "Reference" "R23"
-			(at 219.202 110.744 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120 ohm"
-			(at 218.694 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 219.71 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 219.71 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "923f9179-e74f-4594-b814-c8e3b980a041")
-		)
-		(pin "1"
-			(uuid "a91af1c7-d947-4f7a-93bc-57f3d5813df3")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4014,73 +3395,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 109.22 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "8bc9dd37-6259-48d4-b527-c51e13989bed")
-		(property "Reference" "#PWR038"
-			(at 208.28 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 210.82 109.2199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0a36ff07-d6f1-47e9-8a9f-0d8f93cb8223")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 100.33 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4222,157 +3536,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 252.73 118.11 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "c8462f18-d617-422b-b6d4-08ee963785fc")
-		(property "Reference" "#PWR037"
-			(at 248.92 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 258.572 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 252.73 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2043233f-be3a-4124-adb1-7b3c2116deac")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x04")
-		(at 232.41 111.76 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "ce02156a-8cae-4e4c-94f7-69e2ef3c8963")
-		(property "Reference" "SW3"
-			(at 232.41 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DS04-254-2-04BK-SMT"
-			(at 232.41 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm"
-			(at 232.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 232.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "80b08f0d-b8dc-4b5e-a706-e901417f5627")
-		)
-		(pin "7"
-			(uuid "7a00cdbe-b5eb-4b1d-a00f-4941cb28ee9c")
-		)
-		(pin "4"
-			(uuid "fa60e077-f249-4341-95f0-eb677d7bd671")
-		)
-		(pin "6"
-			(uuid "dfce16c1-410c-4f42-9d11-46765e7748ab")
-		)
-		(pin "5"
-			(uuid "ee22499d-1242-482c-b71d-ea8e103f2506")
-		)
-		(pin "8"
-			(uuid "8be1e6d4-1b98-4470-81e4-8f3fb1b0ac04")
-		)
-		(pin "3"
-			(uuid "d9fbb6f6-f6de-4a0e-92be-9aadf773a389")
-		)
-		(pin "1"
-			(uuid "3068925b-ae5e-4e02-9abb-ed482e28ee4c")
-		)
-		(instances
-			(project ""
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 72.39 53.34 0)
 		(unit 1)
@@ -4439,73 +3602,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 246.38 118.11 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "e03226a5-9751-4b3f-a5c9-41d03c69be2f")
-		(property "Reference" "R21"
-			(at 245.618 120.904 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120 ohm"
-			(at 245.872 115.824 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 246.38 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 246.38 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "369887c4-6bad-4670-86b9-67e4f4e1ae65")
-		)
-		(pin "1"
-			(uuid "2d830ba9-2fce-4f49-88cc-0596b74183a0")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 57.15 106.68 180)
 		(unit 1)
@@ -4565,73 +3661,6 @@
 			(project "ESP32-S3 Hub"
 				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 245.11 111.76 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "efca0a8d-5989-4eae-bf5d-0c03fe8bbd45")
-		(property "Reference" "R22"
-			(at 244.602 113.284 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120 ohm"
-			(at 244.094 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 245.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 245.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "34ed1e95-63e0-447f-a7b0-e13127fbb6d6")
-		)
-		(pin "1"
-			(uuid "143418c0-8d36-4ef2-8558-3f93f95715f8")
-		)
-		(instances
-			(project "ESP32-S3 Hub"
-				(path "/a8c80fba-3bca-4358-b5bb-9ebf9383c658/c12991ca-4617-4c32-8678-9934d12b2f96"
-					(reference "R22")
 					(unit 1)
 				)
 			)
