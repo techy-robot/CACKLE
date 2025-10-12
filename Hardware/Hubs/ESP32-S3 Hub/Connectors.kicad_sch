@@ -3694,22 +3694,22 @@
 	)
 	(global_label "RS485-"
 		(shape bidirectional)
-		(at 160.02 194.31 0)
+		(at 147.32 194.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1cc11896-c074-4e43-a550-90f90ba2ecce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 171.7969 194.31 0)
+			(at 135.5431 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4310,22 +4310,22 @@
 	)
 	(global_label "RS485+"
 		(shape bidirectional)
-		(at 160.02 191.77 0)
+		(at 147.32 191.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "75a4013d-1692-487d-aec9-7ff5921e5ed2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 171.7969 191.77 0)
+			(at 135.5431 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9971,7 +9971,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 194.31 270)
+		(at 160.02 194.31 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9980,7 +9981,7 @@
 		(fields_autoplaced yes)
 		(uuid "b318a16b-aff8-4c49-9dcb-9be652b918ff")
 		(property "Reference" "#PWR080"
-			(at 140.97 194.31 0)
+			(at 166.37 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9989,7 +9990,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 194.3099 90)
+			(at 163.83 194.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9998,7 +9999,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 194.31 0)
+			(at 160.02 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10007,7 +10008,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 194.31 0)
+			(at 160.02 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10016,7 +10017,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 194.31 0)
+			(at 160.02 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11358,7 +11359,8 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 147.32 191.77 90)
+		(at 160.02 191.77 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11367,7 +11369,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9a7f03d-2123-483e-b6c6-800f50c707e2")
 		(property "Reference" "#PWR081"
-			(at 151.13 191.77 0)
+			(at 156.21 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,7 +11378,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 143.51 191.7699 90)
+			(at 163.83 191.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11385,7 +11387,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 191.77 0)
+			(at 160.02 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11394,7 +11396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 191.77 0)
+			(at 160.02 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11403,7 +11405,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 147.32 191.77 0)
+			(at 160.02 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
