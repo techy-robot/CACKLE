@@ -60,31 +60,7 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|148495000|96345000|1f194eed-3e0d-4b85-8bfc-0dec2e129ed2|d89c5db9-66ce-4028-b9c9-3858db7e3106",
-          ""
-        ],
-        [
           "courtyards_overlap|149778796|96840452|9199fd0a-8e66-405c-b3b2-0f20afaa04b6|d89c5db9-66ce-4028-b9c9-3858db7e3106",
-          ""
-        ],
-        [
-          "courtyards_overlap|149818344|96880000|238af81d-fa34-4c18-8e46-2e348160cfb3|9199fd0a-8e66-405c-b3b2-0f20afaa04b6",
-          ""
-        ],
-        [
-          "courtyards_overlap|150305000|96880000|238af81d-fa34-4c18-8e46-2e348160cfb3|d89c5db9-66ce-4028-b9c9-3858db7e3106",
-          ""
-        ],
-        [
-          "courtyards_overlap|150735000|92775000|1f194eed-3e0d-4b85-8bfc-0dec2e129ed2|d0d77fa8-3fea-41cc-a16e-7877c72c885d",
-          ""
-        ],
-        [
-          "courtyards_overlap|150745000|84252381|18dc4830-ab43-43f1-a69b-0c8906191883|a2c7b089-c02b-4789-abbf-5578ee9a47b6",
-          ""
-        ],
-        [
-          "courtyards_overlap|150745000|85985409|2fae1dcf-9381-4e1e-913b-480f27295840|a2c7b089-c02b-4789-abbf-5578ee9a47b6",
           ""
         ],
         [
@@ -96,47 +72,7 @@
           ""
         ],
         [
-          "courtyards_overlap|152355000|83253357|18dc4830-ab43-43f1-a69b-0c8906191883|bf2753e0-0a5f-4b79-9083-e89372e2d8cc",
-          ""
-        ],
-        [
-          "courtyards_overlap|152355000|84848414|2fae1dcf-9381-4e1e-913b-480f27295840|bf2753e0-0a5f-4b79-9083-e89372e2d8cc",
-          ""
-        ],
-        [
           "courtyards_overlap|157718858|93738615|1f4c7e72-057f-494d-ad69-b33a1420104d|acac5629-a1ac-4d57-bb37-a51a50ff12c0",
-          ""
-        ],
-        [
-          "courtyards_overlap|159316504|96135000|cdb4fc03-7a9c-4ea6-9868-5a7fc2d09170|d69de992-a107-4b47-9a4c-8350b757e52b",
-          ""
-        ],
-        [
-          "courtyards_overlap|159439535|94538657|acac5629-a1ac-4d57-bb37-a51a50ff12c0|cdb4fc03-7a9c-4ea6-9868-5a7fc2d09170",
-          ""
-        ],
-        [
-          "courtyards_overlap|160055000|95534248|9199fd0a-8e66-405c-b3b2-0f20afaa04b6|d7e68328-83e2-4dc8-8620-ca4a3139277f",
-          ""
-        ],
-        [
-          "courtyards_overlap|160055000|96845000|3d9c510a-69a1-4afc-9575-a5b8e32d6369|9199fd0a-8e66-405c-b3b2-0f20afaa04b6",
-          ""
-        ],
-        [
-          "starved_thermal|148920000|96800000|dab39d86-b5b8-4903-9df4-cb7a018452aa|c86d7707-5fbf-451d-9718-9678e022f2e2|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|149020000|96800000|dab39d86-b5b8-4903-9df4-cb7a018452aa|943d435b-8836-4a46-badd-9038aa09f4e1|B.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|151520000|91300000|dab39d86-b5b8-4903-9df4-cb7a018452aa|16913084-39c0-46f2-af67-e231e2cd6b00|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|153490000|84700000|dab39d86-b5b8-4903-9df4-cb7a018452aa|efea3260-655c-49df-9703-90ed36d24e9e|In3.Cu",
           ""
         ]
       ],
@@ -205,7 +141,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.16,
+        "min_clearance": 0.12,
         "min_connection": 0.1,
         "min_copper_edge_clearance": 0.28,
         "min_groove_width": 0.0,
@@ -218,9 +154,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.16,
+        "min_track_width": 0.12,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -561,7 +497,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.16,
+        "clearance": 0.12,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.16,
@@ -572,16 +508,15 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.16,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.12,
+        "via_diameter": 0.4,
+        "via_drill": 0.2,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.16,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,

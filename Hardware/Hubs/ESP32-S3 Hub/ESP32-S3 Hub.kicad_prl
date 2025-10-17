@@ -1,7 +1,7 @@
 {
   "board": {
     "active_layer": 0,
-    "active_layer_preset": "All Layers",
+    "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -127,20 +127,8 @@
   "project": {
     "files": [
       {
-        "name": "ESP32-S3 Hub.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 367,
-          "pos_y": 230,
-          "size_x": 768,
-          "size_y": 690
-        }
-      },
-      {
         "name": "ESP32-S3 Hub.kicad_pcb",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
           "maximized": true,
@@ -148,6 +136,18 @@
           "pos_y": 0,
           "size_x": 1280,
           "size_y": 583
+        }
+      },
+      {
+        "name": "ESP32-S3 Hub.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 367,
+          "pos_y": 230,
+          "size_x": 768,
+          "size_y": 690
         }
       }
     ]
