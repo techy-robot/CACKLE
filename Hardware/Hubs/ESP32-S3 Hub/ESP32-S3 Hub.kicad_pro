@@ -58,24 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|149778796|96840452|9199fd0a-8e66-405c-b3b2-0f20afaa04b6|d89c5db9-66ce-4028-b9c9-3858db7e3106",
-          ""
-        ],
-        [
-          "courtyards_overlap|152177545|83128220|18dc4830-ab43-43f1-a69b-0c8906191883|e1780302-f721-4a60-87ef-7b09fcee2f6a",
-          ""
-        ],
-        [
-          "courtyards_overlap|152298550|84794755|18dc4830-ab43-43f1-a69b-0c8906191883|2fae1dcf-9381-4e1e-913b-480f27295840",
-          ""
-        ],
-        [
-          "courtyards_overlap|157718858|93738615|1f4c7e72-057f-494d-ad69-b33a1420104d|acac5629-a1ac-4d57-bb37-a51a50ff12c0",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -153,7 +136,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.13,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.4,
