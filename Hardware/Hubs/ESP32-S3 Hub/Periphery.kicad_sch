@@ -1841,6 +1841,27 @@
 		)
 		(uuid "16e78aac-2565-4f0f-af8c-d933a791dfed")
 	)
+	(text_box "Add configurable resistance, using a solution like TI's with transistors. https://www.ti.com/lit/ug/tiducf3/tiducf3.pdf"
+		(exclude_from_sim no)
+		(at 165.1 96.52 0)
+		(size 50.8 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+			(href "https://www.ti.com/lit/ug/tiducf3/tiducf3.pdf")
+		)
+		(uuid "b6b37d6f-02ba-47cc-b116-47197d6cb992")
+	)
 	(text_box "Note that there is a 5ns graduated delay between outputs. Also 30mhz max output\n"
 		(exclude_from_sim no)
 		(at 44.45 175.26 0)
@@ -1861,10 +1882,10 @@
 		)
 		(uuid "c094e1b4-995e-432f-96a9-80256deb3533")
 	)
-	(text_box "4.5ma per pin with this resistor"
+	(text_box "4.5ma sink/1ma source per pin with this resistor, compared to 8.6/2.1 with 0.75k"
 		(exclude_from_sim no)
 		(at 29.21 133.35 0)
-		(size 16.51 8.89)
+		(size 19.05 16.51)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)

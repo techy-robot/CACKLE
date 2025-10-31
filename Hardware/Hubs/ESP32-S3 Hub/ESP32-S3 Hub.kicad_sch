@@ -2186,14 +2186,14 @@
 		)
 		(uuid "f7fe7a8b-d9b7-46a5-b667-4399fda162fc")
 	)
-	(text_box "DANGER ZONE. I'm using the JTAG master select pin as a flow control pin for the RS485 module. When programming I REALLY need to not have anything connected"
+	(text_box "DANGER ZONE. I'm using the JTAG master select pin as a flow control pin for the RS485 module. Should not affect anything, as this pin isn't used during uart flashing, only JTAG"
 		(exclude_from_sim no)
 		(at 204.47 102.87 0)
 		(size 29.21 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)

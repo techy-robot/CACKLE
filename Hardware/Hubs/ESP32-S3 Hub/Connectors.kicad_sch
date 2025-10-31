@@ -2151,6 +2151,26 @@
 		)
 		(uuid "1cae23f3-af21-4ec5-bd4c-d8fde6cb3e78")
 	)
+	(text_box "Add capacitive bus isolators so long distances have less of an effect"
+		(exclude_from_sim no)
+		(at 105.41 80.01 0)
+		(size 19.05 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "46946c2b-d644-4e74-9251-623b628bdb96")
+	)
 	(text_box "I have 3 extra pins I could use instead of filling it with power connections. I could hook them up to USB for prog, and the LED"
 		(exclude_from_sim no)
 		(at 137.16 36.83 0)
@@ -2171,7 +2191,7 @@
 		)
 		(uuid "84dee202-8de4-42f4-ac6f-1533001042de")
 	)
-	(text_box "All connectors need: SPI, I2C, programming, and 1 multipurpose pin. Beyond that, nothing is gaurunteed (what do the free pins do, are the different on each side, etc...)\n"
+	(text_box "All connectors need: SPI, I2C, programming, and 1 multipurpose pin. Beyond that, nothing is gaurunteed (what do the free pins do, are they different on each side, etc...)\n"
 		(exclude_from_sim no)
 		(at 179.07 139.7 0)
 		(size 26.67 17.78)
