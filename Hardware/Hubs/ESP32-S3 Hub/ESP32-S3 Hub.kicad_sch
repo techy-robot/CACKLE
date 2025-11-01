@@ -2393,6 +2393,12 @@
 		(uuid "67b48cfd-c04f-4245-86c6-c420c497012f")
 	)
 	(junction
+		(at 144.78 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d0cb864-2768-4b2e-b59b-2b63bdf0e521")
+	)
+	(junction
 		(at 149.86 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2630,7 +2636,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 41.91) (xy 144.78 54.61)
+			(xy 144.78 41.91) (xy 144.78 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3400,6 +3406,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 49.53) (xy 144.78 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8602161-ea46-4f5f-80d8-9435d1f34425")
+	)
+	(wire
+		(pts
 			(xy 137.16 31.75) (xy 142.24 31.75)
 		)
 		(stroke
@@ -3730,7 +3746,7 @@
 	)
 	(global_label "CS2"
 		(shape input)
-		(at 171.45 85.09 0)
+		(at 171.45 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3740,7 +3756,7 @@
 		)
 		(uuid "0603c129-8009-4e6d-8ac8-42d738bccbce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.1242 85.09 0)
+			(at 178.1242 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3818,7 +3834,7 @@
 	)
 	(global_label "CS1"
 		(shape input)
-		(at 171.45 87.63 0)
+		(at 171.45 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3828,7 +3844,7 @@
 		)
 		(uuid "17a5ec47-e03b-4db6-848e-a83a36469d5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.1242 87.63 0)
+			(at 178.1242 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3950,7 +3966,7 @@
 	)
 	(global_label "CS4"
 		(shape input)
-		(at 171.45 80.01 0)
+		(at 171.45 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3960,7 +3976,7 @@
 		)
 		(uuid "2fd6661f-7926-43af-ab7a-d0d40260757c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.1242 80.01 0)
+			(at 178.1242 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4857,7 +4873,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 144.78 64.77 270)
+		(at 142.24 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4865,7 +4881,7 @@
 		(dnp no)
 		(uuid "22c51ad3-905d-4cc5-b131-c73f9473e482")
 		(property "Reference" "C8"
-			(at 145.542 66.548 90)
+			(at 143.002 51.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +4889,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 144.526 63.246 90)
+			(at 141.986 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +4897,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 144.78 64.77 0)
+			(at 142.24 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +4906,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 64.77 0)
+			(at 142.24 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4915,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 144.78 64.77 0)
+			(at 142.24 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,7 +4924,7 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 145.542 66.548 0)
+			(at 143.002 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
