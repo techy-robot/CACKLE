@@ -2483,12 +2483,6 @@
 		(uuid "ea898bff-9487-42e6-81eb-2df19bca7f16")
 	)
 	(junction
-		(at 144.78 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb2451a9-200b-4d28-b5a6-0e31b832a02e")
-	)
-	(junction
 		(at 106.68 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2566,16 +2560,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 41.91) (xy 144.78 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0920fd52-d2ac-4020-98f8-72130918aaa8")
-	)
-	(wire
-		(pts
 			(xy 167.64 87.63) (xy 171.45 87.63)
 		)
 		(stroke
@@ -2646,7 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 49.53) (xy 144.78 54.61)
+			(xy 144.78 41.91) (xy 144.78 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3768,7 +3752,7 @@
 	)
 	(global_label "2CSA-A"
 		(shape input)
-		(at 118.11 90.17 180)
+		(at 118.11 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3778,7 +3762,7 @@
 		)
 		(uuid "0b5c37b7-9f85-49ec-b2ca-10d583ad3c0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6862 90.17 0)
+			(at 107.6862 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +3774,7 @@
 	)
 	(global_label "1CSA-A"
 		(shape input)
-		(at 118.11 100.33 180)
+		(at 118.11 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3800,7 +3784,7 @@
 		)
 		(uuid "0baaff5a-3a5c-48bf-8a85-7324a2477397")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6862 100.33 0)
+			(at 107.6862 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3900,7 +3884,7 @@
 	)
 	(global_label "4CSA-C"
 		(shape input)
-		(at 118.11 72.39 180)
+		(at 118.11 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3910,7 +3894,7 @@
 		)
 		(uuid "1a1d2a6b-1626-4537-9ba8-75271d9f703b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 72.39 0)
+			(at 107.5048 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3944,7 +3928,7 @@
 	)
 	(global_label "4CSA-B"
 		(shape input)
-		(at 118.11 67.31 180)
+		(at 118.11 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3954,7 +3938,7 @@
 		)
 		(uuid "24e0d958-61ed-4c91-8bc3-8e24f1d5c054")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 67.31 0)
+			(at 107.5048 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +3972,7 @@
 	)
 	(global_label "2CSA-D"
 		(shape input)
-		(at 118.11 97.79 180)
+		(at 118.11 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3998,7 +3982,7 @@
 		)
 		(uuid "38142c83-0e57-49d7-9abb-eb0bff54a47b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 97.79 0)
+			(at 107.5048 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,7 +3994,7 @@
 	)
 	(global_label "2CSA-C"
 		(shape input)
-		(at 118.11 95.25 180)
+		(at 118.11 64.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4020,7 +4004,7 @@
 		)
 		(uuid "66ac7397-d2a4-485a-bd04-cd5221a42242")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 95.25 0)
+			(at 107.5048 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4032,7 +4016,7 @@
 	)
 	(global_label "3CSA-B"
 		(shape input)
-		(at 118.11 77.47 180)
+		(at 118.11 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4042,7 +4026,7 @@
 		)
 		(uuid "6d8eee91-5949-44be-b7f6-60e21657d177")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 77.47 0)
+			(at 107.5048 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,7 +4038,7 @@
 	)
 	(global_label "4CSA-A"
 		(shape input)
-		(at 118.11 64.77 180)
+		(at 118.11 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4064,7 +4048,7 @@
 		)
 		(uuid "6e05f20a-d26b-488a-8ca9-97efa9b16169")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6862 64.77 0)
+			(at 107.6862 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,7 +4126,7 @@
 	)
 	(global_label "1CSA-D"
 		(shape input)
-		(at 118.11 118.11 180)
+		(at 118.11 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4152,7 +4136,7 @@
 		)
 		(uuid "8a847c08-8548-4bab-a6b6-2164aa279c22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 118.11 0)
+			(at 107.5048 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4164,7 +4148,7 @@
 	)
 	(global_label "1CSA-C"
 		(shape input)
-		(at 118.11 115.57 180)
+		(at 118.11 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4174,7 +4158,7 @@
 		)
 		(uuid "8e8ecd2a-93b2-4a24-849d-da7b769ef1eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 115.57 0)
+			(at 107.5048 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4230,7 +4214,7 @@
 	)
 	(global_label "4CSA-D"
 		(shape input)
-		(at 118.11 74.93 180)
+		(at 118.11 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4240,7 +4224,7 @@
 		)
 		(uuid "9d6247b6-ec8d-416b-8039-dce35d954401")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 74.93 0)
+			(at 107.5048 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +4324,7 @@
 	)
 	(global_label "3CSA-D"
 		(shape input)
-		(at 118.11 85.09 180)
+		(at 118.11 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4350,7 +4334,7 @@
 		)
 		(uuid "b37855fb-9927-4309-bd6b-29c0b5eb31a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 85.09 0)
+			(at 107.5048 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4346,7 @@
 	)
 	(global_label "3CSA-A"
 		(shape input)
-		(at 118.11 80.01 180)
+		(at 118.11 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4372,7 +4356,7 @@
 		)
 		(uuid "b57ecf7a-da66-4175-aef5-7bfc93d38d5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6862 80.01 0)
+			(at 107.6862 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +4368,7 @@
 	)
 	(global_label "1CSA-B"
 		(shape input)
-		(at 118.11 102.87 180)
+		(at 118.11 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4394,7 +4378,7 @@
 		)
 		(uuid "b713b39d-ef65-4366-8876-3e92785f0012")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 102.87 0)
+			(at 107.5048 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,7 +4412,7 @@
 	)
 	(global_label "3CSA-C"
 		(shape input)
-		(at 118.11 82.55 180)
+		(at 118.11 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4438,7 +4422,7 @@
 		)
 		(uuid "d5d2be5f-a606-4123-b754-601c33465718")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 82.55 0)
+			(at 107.5048 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4500,7 @@
 	)
 	(global_label "2CSA-B"
 		(shape input)
-		(at 118.11 92.71 180)
+		(at 118.11 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4526,7 +4510,7 @@
 		)
 		(uuid "e752f971-fe15-4f3d-a480-9fe6c88561ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 92.71 0)
+			(at 107.5048 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +4857,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 142.24 49.53 270)
+		(at 144.78 64.77 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4881,7 +4865,7 @@
 		(dnp no)
 		(uuid "22c51ad3-905d-4cc5-b131-c73f9473e482")
 		(property "Reference" "C8"
-			(at 143.002 51.308 90)
+			(at 145.542 66.548 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,7 +4873,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 141.986 48.006 90)
+			(at 144.526 63.246 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4897,7 +4881,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 142.24 49.53 0)
+			(at 144.78 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4906,7 +4890,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 49.53 0)
+			(at 144.78 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,7 +4899,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 142.24 49.53 0)
+			(at 144.78 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +4908,7 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 143.002 51.308 0)
+			(at 145.542 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)

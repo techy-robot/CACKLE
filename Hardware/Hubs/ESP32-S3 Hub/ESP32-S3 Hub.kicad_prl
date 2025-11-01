@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 10,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -127,20 +127,8 @@
   "project": {
     "files": [
       {
-        "name": "ESP32-S3 Hub.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 367,
-          "pos_y": 230,
-          "size_x": 768,
-          "size_y": 690
-        }
-      },
-      {
         "name": "ESP32-S3 Hub.kicad_pcb",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
           "maximized": true,
