@@ -4,9 +4,10 @@ tags:
 modified:
   - 2024-10-14T22:13:06-06:00
   - 2025-09-23T16:41:40-06:00
+  - 2025-11-08T11:32:59-07:00
 ---
 
-I am trying to save money while still acheiving what I need. Currently, for signal lines I am using 1.27mm right angle pin headers, and for Power, I'm using Keystone 6100 and 6102 quick connect edge connectors. For vertical Mezzanine connectors, I am using TE 3-2363961-0 receptacle and TE 3-2363962-0 connector, 30 pins.
+I am trying to save money while still acheiving what I need. Currently, for signal lines I am using 2x2 1.27mm right angle pin headers, and for Power, I'm using Keystone 6100 and 6102 quick connect edge connectors. For vertical Mezzanine connectors, I am using TE 3-2363961-0 receptacle and TE 3-2363962-0 connector, 30 pins.
 
 The power connectors are expensive, around $1.8 per pair. I have found a sister product that is much cheaper however, and provides almost the exact same functionality. Its Keystone 3579, which is tin plated instead of gold plated. It can still carry 10 amps per connector. The matching component is 3569, which is a fuse clip. Now, this is much longer than the 610x receptacle, and the blade doesn't stick completely into it. I had a fun idea of chopping the part in half, and using it twice. The length would match, it would just be unstable on the board (ie not usable on a PnP).
 
