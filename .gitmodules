@@ -1,41 +1,41 @@
-[submodule "Hardware/Drivers/DRV8213_brushed_Motor_Driver"]
+[submodule "Drivers/DRV8213_brushed_Motor_Driver"]
 	path = Hardware/Drivers/DRV8213_brushed_Motor_Driver
 	url = git@github.com:techy-robot/CACKLE-Driver-DRV8213_brushed_Motor_Driver.git
 
-[submodule "Hardware/Drivers/DRV8311_Motor_Driver"]
+[submodule "Drivers/DRV8311_Motor_Driver"]
 	path = Hardware/Drivers/DRV8311_Motor_Driver
 	url = git@github.com:techy-robot/CACKLE-Driver-DRV8311_Motor_Driver.git
 
-[submodule "Hardware/Expansion Boards/2_connector_Sensor"]
+[submodule "Expansion Boards/2_connector_Sensor"]
 	path = "Hardware/Expansion Boards/2_connector_Sensor"
 	url = git@github.com:techy-robot/CACKLE-Expansion-2_connector_Sensor.git
 
-[submodule "Hardware/Expansion Boards/Sensor_Board"]
+[submodule "Expansion Boards/Sensor_Board"]
 	path = "Hardware/Expansion Boards/Sensor_Board"
 	url = git@github.com:techy-robot/CACKLE-Expansion-Sensor_Board.git
 
-[submodule "Hardware/Hubs/ESP32-S3"]
+[submodule "Hubs/ESP32-S3"]
 	path = "Hardware/Hubs/ESP32-S3"
 	url = git@github.com:techy-robot/CACKLE-Hub-ESP32-S3.git
 
-[submodule "Hardware/nanoSPI Devices/MA735_magnetic_encoder"]
+[submodule "nanoSPI Devices/MA735_magnetic_encoder"]
 	path = "Hardware/nanoSPI Devices/MA735_magnetic_encoder"
 	url = git@github.com:techy-robot/CACKLE-nanoSPI-MA735_magnetic_encoder.git
 
-[submodule "Hardware/Passive Boards/Endcap"]
+[submodule "Passive Boards/Endcap"]
 	path = "Hardware/Passive Boards/Endcap"
 	url = git@github.com:techy-robot/CACKLE-Passive-Endcap.git
 
-[submodule "Hardware/Passive Boards/Vertical_Sensor_Spacer"]
+[submodule "Passive Boards/Vertical_Sensor_Spacer"]
 	path = "Hardware/Passive Boards/Vertical_Sensor_Spacer"
 	url = git@github.com:techy-robot/CACKLE-Passive-Vertical_Sensor_Spacer.git
 
 
-[submodule "Hardware/PSUs/2s_40A_PSU_and_charger"]
+[submodule "PSUs/2s_40A_PSU_and_charger"]
 	path = "Hardware/PSUs/2s_40A_PSU_and_charger"
 	url = git@github.com:techy-robot/CACKLE-PSU-2s_40A_PSU_and_charger.git
 
-[submodule "Hardware/PSUs/USB_2A_PSU_1side"]
+[submodule "PSUs/USB_2A_PSU_1side"]
 	path = "Hardware/PSUs/USB_2A_PSU_1side"
 	url = git@github.com:techy-robot/CACKLE-PSU-USB_2A_PSU_1side.git
 
