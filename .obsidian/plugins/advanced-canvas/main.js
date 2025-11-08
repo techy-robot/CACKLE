@@ -491,6 +491,7 @@ var DEFAULT_SETTINGS_VALUES = {
   defaultTextNodeStyleAttributes: {},
   edgesStylingFeatureEnabled: true,
   customEdgeStyleAttributes: [],
+  inheritEdgeColorFromNode: false,
   defaultEdgeColor: 0,
   defaultEdgeLineDirection: "unidirectional",
   defaultEdgeStyleAttributes: {},
@@ -533,6 +534,7 @@ var DEFAULT_SETTINGS_VALUES = {
   usePgUpPgDownKeysToChangeSlides: true,
   zoomToSlideWithoutPadding: true,
   useUnclampedZoomWhilePresenting: false,
+  fullscreenPresentationEnabled: true,
   slideTransitionAnimationDuration: 0.5,
   slideTransitionAnimationIntensity: 1.25,
   canvasEncapsulationEnabled: false,
@@ -734,6 +736,11 @@ var SETTINGS = {
         type: "button",
         onClick: () => window.open("https://github.com/Developer-Mike/obsidian-advanced-canvas/blob/main/README.md#custom-styles")
       },
+      inheritEdgeColorFromNode: {
+        label: "Inherit edge color from node",
+        description: "When creating a new edge by dragging from a node, the edge will inherit the color of the node it is dragged from.",
+        type: "boolean"
+      },
       defaultEdgeColor: {
         label: "Default edge color",
         description: "The default color of an edge. The default range is from 0 to 6, where 0 is no color. The range can be extended by using the Custom Colors feature of Advanced Canvas.",
@@ -851,6 +858,11 @@ var SETTINGS = {
       useUnclampedZoomWhilePresenting: {
         label: "Use unclamped zoom while presenting",
         description: "When enabled, the zoom will not be clamped while presenting.",
+        type: "boolean"
+      },
+      fullscreenPresentationEnabled: {
+        label: "Enter fullscreen while presenting",
+        description: "When enabled, presentations automatically request fullscreen. Disable to keep Obsidian windowed during presentations.",
         type: "boolean"
       },
       slideTransitionAnimationDuration: {
@@ -1570,6 +1582,13 @@ var CanvasPatcher = class extends Patcher {
         that.plugin.app.workspace.trigger("advanced-canvas:dragging-state-changed", this, dragging);
         return result;
       }),
+      // OBSIDIAN-FIX
+      cloneData: Patcher.OverrideExisting((next) => function(elements, shift) {
+        const result = next.call(this, elements, shift);
+        elements.nodes = elements.nodes.map((nodeData) => JSON.parse(JSON.stringify(nodeData)));
+        elements.edges = elements.edges.map((edgeData) => JSON.parse(JSON.stringify(edgeData)));
+        return result;
+      }),
       getContainingNodes: Patcher.OverrideExisting((next) => function(bbox) {
         const result = next.call(this, bbox);
         that.plugin.app.workspace.trigger("advanced-canvas:containing-nodes-requested", this, bbox, result);
@@ -2218,8 +2237,8 @@ var BacklinksPatcher = class extends Patcher {
     });
     Patcher.patchPrototype(this.plugin, this.plugin.app.vault, {
       recurseChildrenAC: (_next) => function(origin, traverse) {
-        for (var stack = [origin]; stack.length > 0; ) {
-          var current = stack.pop();
+        for (let stack = [origin]; stack.length > 0; ) {
+          const current = stack.pop();
           if (current) {
             traverse(current);
             if (current instanceof import_obsidian7.TFolder) stack = stack.concat(current.children);
@@ -2228,8 +2247,8 @@ var BacklinksPatcher = class extends Patcher {
       },
       getMarkdownFiles: Patcher.OverrideExisting((next) => function(...args) {
         if (!that.isRecomputingBacklinks) return next.call(this, ...args);
-        var files = [];
-        var root = this.getRoot();
+        const files = [];
+        const root = this.getRoot();
         this.recurseChildrenAC(root, (child) => {
           if (child instanceof import_obsidian7.TFile && (child.extension === "md" || child.extension === "canvas")) {
             files.push(child);
@@ -2284,7 +2303,12 @@ var PropertiesPatcher = class extends Patcher {
         updateFrontmatter: Patcher.OverrideExisting((next) => function(file, content) {
           var _a, _b, _c;
           if ((file == null ? void 0 : file.extension) === "canvas") {
-            const frontmatter = (_c = (_b = (_a = JSON.parse(content)) == null ? void 0 : _a.metadata) == null ? void 0 : _b.frontmatter) != null ? _c : {};
+            let frontmatter;
+            try {
+              frontmatter = (_c = (_b = (_a = JSON.parse(content)) == null ? void 0 : _a.metadata) == null ? void 0 : _b.frontmatter) != null ? _c : {};
+            } catch (e) {
+              frontmatter = {};
+            }
             this.rawFrontmatter = JSON.stringify(frontmatter, null, 2);
             this.frontmatter = frontmatter;
             return frontmatter;
@@ -2331,7 +2355,8 @@ var SearchPatcher = class extends Patcher {
   patchSearchQuery(searchQuery) {
     Patcher.patchThisAndPrototype(this.plugin, searchQuery, {
       _match: Patcher.OverrideExisting((next) => function(data) {
-        const isCanvas = data.strings.filepath.endsWith(".canvas");
+        var _a, _b;
+        const isCanvas = (_b = (_a = data.strings.filepath) == null ? void 0 : _a.endsWith(".canvas")) != null ? _b : false;
         if (isCanvas && !data.cache)
           data.cache = this.app.metadataCache.getCache(data.strings.filepath);
         return next.call(this, data);
@@ -3073,6 +3098,7 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     this.isPresentationMode = false;
     this.visitedNodeIds = [];
     this.fullscreenModalObserver = null;
+    this.presentationUsesFullscreen = false;
   }
   isEnabled() {
     return "presentationFeatureEnabled";
@@ -3240,25 +3266,25 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     if (isStartNode) canvas.metadata["startNode"] = groupNode.getData().id;
   }
   async animateNodeTransition(canvas, fromNode, toNode) {
-    const useCustomZoomFunction = this.plugin.settings.getSetting("zoomToSlideWithoutPadding");
+    const removePadding = this.plugin.settings.getSetting("zoomToSlideWithoutPadding");
     const animationDurationMs = this.plugin.settings.getSetting("slideTransitionAnimationDuration") * 1e3;
     const toNodeBBox = CanvasHelper.getSmallestAllowedZoomBBox(canvas, toNode.getBBox());
+    const toNodeBBoxPadded = removePadding ? toNodeBBox : BBoxHelper.enlargeBBox(toNodeBBox, 50);
+    console.log({ toNodeBBox, toNodeBBoxPadded });
     if (animationDurationMs > 0 && fromNode) {
       const animationIntensity = this.plugin.settings.getSetting("slideTransitionAnimationIntensity");
       const fromNodeBBox = CanvasHelper.getSmallestAllowedZoomBBox(canvas, fromNode.getBBox());
-      const currentNodeBBoxEnlarged = BBoxHelper.scaleBBox(fromNodeBBox, animationIntensity);
-      if (useCustomZoomFunction) canvas.zoomToRealBbox(currentNodeBBoxEnlarged);
-      else canvas.zoomToBbox(currentNodeBBoxEnlarged);
+      const fromNodeBBoxPadded = removePadding ? fromNodeBBox : BBoxHelper.enlargeBBox(fromNodeBBox, 50);
+      const currentNodeBBoxEnlarged = BBoxHelper.scaleBBox(fromNodeBBoxPadded, animationIntensity);
+      canvas.zoomToRealBbox(currentNodeBBoxEnlarged);
       await sleep(animationDurationMs / 2);
       if (fromNode.getData().id !== toNode.getData().id) {
-        const nextNodeBBoxEnlarged = BBoxHelper.scaleBBox(toNodeBBox, animationIntensity + 0.1);
-        if (useCustomZoomFunction) canvas.zoomToRealBbox(nextNodeBBoxEnlarged);
-        else canvas.zoomToBbox(nextNodeBBoxEnlarged);
+        const nextNodeBBoxEnlarged = BBoxHelper.scaleBBox(toNodeBBoxPadded, animationIntensity);
+        canvas.zoomToRealBbox(nextNodeBBoxEnlarged);
         await sleep(animationDurationMs / 2);
       }
     }
-    if (useCustomZoomFunction) canvas.zoomToRealBbox(toNodeBBox);
-    else canvas.zoomToBbox(toNodeBBox);
+    canvas.zoomToRealBbox(toNodeBBoxPadded);
   }
   async startPresentation(canvas, tryContinue = false) {
     if (!tryContinue || this.visitedNodeIds.length === 0) {
@@ -3274,13 +3300,27 @@ var PresentationCanvasExtension = class extends CanvasExtension {
       y: canvas.ty,
       zoom: canvas.tZoom
     };
+    const shouldEnterFullscreen = this.plugin.settings.getSetting("fullscreenPresentationEnabled");
+    this.presentationUsesFullscreen = shouldEnterFullscreen;
     canvas.wrapperEl.focus();
-    canvas.wrapperEl.requestFullscreen();
     canvas.wrapperEl.classList.add("presentation-mode");
+    if (shouldEnterFullscreen) {
+      try {
+        await canvas.wrapperEl.requestFullscreen();
+      } catch (_err) {
+        this.presentationUsesFullscreen = false;
+      }
+    }
     canvas.setReadonly(true);
     if (this.plugin.settings.getSetting("useUnclampedZoomWhilePresenting"))
       canvas.screenshotting = true;
     canvas.wrapperEl.onkeydown = (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        this.endPresentation(canvas);
+        return;
+      }
       if (this.plugin.settings.getSetting("useArrowKeysToChangeSlides")) {
         if (e.key === "ArrowRight") this.nextNode(canvas);
         else if (e.key === "ArrowLeft") this.previousNode(canvas);
@@ -3290,24 +3330,27 @@ var PresentationCanvasExtension = class extends CanvasExtension {
         else if (e.key === "PageUp") this.previousNode(canvas);
       }
     };
-    this.fullscreenModalObserver = new MutationObserver((mutationRecords) => {
-      mutationRecords.forEach((mutationRecord) => {
-        mutationRecord.addedNodes.forEach((node) => {
-          var _a;
-          document.body.removeChild(node);
-          (_a = document.fullscreenElement) == null ? void 0 : _a.appendChild(node);
+    if (this.presentationUsesFullscreen) {
+      this.fullscreenModalObserver = new MutationObserver((mutationRecords) => {
+        mutationRecords.forEach((mutationRecord) => {
+          mutationRecord.addedNodes.forEach((node) => {
+            var _a;
+            document.body.removeChild(node);
+            (_a = document.fullscreenElement) == null ? void 0 : _a.appendChild(node);
+          });
         });
+        const inputField = document.querySelector(".prompt-input");
+        if (inputField) inputField.focus();
       });
-      const inputField = document.querySelector(".prompt-input");
-      if (inputField) inputField.focus();
-    });
-    this.fullscreenModalObserver.observe(document.body, { childList: true });
-    canvas.wrapperEl.onfullscreenchange = (_e) => {
-      if (document.fullscreenElement) return;
-      this.endPresentation(canvas);
-    };
+      this.fullscreenModalObserver.observe(document.body, { childList: true });
+      canvas.wrapperEl.onfullscreenchange = (_e) => {
+        if (document.fullscreenElement) return;
+        this.endPresentation(canvas);
+      };
+    }
     this.isPresentationMode = true;
-    await sleep(500);
+    if (this.presentationUsesFullscreen)
+      await sleep(500);
     const startNodeId = this.visitedNodeIds.first();
     if (!startNodeId) return;
     const startNode = canvas.nodes.get(startNodeId);
@@ -3316,18 +3359,22 @@ var PresentationCanvasExtension = class extends CanvasExtension {
   }
   endPresentation(canvas) {
     var _a;
-    (_a = this.fullscreenModalObserver) == null ? void 0 : _a.disconnect();
-    this.fullscreenModalObserver = null;
+    if (!this.isPresentationMode) return;
+    if (this.presentationUsesFullscreen) {
+      (_a = this.fullscreenModalObserver) == null ? void 0 : _a.disconnect();
+      this.fullscreenModalObserver = null;
+      canvas.wrapperEl.onfullscreenchange = null;
+      if (document.fullscreenElement) document.exitFullscreen();
+    }
     canvas.wrapperEl.onkeydown = null;
-    canvas.wrapperEl.onfullscreenchange = null;
     canvas.setReadonly(false);
     if (this.plugin.settings.getSetting("useUnclampedZoomWhilePresenting"))
       canvas.screenshotting = false;
     canvas.wrapperEl.classList.remove("presentation-mode");
-    if (document.fullscreenElement) document.exitFullscreen();
     if (this.plugin.settings.getSetting("resetViewportOnPresentationEnd"))
       canvas.setViewport(this.savedViewport.x, this.savedViewport.y, this.savedViewport.zoom);
     this.isPresentationMode = false;
+    this.presentationUsesFullscreen = false;
   }
   nextNode(canvas) {
     var _a;
@@ -4594,8 +4641,11 @@ var BetterDefaultSettingsCanvasExtension = class extends CanvasExtension {
     });
   }
   async applyDefaultEdgeStyles(canvas, edge) {
+    var _a;
     const edgeData = edge.getData();
     let color = this.plugin.settings.getSetting("defaultEdgeColor").toString();
+    if (this.plugin.settings.getSetting("inheritEdgeColorFromNode"))
+      color = (_a = edge.from.node.getData().color) != null ? _a : color;
     if (color === "0") color = void 0;
     edge.setData({
       ...edgeData,
@@ -7048,15 +7098,33 @@ var NodeExposerExtension = class extends CanvasExtension {
       (_canvas, node) => {
         const nodeData = node == null ? void 0 : node.getData();
         if (!nodeData) return;
-        for (const exposedDataKey of getExposedNodeData(this.plugin.settings)) {
-          const datasetPairs = nodeData[exposedDataKey] instanceof Object ? Object.entries(nodeData[exposedDataKey]) : [[exposedDataKey, nodeData[exposedDataKey]]];
-          for (const [key, value] of datasetPairs) {
-            if (!value) delete node.nodeEl.dataset[key];
-            else node.nodeEl.dataset[key] = value;
-          }
-        }
+        this.setDataAttributes(node.nodeEl, nodeData);
       }
     ));
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      "advanced-canvas:node-editing-state-changed",
+      (_canvas, node, editing) => {
+        var _a;
+        if (!editing) return;
+        const nodeData = node.getData();
+        if (!nodeData) return;
+        const iframe = node.nodeEl.querySelector("iframe");
+        if (!iframe) return;
+        const iframeBody = (_a = iframe.contentDocument) == null ? void 0 : _a.body;
+        if (!iframeBody) return;
+        iframeBody.classList.add("canvas-node-iframe-body");
+        this.setDataAttributes(iframeBody, nodeData);
+      }
+    ));
+  }
+  setDataAttributes(element, nodeData) {
+    for (const exposedDataKey of getExposedNodeData(this.plugin.settings)) {
+      const datasetPairs = nodeData[exposedDataKey] instanceof Object ? Object.entries(nodeData[exposedDataKey]) : [[exposedDataKey, nodeData[exposedDataKey]]];
+      for (const [key, value] of datasetPairs) {
+        if (!value) delete element.dataset[key];
+        else element.dataset[key] = value;
+      }
+    }
   }
 };
 

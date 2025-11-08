@@ -1,7 +1,6 @@
 ---
-aliases: 
-tags: 
-append_modified_update: true
+aliases:
+tags:
 modified:
 ---
 

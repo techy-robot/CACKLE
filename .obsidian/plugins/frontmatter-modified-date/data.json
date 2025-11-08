@@ -1,6 +1,10 @@
 {
   "frontmatterProperty": "modified",
+  "createdDateProperty": "",
   "momentFormat": "",
+  "storeHistoryLog": true,
+  "historyNewestFirst": false,
+  "historyMaxItems": 0,
   "excludedFolders": [
     "Templates"
   ],

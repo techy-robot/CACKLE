@@ -1108,16 +1108,16 @@ function displayValue2(managedField, container, onClicked = () => {
   return baseDisplayValue(managedField, container, onClicked);
 }
 function createDvField2(managedField, dv, p, fieldContainer, attrs = {}) {
-  var _a, _b;
+  var _a, _b, _c;
   attrs.cls = "value-container";
   const editBtn = fieldContainer.createEl("button");
-  const fieldValue = dv.el("span", managedField.value || "", attrs);
+  const fieldValue = dv.el("span", (_a = managedField.value) != null ? _a : "", attrs);
   fieldContainer.appendChild(fieldValue);
   const spacer = fieldContainer.createDiv({ cls: "spacer-1" });
-  if ((_a = attrs.options) == null ? void 0 : _a.alwaysOn)
+  if ((_b = attrs.options) == null ? void 0 : _b.alwaysOn)
     spacer.hide();
   (0, import_obsidian5.setIcon)(editBtn, getIcon("Number"));
-  if (!((_b = attrs == null ? void 0 : attrs.options) == null ? void 0 : _b.alwaysOn)) {
+  if (!((_c = attrs == null ? void 0 : attrs.options) == null ? void 0 : _c.alwaysOn)) {
     editBtn.hide();
     spacer.show();
     fieldContainer.onmouseover = () => {
@@ -14420,7 +14420,8 @@ var DEFAULT_SETTINGS = {
   chooseFileClassAtFileCreation: false,
   autoInsertFieldsAtFileClassInsertion: false,
   fileClassIcon: "package",
-  isAutoCalculationEnabled: true
+  isAutoCalculationEnabled: true,
+  disableDataviewPrompt: false
 };
 var incrementVersion = (plugin) => {
   const currentVersion = plugin.settings.settingsVersion;
@@ -15435,6 +15436,18 @@ var MetadataMenuSettingTab = class extends import_obsidian38.PluginSettingTab {
         await this.plugin.saveSettings();
       });
     }).settingEl.addClass("no-border");
+    if (!this.app.plugins.enabledPlugins.has("dataview") || this.app.plugins.plugins["dataview"] && //@ts-ignore
+    !this.app.plugins.plugins["dataview"].settings.enableDataviewJs) {
+      new import_obsidian38.Setting(globalSettings.containerEl).setName("Disable dataview notice").setDesc(
+        "Dataview is not installed or enabled. Disable this notice"
+      ).addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.disableDataviewPrompt);
+        toggle.onChange(async (value) => {
+          this.plugin.settings.disableDataviewPrompt = value;
+          await this.plugin.saveSettings();
+        });
+      }).settingEl.addClass("no-border");
+    }
     containerEl.createDiv({ cls: "setting-divider" });
     const presetFieldsSettings = new PresetFieldsSettingGroup(
       this,
@@ -25753,8 +25766,10 @@ var MetadataMenu = class extends import_obsidian85.Plugin {
     this.indexName = `metadata_menu_${this.app.appId || this.app.vault.adapter.basePath || this.app.vault.getName()}`;
     (window["MetadataMenuAPI"] = this.api) && this.register(() => delete window["MetadataMenuAPI"]);
     (window["MetadataMenu"] = this) && this.register(() => delete window["MetadataMenu"]);
-    if (!this.app.plugins.enabledPlugins.has("dataview") || //@ts-ignore
-    this.app.plugins.plugins["dataview"] && !this.app.plugins.plugins["dataview"].settings.enableDataviewJs) {
+    await this.loadSettings();
+    await migrateSettings(this);
+    if (!this.settings.disableDataviewPrompt && (!this.app.plugins.enabledPlugins.has("dataview") || this.app.plugins.plugins["dataview"] && //@ts-ignore
+    !this.app.plugins.plugins["dataview"].settings.enableDataviewJs)) {
       new import_obsidian85.Notice(
         `------------------------------------------
 (!) INFO (!) 
@@ -25763,8 +25778,6 @@ Install and enable dataview and dataviewJS for extra Metadata Menu features
         6e4
       );
     }
-    await this.loadSettings();
-    await migrateSettings(this);
     this.indexStatus = this.addChild(new IndexStatus(this));
     this.codeBlockListManager = this.addChild(new FileClassCodeBlockListManager(this));
     this.fieldIndex = this.addChild(new FieldIndex(this));

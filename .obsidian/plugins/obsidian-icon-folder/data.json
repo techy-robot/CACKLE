@@ -34,11 +34,6 @@
     "lucideIconPackType": "native",
     "useInternalPlugins": false
   },
-  "Docs/Wiki": "SiWikipedia",
   "Docs/Bookmarks": "LiBookmark",
-  "Docs/Events": "LiCalendar",
-  "Docs/Logs": "TiNotes",
-  "Docs/Goals": "IbTarget",
-  "Docs/Action Items": "LiFileCheck",
   "Docs/Action Items/Build 3D printer": "RiPrinterCloudLine"
 }

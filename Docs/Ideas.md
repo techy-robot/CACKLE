@@ -1,7 +1,6 @@
 ---
 aliases:
 tags:
-append_modified_update: true
 modified:
   - 2025-06-06T20:38:58-06:00
   - 2025-09-09T16:25:11-06:00

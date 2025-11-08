@@ -6647,16 +6647,11 @@ function adjustBrightness(rgb, factor) {
   }
   return { r: clamp(Math.round(r1 * 255), 0, 255), g: clamp(Math.round(g1 * 255), 0, 255), b: clamp(Math.round(b1 * 255), 0, 255) };
   function hue2rgb(p, q, t) {
-    if (t < 0)
-      t += 1;
-    if (t > 1)
-      t -= 1;
-    if (t < 1 / 6)
-      return clamp(p + (q - p) * 6 * t, 0, 1);
-    if (t < 1 / 2)
-      return clamp(q, 0, 1);
-    if (t < 2 / 3)
-      return clamp(p + (q - p) * (2 / 3 - t) * 6, 0, 1);
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return clamp(p + (q - p) * 6 * t, 0, 1);
+    if (t < 1 / 2) return clamp(q, 0, 1);
+    if (t < 2 / 3) return clamp(p + (q - p) * (2 / 3 - t) * 6, 0, 1);
     return clamp(p, 0, 1);
   }
 }
@@ -7327,13 +7322,11 @@ var JqueryWranglerCanvasNodeBackground = class extends JqueryWrangler {
   // Methods
   // -----------------------------------------------------------------------------------------------------------------
   findElement(tag_name) {
-    if (!tag_name)
-      return null;
+    if (!tag_name) return null;
     const regex = new RegExp(`#${tag_name}`, "i");
     return (0, import_jquery3.default)(`div.canvas-node > div.canvas-node-container:has(a.tag)`).filter((_, el) => {
       const href = (0, import_jquery3.default)(el).find("a.tag").attr("href");
-      if (href === void 0)
-        return false;
+      if (href === void 0) return false;
       return regex.test(href);
     });
   }
@@ -7341,8 +7334,7 @@ var JqueryWranglerCanvasNodeBackground = class extends JqueryWrangler {
     this.getTags(false).map(
       ({ tag_name, color, background_color }) => {
         const canvasNode = this.findElement(tag_name);
-        if (canvasNode === null)
-          return;
+        if (canvasNode === null) return;
         canvasNode.css({
           "--canvas-color": `${color.r}, ${color.g}, ${color.b}`,
           "background-color": this.getBackgroundWithOpacityString(background_color)
@@ -8412,3 +8404,5 @@ jquery/dist/jquery.js:
    * Date: 2023-08-28T13:37Z
    *)
 */
+
+/* nosourcemap */

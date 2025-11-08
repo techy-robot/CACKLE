@@ -1,5 +1,5 @@
 ---
-modified: 2025-11-07T22:09:57-07:00
+modified: 2025-11-08T10:36:11-07:00
 ---
 # CACKLE - Card Adaptable Controller Kinetic Link Electronics
 ![](media/sideview%20RL%20with%20arrows.jpg)
@@ -72,4 +72,4 @@ Feal free to contribute in any way possible! This is an open-source project, and
 Read the Architecture notes and [CONTRIBUTING.md](CONTRIBUTING.md) for more in-depth on this.
 
 # A Note on Project Management
-This project is managed transparently in this very repo. I am using Obsidian.md as my notetaking, documentation, and project management tool. A lot of the markdown files you will see in this repo might look a bit weird; that is due to the Wiki-links instead of markdown links and the YAML file front-matter that Obsidian supports. My system works well for one person, but I'm not sure how future proof this system is. You can find my sample vault here, which explains more: [GitHub - techy-robot/Project-Management-Obsidian-Sample-Vault](https://github.com/techy-robot/Project-Management-Obsidian-Sample-Vault). 
+I am using Obsidian.md as my notetaking and documentation tool. A lot of the markdown files you will see in this repo might look a bit weird; that is due to the YAML file front-matter that Obsidian supports, and occasional plugins with custom code.

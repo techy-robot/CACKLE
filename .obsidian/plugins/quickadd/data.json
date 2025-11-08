@@ -1,184 +1,6 @@
 {
   "choices": [
     {
-      "id": "d6074480-a29d-4c46-ba53-e3b0c4b1c09c",
-      "name": "New Contact",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Journal Notes/Templates/Contact Template.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Journal Notes/Contacts"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": true,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "source",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false,
-      "fileOpening": {
-        "location": "split",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "source"
-      }
-    },
-    {
-      "id": "9f586ba6-da10-4aee-ac1f-93e67cec0e71",
-      "name": "New Event",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Journal Notes/Templates/Event Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Events/{{DATE}} {{NAME}}"
-      },
-      "folder": {
-        "enabled": false,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": true,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false,
-      "fileOpening": {
-        "location": "split",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
-    },
-    {
-      "id": "dd7c746d-482d-4680-acc8-bd135152afc3",
-      "name": "New Action",
-      "type": "Template",
-      "command": true,
-      "templatePath": "Docs/Templates/Action Item template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{DATE}} {{NAME}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Docs/Action Items"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
-    },
-    {
-      "id": "59c20ca6-7f69-4461-b0b1-87c1a0d4f0cd",
-      "name": "New Milestone",
-      "type": "Template",
-      "command": true,
-      "templatePath": "Docs/Templates/Milestone Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{DATE}} {{NAME}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Docs/Action Items"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
-    },
-    {
-      "id": "8e53d4e2-e14e-4368-832a-a82014f7f259",
-      "name": "New Goal",
-      "type": "Template",
-      "command": true,
-      "templatePath": "Docs/Templates/Goal Template.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Docs/Goals"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
-    },
-    {
       "id": "e23a57b7-3734-4d5c-bf0c-2dae807416d4",
       "name": "New Wiki Entry",
       "type": "Template",
@@ -191,7 +13,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "Docs/Wiki"
+          "Docs"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -219,12 +41,14 @@
   "devMode": false,
   "templateFolderPath": "Docs/Templates",
   "announceUpdates": true,
-  "version": "2.4.0",
+  "version": "2.7.0",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
   "enableRibbonIcon": false,
   "showCaptureNotification": true,
+  "showInputCancellationNotification": false,
+  "enableTemplatePropertyTypes": false,
   "ai": {
     "defaultModel": "Ask me",
     "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",

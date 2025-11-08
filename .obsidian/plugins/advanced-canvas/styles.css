@@ -148,8 +148,7 @@ details.setting-item > *:not(summary) {
   --box-shadow: var(--shadow-border-themed);
 }
 .canvas-node[data-text-align=center] .markdown-preview-view {
-  padding: 0 !important;
-  overflow-y: initial;
+  scrollbar-gutter: auto;
 }
 .canvas-node[data-text-align=center] .markdown-preview-view .markdown-preview-section {
   display: flex;
@@ -222,7 +221,6 @@ details.setting-item > *:not(summary) {
   border-radius: 50%;
 }
 .canvas-node[data-shape=circle] .canvas-node-container .markdown-preview-view {
-  padding: 0 !important;
   overflow-y: initial;
 }
 .canvas-node[data-shape=predefined-process] .canvas-node-container .canvas-node-content {

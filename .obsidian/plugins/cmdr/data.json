@@ -24,24 +24,6 @@
   "statusBar": [],
   "pageHeader": [
     {
-      "id": "quickadd:choice:dd7c746d-482d-4680-acc8-bd135152afc3",
-      "icon": "file-check",
-      "name": "QuickAdd: New Action",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:59c20ca6-7f69-4461-b0b1-87c1a0d4f0cd",
-      "icon": "map-pin",
-      "name": "QuickAdd: New Milestone",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:8e53d4e2-e14e-4368-832a-a82014f7f259",
-      "icon": "target",
-      "name": "QuickAdd: New Goal",
-      "mode": "any"
-    },
-    {
       "id": "quickadd:choice:e23a57b7-3734-4d5c-bf0c-2dae807416d4",
       "icon": "lightbulb",
       "name": "QuickAdd: New Wiki Entry",
